@@ -32,6 +32,7 @@ print("subscale_scores_data: ", subscale_scores_data.shape)
 score_cols = ([x for x in total_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING") and not "Barratt" in x and not "preg_symp" in x] 
     + [x for x in subscale_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING")  and not "Barratt" in x and not "preg_symp" in x])
 
+results = []
 for diag_col in diags:
     best_auc = 0
     best_score_col = ""
@@ -42,9 +43,11 @@ for diag_col in diags:
         else:
             auc = roc_auc_score(subscale_scores_data[diag_col], subscale_scores_data[score_col])
         if auc > best_auc:
-            #print(auc, best_auc)
             best_auc = auc
             best_score_col = score_col
-        #print(diag_col, score_col, auc)
-        
-    print(diag_col, best_score_col, best_auc)
+    results.append([diag_col, best_score_col, best_auc])
+
+# Save results as csv
+results_df = pd.DataFrame(results, columns=["Diag", "Best score", "AUC"])
+print(results_df)
+results_df.to_csv("output/score_manually.csv", index=False)
