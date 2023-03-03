@@ -1,9 +1,8 @@
-# Score SWAN manually
-
-## Read prepared data
-
 import pandas as pd
 import os, datetime
+from sklearn.metrics import roc_auc_score
+
+# Read prepared data
 
 def get_newest_non_empty_dir_in_dir(path):
     dir_names = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
@@ -15,80 +14,37 @@ def get_newest_non_empty_dir_in_dir(path):
     newest_dir_name = non_empty_dir_names[timestamps.index(max(timestamps))]
     return path + newest_dir_name + "/"
 
+def get_list_of_analysed_diags():
+    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/")
+    report = pd.read_csv(path + "auc-on-subsets-test-set-optimal-threshold.csv")
+    return [x for x in report.columns if x.startswith("Diag.")]
+
 path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/make_dataset/")
-all_data = pd.read_csv(path+'item_lvl_w_impairment.csv')
+total_scores_data = pd.read_csv(path+'total_scores_w_impairment.csv')
+subscale_scores_data = pd.read_csv(path+'subscale_scores_w_impairment.csv')
 
-swan_cols = [col for col in all_data.columns if col.startswith("SWAN")]
-srs_cols = [col for col in all_data.columns if col.startswith("SRS")]
-diag_cols = [col for col in all_data.columns if col.startswith("Diag.")]
+diags = get_list_of_analysed_diags()
+print(diags)
 
+print("total_scores_data: ", total_scores_data.shape)
+print("subscale_scores_data: ", subscale_scores_data.shape)
 
+score_cols = ([x for x in total_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING") and not "Barratt" in x and not "preg_symp" in x] 
+    + [x for x in subscale_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING")  and not "Barratt" in x and not "preg_symp" in x])
 
-
-### Score SWAN manually for ADHD-Inattentive Type
-print("Diag.ADHD-Inattentive Type")
-
-data = all_data[swan_cols + diag_cols].copy()
-
-inattentive_cols = swan_cols[0:9] # First 9 cols: https://www.aacap.org/App_Themes/AACAP/docs/member_resources/toolbox_for_clinical_practice_and_outcomes/symptoms/SWAN_Attention-DeficitHyperactivity_Disorder_Symptoms_Child.pdf 
-
-data["Inattentive_score"] = data[inattentive_cols].sum(axis=1)/len(inattentive_cols)
-
-# Print mean score 
-print(data["Inattentive_score"].mean())
-# Print mean among non-diagnosed
-print(data[data["Diag.ADHD-Inattentive Type"] == 0]["Inattentive_score"].mean())
-# Print mean among diagnosed
-print(data[data["Diag.ADHD-Inattentive Type"] == 1]["Inattentive_score"].mean())
-
-# Calculate AUC
-
-from sklearn.metrics import roc_auc_score
-
-auc = roc_auc_score(data["Diag.ADHD-Inattentive Type"], data["Inattentive_score"])
-print("AUC: ", auc)
-
-# => AUC is 0.66, which is lower than the AUC of the model (only SWAN items as input) (0.79)
-
-
-
-### Score SWAN manually for ADHD-Combined Type
-print("Diag.ADHD-Combined Type")
-
-data["Combined_score"] = data[swan_cols].sum(axis=1) # https://www.academia.edu/4479470/Across_the_continuum_of_attention_skills_A_twin_study_of_the_SWAN_ADHD_rating_scale 
-
-# Print mean score
-print(data["Combined_score"].mean())
-# Print mean among non-diagnosed
-print(data[data["Diag.ADHD-Combined Type"] == 0]["Combined_score"].mean())
-# Print mean among diagnosed
-print(data[data["Diag.ADHD-Combined Type"] == 1]["Combined_score"].mean())
-
-# Calculate AUC
-
-auc = roc_auc_score(data["Diag.ADHD-Combined Type"], data["Combined_score"])
-print("AUC: ", auc)
-
-# => AUC is 0.82, which is lower than the AUC of the model (only SWAN items as input) (0.85)
-
-
-
-### Score SRS manually for ASD
-print("Diag.Autism Spectrum Disorder")
-
-data = all_data[srs_cols + diag_cols].copy()
-data["SRS_score"] = data[srs_cols].sum(axis=1) # https://journals.sagepub.com/doi/abs/10.1177/0734282913517525?journalCode=jpaa 
-
-# Print mean score
-print(data["SRS_score"].mean())
-# Print mean among non-diagnosed
-print(data[data["Diag.Autism Spectrum Disorder"] == 0]["SRS_score"].mean())
-# Print mean among diagnosed
-print(data[data["Diag.Autism Spectrum Disorder"] == 1]["SRS_score"].mean())
-
-# Calculate AUC
-
-auc = roc_auc_score(data["Diag.Autism Spectrum Disorder"], data["SRS_score"])
-print("AUC: ", auc)
-
-# => AUC is 0.84, which is lower than the AUC of the model (only SRS items as input) (0.89)
+for diag_col in diags:
+    best_auc = 0
+    best_score_col = ""
+    for score_col in score_cols:
+        # Find best scale for diag    
+        if "Total" in score_col:
+            auc = roc_auc_score(total_scores_data[diag_col], total_scores_data[score_col])    
+        else:
+            auc = roc_auc_score(subscale_scores_data[diag_col], subscale_scores_data[score_col])
+        if auc > best_auc:
+            #print(auc, best_auc)
+            best_auc = auc
+            best_score_col = score_col
+        #print(diag_col, score_col, auc)
+        
+    print(diag_col, best_score_col, best_auc)
