@@ -70,8 +70,6 @@ best_scores_df.to_csv("output/best_scores.csv", index=False)
 
 # Compare with ML scores
 
-## Get ML scores where "Number of features" is 10 
-
 path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/")
 ml_scores = pd.read_csv(path + "auc-on-subsets-test-set-optimal-threshold.csv")
 
