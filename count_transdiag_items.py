@@ -55,16 +55,17 @@ for subset in subsets:
 # Make a table with rows = items, cols = subsets, values = count
 item_counts_table = pd.DataFrame.from_dict(item_counts)
 
-# Sort by count in 126 subset
-item_counts_table = item_counts_table.sort_values(126, ascending=False)
-print(item_counts_table)
-
 # Append item name to item ID
 item_names = pd.read_csv("../diagnosis_predictor/references/item-names.csv")
 item_names["ID"] = item_names["datadic"] + "," + item_names["keys"]
 
 # Merge item names to item_counts_table
-item_counts_table = item_counts_table.merge(item_names, left_index=True, right_on="ID")
+item_counts_table = item_names.merge(item_counts_table, left_on="ID", right_index=True)
+item_counts_table = item_counts_table.drop(["datadic", "keys"], axis=1)
+
+# Sort by count in 126 subset
+item_counts_table = item_counts_table.sort_values(126, ascending=False)
+print(item_counts_table)
 
 # Save to csv
 item_counts_table.to_csv("item_counts.csv", index=False)
