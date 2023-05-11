@@ -21,9 +21,9 @@ def remove_prefix_from_diag(diag):
     else:
         return diag
 
-path_all_features = "/Users/charlie/Repos/diagnosis_predictor_data/reports/evaluate_original_models/"
+path_all_features = "../diagnosis_predictor_data/reports/evaluate_original_models/"
 dir_all_features = get_newest_non_empty_dir_in_dir(path_all_features) + "performance_table_all_features.csv"
-path_optimal_features = "/Users/charlie/Repos/diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
+path_optimal_features = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
 dir_optimal_features = get_newest_non_empty_dir_in_dir(path_optimal_features) + "auc-on-subsets-test-set-optimal-threshold.csv"
 
 optimal_nb_features = read_dict_from_txt_file(get_newest_non_empty_dir_in_dir(path_optimal_features) + "optimal-nb-features.txt")
@@ -46,4 +46,4 @@ for diag in diags:
 
 result_table = pd.DataFrame(result_table, columns=["Diagnosis", "Optimal number of features", "AUCROC with all features", "AUROC at optimal number of features"])
 print(result_table)
-result_table.to_csv("compare_auc_at_optimal_nb_features_vs_all_features.csv", index=False)
+result_table.to_csv("output/compare_auc_at_optimal_nb_features_vs_all_features.csv", index=False)

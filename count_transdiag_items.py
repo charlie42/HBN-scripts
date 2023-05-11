@@ -69,5 +69,3 @@ print(item_counts_table)
 
 # Save to csv
 item_counts_table.to_csv("item_counts.csv", index=False)
-
-
