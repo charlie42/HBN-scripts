@@ -29,8 +29,8 @@ def find_auc_for_score_col(score_col):
 # Read prepared data
 
 path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/data/make_dataset/")
-total_scores_data = pd.read_csv(path+'total_scores_w_impairment.csv')
-subscale_scores_data = pd.read_csv(path+'subscale_scores_w_impairment.csv')
+total_scores_data = pd.read_csv(path+'total_scores.csv')
+subscale_scores_data = pd.read_csv(path+'subscale_scores.csv')
 
 diags = get_list_of_analysed_diags()
 print(diags)
@@ -71,6 +71,7 @@ best_scores_df.to_csv("output/best_scores.csv", index=False)
 # Compare with ML scores
 
 path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/")
+print("Reading report from: ", path)
 ml_scores = pd.read_csv(path + "auc-on-subsets-test-set-optimal-threshold.csv")
 
 numbers_of_items = {"SCQ,SCQ_Total": 40,
@@ -84,16 +85,15 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
 
 ml_scores_at_num_features = {}
 for diag_col in diags:
-    best_score_col = best_scores_df[best_scores_df["Diag"] == diag_col]["Best score"].values[0]
-    number_of_items = numbers_of_items[best_score_col] if best_score_col in numbers_of_items else 10
-    ml_score = ml_scores[ml_scores["Number of features"] == number_of_items][diag_col].values[0]
-    ml_scores_at_num_features[diag_col] = ml_score
-    print(diag_col, best_score_col, number_of_items, ml_score)
+    best_score = best_scores_df[best_scores_df["Diag"] == diag_col]["AUC"].values[0]
+    best_score_subscale = best_scores_df[best_scores_df["Diag"] == diag_col]["Best score"].values[0]
+    number_of_items_in_best_subscale = numbers_of_items[best_score_subscale] if best_score_subscale in numbers_of_items else 10
+    ml_score_at_number_of_items_of_best_subscale = ml_scores[ml_scores["Number of features"] == number_of_items_in_best_subscale][diag_col].values[0]
+    # Find number of items needed to reach performance of the best subscale    
+    number_of_items_for_ml_score_of_best_subscale = ml_scores[ml_scores[diag_col] >= best_score]["Number of features"].min()
+    ml_scores_at_num_features[diag_col] = [best_score_subscale, best_score, number_of_items_in_best_subscale, ml_score_at_number_of_items_of_best_subscale, number_of_items_for_ml_score_of_best_subscale]
 
-ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=["ML score"])
-print(ml_scores_at_num_features_df)
+ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=["Best subscale", "Best subscale score", "Number of items", "ML score", "Number of items to reach best subscale"])
 
-all_scores_df = pd.concat([all_scores_df, ml_scores_at_num_features_df], axis=1).T
-print(all_scores_df)
-
-all_scores_df.to_csv("output/all_scores.csv")
+all_scores_df.T.to_csv("output/subscale_scores.csv")
+ml_scores_at_num_features_df.to_csv("output/subsale_scores_vs_ml.csv")

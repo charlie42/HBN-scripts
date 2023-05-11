@@ -26,7 +26,7 @@ def find_auc_for_score_col(score_col):
 # Read prepared data
 
 path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/data/make_dataset/")
-total_scores_data = pd.read_csv(path+'total_scores_w_impairment.csv')
+total_scores_data = pd.read_csv(path+'total_scores.csv')
 
 diags = get_list_of_analysed_diags()
 print(diags)
