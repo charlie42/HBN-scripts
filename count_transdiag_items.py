@@ -68,4 +68,4 @@ item_counts_table = item_counts_table.sort_values(126, ascending=False)
 print(item_counts_table)
 
 # Save to csv
-item_counts_table.to_csv("item_counts.csv", index=False)
+item_counts_table.to_csv("output/item_counts.csv", index=False)
