@@ -6,7 +6,7 @@ def get_newest_non_empty_dir_in_dir(path):
     dir_names = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
     non_empty_dir_names = [d for d in dir_names if len(os.listdir(path+d)) > 0]
     # Filter only those with first_dropped_assessment in name (not single assessment)
-    non_empty_dir_names = [d for d in non_empty_dir_names if "first_dropped_assessment" in d]
+    non_empty_dir_names = [d for d in non_empty_dir_names if "first_assessment_to_drop" in d]
     # Find non-empty dir with the latest timestamp, dir name format: 2023-01-05 11.03.00___first_dropped_assessment__ICU_P___other_diag_as_input__0___debug_mode__True
     
     timestamps = [d.split("___")[0] for d in non_empty_dir_names]
@@ -28,11 +28,14 @@ def find_auc_for_score_col(score_col):
 
 # Read prepared data
 
-path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/data/make_dataset/")
+path = get_newest_non_empty_dir_in_dir("../../diagnosis_predictor_data/data/create_datasets/")
+print("Reading input data from: ", path)
 total_scores_data = pd.read_csv(path+'total_scores.csv')
 subscale_scores_data = pd.read_csv(path+'subscale_scores.csv')
 
 diags = get_list_of_analysed_diags()
+# Drop diags that we created outselves, they're not in the raw data: "Diag.Any Diag"
+diags = [x for x in diags if not x == "Diag.Any Diag"]
 print(diags)
 
 print("total_scores_data: ", total_scores_data.shape)
@@ -44,29 +47,27 @@ print(score_cols)
 
 # Get manual AUC scores for each diag and each scale/subscale
 
-best_score = []
-all_scores = {}
+best_manual_score = []
+all_manual_scores = {}
 for diag_col in diags:
     scores_for_diag = []
     for score_col in score_cols:
         auc = find_auc_for_score_col(score_col)
         scores_for_diag.append(auc)
-    all_scores[diag_col] = scores_for_diag
+    all_manual_scores[diag_col] = scores_for_diag
 
-all_scores_df = pd.DataFrame.from_dict(all_scores, orient='index', columns=score_cols)
-print(all_scores_df)
+all_manual_scores_df = pd.DataFrame.from_dict(all_manual_scores, orient='index', columns=score_cols)
+print(all_manual_scores_df)
 
 # Make df with best scores for each diag (cols: Diag,Best score,AUC) 
 
-best_scores = []
+best_manual_scores = []
 for diag_col in diags:
-    best_score = all_scores_df.loc[diag_col].max()
-    best_score_col = all_scores_df.loc[diag_col].idxmax()
-    best_scores.append([diag_col, best_score_col, best_score])
-best_scores_df = pd.DataFrame(best_scores, columns=["Diag","Best score","AUC"])
-print(best_scores_df)
-
-best_scores_df.to_csv("output/best_scores.csv", index=False)
+    best_manual_score = all_manual_scores_df.loc[diag_col].max()
+    best_manual_score_col = all_manual_scores_df.loc[diag_col].idxmax()
+    best_manual_scores.append([diag_col, best_manual_score_col, best_manual_score])
+best_manual_scores_df = pd.DataFrame(best_manual_scores, columns=["Diag","Best score","AUC"])
+print(best_manual_scores_df)
 
 # Compare with ML scores
 
@@ -85,15 +86,15 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
 
 ml_scores_at_num_features = {}
 for diag_col in diags:
-    best_score = best_scores_df[best_scores_df["Diag"] == diag_col]["AUC"].values[0]
-    best_score_subscale = best_scores_df[best_scores_df["Diag"] == diag_col]["Best score"].values[0]
-    number_of_items_in_best_subscale = numbers_of_items[best_score_subscale] if best_score_subscale in numbers_of_items else 10
-    ml_score_at_number_of_items_of_best_subscale = ml_scores[ml_scores["Number of features"] == number_of_items_in_best_subscale][diag_col].values[0]
+    best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
+    best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best score"].values[0]
+    number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale] if best_manual_score_subscale in numbers_of_items else 10
+    ml_score_at_number_of_items_of_best_manual_subscale = ml_scores[ml_scores["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
     # Find number of items needed to reach performance of the best subscale    
-    number_of_items_for_ml_score_of_best_subscale = ml_scores[ml_scores[diag_col] >= best_score]["Number of features"].min()
-    ml_scores_at_num_features[diag_col] = [best_score_subscale, best_score, number_of_items_in_best_subscale, ml_score_at_number_of_items_of_best_subscale, number_of_items_for_ml_score_of_best_subscale]
+    number_of_items_for_ml_score_of_best_manual_subscale = ml_scores[ml_scores[diag_col] >= best_manual_score]["Number of features"].min()
+    ml_scores_at_num_features[diag_col] = [best_manual_score_subscale, best_manual_score, number_of_items_in_best_manual_subscale, ml_score_at_number_of_items_of_best_manual_subscale, number_of_items_for_ml_score_of_best_manual_subscale]
 
-ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=["Best subscale", "Best subscale score", "Number of items", "ML score", "Number of items to reach best subscale"])
+ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=["Best subscale", "Best subscale score", "# of items", "ML score at # of items", "# of items to reach best subscale"]).sort_values(by="Best subscale score", ascending=False)
 
-all_scores_df.T.to_csv("output/subscale_scores.csv")
-ml_scores_at_num_features_df.to_csv("output/subsale_scores_vs_ml.csv")
+all_manual_scores_df.T.to_csv("output/manual_subscale_scores.csv", float_format='%.3f')
+ml_scores_at_num_features_df.to_csv("output/manual_subsale_scores_vs_ml.csv", float_format='%.3f')

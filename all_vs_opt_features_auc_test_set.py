@@ -46,4 +46,4 @@ for diag in diags:
 
 result_table = pd.DataFrame(result_table, columns=["Diagnosis", "Optimal number of features", "AUCROC with all features", "AUROC at optimal number of features"])
 print(result_table)
-result_table.to_csv("output/compare_auc_at_optimal_nb_features_vs_all_features.csv", index=False)
+result_table.to_csv("output/compare_auc_at_optimal_nb_features_vs_all_features.csv", float_format='%.3f', index=False)

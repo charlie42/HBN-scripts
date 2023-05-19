@@ -1,17 +1,18 @@
 Diagnosis,Optimal number of features,AUCROC with all features,AUROC at optimal number of features
-Major Depressive Disorder,3,0.8986420083981059,0.8927901366925757
-Oppositional Defiant Disorder,3,0.8877889952362221,0.8710065119531489
-Autism Spectrum Disorder,3,0.927680311890838,0.8599025341130605
-ADHD-Combined Type,2,0.8761667457680746,0.8333399251173337
-Generalized Anxiety Disorder,2,0.884405817121369,0.8329016538122098
-Enuresis,3,0.8704697541906844,0.81768038163387
-Social Anxiety (Social Phobia),2,0.8270732923383747,0.8039582294609717
-No Diagnosis Given,2,0.8465407439571574,0.7708604718483139
-Specific Phobia,3,0.5,0.7600813743218807
-Separation Anxiety,3,0.8755630630630632,0.7433136261261262
-Language Disorder,3,0.5,0.7338047747230925
-Specific Learning Disorder with Impairment in Mathematics,2,0.5,0.6977166821994407
-Specific Learning Disorder with Impairment in Reading,3,0.6965074473549049,0.6723677452491013
-ADHD-Inattentive Type,2,0.746317680266872,0.6394085193738773
-Specific Learning Disorder with Impairment in Written Expression,3,0.6270909832721339,0.5682170542635658
-Other Specified Anxiety Disorder,3,0.5,0.5622713668107748
+Autism Spectrum Disorder,15,0.933,0.9226413255360624
+Major Depressive Disorder,6,0.898,0.890065219333512
+Separation Anxiety,12,0.878,0.8382835960960962
+ADHD-Combined Type,5,0.881,0.8570703475188525
+Oppositional Defiant Disorder,4,0.881,0.8640138105852017
+Generalized Anxiety Disorder,15,0.874,0.8634165995165188
+Enuresis,3,0.878,0.81768038163387
+Social Anxiety (Social Phobia),15,0.866,0.8538308126973575
+No Diagnosis Given,6,0.844,0.8390505138225502
+Any Diag,13,0.799,0.7910334346504558
+Language Disorder,16,0.785,0.764275627730462
+Specific Phobia,2,0.772,0.73250452079566
+ADHD-Inattentive Type,11,0.763,0.7382537849627919
+Specific Learning Disorder with Impairment in Mathematics,8,0.722,0.6889717303510408
+Specific Learning Disorder with Impairment in Reading,18,0.718,0.7315699366546824
+Specific Learning Disorder with Impairment in Written Expression,20,0.631,0.6194818441452468
+Other Specified Anxiety Disorder,25,0.604,0.6497339541070835
