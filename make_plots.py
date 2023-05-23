@@ -117,32 +117,29 @@ def plot_eval_orig(eval_orig_df):
 
 def plot_eval_subsets(eval_subsets_df):
     print("DEBUG", eval_subsets_df.columns)
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(10, 8))
     plt.title("ROC AUC on test set for subsets of features")
     #plt.plot(eval_subsets_df["AUC all assessments"], label="ML on optimal # of features (all assessments)", marker="o", linestyle="", color="blue")
     #plt.plot(eval_subsets_df["AUC free assessments"], label="ML on optimal # of features (free assessments)", marker="o", markerfacecolor='none', linestyle="", color="blue")
-    plt.plot(eval_subsets_df["Best subscale score"], label="best subscale", marker="o", markersize=10, linestyle="", color="red")
-    plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="ML on subscale # of features (all assessments)", marker="o", linestyle="", color="green")
+    plt.plot(eval_subsets_df["Best subscale score"], label="Best subscale (and # of features to reach it with ML)", marker="o", linestyle="", color="red")
+    plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="ML on subscale # of features (all assessments)", marker="o", linestyle="", color="blue")
     #plt.plot(eval_subsets_df["ML score at # of items of best subscale (free assessments)"], label="ML on subscale # of features (free assessments)", marker="o", markerfacecolor='none', linestyle="", color="green")
     plt.xticks(rotation=45, ha="right")
-    plt.legend(loc="lower right")
-    plt.ylim([0.5, 1.0])
+    plt.legend(loc="upper right")
 
     # Print number of items next to AUC scores to the right of the markers
     for i, row in eval_subsets_df.iterrows():
         #plt.text(i, row["AUC all assessments"]+0.01, str(row["Optimal # of features all assessments"]), ha="left", va="center", size=8)
-        plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="left", va="center", size=8)
-        plt.text(i, row["Best subscale score"]+0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="left", va="center", size=8)
+        plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="center", va="bottom", size=8)
+        plt.text(i, row["Best subscale score"]-0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="center", va="top", size=8)
     
     # Append best subscale name to the diag name on x axis
     eval_subsets_df["Best subscale"] = eval_subsets_df["Best subscale"].str.split(",").str[1] # Remove prefix before , from subscale names
     plt.xticks(range(len(eval_subsets_df.index)), eval_subsets_df.index + " (" + eval_subsets_df["Best subscale"] + ")")
-    
-    
-    
 
+    plt.tight_layout()
     
-    plt.show()
+    plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
 def main():
     dir_eval_orig_all, dir_eval_orig_free = read_data_eval_orig()
