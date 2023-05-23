@@ -71,7 +71,27 @@ def make_df_to_plot_eval_orig(dir_eval_orig_all, dir_eval_orig_free):
     return eval_orig_df
 
 def make_df_to_plot_eval_subsets(dir_eval_subsets_all, dir_eval_subsets_free):
-    pass
+    df_opt_features_all = pd.read_csv(dir_eval_subsets_all + "auc-sens-spec-on-subsets-test-set-optimal-threshold-optimal-nb-features.csv", index_col=1)
+    df_opt_features_free = pd.read_csv(dir_eval_subsets_free + "auc-sens-spec-on-subsets-test-set-optimal-threshold-optimal-nb-features.csv", index_col=1)
+
+    df_manual = pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
+
+    # Make one dataset with all info
+    df_opt_features_all = df_opt_features_all[["AUC", "Number of features"]]
+    df_opt_features_all.columns = ["AUC all assessments", "Optimal # of features all assessments"]
+    df_opt_features_free = df_opt_features_free[["AUC", "Number of features"]]
+    df_opt_features_free.columns = ["AUC free assessments", "Optimal # of features free assessments"]
+    df_opt_features = df_opt_features_all.merge(df_opt_features_free, left_index=True, right_index=True)
+
+    # Add manual scoring
+    df_opt_features = df_opt_features.merge(df_manual, left_index=True, right_index=True).sort_values(by="Best subscale score", ascending=False)
+
+    # Rephrase diags to shorter names
+    df_opt_features = df_opt_features.rename(index=diagnosis_dict)
+    print(df_opt_features)
+
+    return df_opt_features
+
 
 def plot_eval_orig(eval_orig_df):
     # Plot on same plot, one point for each diagnosis, connext diagnoses with lines
@@ -96,7 +116,33 @@ def plot_eval_orig(eval_orig_df):
     plt.savefig(output_dir + "ROC_AUC_all_features.png", bbox_inches="tight", dpi=600)
 
 def plot_eval_subsets(eval_subsets_df):
-    pass
+    print("DEBUG", eval_subsets_df.columns)
+    plt.figure(figsize=(10, 5))
+    plt.title("ROC AUC on test set for subsets of features")
+    #plt.plot(eval_subsets_df["AUC all assessments"], label="ML on optimal # of features (all assessments)", marker="o", linestyle="", color="blue")
+    #plt.plot(eval_subsets_df["AUC free assessments"], label="ML on optimal # of features (free assessments)", marker="o", markerfacecolor='none', linestyle="", color="blue")
+    plt.plot(eval_subsets_df["Best subscale score"], label="best subscale", marker="o", markersize=10, linestyle="", color="red")
+    plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="ML on subscale # of features (all assessments)", marker="o", linestyle="", color="green")
+    #plt.plot(eval_subsets_df["ML score at # of items of best subscale (free assessments)"], label="ML on subscale # of features (free assessments)", marker="o", markerfacecolor='none', linestyle="", color="green")
+    plt.xticks(rotation=45, ha="right")
+    plt.legend(loc="lower right")
+    plt.ylim([0.5, 1.0])
+
+    # Print number of items next to AUC scores to the right of the markers
+    for i, row in eval_subsets_df.iterrows():
+        #plt.text(i, row["AUC all assessments"]+0.01, str(row["Optimal # of features all assessments"]), ha="left", va="center", size=8)
+        plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="left", va="center", size=8)
+        plt.text(i, row["Best subscale score"]+0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="left", va="center", size=8)
+    
+    # Append best subscale name to the diag name on x axis
+    eval_subsets_df["Best subscale"] = eval_subsets_df["Best subscale"].str.split(",").str[1] # Remove prefix before , from subscale names
+    plt.xticks(range(len(eval_subsets_df.index)), eval_subsets_df.index + " (" + eval_subsets_df["Best subscale"] + ")")
+    
+    
+    
+
+    
+    plt.show()
 
 def main():
     dir_eval_orig_all, dir_eval_orig_free = read_data_eval_orig()
