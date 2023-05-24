@@ -101,7 +101,7 @@ def plot_eval_orig(eval_orig_df):
     plt.plot(eval_orig_df["ROC AUC free assessments"], label="free assessments", marker="*", linestyle="", color="blue")
     plt.plot(eval_orig_df["ROC AUC healthy controls all assessments"], label="healthy controls all assessments", marker="o", linestyle="", color="red")
     #plt.plot(eval_orig_df["ROC AUC healthy controls free assessments"], label="healthy controls free assessments", marker="o", linestyle="--", color="green")
-    plt.xticks(rotation=45, ha="right")
+    plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="lower right")
     plt.ylim([0.5, 1.0])
 
@@ -115,7 +115,7 @@ def plot_eval_orig(eval_orig_df):
     make_dir_if_not_exists(output_dir)
     plt.savefig(output_dir + "ROC_AUC_all_features.png", bbox_inches="tight", dpi=600)
 
-def plot_eval_subsets(eval_subsets_df):
+def plot_manual_vs_ml(eval_subsets_df):
     print("DEBUG", eval_subsets_df.columns)
     plt.figure(figsize=(10, 8))
     plt.title("ROC AUC on test set for subsets of features")
@@ -124,7 +124,7 @@ def plot_eval_subsets(eval_subsets_df):
     plt.plot(eval_subsets_df["Best subscale score"], label="Best subscale (and # of features to reach it with ML)", marker="o", linestyle="", color="red")
     plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="ML on subscale # of features (all assessments)", marker="o", linestyle="", color="blue")
     #plt.plot(eval_subsets_df["ML score at # of items of best subscale (free assessments)"], label="ML on subscale # of features (free assessments)", marker="o", markerfacecolor='none', linestyle="", color="green")
-    plt.xticks(rotation=45, ha="right")
+    plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="upper right")
 
     # Print number of items next to AUC scores to the right of the markers
@@ -135,11 +135,40 @@ def plot_eval_subsets(eval_subsets_df):
     
     # Append best subscale name to the diag name on x axis
     eval_subsets_df["Best subscale"] = eval_subsets_df["Best subscale"].str.split(",").str[1] # Remove prefix before , from subscale names
-    plt.xticks(range(len(eval_subsets_df.index)), eval_subsets_df.index + " (" + eval_subsets_df["Best subscale"] + ")")
+    plt.xticks(range(len(eval_subsets_df.index)), eval_subsets_df.index + " (" + eval_subsets_df["Best subscale"] + ")", rotation=45, ha="right", size=8)
 
     plt.tight_layout()
     
     plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
+
+def plot_opt_num_features(eval_subsets_df):
+    opt_vs_all_df = pd.read_csv("output/compare_auc_at_optimal_nb_features_vs_all_features.csv", index_col=0).sort_values(by="ROC AUC optimal features all assessments", ascending=False)
+    
+    # Plot AUC on all features all assessments, AUC on optimal # of features all assessments, AUC on optimal # of features free assessments, AUC on all features free assessments
+    plt.figure(figsize=(10, 8))
+    plt.title("ROC AUC on test set for subsets of features vs all features")
+    plt.plot(opt_vs_all_df["ROC AUC all features all assessments"], label="AUC on all features (all assessments)", marker="o", linestyle="", color="blue")
+    plt.plot(opt_vs_all_df["ROC AUC all features free assessments"], label="AUC on all features (free assessments)", marker="o", linestyle="", color="red")
+    plt.plot(opt_vs_all_df["ROC AUC optimal features all assessments"], label="AUC on optimal # of features (all assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
+    plt.plot(opt_vs_all_df["ROC AUC optimal features free assessments"], label="AUC on optimal # of features (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
+    plt.xticks(rotation=45, ha="right", size=8)
+    plt.legend(loc="upper right")
+
+    # Print number of items next to AUC scores to the right of the markers
+    opt_vs_all_df = opt_vs_all_df.reset_index()
+    for i, row in opt_vs_all_df.iterrows():
+        plt.text(i+0.1, row["ROC AUC optimal features all assessments"]-0.001, str(row["Number of features all assessments"]), ha="left", va="center", fontsize=6)
+        plt.text(i+0.1, row["ROC AUC optimal features free assessments"]-0.0005, str(row["Number of features free assessments"]), ha="left", va="center", fontsize=6)
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/ROC_AUC_optimal_vs_all_features.png", bbox_inches="tight", dpi=600)
+
+
+def plot_eval_subsets(eval_subsets_df):
+
+    plot_manual_vs_ml(eval_subsets_df)
+    plot_opt_num_features(eval_subsets_df)
 
 def main():
     dir_eval_orig_all, dir_eval_orig_free = read_data_eval_orig()

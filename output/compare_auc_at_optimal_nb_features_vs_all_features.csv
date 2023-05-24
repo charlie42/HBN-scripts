@@ -1,18 +1,18 @@
-Diagnosis,Optimal number of features,AUCROC with all features,AUROC at optimal number of features
-Autism Spectrum Disorder,15,0.933,0.9226413255360624
-Major Depressive Disorder,6,0.898,0.890065219333512
-Separation Anxiety,12,0.878,0.8382835960960962
-ADHD-Combined Type,5,0.881,0.8570703475188525
-Oppositional Defiant Disorder,4,0.881,0.8640138105852017
-Generalized Anxiety Disorder,15,0.874,0.8634165995165188
-Enuresis,3,0.878,0.81768038163387
-Social Anxiety (Social Phobia),15,0.866,0.8538308126973575
-No Diagnosis Given,6,0.844,0.8390505138225502
-Any Diag,13,0.799,0.7910334346504558
-Language Disorder,16,0.785,0.764275627730462
-Specific Phobia,2,0.772,0.73250452079566
-ADHD-Inattentive Type,11,0.763,0.7382537849627919
-Specific Learning Disorder with Impairment in Mathematics,8,0.722,0.6889717303510408
-Specific Learning Disorder with Impairment in Reading,18,0.718,0.7315699366546824
-Specific Learning Disorder with Impairment in Written Expression,20,0.631,0.6194818441452468
-Other Specified Anxiety Disorder,25,0.604,0.6497339541070835
+Diag,ROC AUC all features all assessments,ROC AUC all features free assessments,Number of features all assessments,ROC AUC optimal features all assessments,Number of features free assessments,ROC AUC optimal features free assessments
+Major Depressive Disorder,0.898,0.883,6,0.890,12,0.880
+Autism Spectrum Disorder,0.933,0.904,15,0.923,18,0.879
+Enuresis,0.878,0.856,3,0.818,5,0.746
+ADHD-Combined Type,0.881,0.880,5,0.857,6,0.852
+Social Anxiety (Social Phobia),0.866,0.840,15,0.854,15,0.838
+Generalized Anxiety Disorder,0.874,0.859,15,0.863,15,0.840
+Oppositional Defiant Disorder,0.881,0.885,4,0.864,6,0.814
+Any Diag,0.799,0.853,13,0.791,19,0.821
+No Diagnosis Given,0.844,0.847,6,0.839,10,0.810
+Separation Anxiety,0.878,0.824,12,0.838,11,0.859
+ADHD-Inattentive Type,0.763,0.751,11,0.738,12,0.765
+Specific Learning Disorder with Impairment in Mathematics,0.722,0.732,8,0.689,14,0.759
+Language Disorder,0.785,0.727,16,0.764,19,0.681
+Specific Phobia,0.772,0.764,2,0.733,4,0.731
+Specific Learning Disorder with Impairment in Reading,0.718,0.765,18,0.732,19,0.779
+Specific Learning Disorder with Impairment in Written Expression,0.631,0.621,20,0.619,17,0.675
+Other Specified Anxiety Disorder,0.604,0.617,25,0.650,9,0.601
