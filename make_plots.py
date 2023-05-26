@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from make_final_tables import read_data_eval_subsets
+
 diagnosis_dict = {
         'Diag.Major Depressive Disorder': 'MDD',
         'Diag.Autism Spectrum Disorder': 'ASD',
@@ -24,82 +26,20 @@ diagnosis_dict = {
         'Diag.Other Specified Anxiety Disorder': 'Other Anxiety'
     }
 
-def read_data_eval_orig():
-    # Read report tables to visualize
-    path_eval_orig = "../diagnosis_predictor_data/reports/evaluate_original_models/"
-    dir_eval_orig_all = get_newest_non_empty_dir_in_dir(path_eval_orig, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
-                                                                    "only_free_assessments__0",
-                                                                    #"debug_mode__False"
-                                                                    ])
-    dir_eval_orig_free = get_newest_non_empty_dir_in_dir(path_eval_orig, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
-                                                                    "only_free_assessments__1",
-                                                                    #"debug_mode__False"
-                                                                    ])
-    
-    return dir_eval_orig_all, dir_eval_orig_free
+def make_df_to_plot_thresholds(dir_eval_subsets_all, filename):
 
-def read_data_eval_subsets():
+    df_opt_features_all = pd.read_csv(dir_eval_subsets_all + "sens-spec-on-subsets-test-set-optimal-nb-features/" + filename, 
+                                      index_col=0)
 
-    path_eval_subsets = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
-    dir_eval_subsets_all = get_newest_non_empty_dir_in_dir(path_eval_subsets, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
-                                                                  "only_free_assessments__0",
-                                                                  #"debug_mode__False"
-                                                                  ])
-    dir_eval_subsets_free = get_newest_non_empty_dir_in_dir(path_eval_subsets, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
-                                                                  "only_free_assessments__1",
-                                                                  #"debug_mode__False"
-                                                                  ])
-
-    return dir_eval_subsets_all, dir_eval_subsets_free
-
-def make_df_to_plot_eval_orig(dir_eval_orig_all, dir_eval_orig_free):
-    # Read ROC AUC on all features on test set and for only healthy controls, for all assessments and free assessments
-    eval_orig_all_df = pd.read_csv(dir_eval_orig_all + "performance_table_all_features.csv", index_col=0)
-    eval_orig_free_df = pd.read_csv(dir_eval_orig_free + "performance_table_all_features.csv", index_col=0)
-
-    # Each row is diagnosis (index), plot ROC AUC column and ROC AUC healthy controls column. 
-    # Plot both for all assessments and free assessments on the same plot, add number of positive examples to each diagnosis
-    eval_orig_all_df = eval_orig_all_df[["ROC AUC", "ROC AUC Healthy Controls", "# of Positive Examples"]]
-    eval_orig_free_df = eval_orig_free_df[["ROC AUC", "ROC AUC Healthy Controls"]]
-    eval_orig_all_df.columns = ["ROC AUC all assessments", "ROC AUC healthy controls all assessments", "# of Positive Examples"]
-    eval_orig_free_df.columns = ["ROC AUC free assessments", "ROC AUC healthy controls free assessments"]
-    eval_orig_df = eval_orig_all_df.merge(eval_orig_free_df, left_index=True, right_index=True).sort_values(by="ROC AUC all assessments", ascending=False)
-
-    # Rephrase diags to shorter names
-    eval_orig_df = eval_orig_df.rename(index=diagnosis_dict)
-
-    return eval_orig_df
-
-def make_df_to_plot_eval_subsets(dir_eval_subsets_all, dir_eval_subsets_free):
-    df_opt_features_all = pd.read_csv(dir_eval_subsets_all + "auc-sens-spec-on-subsets-test-set-optimal-threshold-optimal-nb-features.csv", index_col=1)
-    df_opt_features_free = pd.read_csv(dir_eval_subsets_free + "auc-sens-spec-on-subsets-test-set-optimal-threshold-optimal-nb-features.csv", index_col=1)
-
-    df_manual = pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
-
-    # Make one dataset with all info
-    df_opt_features_all = df_opt_features_all[["AUC", "Number of features"]]
-    df_opt_features_all.columns = ["AUC all assessments", "Optimal # of features all assessments"]
-    df_opt_features_free = df_opt_features_free[["AUC", "Number of features"]]
-    df_opt_features_free.columns = ["AUC free assessments", "Optimal # of features free assessments"]
-    df_opt_features = df_opt_features_all.merge(df_opt_features_free, left_index=True, right_index=True)
-
-    # Add manual scoring
-    df_opt_features = df_opt_features.merge(df_manual, left_index=True, right_index=True).sort_values(by="Best subscale score", ascending=False)
-
-    # Rephrase diags to shorter names
-    df_opt_features = df_opt_features.rename(index=diagnosis_dict)
-    print(df_opt_features)
-
-    return df_opt_features
-
+    return df_opt_features_all
 
 def plot_eval_orig(eval_orig_df):
     # Plot on same plot, one point for each diagnosis, connext diagnoses with lines
     plt.figure(figsize=(10, 5))
     plt.title("ROC AUC for all features")
-    plt.plot(eval_orig_df["ROC AUC all assessments"], label="all assessments", marker="o", linestyle="", color="blue")
-    plt.plot(eval_orig_df["ROC AUC free assessments"], label="free assessments", marker="*", linestyle="", color="blue")
-    plt.plot(eval_orig_df["ROC AUC healthy controls all assessments"], label="healthy controls all assessments", marker="o", linestyle="", color="red")
+    plt.plot(eval_orig_df["AUC all features all assessments"], label="all assessments", marker="o", linestyle="", color="blue")
+    plt.plot(eval_orig_df["AUC all features free assessments"], label="free assessments", marker="o", linestyle="", color="blue", markerfacecolor='none')
+    plt.plot(eval_orig_df["AUC all features healthy controls all assessments"], label="healthy controls all assessments", marker="o", linestyle="", color="red")
     #plt.plot(eval_orig_df["ROC AUC healthy controls free assessments"], label="healthy controls free assessments", marker="o", linestyle="--", color="green")
     plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="lower right")
@@ -141,47 +81,69 @@ def plot_manual_vs_ml(eval_subsets_df):
     
     plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
-def plot_opt_num_features(eval_subsets_df):
-    opt_vs_all_df = pd.read_csv("output/compare_auc_at_optimal_nb_features_vs_all_features.csv", index_col=0).sort_values(by="ROC AUC optimal features all assessments", ascending=False)
+def plot_opt_num_features(opt_vs_all_df):
+    opt_vs_all_df = opt_vs_all_df.sort_values(by="AUC optimal features all assessments", ascending=False)
     
     # Plot AUC on all features all assessments, AUC on optimal # of features all assessments, AUC on optimal # of features free assessments, AUC on all features free assessments
     plt.figure(figsize=(10, 8))
     plt.title("ROC AUC on test set for subsets of features vs all features")
-    plt.plot(opt_vs_all_df["ROC AUC all features all assessments"], label="AUC on all features (all assessments)", marker="o", linestyle="", color="blue")
-    plt.plot(opt_vs_all_df["ROC AUC all features free assessments"], label="AUC on all features (free assessments)", marker="o", linestyle="", color="red")
-    plt.plot(opt_vs_all_df["ROC AUC optimal features all assessments"], label="AUC on optimal # of features (all assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
-    plt.plot(opt_vs_all_df["ROC AUC optimal features free assessments"], label="AUC on optimal # of features (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
+    plt.plot(opt_vs_all_df["AUC all features all assessments"], label="AUC on all features (all assessments)", marker="o", linestyle="", color="blue")
+    plt.plot(opt_vs_all_df["AUC all features free assessments"], label="AUC on all features (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
+    plt.plot(opt_vs_all_df["AUC optimal features all assessments"], label="AUC on optimal # of features (all assessments)", marker="o", linestyle="", color="red")
+    plt.plot(opt_vs_all_df["AUC optimal features free assessments"], label="AUC on optimal # of features (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="upper right")
 
     # Print number of items next to AUC scores to the right of the markers
     opt_vs_all_df = opt_vs_all_df.reset_index()
     for i, row in opt_vs_all_df.iterrows():
-        plt.text(i+0.1, row["ROC AUC optimal features all assessments"]-0.001, str(row["Number of features all assessments"]), ha="left", va="center", fontsize=6)
-        plt.text(i+0.1, row["ROC AUC optimal features free assessments"]-0.0005, str(row["Number of features free assessments"]), ha="left", va="center", fontsize=6)
+        plt.text(i+0.1, row["AUC optimal features all assessments"]-0.001, str(row["Optimal # of features all assessments"]), ha="left", va="center", fontsize=6)
+        plt.text(i+0.1, row["AUC optimal features free assessments"]-0.0005, str(row["Optimal # of features free assessments"]), ha="left", va="center", fontsize=6)
 
     plt.tight_layout()
 
     plt.savefig("output/viz/ROC_AUC_optimal_vs_all_features.png", bbox_inches="tight", dpi=600)
 
+def plot_thresholds(thresholds_df):
+    # Drop first row (PPV always 0.5)
+    thresholds_df = thresholds_df.drop(thresholds_df.index[0])
 
-def plot_eval_subsets(eval_subsets_df):
+    # Plot sensitivity, specificity, PPV, and NPV for each threshold
+    plt.figure(figsize=(10, 8))
+    plt.title("Sensitivity, specificity, PPV, and NPV for each threshold for ASD diagnosis, optimal # of features, all assessments")
+    plt.plot(thresholds_df.index, thresholds_df["Sensitivity"], label="Sensitivity", marker="o", linestyle="-", color="blue")
+    plt.plot(thresholds_df.index, thresholds_df["Specificity"], label="Specificity", marker="o", linestyle="-", color="red")
+    plt.plot(thresholds_df.index, thresholds_df["PPV"], label="PPV", marker="o", linestyle="-", color="green")
+    plt.plot(thresholds_df.index, thresholds_df["NPV"], label="NPV", marker="o", linestyle="-", color="orange")
+    plt.xlim(thresholds_df.index[0], thresholds_df.index[-1])
+    plt.xticks(thresholds_df.index, rotation=45, ha="right", size=8)
+    plt.legend(loc="upper right")
 
-    plot_manual_vs_ml(eval_subsets_df)
-    plot_opt_num_features(eval_subsets_df)
+    plt.tight_layout()
+
+    plt.savefig("output/viz/sensitivity_specificity_PPV_NPV.png", bbox_inches="tight", dpi=600)
+
 
 def main():
-    dir_eval_orig_all, dir_eval_orig_free = read_data_eval_orig()
-    print("Reading reports from: ", dir_eval_orig_all, dir_eval_orig_free)
 
-    eval_orig_df = make_df_to_plot_eval_orig(dir_eval_orig_all, dir_eval_orig_free)
+    # Read performance tables
+    eval_orig_df = pd.read_csv("output/eval_orig.csv", index_col=0)
+    eval_subsets_df = pd.read_csv("output/eval_subsets.csv", index_col=0)
+    compare_orig_subsets_df = pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
+
+    # Read thresholds data from diagnosis_predictor_data (for all assessments, that's why using dir_eval_subsets_all[0])
+    dir_eval_subsets_all = read_data_eval_subsets()
+    filename = "Diag.Autism Spectrum Disorder.csv"
+    thresholds_df = make_df_to_plot_thresholds(dir_eval_subsets_all[0], filename)
+    
+    # Rephrase diags to shorter names
+    eval_orig_df = eval_orig_df.rename(index=diagnosis_dict)
+    eval_subsets_df = eval_subsets_df.rename(index=diagnosis_dict)
+
     plot_eval_orig(eval_orig_df)
-
-    dir_eval_subsets_all, dir_eval_subsets_free = read_data_eval_subsets()
-    print("Reading reports from: ", dir_eval_subsets_all, dir_eval_subsets_free)
-
-    eval_subsets_df = make_df_to_plot_eval_subsets(dir_eval_subsets_all, dir_eval_subsets_free)
-    plot_eval_subsets(eval_subsets_df)
+    plot_manual_vs_ml(eval_subsets_df)
+    plot_opt_num_features(compare_orig_subsets_df)
+    plot_thresholds(thresholds_df)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,17 @@
+,AUC all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples,AUC all features free assessments,AUC all features healthy controls free assessments,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),ML score at # of items of best subscale (free assessments),# of items to reach best subscale (all assessments),# of items to reach best subscale (free assessments)
+Diag.Autism Spectrum Disorder,0.933,0.985,498.0,0.904,0.966,0.923,15,0.879,18.0,"ASSQ,ASSQ_Total",0.861,27,0.921,0.885,4,5.0
+Diag.Major Depressive Disorder,0.898,0.911,197.0,0.883,0.911,0.89,6,0.88,12.0,"CBCL,CBCL_Int_T",0.758,10,0.886,0.877,1,1.0
+Diag.ADHD-Combined Type,0.881,0.956,862.0,0.88,0.956,0.857,5,0.852,6.0,"SWAN,SWAN_HY",0.851,9,0.869,0.859,2,6.0
+Diag.Oppositional Defiant Disorder,0.881,0.935,433.0,0.885,0.954,0.864,4,0.814,6.0,"CBCL,CBCL_Ext_T",0.851,10,0.865,0.821,3,
+Diag.Enuresis,0.878,0.867,269.0,0.856,0.826,0.818,3,0.746,5.0,"CBCL,CBCL_OP",0.653,10,0.868,0.73,1,1.0
+Diag.Separation Anxiety,0.878,0.941,187.0,0.824,0.879,0.838,12,0.859,11.0,"SCARED_P,SCARED_P_SP",0.814,10,0.823,0.852,10,4.0
+Diag.Generalized Anxiety Disorder,0.874,0.927,508.0,0.859,0.912,0.863,15,0.84,15.0,"SCARED_P,SCARED_P_GD",0.809,10,0.864,0.829,2,7.0
+Diag.Social Anxiety (Social Phobia),0.866,0.898,329.0,0.84,0.879,0.854,15,0.838,15.0,"SCARED_P,SCARED_P_SC",0.808,10,0.855,0.835,3,2.0
+Diag.No Diagnosis Given,0.844,,246.0,0.847,,0.839,6,0.81,10.0,"SCARED_P,SCARED_P_SC",0.422,10,0.845,0.81,1,1.0
+Diag.Language Disorder,0.785,0.804,428.0,0.727,0.798,0.764,16,0.681,19.0,"SRS,SRS_COG_T",0.583,10,0.773,0.66,1,1.0
+Diag.Specific Phobia,0.772,0.845,302.0,0.764,0.817,0.733,2,0.731,4.0,"SCARED_P,SCARED_P_Total",0.662,10,0.765,0.734,2,1.0
+Diag.ADHD-Inattentive Type,0.763,0.847,898.0,0.751,0.835,0.738,11,0.765,12.0,"SWAN,SWAN_IN",0.663,9,0.739,0.756,2,1.0
+Diag.Specific Learning Disorder with Impairment in Mathematics,0.722,0.801,290.0,0.732,0.77,0.689,8,0.759,14.0,"SWAN,SWAN_IN",0.578,9,0.695,0.747,1,1.0
+Diag.Specific Learning Disorder with Impairment in Reading,0.718,0.681,592.0,0.765,0.735,0.732,18,0.779,19.0,"SCARED_P,SCARED_P_SP",0.523,10,0.702,0.749,1,1.0
+Diag.Specific Learning Disorder with Impairment in Written Expression,0.631,0.66,216.0,0.621,0.672,0.619,20,0.675,17.0,"SWAN,SWAN_IN",0.556,9,0.586,0.632,1,2.0
+Diag.Other Specified Anxiety Disorder,0.604,0.654,157.0,0.617,0.768,0.65,25,0.601,9.0,"SCARED_P,SCARED_P_GD",0.637,10,0.591,0.601,20,25.0
