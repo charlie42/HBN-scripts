@@ -19,11 +19,16 @@ diagnosis_dict = {
         'Diag.Separation Anxiety': 'SA',
         'Diag.ADHD-Inattentive Type': 'ADHD-I',
         'Diag.Specific Learning Disorder with Impairment in Mathematics': 'SLD-Math',
+        'New Diag.Specific Learning Disorder with Impairment in Mathematics': 'SLD-Math',
         'Diag.Language Disorder': 'Language',
         'Diag.Specific Phobia': 'Phobia',
         'Diag.Specific Learning Disorder with Impairment in Reading': 'SLD-Reading',
         'Diag.Specific Learning Disorder with Impairment in Written Expression': 'SLD-Writing',
-        'Diag.Other Specified Anxiety Disorder': 'Other Anxiety'
+        'New Diag.Specific Learning Disorder with Impairment in Reading': 'SLD-Reading',
+        'New Diag.Specific Learning Disorder with Impairment in Written Expression': 'SLD-Writing',
+        'Diag.Other Specified Anxiety Disorder': 'Other Anxiety',
+        'New Diag.Processing Speed Deficit': 'LD-PS',
+        'New Diag.Borderline Intellectual Functioning': 'LD-BIF',
     }
 
 def make_df_to_plot_thresholds(dir_eval_subsets_all, filename):
@@ -123,6 +128,38 @@ def plot_thresholds(thresholds_df):
 
     plt.savefig("output/viz/sensitivity_specificity_PPV_NPV.png", bbox_inches="tight", dpi=600)
 
+def plot_what_improves_LD(check_what_improves_LD_df):
+
+    # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
+    for col in check_what_improves_LD_df.columns:
+        if not col.startswith("ROC AUC"):
+            check_what_improves_LD_df[col] = check_what_improves_LD_df[col].astype('Int64')
+
+    sns.set_style("whitegrid")
+    sns.set_context("paper")
+
+    check_what_improves_LD_df = check_what_improves_LD_df.sort_values("ROC AUC Mean CV_nothing", ascending=False)
+
+    # Plot ROC AUC Mean CV, x=diag (index), y=ROC AUC Mean CV, color=_nothing or _nih or _conners or _newdiag
+    plt.figure(figsize=(10, 8))
+    plt.title("ROC AUC Mean CV for each LD diagnosis, all features, all assessments")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_nothing"], label="ROC AUC Mean CV_nothing", marker="D", color="blue", markersize=10, linestyle="")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_nih"], label="ROC AUC Mean CV_nih", marker="o", color="red", markersize=10, linestyle="")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_conners"], label="ROC AUC Mean CV_conners", marker="o", color="green", markersize=10, linestyle="")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag"], label="ROC AUC Mean CV_newdiag", marker="o", color="orange", markersize=10, linestyle="")
+    plt.xlim(check_what_improves_LD_df.index[0], check_what_improves_LD_df.index[-1])
+    plt.xticks(check_what_improves_LD_df.index, rotation=45, ha="right", size=8)
+    plt.legend(loc="upper right")
+
+    # Add text labels for each point with # of positive examples and Total examples
+    check_what_improves_LD_df = check_what_improves_LD_df.reset_index()
+    for i, row in check_what_improves_LD_df.iterrows():
+        plt.text(i+0.1, row["ROC AUC Mean CV_nothing"]-0.0005, str(row["# of positive examples_nothing"]) + "/" + str(row["Total examples_nothing"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_nih"]-0.0005, str(row["# of positive examples_nih"]) + "/" + str(row["Total examples_nih"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_conners"]-0.0005, str(row["# of positive examples_conners"]) + "/" + str(row["Total examples_conners"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag"]-0.0005, str(row["# of positive examples_newdiag"]) + "/" + str(row["Total examples_newdiag"]), ha="left", va="center", fontsize=8)
+
+    plt.savefig("output/viz/what_improves_LD.png", dpi=600)
 
 def main():
 
@@ -130,6 +167,7 @@ def main():
     eval_orig_df = pd.read_csv("output/eval_orig.csv", index_col=0)
     eval_subsets_df = pd.read_csv("output/eval_subsets.csv", index_col=0)
     compare_orig_subsets_df = pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
+    what_improves_LD_df = pd.read_csv("output/what_improves_LD.csv", index_col=0)
 
     # Read thresholds data from diagnosis_predictor_data (for all assessments, that's why using dir_eval_subsets_all[0])
     dir_eval_subsets_all = read_data_eval_subsets()
@@ -139,11 +177,13 @@ def main():
     # Rephrase diags to shorter names
     eval_orig_df = eval_orig_df.rename(index=diagnosis_dict)
     eval_subsets_df = eval_subsets_df.rename(index=diagnosis_dict)
+    what_improves_LD_df = what_improves_LD_df.rename(index=diagnosis_dict)
 
     plot_eval_orig(eval_orig_df)
     plot_manual_vs_ml(eval_subsets_df)
     plot_opt_num_features(compare_orig_subsets_df)
     plot_thresholds(thresholds_df)
+    plot_what_improves_LD(what_improves_LD_df)
 
 if __name__ == "__main__":
     main()
