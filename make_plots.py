@@ -56,7 +56,10 @@ def plot_eval_orig(eval_orig_df):
     ax2.set_ylabel("Number of positive examples")
     ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples free assessments"].values, color="blue", width=0.5, alpha=0.2, fill=False)
     ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples all assessments"].values, color="blue", width=0.5, alpha=0.2)
-    ax2.legend(["# of Positive Examples free assessments", "# of Positive Examples all assessments"], loc="lower right")
+    tot_n_features_all_assessments = eval_orig_df["# rows full dataset all assessments"].values[0]
+    tot_n_features_free_assessments = eval_orig_df["# rows full dataset free assessments"].values[0]
+    ax2.legend([f"# of Positive Examples free assessments/{tot_n_features_free_assessments}", f"# of Positive Examples all assessments/{tot_n_features_all_assessments}"], loc="lower right")
+    
 
     # ax2 = plt.twinx()
     # ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples all assessments"], alpha=0.3, color="black")
@@ -101,12 +104,16 @@ def plot_manual_vs_ml(eval_subsets_df):
 
 def plot_opt_num_features(opt_vs_all_df):
     opt_vs_all_df = opt_vs_all_df.sort_values(by="AUC optimal features all assessments", ascending=False)
+
+    # Get total number of features in all assessments and free assessments
+    tot_n_features_all_assessments = opt_vs_all_df["# input features all assessments"].values[0]
+    tot_n_features_free_assessments = opt_vs_all_df["# input features free assessments"].values[0]
     
     # Plot AUC on all features all assessments, AUC on optimal # of features all assessments, AUC on optimal # of features free assessments, AUC on all features free assessments
     plt.figure(figsize=(10, 8))
     plt.title("ROC AUC on test set for subsets of features vs all features")
-    plt.plot(opt_vs_all_df["AUC all features all assessments"], label="AUC on all features (all assessments)", marker="o", linestyle="", color="blue")
-    plt.plot(opt_vs_all_df["AUC all features free assessments"], label="AUC on all features (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
+    plt.plot(opt_vs_all_df[f"AUC all features all assessments"], label=f"AUC on all features ({tot_n_features_all_assessments}) (all assessments)", marker="o", linestyle="", color="blue")
+    plt.plot(opt_vs_all_df[f"AUC all features free assessments"], label=f"AUC on all features ({tot_n_features_free_assessments}) (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.plot(opt_vs_all_df["AUC optimal features all assessments"], label="AUC on optimal # of features (all assessments)", marker="o", linestyle="", color="red")
     plt.plot(opt_vs_all_df["AUC optimal features free assessments"], label="AUC on optimal # of features (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
@@ -143,11 +150,6 @@ def plot_thresholds(thresholds_df):
 
 def plot_what_improves_LD(check_what_improves_LD_df):
 
-    # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
-    for col in check_what_improves_LD_df.columns:
-        if not col.startswith("ROC AUC"):
-            check_what_improves_LD_df[col] = check_what_improves_LD_df[col].astype('Int64')
-
     sns.set_style("whitegrid")
     sns.set_context("paper")
 
@@ -177,8 +179,6 @@ def plot_what_improves_LD(check_what_improves_LD_df):
 def main():
 
     # Read performance tables
-    eval_orig_df = pd.read_csv("output/eval_orig.csv", index_col=0)
-    eval_subsets_df = pd.read_csv("output/eval_subsets.csv", index_col=0)
     compare_orig_subsets_df = pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
     what_improves_LD_df = pd.read_csv("output/what_improves_LD.csv", index_col=0)
 
@@ -188,12 +188,22 @@ def main():
     thresholds_df = make_df_to_plot_thresholds(dir_eval_subsets_all[0], filename)
     
     # Rephrase diags to shorter names
-    eval_orig_df = eval_orig_df.rename(index=diagnosis_dict)
-    eval_subsets_df = eval_subsets_df.rename(index=diagnosis_dict)
+    compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
     what_improves_LD_df = what_improves_LD_df.rename(index=diagnosis_dict)
 
-    plot_eval_orig(eval_orig_df)
-    plot_manual_vs_ml(eval_subsets_df)
+    # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
+    for col in what_improves_LD_df.columns:
+        print(col)
+        if not "AUC" in col and not "score" in col and not "Best subscale" in col:
+            what_improves_LD_df[col] = what_improves_LD_df[col].astype('Int64')
+    for col in compare_orig_subsets_df.columns:
+        print(col)
+        if not "AUC" in col and not "score" in col and not "Best subscale" in col:
+            compare_orig_subsets_df[col] = compare_orig_subsets_df[col].astype('Int64')
+
+
+    plot_eval_orig(compare_orig_subsets_df)
+    plot_manual_vs_ml(compare_orig_subsets_df)
     plot_opt_num_features(compare_orig_subsets_df)
     plot_thresholds(thresholds_df)
     plot_what_improves_LD(what_improves_LD_df)

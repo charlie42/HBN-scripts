@@ -90,10 +90,10 @@ def make_df_ds_stats(dir_all, dir_free):
     print(ds_stats_df_all_assessments)
 
     ds_stats_df_all_assessments = ds_stats_df_all_assessments.T[["n_rows_full_ds", "n_input_cols"]]
-    ds_stats_df_all_assessments.columns = ["# of rows full dataset all assessments", "# input features all assessments"]
+    ds_stats_df_all_assessments.columns = ["# rows full dataset all assessments", "# input features all assessments"]
 
     ds_stats_df_free_assessments = ds_stats_df_free_assessments.T[["n_rows_full_ds", "n_input_cols"]]
-    ds_stats_df_free_assessments.columns = ["# of rows full dataset free assessments", "# input features free assessments"]
+    ds_stats_df_free_assessments.columns = ["# rows full dataset free assessments", "# input features free assessments"]
 
     #Merge
     ds_stats_df = ds_stats_df_all_assessments.merge(ds_stats_df_free_assessments, left_index=True, right_index=True)
