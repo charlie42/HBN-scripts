@@ -39,11 +39,11 @@ def make_df_to_plot_eval_orig(dir_eval_orig_all, dir_eval_orig_free):
 
     # Each row is diagnosis (index), plot ROC AUC column and ROC AUC healthy controls column. 
     # Plot both for all assessments and free assessments on the same plot, add number of positive examples to each diagnosis
-    eval_orig_all_df = eval_orig_all_df[["ROC AUC", "ROC AUC Healthy Controls", "# of Positive Examples"]]
-    eval_orig_free_df = eval_orig_free_df[["ROC AUC", "ROC AUC Healthy Controls"]]
-    eval_orig_all_df.columns = ["AUC all features all assessments", "AUC all features healthy controls all assessments", "# of Positive Examples"]
-    eval_orig_free_df.columns = ["AUC all features free assessments", "AUC all features healthy controls free assessments"]
-    eval_orig_df = eval_orig_all_df.merge(eval_orig_free_df, left_index=True, right_index=True).sort_values(by="AUC all features all assessments", ascending=False)
+    eval_orig_all_df = eval_orig_all_df[["ROC AUC", "ROC AUC Mean CV", "ROC AUC Healthy Controls", "# of Positive Examples"]]
+    eval_orig_free_df = eval_orig_free_df[["ROC AUC", "ROC AUC Mean CV", "ROC AUC Healthy Controls"]]
+    eval_orig_all_df.columns = ["AUC all features all assessments", "AUC CV all features all assessments", "AUC all features healthy controls all assessments", "# of Positive Examples"]
+    eval_orig_free_df.columns = ["AUC all features free assessments", "AUC CV all features free assessments", "AUC all features healthy controls free assessments"]
+    eval_orig_df = eval_orig_all_df.merge(eval_orig_free_df, left_index=True, right_index=True).sort_values(by="AUC CV all features all assessments", ascending=False)
 
     return eval_orig_df
 
