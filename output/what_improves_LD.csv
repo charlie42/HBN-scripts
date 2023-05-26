@@ -1,0 +1,6 @@
+Diag,ROC AUC Mean CV_nothing,ROC AUC Mean CV_nih,ROC AUC Mean CV_conners,ROC AUC Mean CV_newdiag
+New Diag.Processing Speed Deficit,0.716,0.818,0.741,0.745
+New Diag.Specific Learning Disorder with Impairment in Reading,0.702,0.72,0.753,0.828
+New Diag.Specific Learning Disorder with Impairment in Written Expression,0.622,0.641,,0.638
+New Diag.Specific Learning Disorder with Impairment in Mathematics,0.665,0.746,0.684,0.764
+New Diag.Borderline Intellectual Functioning,,,,0.797
