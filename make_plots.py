@@ -48,15 +48,27 @@ def plot_eval_orig(eval_orig_df):
     plt.plot(eval_orig_df["AUC CV all features free assessments"], label="CV free assessments", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.plot(eval_orig_df["AUC all features healthy controls all assessments"], label="test set healthy controls all assessments", marker="o", linestyle="", color="lightcoral")
     plt.xticks(rotation=45, ha="right", size=8)
-    plt.legend(loc="lower right")
+    plt.legend(loc="upper right")
     plt.ylim([0.5, 1.0])
 
-    # Add bars with the number of positive examples to each diagnosis
+    # For each diag, also plot bar plots with the number of positive examples for all assessments and for free assessments
     ax2 = plt.twinx()
-    ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples"], alpha=0.2, color="black")
-    ax2.set_ylabel("# of Positive Examples", color="black")
-    ax2.tick_params(axis='y', labelcolor="black")
+    ax2.set_ylabel("Number of positive examples")
+    ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples free assessments"].values, color="blue", width=0.5, alpha=0.2, fill=False)
+    ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples all assessments"].values, color="blue", width=0.5, alpha=0.2)
+    ax2.legend(["# of Positive Examples free assessments", "# of Positive Examples all assessments"], loc="lower right")
 
+    # ax2 = plt.twinx()
+    # ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples all assessments"], alpha=0.3, color="black")
+    # ax2.bar(eval_orig_df.index, eval_orig_df["# of Positive Examples free assessments"], alpha=0.1, color="black")
+    # ax2.set_ylabel("# of Positive Examples, free and all assessments", color="black")
+    # ax2.tick_params(axis='y', labelcolor="black")
+
+
+
+   
+
+    
     output_dir = "output/viz/"
     make_dir_if_not_exists(output_dir)
     plt.savefig(output_dir + "ROC_AUC_all_features.png", bbox_inches="tight", dpi=600)
