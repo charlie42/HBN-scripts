@@ -1,8 +1,0 @@
-,Value
-n_rows_full_ds,1396
-n_rows_train_ds,892
-n_rows_val_ds,224
-n_rows_test_ds,280
-n_rows_test_ds_only_healthy_controls,73
-n_rows_val_ds_only_healthy_controls,63
-n_input_cols,1120

@@ -7,8 +7,8 @@ from helpers import get_newest_non_empty_dir_in_dir
 
 path = "../diagnosis_predictor_data/reports/identify_feature_subsets/"
 dir = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
-                                             "only_free_assessments__1",
-                                             "debug_mode__False"]) 
+                                             "only_free_assessments__0",
+                                             "debug_mode__True"]) 
                                                                                                     
 print("Reading reports from: ", dir)
 from joblib import load
@@ -54,11 +54,14 @@ item_counts_table = item_counts_table.drop(["datadic", "keys"], axis=1)
 # Move ID column to be the first
 cols = item_counts_table.columns.tolist()
 cols.pop(cols.index("ID"))
-print(type(["ID"]), type(cols))
 item_counts_table = item_counts_table[["ID"] + cols]
 
-# Sort by count in 126 subset
-item_counts_table = item_counts_table.sort_values(30, ascending=False)
+# Only print 1, 2, 3, 5, 10, 20, 35 subsets: 
+cols_to_keep = [col for col in item_counts_table.columns.tolist() if not str(col).isdigit() or int(col) in [1, 2, 3, 5, 10, 20, 35]]
+item_counts_table = item_counts_table[cols_to_keep]
+
+# Sort by count in 35th subset
+item_counts_table = item_counts_table.sort_values(35, ascending=False)
 print(item_counts_table)
 
 # Save to csv

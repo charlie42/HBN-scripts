@@ -1,5 +1,0 @@
-Diag,ROC AUC Mean CV,ROC AUC SD CV,ROC AUC Mean CV - SD,ROC AUC,ROC AUC Healthy Controls,# of Positive Examples
-New Diag.Processing Speed Deficit,0.818,0.020,0.798,0.804,0.903,559.000
-New Diag.Specific Learning Disorder with Impairment in Mathematics,0.746,0.027,0.719,0.724,0.822,217.000
-New Diag.Specific Learning Disorder with Impairment in Reading,0.720,0.029,0.691,0.741,0.793,470.000
-New Diag.Specific Learning Disorder with Impairment in Written Expression,0.641,0.051,0.590,0.699,0.694,156.000

@@ -12,7 +12,7 @@ def get_pos_examples_dir(path):
     oldest_dir_name = dir_names[timestamps.index(min(timestamps))]
     return path + oldest_dir_name + "/"
 
-dir = "input/check_what_improves_LD_data/"
+dir = "../learning_diagnosis_predictor_data/check_what_improves_LD_data/"
 
 # Read scores
 nothing_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "Nothing/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]

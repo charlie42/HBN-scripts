@@ -1,6 +1,6 @@
 Diag,ROC AUC Mean CV_nothing,# of positive examples_nothing,Total examples_nothing,ROC AUC Mean CV_nih,# of positive examples_nih,Total examples_nih,ROC AUC Mean CV_conners,# of positive examples_conners,Total examples_conners,ROC AUC Mean CV_newdiag,# of positive examples_newdiag,Total examples_newdiag
-New Diag.Processing Speed Deficit,0.716,551,2283,0.818,559,2320,0.741,358,1422,0.745,559,2320
-New Diag.Specific Learning Disorder with Impairment in Reading,0.702,464,2283,0.72,470,2320,0.753,305,1422,0.828,367,2320
-New Diag.Specific Learning Disorder with Impairment in Written Expression,0.622,154,2283,0.641,156,2320,,,,0.638,156,2320
-New Diag.Specific Learning Disorder with Impairment in Mathematics,0.665,215,2283,0.746,217,2320,0.684,172,1422,0.764,461,2320
-New Diag.Borderline Intellectual Functioning,,,,,,,,,,0.797,393,2320
+New Diag.Processing Speed Deficit,0.753,358,1426,0.774,358,1426,0.741,358,1422,0.747,358,1426
+New Diag.Specific Learning Disorder with Impairment in Reading,0.706,306,1426,0.71,306,1426,0.787,305,1422,0.816,191,1426
+New Diag.Specific Learning Disorder with Impairment in Mathematics,0.703,172,1426,0.721,172,1426,0.69,172,1422,0.703,275,1426
+New Diag.Specific Learning Disorder with Impairment in Written Expression,0.64,123,1426,0.637,123,1426,0.597,123,1422,0.756,243,1426
+New Diag.Borderline Intellectual Functioning,,,,,,,,,,0.844,260,1426

@@ -10,7 +10,27 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "SRS,SRS_Total_T": 65,
                     "CBCL,CBCL_Total_T": 112,
                     "SWAN,SWAN_HY": 9,
-                    "SWAN,SWAN_IN": 9}
+                    "SWAN,SWAN_IN": 9,
+                    "CBCL,CBCL_WD_T": 8,
+                    "CBCL,CBCL_AD_T": 13,
+                    "CBCL,CBCL_AP_T": 10,
+                    "CBCL,CBCL_AB_T": 18,
+                    "CBCL,CBCL_RBB_T": 17,
+                    "CBCL,CBCL_TP_T": 15,
+                    "CBCL,CBCL_SC_T": 11,
+                    "CBCL,CBCL_SP_T": 11,
+                    "CBCL,CBCL_OP_T": 17,
+                    "CBCL,CBCL_Int_T": 32,
+                    "CBCL,CBCL_Ext_T": 35,
+                    "CBCL,CBCL_C_T": 53, 
+                    "SRS,SRS_MOT_T": 11,
+                    "SRS,SRS_AWR_T": 8,
+                    "SRS,SRS_COG_T": 12,
+                    "SRS,SRS_COM_T": 22,
+                    "SRS,SRS_RRB_T": 12,
+                    "SRS,SRS_SCI_T": 53, 
+                    "SRS,SRS_DSMRRB_T": 12,
+                    }
 
 def get_list_of_analysed_diags():
     path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", ["first_assessment_to_drop"])
@@ -107,6 +127,7 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale] if best_manual_score_subscale in numbers_of_items else 10
 
         ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
+        print(diag_col, number_of_items_in_best_manual_subscale)
         ml_score_at_number_of_items_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
