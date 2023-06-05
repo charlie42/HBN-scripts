@@ -19,6 +19,9 @@ nothing_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "Nothing/", [
 nih_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "NIH/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
 conners_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "Conners/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
 newdiag_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "NewDiag/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
+newdiag_nih_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "NewDiag+NIH/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
+newdiag_conners_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "NewDiag+Conners/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
+newdiag_conners_nih_scores = pd.read_csv(get_newest_non_empty_dir_in_dir(dir + "NewDiag+Conners+NIH/", ["use_test_set__1"]) + "performance_table_all_features.csv", index_col=0)[["ROC AUC Mean CV"]]
 
 # Read # of positive examples
 nothing_pos = pd.read_csv(get_pos_examples_dir(dir + "Nothing/") + "number-of-positive-examples.csv", index_col=1)
@@ -37,6 +40,18 @@ newdiag_pos = pd.read_csv(get_pos_examples_dir(dir + "NewDiag/") + "number-of-po
 newdiag_pos = newdiag_pos[[newdiag_pos.columns[-1]]]
 newdiag_ds_size = pd.read_csv(get_pos_examples_dir(dir + "NewDiag/") + "dataset_stats.csv", index_col=0).loc["n_rows_full_ds"].values[0]
 
+newdiag_nih_pos = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+NIH/") + "number-of-positive-examples.csv", index_col=1)
+newdiag_nih_pos = newdiag_nih_pos[[newdiag_nih_pos.columns[-1]]]
+newdiag_nih_ds_size = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+NIH/") + "dataset_stats.csv", index_col=0).loc["n_rows_full_ds"].values[0]
+
+newdiag_conners_pos = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+Conners/") + "number-of-positive-examples.csv", index_col=1)
+newdiag_conners_pos = newdiag_conners_pos[[newdiag_conners_pos.columns[-1]]]
+newdiag_conners_ds_size = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+Conners/") + "dataset_stats.csv", index_col=0).loc["n_rows_full_ds"].values[0]
+
+newdiag_conners_nih_pos = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+Conners+NIH/") + "number-of-positive-examples.csv", index_col=1)
+newdiag_conners_nih_pos = newdiag_conners_nih_pos[[newdiag_conners_nih_pos.columns[-1]]]
+newdiag_conners_nih_ds_size = pd.read_csv(get_pos_examples_dir(dir + "NewDiag+Conners+NIH/") + "dataset_stats.csv", index_col=0).loc["n_rows_full_ds"].values[0]
+
 # Add # of positive examples to scores
 nothing_scores["# of positive examples"] = nothing_pos
 nothing_scores["Total examples"] = nothing_ds_size
@@ -46,11 +61,26 @@ conners_scores["# of positive examples"] = conners_pos
 conners_scores["Total examples"] = conners_ds_size
 newdiag_scores["# of positive examples"] = newdiag_pos
 newdiag_scores["Total examples"] = newdiag_ds_size
+newdiag_nih_scores["# of positive examples"] = newdiag_nih_pos
+newdiag_nih_scores["Total examples"] = newdiag_nih_ds_size
+newdiag_conners_scores["# of positive examples"] = newdiag_conners_pos
+newdiag_conners_scores["Total examples"] = newdiag_conners_ds_size
+newdiag_conners_nih_scores["# of positive examples"] = newdiag_conners_nih_pos
+newdiag_conners_nih_scores["Total examples"] = newdiag_conners_nih_ds_size
 
-# Merge into one table
-scores = nothing_scores.merge(nih_scores, suffixes=("_nothing", "_nih"), how="outer", on="Diag")
-scores = scores.merge(conners_scores, suffixes=("_nih", "_conners"), how="outer", on="Diag")
-scores = scores.merge(newdiag_scores, suffixes=("_conners", "_newdiag"), how="outer", on="Diag")
+# Add suffixes for merging
+nothing_scores = nothing_scores.add_suffix("_nothing")
+nih_scores = nih_scores.add_suffix("_nih")
+conners_scores = conners_scores.add_suffix("_conners")
+newdiag_scores = newdiag_scores.add_suffix("_newdiag")
+newdiag_nih_scores = newdiag_nih_scores.add_suffix("_newdiag_nih")
+newdiag_conners_scores = newdiag_conners_scores.add_suffix("_newdiag_conners")
+newdiag_conners_nih_scores = newdiag_conners_nih_scores.add_suffix("_newdiag_conners_nih")
+
+# Merge into one table on Diag
+scores = pd.concat([nothing_scores, nih_scores, conners_scores, newdiag_scores, newdiag_nih_scores, newdiag_conners_scores, newdiag_conners_nih_scores], axis=1, join="outer")
+
+print(scores.columns)
 
 # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
 for col in scores.columns:

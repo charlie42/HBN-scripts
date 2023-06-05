@@ -147,12 +147,9 @@ def plot_thresholds(thresholds_df):
 
 def plot_what_improves_LD(check_what_improves_LD_df):
 
-    sns.set_style("whitegrid")
-    sns.set_context("paper")
-
     check_what_improves_LD_df = check_what_improves_LD_df.sort_values("ROC AUC Mean CV_nothing", ascending=False)
 
-    print("index", check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_nothing"])
+    # First plot: one by one
 
     # Plot ROC AUC Mean CV, x=diag (index), y=ROC AUC Mean CV, color=_nothing or _nih or _conners or _newdiag
     plt.figure(figsize=(10, 8))
@@ -169,16 +166,41 @@ def plot_what_improves_LD(check_what_improves_LD_df):
     plt.xlabel("Diagnosis")
 
     # Add text labels for each point with # of positive examples and Total examples
-    check_what_improves_LD_df = check_what_improves_LD_df.reset_index()
-    for i, row in check_what_improves_LD_df.iterrows():
+    check_what_improves_LD_df_reset_index = check_what_improves_LD_df.reset_index()
+    for i, row in check_what_improves_LD_df_reset_index.iterrows():
         plt.text(i+0.1, row["ROC AUC Mean CV_nothing"]-0.0005, str(row["# of positive examples_nothing"]) + "/" + str(row["Total examples_nothing"]), ha="left", va="center", fontsize=8)
         plt.text(i+0.1, row["ROC AUC Mean CV_nih"]-0.0005, str(row["# of positive examples_nih"]) + "/" + str(row["Total examples_nih"]), ha="left", va="center", fontsize=8)
         plt.text(i+0.1, row["ROC AUC Mean CV_conners"]-0.0005, str(row["# of positive examples_conners"]) + "/" + str(row["Total examples_conners"]), ha="left", va="center", fontsize=8)
         plt.text(i+0.1, row["ROC AUC Mean CV_newdiag"]-0.0005, str(row["# of positive examples_newdiag"]) + "/" + str(row["Total examples_newdiag"]), ha="left", va="center", fontsize=8)
-
     plt.tight_layout()
     
-    plt.savefig("output/viz/what_improves_LD.png", dpi=600)
+    plt.savefig("output/viz/what_improves_LD_one_by_one.png", dpi=600)
+
+    # Second plot: cummulative
+
+    # Plot ROC AUC Mean CV, x=diag (index), y=ROC AUC Mean CV, color=_nothing or _nih or _conners or _newdiag
+    plt.figure(figsize=(10, 8))
+    plt.title("AUROC Mean CV for each LD diagnosis, all features, all assessments")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag"], label="AUROC CV - Test-based (+ positive cases/total cases)", marker="D", color="blue", markersize=10, linestyle="")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag_conners"], label="AUROC CV - Test-based and Conners (+ positive cases/total cases)", marker="o", color="green", markersize=10, linestyle="")
+    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag_conners_nih"], label="AUROC CV - Test-based and and Conners and NIH (+ positive cases/total cases)", marker="o", color="red", markersize=10, linestyle="")
+    plt.xlim(check_what_improves_LD_df.index[0], check_what_improves_LD_df.index[-1])
+    plt.ylim(0.5, 1)
+    plt.xticks(check_what_improves_LD_df.index, rotation=45, ha="right", size=8)
+    plt.legend(loc="upper right")
+    plt.ylabel("AUROC")
+    plt.xlabel("Diagnosis")
+
+    # Add text labels for each point with # of positive examples and Total examples
+    for i, row in check_what_improves_LD_df_reset_index.iterrows():
+        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag"]-0.0005, str(row["# of positive examples_newdiag"]) + "/" + str(row["Total examples_newdiag"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_nih"]-0.0005, str(row["# of positive examples_newdiag_nih"]) + "/" + str(row["Total examples_newdiag_nih"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_conners"]-0.0005, str(row["# of positive examples_newdiag_conners"]) + "/" + str(row["Total examples_newdiag_conners"]), ha="left", va="center", fontsize=8)
+        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_conners_nih"]-0.0005, str(row["# of positive examples_newdiag_conners_nih"]) + "/" + str(row["Total examples_newdiag_conners_nih"]), ha="left", va="center", fontsize=8)
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/what_improves_LD_cumulative.png", dpi=600)
 
 def main():
 
