@@ -190,14 +190,7 @@ def plot_what_improves_LD(check_what_improves_LD_df):
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
     plt.xlabel("Diagnosis")
-
-    # Add text labels for each point with # of positive examples and Total examples
-    for i, row in check_what_improves_LD_df_reset_index.iterrows():
-        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag"]-0.0005, str(row["# of positive examples_newdiag"]) + "/" + str(row["Total examples_newdiag"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_nih"]-0.0005, str(row["# of positive examples_newdiag_nih"]) + "/" + str(row["Total examples_newdiag_nih"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_conners"]-0.0005, str(row["# of positive examples_newdiag_conners"]) + "/" + str(row["Total examples_newdiag_conners"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag_conners_nih"]-0.0005, str(row["# of positive examples_newdiag_conners_nih"]) + "/" + str(row["Total examples_newdiag_conners_nih"]), ha="left", va="center", fontsize=8)
-
+    
     plt.tight_layout()
 
     plt.savefig("output/viz/what_improves_LD_cumulative.png", dpi=600)

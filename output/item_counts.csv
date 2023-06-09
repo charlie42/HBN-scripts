@@ -1,337 +1,366 @@
-�,questions,value,valuelabels,1,2,3,5,10,20,35
-"ASSQ,ASSQ_10",is surprisingly good at some things and surprisingly poor at others,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,1,2,3,4,6
-"PreInt_DevHx,puberty",Has your child shown adult sexual body development (puberty)?,0-1,"0= No, 1= Yes",0,0,0,0,1,3,5
-"SCARED_P,SCARED_P_07",7. My child is nervous,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,3,5
-"ARI_P,ARI_P_01",Is easily annoyed by others,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,4,4
-"SRS,SRS_47",47. Is too silly or laughs inappropriately.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,4
-"SympChck,CSC_01P",1. Feels sad and down most days for at least 1 week(past),0-1,"0=No, 1=Yes",0,1,1,2,2,2,4
-"SDQ,SDQ_15","Easily distracted, concentration wanders",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,1,2,4
-"SDQ,SDQ_08",Many worries or often seems worried,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,1,1,2,2,3,4
-"SDQ,SDQ_07","Generally well behaved, usually does what adults request",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,1,1,2,4
-"SympChck,CSC_06C",6. Has periods of unusual energy and activity(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,3,4
-"CBCL,CBCL_10","10. Can't sit still, restless or hyperactive",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,2,4
-"SDQ,SDQ_01",Considerate of other people's feelings,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,3,4
-"CBCL,CBCL_112",112. Worries,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",2,2,2,2,2,3,4
-"PreInt_DevHx,dev_normal",All developmental milestones within normal limits,0-1,"0= No, 1= Yes",0,0,0,0,0,2,4
-"SympChck,CSC_17P",17. Often has trouble going to sleep without parent/guardian nearby(past),0-1,"0=No, 1=Yes",0,0,1,2,2,2,4
-"PreInt_EduHx,weakness_math",Math,0-1,"0= Unchecked, 1= Checked",0,1,1,1,1,2,4
-"SCARED_P,SCARED_P_23",23. My child is a worrier,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,1,1,1,1,1,4
-"SWAN,SWAN_04",4. Follows through on instructions and finishes school work and chores,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,1,1,4
-"PreInt_EduHx,tutor",Has your child had tutoring outside of school?,0-1,"0= No, 1= Yes",0,1,2,2,4,4,4
-"PreInt_EduHx,strength_english",English,0-1,"0= Unchecked, 1= Checked",0,1,1,1,1,2,3
-"PreInt_EduHx,recent_grades",Recent typical academic performance:,01-May,"1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",0,1,1,1,1,3,3
-"CBCL,CBCL_41",41. Impulsive or acts without thinking,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,3
-"CBCL,CBCL_45","45. Nervous, highstrung, or tense",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,1,1,3
-"SWAN,SWAN_01",1. Gives close attention to detail and avoids careless mistakes,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,1,3
-"CBCL,CBCL_47",47. Nightmares,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,3
-"CBCL,CBCL_50",50. Too fearful or anxious,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,3
-"CBCL,CBCL_56C","     56C. Nausea, feels sick",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,3
-"CBCL,CBCL_61",61. Poor school work,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,3,3
-"SCARED_P,SCARED_P_01","1. When my child feels frightened, it is hard to breathe",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,2,2,3
-"CBCL,CBCL_78",78. Inattentive or easily distracted,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,3
-"SCARED_P,SCARED_P_04",4. My child gets scared if he/she sleeps away from home,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,3
-"SDQ,SDQ_10",Constantly fidgeting or squirming,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,3
-"SCARED_P,SCARED_P_41",41. My child is shy,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",1,1,1,1,1,2,3
-"SCARED_P,SCARED_P_33",33. My child worries about what is going to happen in the future,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,2,3
-"PreInt_EduHx,weakness_science",Science,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,2,3
-"SCARED_P,SCARED_P_14",14. My child worries about being as good as other kids,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,3
-"SCARED_P,SCARED_P_21",21. My child worries about things working out for him/her,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,3
-"CBCL,CBCL_108",108. Wets the bed,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,2,2,2,3
-"SCARED_P,SCARED_P_32",32. My child feels shy with people he/she doesn't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,3
-"SCQ,SCQ_08",8. Does she/he ever have things that she/he seems to have to do in a very particular way or order or rituals that she/he insists that you go though?,0-1,"0= No, 1= Yes",0,0,0,0,1,2,3
-"SWAN,SWAN_05",5. Organizes tasks and activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,3
-"SCQ,SCQ_05","5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)?",0-1,"0= No, 1= Yes",0,0,1,1,2,3,3
-"PreInt_EduHx,repeated_grades",Were any grades repeated?,0-1,"0= No, 1= Yes",0,0,0,1,2,2,3
-"SRS,SRS_43",43. Separates easily from caregivers.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,3,3
-"SympChck,CSC_34C","34. Has trouble paying attention, and it affects school work or performance(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,3
-"CBCL,CBCL_23",23. Disobedient at school,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,3
-"CBCL,CBCL_16","16. Cruelty, bullying, or meanness to others",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,2,3
-"CBCL,CBCL_17",17. Daydreams or gets lost in his/her thoughts,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,1,3
-"SympChck,CSC_16P","16. Often does not want to go to school, due to worry about parent/guardian separation (past)",0-1,"0=No, 1=Yes",0,0,1,1,2,2,3
-"SympChck,CSC_21P","21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations(Past)",0-1,"0=No, 1=Yes",0,0,0,0,1,0,3
-"CBCL,CBCL_19",19. Demands a lot of attention,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,1,1,1,1,1,3
-"SympChck,CSC_27P","27. Feels like he/she has to do certain things in a very specific way (handwashing, checking, doing things multiple times)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,3
-"SympChck,CSC_39C","39. Argues or talks back to adults, more than others his/her age(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,2,3
-"CBCL,CBCL_22",22. Disobedient at home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,1,1,2,3
-"SympChck,CSC_13C","13. Feels very afraid of being on a bridge or traveling in a car, bus, or train(Current)",0-1,"0=No, 1=Yes",0,0,0,1,2,2,3
-"SWAN,SWAN_16",16. Reflects on questions (controls blurting out answers),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,1,1,1,1,2,3
-"CBCL,CBCL_29","29. Fears certain animals, situations, or places, other than school",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,2,3,3
-"SWAN,SWAN_12",12. Modulates motor activity (inhibits inappropriate running or climbing),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,1,2,2,2,3
-"SympChck,CSC_49P",49. Feels really upset when there is an unexpected change in his/her schedule(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,3
-"SympChck,CSC_22C","22. Has intense fears of specific animals, situations, or anything else(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,2
-"SCQ,SCQ_38","38. If you come into a room and start talkking to her/him without calling her/his name, does she/he usually look up and pay attention to you?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,2
-"SympChck,CSC_14C",14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2
-"SCQ,SCQ_14","14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people?",0-1,"0= No, 1= Yes",0,0,0,0,0,0,2
-"SCQ,SCQ_13","13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)?",0-1,"0= No, 1= Yes",0,0,0,0,2,2,2
-"PreInt_EduHx,number_friends",How many close friends does your child have?,01-Jun,"1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",0,0,0,0,1,2,2
-"SympChck,CSC_18C",18. Is afraid of being alone at home or in a different room than parent/guardian(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,2,2
-"SCQ,SCQ_04","4. Does she/he ever use socially inappropriate questions or statements? For example, does she/he ever regularly ask personal questions or make personal comments at awkward times?",0-1,"0= No, 1= Yes",0,0,0,0,1,1,2
-"SympChck,CSC_18P",18. Is afraid of being alone at home or in a different room than parent/guardian(past),0-1,"0=No, 1=Yes",1,1,1,1,1,1,2
-"SCARED_P,SCARED_P_35",35. My child worries about how well he/she does things,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,1,1,2,2,2,2
-"SCARED_P,SCARED_P_34","34. When my child gets frightened, he/she feels like throwing up",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,2
-"PreInt_EduHx,getalongkids_neighborhood",How does your child get along with children in the neighborhood?,01-Apr,"1= Excellent, 2= Good, 3= Fair, 4= Poor",0,0,0,0,0,2,2
-"SCARED_P,SCARED_P_08",8. My child follows me wherever I go,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,1,2
-"SympChck,CSC_39P","39. Argues or talks back to adults, more than others his/her age(Past)",0-1,"0=No, 1=Yes",0,1,1,1,1,2,2
-"SympChck,CSC_22P","22. Has intense fears of specific animals, situations, or anything else(Past)",0-1,"0=No, 1=Yes",0,1,1,1,2,2,2
-"SympChck,CSC_23C",23. Worries most days of the week(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,2
-"SympChck,CSC_23P",23. Worries most days of the week(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,2,2
-"SympChck,CSC_30C",30. Feels extremely worried about gaining weight or becoming fat(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2
-"SympChck,CSC_07C",7. Has times when he/she sleeps much less than usual but still feels rested(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2
-"SympChck,CSC_34P","34. Has trouble paying attention, and it affects school work or performance(Past)",0-1,"0=No, 1=Yes",0,2,2,2,2,2,2
-"SCARED_P,SCARED_P_15","15. When my child gets frightened, he/she feels like things are not real",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,2
-"SympChck,CSC_35P",35. Is often easily distracted(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,2
-"SympChck,CSC_36P",36. Has difficulty remaining seated at home or school(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,2,2
-"SympChck,CSC_47P","47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,1,1,2
-"SympChck,CSC_40C",40. Actively disobeys or doesn't listen to adult rules(Current),0-1,"0=No, 1=Yes",0,0,0,1,1,1,2
-"SCARED_P,SCARED_P_11",11. My child gets stomachaches at school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,2
-"SCARED_P,SCARED_P_10",10. My child feels nervous with people he/she doesn’t know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,2
-"SWAN,SWAN_07",7. Keeps track of things necessary for activities (doesn't lose them),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,2
-"SympChck,CSC_04P","4. Often feels overly happy and silly, above and beyond a normal feeling(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,2
-"SDQ,SDQ_02","Restless, overactive, cannot stay still for long",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,2,2,2,2
-"SRS,SRS_49","49. Does extremely well at a few tasks, but does not do as well at most other tasks.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_33","33. Is socially awkward, even when he or she is trying to be polite.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_35",35. Has trouble keeping up with the flow of a normal conversation.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,2
-"SRS,SRS_42","42. Seems overly sensitive to sounds, textures, or smells.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,2
-"PreInt_EduHx,school_sports",Sports,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2
-"SWAN,SWAN_17",17. Awaits turn (stands in line and takes turns),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,1,1,1,2
-"SRS,SRS_48","48. Has a sense of humor, understands jokes.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_50","50. Has repetitive, odd behaviors such as hand flapping or rocking.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,2
-"SDQ,SDQ_04","Shares readily with other children, for example toys, treats, pencils (for 11-17 year olds: Shares readily with other youth, for example CD’s, games, food)",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,2,2
-"SRS,SRS_51",51. Has difficulty answering questions directly and ends up talking around the subject.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,2
-"SRS,SRS_56",56. Walks in between two people who are talking.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,2,2
-"SRS,SRS_57",57. Gets teased a lot.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_61","61. Is inflexible, has a hard time changing his or her mind.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,2,2
-"SWAN,SWAN_15",15. Modulates verbal activity (controls excessive talking),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,1,1,2
-"SWAN,SWAN_02",2. Sustains attention on tasks or play activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,1,2
-"SRS,SRS_32",32. Has good personal hygiene.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_29",29. Is regarded by other children as odd or weird.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",1,1,1,1,1,1,2
-"SRS,SRS_27",27. Avoids starting social interactions with peers or adults.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,2
-"SRS,SRS_21",21. Is able to imitate others' actions.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SRS,SRS_14",14. Is not well coordinated.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,2
-"SRS,SRS_11",11. Has good self-confidence.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,2
-"SRS,SRS_10",10. Takes things too literally and doesn't get the real meaning of a conversation.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2
-"SDQ,SDQ_29_d",Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,1,2,2
-"SDQ,SDQ_29_c",Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,1,2
-"SDQ,SDQ_28",Do the difficulties upset or distress your child?,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,1,2
-"SDQ,SDQ_26","Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people?",0-3,"0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",2,2,2,2,2,2,2
-"SDQ,SDQ_25","Good attention span, sees chores or homework through to the end",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,2
-"SDQ,SDQ_24","Many fears, easily scared",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",1,1,1,1,1,1,2
-"SDQ,SDQ_18",Often lies or cheats,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,2,2
-"SDQ,SDQ_09","Helpful if someone is hurt, upset or feeling ill",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,1,2
-"SWAN,SWAN_10",10. Sits still (controls movement of hands or feet or controls squirming),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,1,1,2,2
-"SympChck,CSC_05C",5. Has strong and explosive feelings of anger(Current),0-1,"0=No, 1=Yes",0,0,0,1,1,2,2
-"PreInt_EduHx,afterschool_other",Other,0-1,"0= No, 1= Yes",0,0,0,0,0,1,2
-"SCQ,SCQ_15","15. Does she/he ever have any mannerisms or odd ways of moving her/his hands or fingers, such as flapping or moving her/his fingers in front or her/his eyes?",0-1,"0= No, 1= Yes",0,0,0,1,1,2,2
-"PreInt_EduHx,art",Art,0-1,"0= No, 1= Yes",0,0,0,0,0,1,2
-"PreInt_EduHx,dance",Dance,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2
-"PreInt_DevHx,temp_10",Slow to warm up,0-1,"0= No, 1= Yes",0,0,0,0,2,1,2
-"PreInt_DevHx,temp_03",Colic,0-1,"0= No, 1= Yes",0,0,0,0,0,2,2
-"CBCL,CBCL_86","86. Stubborn, sullen, or irritable",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,1,2
-"CBCL,CBCL_83",83. Stores up too many things he/she doesn't need,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2
-"CBCL,CBCL_79",79. Speech problem,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,1,2,2,2
-"CBCL,CBCL_74",74. Showing off or clowning,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,2
-"CBCL,CBCL_67",67. Runs away from home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,2
-"CBCL,CBCL_56F",     56F. Stomachaches,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,2,2,2
-"PreInt_EduHx,strength_math",Math,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,1,2
-"CBCL,CBCL_46",46. Nervous movements or twitching,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2
-"CBCL,CBCL_13",13. Confused or seems to be in a fog,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,2
-"CBCL,CBCL_09",9. Can't get his/her mind off certain thoughts; obsessions,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2
-"CBCL,CBCL_07","7. Bragging, boasting",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,2,2,2
-"CBCL,CBCL_03",3. Argues a lot,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,2
-"ASSQ,ASSQ_16",can be with other children but only on his/her terms,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,1,2,2
-"ASSQ,ASSQ_05",has a literal understanding of ambiguous and metaphoric language (i.e. takes things literally; troubles understanding expressions or metaphors),0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,1,1,2
-"PreInt_EduHx,school_difficulty",Did your child experience any difficulty starting school?,0-1,"0= No, 1= Yes",0,0,0,0,1,2,2
-"CBCL,CBCL_62",62. Poorly coordinated or clumsy,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2
-"PreInt_EduHx,weakness_other",Other,0-1,"0= Unchecked, 1= Checked",0,0,0,0,1,2,2
-"PreInt_EduHx,absent_late",Late,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,0,0,1,2
-"PreInt_EduHx,strength_science",Science,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,0,1
-"SympChck,CSC_13P","13. Feels very afraid of being on a bridge or traveling in a car, bus, or train(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"CBCL,CBCL_11",11. Clings to adults or too dependent,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_03",3. My child doesn’t like to be with people he/she does't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,1
-"SympChck,CSC_08P",8. Has times when he/she is much more interested in sex than usual(past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_10P",10. Has unusual thoughts or beliefs that others cannot understand or believe(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_11C","11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(Current)",0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_11P","11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_12C","12 Feels very afraid of being in a crowded place, or going outside in public alone(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_12P","12 Feels very afraid of being in a crowded place, or going outside in public alone(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"CBCL,CBCL_08","8. Can't concentrate, can't pay attention for long",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_02",2. My child gets headaches when he/she is at school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"PreInt_EduHx,absent_other",Other,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,1,1,1,1
-"SympChck,CSC_14P",14. Worries about being separated from parent/guardian because of getting lost or kidnapped(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_15P",15. Worries excessively about harm occuring to parents/guardians(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_16C","16. Often does not want to go to school, due to worry about parent/guardian separation (Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"CBCL,CBCL_06",6. Bowel movements outside toilet,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SympChck,CSC_17C",17. Often has trouble going to sleep without parent/guardian nearby(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"CBCL,CBCL_05",5. There is very little he/she enjoys,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_04",4. Fails to finish things he/she starts,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"PreInt_EduHx,afterschoolteams","Does your child belong to any groups, sports teams, or organizations?",0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"SympChck,CSC_19C",19. Often feels very nervous around people(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_05P",5. Has strong and explosive feelings of anger(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"CBCL,CBCL_15",15. Cruel to animals,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SympChck,CSC_20C",20. Often feels very nervous when he/she has to do things in front of others(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_03C",3. Has a loss of interest in previously enjoyable activities(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_06","6. When my child gets frightened, he/she fells like passing out",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1
-"CBCL,CBCL_42",42. Would rather be alone than with others,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"CBCL,CBCL_40",40. Hears sounds or voices that aren't there,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_36","36. Gets hurt a lot, accident-prone",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SWAN,SWAN_06",6. Engages in tasks that require sustained mental effort,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,1
-"CBCL,CBCL_33",33. Feels or complains that no one loves him/her,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SWAN,SWAN_08",8. Ignores extraneous stimuli,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,1
-"SWAN,SWAN_09",9. Remembers daily activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,1
-"CBCL,CBCL_32",32. Feels he/she has to be perfect,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SWAN,SWAN_11",11. Stays seated (when required by class rules or social conventions),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,1
-"CBCL,CBCL_28","28. Breaks rules at home, school, or elsewhere",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SWAN,SWAN_13",13. Plays quietly (keeps noise level reasonable),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,1,1,1
-"SWAN,SWAN_14",14. Settles down and rests (controls excessive talking),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,1
-"CBCL,CBCL_27",27. Easily jealous,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"CBCL,CBCL_26",26. Doesn't seem to feel guilty after misbehaving,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_21",21. Destroys things belonging to his/her family or others,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,1,1
-"SWAN,SWAN_18",18. Enters into conversation and games without interrupting or intruding,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,1,1
-"CBCL,CBCL_18",18. Deliberately harms self or attempts suicide,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"SympChck,CSC_02C",2. Often feels annoyed and irritated(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_19P",19. Often feels very nervous around people(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_20P",20. Often feels very nervous when he/she has to do things in front of others(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,1,1
-"SRS,SRS_62",62. Give unusual or illogical reasons for doing things.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"SympChck,CSC_21C","21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"ASSQ,ASSQ_03",lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"ASSQ,ASSQ_01",is old-fashioned or precocious,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"ARI_P,ARI_P_07","Overall, irritability causes him/her problems",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"SympChck,CSC_40P",40. Actively disobeys or doesn't listen to adult rules(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_42C",42. Has skipped a part or a whole day of school(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_42P",42. Has skipped a part or a whole day of school(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_43P",43. Frequently starts physical fights with peers(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,1,1
-"SympChck,CSC_44P","44. Bullies, threatens, or intimidates others(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_45P",45. Has stolen or shoplifted items(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_46C","46. Notices muscles moving uncontrollably (blinking a lot, shrugging)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"ARI_P,ARI_P_06",Loses temper easily,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"SympChck,CSC_48P",48. Has unusual physical mannerisms (rocked body or flapping hands)(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"ARI_P,ARI_P_05",Gets angry frequently,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"SympChck,CSC_51P",51. Often has a difficult time making eye contact(Past),0-1,"0=No, 1=Yes",0,0,1,1,1,1,1
-"SympChck,CSC_53C",53. Smokes or chews tobacco(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_55aC","     a. Cannabis (marijuana, pot, hash, THC)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_55aP","     a. Cannabis (marijuana, pot, hash, THC)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_55bC","     b. Stimulants (speed, amphetamines, dexedrine, diet pills, crystal meth)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_55dC","     d. Cocaine (coke, crack)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_55eP","     e. Opioids (heroin, morphine, codeine, methadone, percodan, oxycotin)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_55gP","     g. Hallucinogens (psychedelics, LSD, mescaline, peyote)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_38P",38. Often becomes really upset and loses his/her temper(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_38C",38. Often becomes really upset and loses his/her temper(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_37P",37. Often acts before thinking(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_28C",28. Often has accidents when he/she wets the bed or self during the day(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"CBCL,CBCL_01",1. Acts too young for his/her age,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"ASSQ,ASSQ_24",shows idiosyncratic attachment to objects (i.e. may get strangely attached to objects as if they were people),0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,1,1
-"ASSQ,ASSQ_23","has special routines; insists on no change (i.e. may need to have exactly the same change; troubles with even the slightest change in his/her environment, or routines or activities)",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"ASSQ,ASSQ_20","has clumsy, ill coordinated, ungainly, awkward movements or gestures",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"PreInt_EduHx,current_religious",Is he/she religious now?,0-2,"0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",0,0,0,0,1,1,1
-"SympChck,CSC_25P",25. Feels very nervous and unable to relax most days of the week(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_26C",26. Is bothered by thoughts which keep coming into his/her head for no reason(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"SympChck,CSC_26P",26. Is bothered by thoughts which keep coming into his/her head for no reason(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"ASSQ,ASSQ_15",wishes to be sociable but fails to make relationships with peers,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_28P",28. Often has accidents when he/she wets the bed or self during the day(Past),0-1,"0=No, 1=Yes",0,1,1,1,1,1,1
-"SympChck,CSC_37C",37. Often acts before thinking(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"SympChck,CSC_29P",29. Often has accidents when he/she soild the bed or self during the day(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1
-"ASSQ,ASSQ_14","has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable)",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,1,1
-"SympChck,CSC_30P",30. Feels extremely worried about gaining weight or becoming fat(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1
-"ASSQ,ASSQ_13",makes naïve and embarrassing remarks,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"ASSQ,ASSQ_11",uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners,0-2,"0=No, 1=Somewhat, 2=Yes",0,1,1,1,1,1,1
-"SympChck,CSC_35C",35. Is often easily distracted(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"PreInt_EduHx,music",Music,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SympChck,CSC_36C",36. Has difficulty remaining seated at home or school(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
-"ASSQ,ASSQ_04",accumulates facts on certain subjects (good rote memory) but does not really understand the meaning,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1
-"SRS,SRS_64",64. Is too tense in social settings.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"SRS,SRS_60","60. Is emotionally distant, doesn't show his or her feelings.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"CBCL,CBCL_52",52. Feels too guilty,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SCQ,SCQ_32","32. If she/he wants something or wants help, does she/he look at you and use gestures with sounds or words to get your attention?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_19",19. Does she/he have any particular friends or a best friend?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_20",20. Does she/he ever talk with you just to be friendly (rather than to get something)?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_21","21. Does she/he ever spontaneously copy you (or other people) or what you are doing (such as vacuuming, gardening, or mending things)?",0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"SCQ,SCQ_22",22. Does she/he ever spontaneously point at things around her/him just to show you things (not because she/he wants them)?,0-1,"0= No, 1= Yes",0,0,1,1,1,1,1
-"SCQ,SCQ_23","23. Does she/he ever use gestures, other than pointing or pulling your hand, to let you know what she/he wants?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_24",24. Does she/he nod her/his head to indicate yes?,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1
-"SCQ,SCQ_25",25. Does she/he shake her/his head to indicate no?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"SCQ,SCQ_27",27. Does she/he smile back if someone smiles at her/him?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"SCQ,SCQ_31",31. Does she/he ever try to comfort you if you are sad or hurt?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"SCQ,SCQ_35",35. Does she/he play any pretend or make-believe games?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"PreInt_DevHx,preg_dur",Duration of pregnancy (weeks),,,0,0,0,1,1,1,1
-"CBCL,CBCL_111","111. Withdrawn, doesn't get inolved with others",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SCQ,SCQ_39",39. Does she/he ever play imaginative games with another child in such a way that you can tell that each child understands what the other is pretending?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"CBCL,CBCL_106",106. Vandalism,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"CBCL,CBCL_104",104. Unusually loud,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SDQ,SDQ_03","Often complains of headaches, stomach-aches or sickness",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,1,1,1
-"CBCL,CBCL_103","103. Unhappy, sad, or depressed",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,1,1,1
-"SDQ,SDQ_05",Often loses temper,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,1,1,1
-"SDQ,SDQ_06","Rather solitary, prefers to play alone (for 11-17 year olds: Would rather be alone than with other youth)",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"CBCL,CBCL_102","102. Underactive, slow moving, or lacks energy",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"ARI_P,ARI_P_02",Often loses his/her temper,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"PreInt_DevHx,birthweight_lbs",Birth weight of child (lbs),,,0,0,0,0,0,0,1
-"CBCL,CBCL_95",95. Temper tantrums or hot temper,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_39","39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport)",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_25",25. My child is afraid to be alone in the house,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_26",26. It is hard for my child to talk with people he/she doesn't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_27","27. When my child gets frightened, he/she feels like he/she is choking ",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1
-"SCARED_P,SCARED_P_30",30. My child is afraid of having anxiety (or panic) attacks,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_31",31. My child worries that something bad will happen to his/her parents,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"PreInt_EduHx,strength_history",Social studies/history,0-1,"0= Unchecked, 1= Checked",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_20",20. My child has nightmares about something bad happening to him/her,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,1
-"PreInt_DevHx,temp_11",Problems with social relatedness,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_18","18. When my child gets frightened, his/her heart beats fast",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_40","40. My child feels nervous when he/she is going to parties, dances, or any place where there will be people that he/she doesn’t know well",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,1,1,1,1,1,1
-"SCQ,SCQ_12","12. Does she/he ever seem to be more interested in parts of a toy or an object (e.g., spinning the wheels of a car), rather than in using the object as it was intended?",0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"PreInt_DevHx,temp_06",Baby did not enjoy body contact,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_01","1. Is she/he now able to talk using short phrases or sentences? If no, skip to question 8.",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_03",3. Does she/he ever use odd phrases or say the same thing over and over in almost exactly the same way (either phrases that she/he hears other people use or ones that she/he makes up?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"PreInt_DevHx,temp_05",Sleeping difficulties,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1
-"SCARED_P,SCARED_P_17",17. My child worries about going to school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"SCQ,SCQ_06","6. Does she/he ever use words that she/he seems to have invented or made up her/himself; put things in odd, indirect ways; or use metaphorical ways of saying things (e.g., saying hot rain for steam)?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"PreInt_DevHx,newborn_problems",Newborn period:,0-1,"0= Uncomplicated,1= Problems (oxygen, incubator, infection, jaundice requiring treatment, breathing difficulty, etc)",0,0,0,0,0,0,1
-"SCQ,SCQ_09","9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1
-"SCQ,SCQ_11","11. Does she/he ever have any interests that preoccupy her/him and might seem off to other people (e.g., traffic lights, drainpipes, or timetables?)",0-1,"0= No, 1= Yes",0,0,0,0,0,0,1
-"CBCL,CBCL_100",100. Trouble sleeping ,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,1,1
-"CBCL,CBCL_93",93. Talks too much,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_24",24. My child gets really frightened for no reason at all,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"CBCL,CBCL_63",63. Prefers being with older kids,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_71",71. Self-conscious or easily embarrassed,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SRS,SRS_28",28. Thinks or talks about the same thing over and over.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,1,1,1,1
-"CBCL,CBCL_68",68. Screams a lot,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SRS,SRS_30",30. Becomes upset in a situation with lots of things going on.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1
-"CBCL,CBCL_66",66. Repeats certain acts over and over; compulsions ,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_65",65. Refuses to talk,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SRS,SRS_38","38. Responds appropriately to mood changes in others (e.g., when a friend's or playmate's mood changes from happy to sad).",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,1,1,1,1,1
-"SRS,SRS_39",39. Has an unusally narrow range of interests.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"CBCL,CBCL_64",64. Prefers being with younger kids,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SRS,SRS_44",44. Doesn't understand how events relate to one another (cause and effect) the way other children his or her age do.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"CBCL,CBCL_72",72. Sets fires,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"PreInt_EduHx,absent_ill",Absent because of being ill,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,0,0,0,1
-"CBCL,CBCL_59",59. Plays with own sex parts in public,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"CBCL,CBCL_58","58. Picks nose, skin, or other parts of body",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"CBCL,CBCL_56G","     56G. Vomiting, throwing up",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SRS,SRS_53","53. Talks to people with an unusual tone of voice (e.g., talks like a robot or like he or she is giving a lecture).",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1
-"SRS,SRS_55",55. Knows when he or she is talking too loud or making too much noise.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"CBCL,CBCL_55",55. Overweight,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"CBCL,CBCL_53",53. Overeating,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"SRS,SRS_58","58. Concentrates too much on parts of things rather than seeing the whole picture. For example, if asked to describe what happened in a story, he or she may talk only about the kind of clothes the characters were wearing.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"SRS,SRS_22",22. Plays appropriately with children his or her age.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1
-"SRS,SRS_17",17. Recognizes when something is unfair.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1
-"CBCL,CBCL_92",92. Talks or walks in sleep,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"CBCL,CBCL_82",82. Steals outside the home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SDQ,SDQ_16","Nervous in new situations, easily loses confidence",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"CBCL,CBCL_91",91. Talks about killing self,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1
-"SDQ,SDQ_21",Thinks things out before acting,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1
-"CBCL,CBCL_89",89. Suspicious,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"CBCL,CBCL_87",87. Sudden changes in mood or feelings,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"PreInt_EduHx,strength_other",Other,0-1,"0= Unchecked, 1= Checked",0,0,0,0,1,1,1
-"CBCL,CBCL_85",85. Strange ideas,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1
-"SDQ,SDQ_29_a",Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,1,1,1
-"PreInt_EduHx,weakness_english",English,0-1,"0= Unchecked, 1= Checked",1,1,1,1,1,1,1
-"SDQ,SDQ_30",Do the difficulties put a burden on you or the family as a whole?,0-2,"0=Not at all, 1=Only a little, 2=A medium amount, 3=A great deal",0,0,0,0,0,0,1
-"SRS,SRS_16",16. Avoids eye contact or has unusual eye contact.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1
-"SRS,SRS_01",1. Seems much more fidgety in social situations than when alone.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1
-"SRS,SRS_02",2. Expressions on his or her face don't match what he or she is saying.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1
-"SRS,SRS_03",3. Seems self-confident when interacting with others.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1
-"SRS,SRS_06",6. Would rather be alone than with others.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"SCARED_P,SCARED_P_13",13. My child worries about sleeping alone,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1
-"CBCL,CBCL_75",75. Too shy or timid,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1
-"SRS,SRS_13","13. Is awkward is turn-taking interactions with peers (e.g., doesn't seem to understand the give-and-take of conversations)",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1
-"PreInt_EduHx,weakness_foreignlanguage",Foreign Language,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,0,1
-"SRS,SRS_15",15. Is able to understand the meaning of other people's tone of voice and facial expressions.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1
-"SympChck,CSC_55iP","     i. Other (prescription drugs, nitrous oxide, ecstasy, MDMA, etc.)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1
+ID,questions,value,valuelabels,1,2,3,5,10,20,30,41
+"CBCL,CBCL_112",112. Worries,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",2,2,2,2,2,4,4,6
+"PreInt_EduHx,weakness_math",Math,0-1,"0= Unchecked, 1= Checked",1,1,1,1,1,4,5,5
+"SCARED_P,SCARED_P_07",7. My child is nervous,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,3,3,5
+"SDQ,SDQ_01",Considerate of other people's feelings,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,1,3,4,5
+"PreInt_EduHx,tutor",Has your child had tutoring outside of school?,0-1,"0= No, 1= Yes",0,1,1,2,3,5,5,5
+"CBCL,CBCL_23",23. Disobedient at school,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,3,5,5
+"CBCL,CBCL_17",17. Daydreams or gets lost in his/her thoughts,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,1,2,4
+"CBCL,CBCL_10","10. Can't sit still, restless or hyperactive",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,2,4,4
+"SRS,SRS_50","50. Has repetitive, odd behaviors such as hand flapping or rocking.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,4,4
+"CBCL,CBCL_79",79. Speech problem,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,1,2,2,4,4
+"PreInt_EduHx,repeated_grades",Were any grades repeated?,0-1,"0= No, 1= Yes",0,0,0,0,1,2,3,4
+"CBCL,CBCL_22",22. Disobedient at home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,1,3,3,3,4
+"SWAN,SWAN_04",4. Follows through on instructions and finishes school work and chores,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,2,2,4
+"SWAN,SWAN_05",5. Organizes tasks and activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,2,4
+"SympChck,CSC_27P","27. Feels like he/she has to do certain things in a very specific way (handwashing, checking, doing things multiple times)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,2,4
+"SympChck,CSC_21P","21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,2,3,4
+"SWAN,SWAN_17",17. Awaits turn (stands in line and takes turns),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,1,1,2,4,4
+"SCARED_P,SCARED_P_32",32. My child feels shy with people he/she doesn't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,3,4,4
+"SRS,SRS_51",51. Has difficulty answering questions directly and ends up talking around the subject.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,4,4
+"PreInt_DevHx,puberty",Has your child shown adult sexual body development (puberty)?,0-1,"0= No, 1= Yes",0,0,0,0,2,3,4,4
+"SDQ,SDQ_07","Generally well behaved, usually does what adults request",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,2,3,4
+"SDQ,SDQ_08",Many worries or often seems worried,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,1,1,2,2,2,3,4
+"SCARED_P,SCARED_P_23",23. My child is a worrier,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,1,1,1,1,1,2,4
+"SRS,SRS_47",47. Is too silly or laughs inappropriately.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,4,4
+"PreInt_DevHx,dev_normal",All developmental milestones within normal limits,0-1,"0= No, 1= Yes",0,0,0,0,0,2,3,4
+"SympChck,CSC_29P",29. Often has accidents when he/she soild the bed or self during the day(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,1,2,4
+"PreInt_EduHx,afterschool_other",Other,0-1,"0= No, 1= Yes",0,0,0,0,0,1,3,4
+"SRS,SRS_14",14. Is not well coordinated.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,2,3
+"SWAN,SWAN_12",12. Modulates motor activity (inhibits inappropriate running or climbing),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,1,2,2,2,3,3
+"CBCL,CBCL_61",61. Poor school work,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,3,3,3
+"CBCL,CBCL_108",108. Wets the bed,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",1,1,1,1,2,2,2,3
+"SWAN,SWAN_16",16. Reflects on questions (controls blurting out answers),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,1,1,1,1,3,3,3
+"SRS,SRS_11",11. Has good self-confidence.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,2,3
+"SympChck,CSC_04P","4. Often feels overly happy and silly, above and beyond a normal feeling(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,3
+"SympChck,CSC_06C",6. Has periods of unusual energy and activity(Current),0-1,"0=No, 1=Yes",0,0,0,1,1,3,3,3
+"CBCL,CBCL_47",47. Nightmares,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,3
+"PreInt_EduHx,strength_english",English,0-1,"0= Unchecked, 1= Checked",0,1,1,1,1,1,2,3
+"SRS,SRS_49","49. Does extremely well at a few tasks, but does not do as well at most other tasks.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,2,3,3
+"SDQ,SDQ_15","Easily distracted, concentration wanders",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,1,3
+"SWAN,SWAN_02",2. Sustains attention on tasks or play activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,2,3
+"SWAN,SWAN_01",1. Gives close attention to detail and avoids careless mistakes,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,0,3
+"SCARED_P,SCARED_P_04",4. My child gets scared if he/she sleeps away from home,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,3,3
+"SRS,SRS_35",35. Has trouble keeping up with the flow of a normal conversation.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,2,3,3
+"SDQ,SDQ_04","Shares readily with other children, for example toys, treats, pencils (for 11-17 year olds: Shares readily with other youth, for example CD’s, games, food)",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,3,3
+"SRS,SRS_56",56. Walks in between two people who are talking.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,2,2,3,3
+"SCQ,SCQ_05","5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)?",0-1,"0= No, 1= Yes",0,0,1,1,2,3,3,3
+"SRS,SRS_48","48. Has a sense of humor, understands jokes.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,2,2,3
+"ARI_P,ARI_P_01",Is easily annoyed by others,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,3,3
+"CBCL,CBCL_41",41. Impulsive or acts without thinking,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,3
+"SCARED_P,SCARED_P_33",33. My child worries about what is going to happen in the future,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,2,3
+"SympChck,CSC_36P",36. Has difficulty remaining seated at home or school(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,2,2,3
+"SympChck,CSC_35C",35. Is often easily distracted(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,3
+"SympChck,CSC_34P","34. Has trouble paying attention, and it affects school work or performance(Past)",0-1,"0=No, 1=Yes",0,2,2,2,3,3,3,3
+"SympChck,CSC_34C","34. Has trouble paying attention, and it affects school work or performance(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,3
+"SCARED_P,SCARED_P_25",25. My child is afraid to be alone in the house,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,3
+"PreInt_EduHx,number_friends",How many close friends does your child have?,01-Jun,"1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",0,0,0,0,2,2,3,3
+"PreInt_EduHx,afterschoolteams","Does your child belong to any groups, sports teams, or organizations?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,2,3
+"SympChck,CSC_25P",25. Feels very nervous and unable to relax most days of the week(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,3
+"CBCL,CBCL_13",13. Confused or seems to be in a fog,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,2,3,3
+"SympChck,CSC_24P",24. Often misses school or other activities because he/she doesn't feel well(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,3
+"SympChck,CSC_24C",24. Often misses school or other activities because he/she doesn't feel well(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,3
+"SympChck,CSC_23P",23. Worries most days of the week(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,1,1,3
+"CBCL,CBCL_19",19. Demands a lot of attention,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,1,1,1,1,2,2,3
+"SympChck,CSC_23C",23. Worries most days of the week(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,3
+"PreInt_EduHx,absent_late",Late,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,0,0,1,2,3
+"SympChck,CSC_21C","21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,3,3
+"SCARED_P,SCARED_P_34","34. When my child gets frightened, he/she feels like throwing up",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,3
+"SCARED_P,SCARED_P_15","15. When my child gets frightened, he/she feels like things are not real",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,3,3
+"SympChck,CSC_16P","16. Often does not want to go to school, due to worry about parent/guardian separation (past)",0-1,"0=No, 1=Yes",0,0,1,2,2,3,3,3
+"SCARED_P,SCARED_P_08",8. My child follows me wherever I go,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,2,3,3
+"SCARED_P,SCARED_P_41",41. My child is shy,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",1,1,1,1,2,2,2,3
+"SympChck,CSC_17P",17. Often has trouble going to sleep without parent/guardian nearby(past),0-1,"0=No, 1=Yes",0,0,0,2,2,2,3,3
+"SympChck,CSC_18C",18. Is afraid of being alone at home or in a different room than parent/guardian(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,2,3,3
+"SympChck,CSC_18P",18. Is afraid of being alone at home or in a different room than parent/guardian(past),0-1,"0=No, 1=Yes",1,1,1,1,1,2,2,3
+"CBCL,CBCL_29","29. Fears certain animals, situations, or places, other than school",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,3,3,3,3
+"PreInt_EduHx,recent_grades",Recent typical academic performance:,01-May,"1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",0,1,1,1,1,3,3,3
+"ASSQ,ASSQ_10",is surprisingly good at some things and surprisingly poor at others,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,1,2,2,3,3,3
+"SympChck,CSC_39C","39. Argues or talks back to adults, more than others his/her age(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,3,3
+"SDQ,SDQ_10",Constantly fidgeting or squirming,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,2
+"SDQ,SDQ_09","Helpful if someone is hurt, upset or feeling ill",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,1,2
+"SCARED_P,SCARED_P_14",14. My child worries about being as good as other kids,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,2
+"SCARED_P,SCARED_P_10",10. My child feels nervous with people he/she doesn’t know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,2
+"SDQ,SDQ_18",Often lies or cheats,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,2,2,2
+"SDQ,SDQ_24","Many fears, easily scared",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",1,1,1,1,1,1,1,2
+"SDQ,SDQ_26","Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people?",0-3,"0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",2,2,2,2,2,2,2,2
+"SCARED_P,SCARED_P_21",21. My child worries about things working out for him/her,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,2,2
+"SCARED_P,SCARED_P_30",30. My child is afraid of having anxiety (or panic) attacks,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1,2
+"SDQ,SDQ_02","Restless, overactive, cannot stay still for long",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,2,2,2,2
+"SCQ,SCQ_04","4. Does she/he ever use socially inappropriate questions or statements? For example, does she/he ever regularly ask personal questions or make personal comments at awkward times?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,2,2
+"SCARED_P,SCARED_P_35",35. My child worries about how well he/she does things,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,1,2,2
+"SCQ,SCQ_39",39. Does she/he ever play imaginative games with another child in such a way that you can tell that each child understands what the other is pretending?,0-1,"0= No, 1= Yes",0,0,0,0,1,2,2,2
+"SCQ,SCQ_38","38. If you come into a room and start talkking to her/him without calling her/his name, does she/he usually look up and pay attention to you?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,2
+"SCQ,SCQ_27",27. Does she/he smile back if someone smiles at her/him?,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2,2
+"SCQ,SCQ_14","14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people?",0-1,"0= No, 1= Yes",0,0,0,0,0,2,2,2
+"SCQ,SCQ_09","9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,2,2
+"SCQ,SCQ_08",8. Does she/he ever have things that she/he seems to have to do in a very particular way or order or rituals that she/he insists that you go though?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,2
+"SDQ,SDQ_25","Good attention span, sees chores or homework through to the end",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,2
+"SRS,SRS_64",64. Is too tense in social settings.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SDQ,SDQ_28",Do the difficulties upset or distress your child?,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,0,1,2
+"SympChck,CSC_14C",14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1,2
+"SympChck,CSC_17C",17. Often has trouble going to sleep without parent/guardian nearby(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,2
+"SympChck,CSC_19P",19. Often feels very nervous around people(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,2
+"SympChck,CSC_20C",20. Often feels very nervous when he/she has to do things in front of others(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,2
+"SympChck,CSC_20P",20. Often feels very nervous when he/she has to do things in front of others(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,2,2,2
+"SympChck,CSC_22P","22. Has intense fears of specific animals, situations, or anything else(Past)",0-1,"0=No, 1=Yes",0,1,1,1,2,2,2,2
+"SympChck,CSC_25C",25. Feels very nervous and unable to relax most days of the week(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,2,2
+"SympChck,CSC_26C",26. Is bothered by thoughts which keep coming into his/her head for no reason(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,2,2
+"SympChck,CSC_26P",26. Is bothered by thoughts which keep coming into his/her head for no reason(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,2
+"SympChck,CSC_28P",28. Often has accidents when he/she wets the bed or self during the day(Past),0-1,"0=No, 1=Yes",0,1,1,1,1,1,2,2
+"SympChck,CSC_30C",30. Feels extremely worried about gaining weight or becoming fat(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,2
+"SympChck,CSC_33C","33. Has frequent eating binges, and it feels out of control(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,2,2,2
+"SympChck,CSC_35P",35. Is often easily distracted(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,2
+"SympChck,CSC_36C",36. Has difficulty remaining seated at home or school(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,2
+"SympChck,CSC_40C",40. Actively disobeys or doesn't listen to adult rules(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,2
+"SympChck,CSC_43C",43. Frequently starts physical fights with peers(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,2
+"SympChck,CSC_47P","47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,1,1,2,2
+"SympChck,CSC_49P",49. Feels really upset when there is an unexpected change in his/her schedule(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,2,2
+"SympChck,CSC_55dC","     d. Cocaine (coke, crack)(Current)",0-1,"0=No, 1=Yes",0,0,0,1,1,2,2,2
+"SympChck,CSC_55gP","     g. Hallucinogens (psychedelics, LSD, mescaline, peyote)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,2,2
+"SympChck,CSC_16C","16. Often does not want to go to school, due to worry about parent/guardian separation (Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,2
+"SympChck,CSC_13C","13. Feels very afraid of being on a bridge or traveling in a car, bus, or train(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,2,2,2
+"SDQ,SDQ_29_d",Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,2,2,2
+"SympChck,CSC_11C","11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,2,2,2
+"SRS,SRS_19",19. Gets frustrated trying to get ideas across in conversations.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SRS,SRS_21",21. Is able to imitate others' actions.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SRS,SRS_23",23. Does not join group activities unless told to do so.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1,2
+"SRS,SRS_24",24. Has more difficulty than other children with changes in his or her routine.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,2,2
+"SRS,SRS_27",27. Avoids starting social interactions with peers or adults.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,2
+"SRS,SRS_29",29. Is regarded by other children as odd or weird.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",1,1,1,1,1,1,2,2
+"SRS,SRS_31",31. Can’t get his or her mind off something once he or she starts thinking about it.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,2
+"SRS,SRS_32",32. Has good personal hygiene.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SRS,SRS_43",43. Separates easily from caregivers.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SRS,SRS_57",57. Gets teased a lot.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,2,2
+"SRS,SRS_58","58. Concentrates too much on parts of things rather than seeing the whole picture. For example, if asked to describe what happened in a story, he or she may talk only about the kind of clothes the characters were wearing.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,2
+"SWAN,SWAN_07",7. Keeps track of things necessary for activities (doesn't lose them),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,0,2
+"SWAN,SWAN_09",9. Remembers daily activities,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,2,2
+"SWAN,SWAN_10",10. Sits still (controls movement of hands or feet or controls squirming),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,1,1,1,2
+"SWAN,SWAN_11",11. Stays seated (when required by class rules or social conventions),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",1,1,1,1,1,1,2,2
+"SWAN,SWAN_13",13. Plays quietly (keeps noise level reasonable),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,2,2,2
+"SympChck,CSC_01P",1. Feels sad and down most days for at least 1 week(past),0-1,"0=No, 1=Yes",0,1,1,1,1,2,2,2
+"SympChck,CSC_03P",3. Has a loss of interest in previously enjoyable activities(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,2
+"SympChck,CSC_07C",7. Has times when he/she sleeps much less than usual but still feels rested(Current),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1,2
+"SCARED_P,SCARED_P_06","6. When my child gets frightened, he/she fells like passing out",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,2,2
+"SCQ,SCQ_13","13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)?",0-1,"0= No, 1= Yes",0,0,0,0,0,2,2,2
+"CBCL,CBCL_16","16. Cruelty, bullying, or meanness to others",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,2
+"ASSQ,ASSQ_13",makes naïve and embarrassing remarks,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,2,2
+"CBCL,CBCL_100",100. Trouble sleeping ,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,1,1,1,1,1,1,2
+"PreInt_EduHx,weakness_other",Other,0-1,"0= Unchecked, 1= Checked",0,0,0,1,1,1,2,2
+"PreInt_EduHx,weakness_science",Science,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,2,2,2
+"ASSQ,ASSQ_16",can be with other children but only on his/her terms,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,1,2,2,2
+"ASSQ,ASSQ_23","has special routines; insists on no change (i.e. may need to have exactly the same change; troubles with even the slightest change in his/her environment, or routines or activities)",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,0,2
+"CBCL,CBCL_01",1. Acts too young for his/her age,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,2
+"CBCL,CBCL_104",104. Unusually loud,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,1,0,2,2
+"CBCL,CBCL_03",3. Argues a lot,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,2
+"CBCL,CBCL_50",50. Too fearful or anxious,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,2
+"CBCL,CBCL_05",5. There is very little he/she enjoys,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"CBCL,CBCL_45","45. Nervous, highstrung, or tense",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,2,2,2,2
+"CBCL,CBCL_07","7. Bragging, boasting",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,2,2
+"CBCL,CBCL_08","8. Can't concentrate, can't pay attention for long",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,2
+"CBCL,CBCL_111","111. Withdrawn, doesn't get inolved with others",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"CBCL,CBCL_09",9. Can't get his/her mind off certain thoughts; obsessions,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"PreInt_EduHx,school_difficulty",Did your child experience any difficulty starting school?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,2
+"PreInt_DevHx,lost_skills",Has your child lost any skills or abilities?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,2
+"CBCL,CBCL_15",15. Cruel to animals,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,2
+"CBCL,CBCL_74",74. Showing off or clowning,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,2
+"CBCL,CBCL_18",18. Deliberately harms self or attempts suicide,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,2,2,2
+"PreInt_DevHx,temp_10",Slow to warm up,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2,2
+"CBCL,CBCL_21",21. Destroys things belonging to his/her family or others,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,2,2,2
+"PreInt_DevHx,temp_07",Overly sensitive to sound,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2,2
+"PreInt_DevHx,temp_03",Colic,0-1,"0= No, 1= Yes",0,0,0,0,1,1,2,2
+"CBCL,CBCL_26",26. Doesn't seem to feel guilty after misbehaving,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,1,2,2,1,2
+"CBCL,CBCL_98",98. Thumb-sucking,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"CBCL,CBCL_32",32. Feels he/she has to be perfect,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,2
+"CBCL,CBCL_78",78. Inattentive or easily distracted,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,1,1,1,2
+"PreInt_EduHx,school_sports",Sports,0-1,"0= No, 1= Yes",0,0,0,0,2,2,2,2
+"CBCL,CBCL_93",93. Talks too much,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,2
+"CBCL,CBCL_83",83. Stores up too many things he/she doesn't need,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"CBCL,CBCL_64",64. Prefers being with younger kids,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,2,2
+"PreInt_EduHx,art",Art,0-1,"0= No, 1= Yes",0,0,0,0,0,1,2,2
+"PreInt_EduHx,absent_other",Other,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,1,1,1,1,2
+"PreInt_EduHx,getalongkids_neighborhood",How does your child get along with children in the neighborhood?,01-Apr,"1= Excellent, 2= Good, 3= Fair, 4= Poor",0,0,0,0,0,2,2,2
+"CBCL,CBCL_85",85. Strange ideas,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,2,2
+"CBCL,CBCL_86","86. Stubborn, sullen, or irritable",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,2,2
+"CBCL,CBCL_66",66. Repeats certain acts over and over; compulsions ,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,2,2,2
+"SWAN,SWAN_08",8. Ignores extraneous stimuli,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,0,1
+"CBCL,CBCL_40",40. Hears sounds or voices that aren't there,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"CBCL,CBCL_65",65. Refuses to talk,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"SympChck,CSC_04C","4. Often feels overly happy and silly, above and beyond a normal feeling(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_67",67. Runs away from home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"SympChck,CSC_15C",15. Worries excessively about harm occuring to parents/guardians(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_39",39. Hangs around with others who get in trouble,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"SWAN,SWAN_06",6. Engages in tasks that require sustained mental effort,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,0,1
+"CBCL,CBCL_38",38. Gets teased a lot,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"CBCL,CBCL_36","36. Gets hurt a lot, accident-prone",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_33",33. Feels or complains that no one loves him/her,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"CBCL,CBCL_71",71. Self-conscious or easily embarrassed,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"CBCL,CBCL_72",72. Sets fires,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"SympChck,CSC_15P",15. Worries excessively about harm occuring to parents/guardians(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_14P",14. Worries about being separated from parent/guardian because of getting lost or kidnapped(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_62",62. Poorly coordinated or clumsy,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SWAN,SWAN_18",18. Enters into conversation and games without interrupting or intruding,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,1,1,1
+"CBCL,CBCL_55",55. Overweight,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SympChck,CSC_05C",5. Has strong and explosive feelings of anger(Current),0-1,"0=No, 1=Yes",0,0,0,1,1,1,1,1
+"CBCL,CBCL_56A",     56A. Aches or pains (not stomach or headaches),0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_53",53. Overeating,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"SympChck,CSC_19C",19. Often feels very nervous around people(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_08P",8. Has times when he/she is much more interested in sex than usual(past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_56C","     56C. Nausea, feels sick",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"CBCL,CBCL_54",54. Overtired without good reason,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"CBCL,CBCL_58","58. Picks nose, skin, or other parts of body",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"SWAN,SWAN_14",14. Settles down and rests (controls excessive talking),-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,0,1
+"SympChck,CSC_09C","9. Hears, sees, or smells things that other people cannot(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"CBCL,CBCL_59",59. Plays with own sex parts in public,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"SympChck,CSC_11P","11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"CBCL,CBCL_42",42. Would rather be alone than with others,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_52",52. Feels too guilty,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"SCARED_P,SCARED_P_05",5. My child worries about other people liking him/her,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1,1
+"CBCL,CBCL_28","28. Breaks rules at home, school, or elsewhere",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"SympChck,CSC_52P",52. Has a hard time expressing feelings on his/her face during social interactions(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"ASSQ,ASSQ_11",uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners,0-2,"0=No, 1=Somewhat, 2=Yes",0,1,1,1,1,1,1,1
+"SympChck,CSC_43P",43. Frequently starts physical fights with peers(Past),0-1,"0=No, 1=Yes",0,0,0,1,1,1,1,1
+"SympChck,CSC_44C","44. Bullies, threatens, or intimidates others(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_44P","44. Bullies, threatens, or intimidates others(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_45P",45. Has stolen or shoplifted items(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_46C","46. Notices muscles moving uncontrollably (blinking a lot, shrugging)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"ASSQ,ASSQ_09","expresses sounds involuntarily; clears throat, grunts, smacks, cries or screams",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,0,1
+"ASSQ,ASSQ_05",has a literal understanding of ambiguous and metaphoric language (i.e. takes things literally; troubles understanding expressions or metaphors),0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,1,1,1,1
+"SympChck,CSC_51P",51. Often has a difficult time making eye contact(Past),0-1,"0=No, 1=Yes",0,0,1,1,1,1,1,1
+"SympChck,CSC_53C",53. Smokes or chews tobacco(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_42C",42. Has skipped a part or a whole day of school(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_53P",53. Smokes or chews tobacco(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_55aC","     a. Cannabis (marijuana, pot, hash, THC)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_55aP","     a. Cannabis (marijuana, pot, hash, THC)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_55bC","     b. Stimulants (speed, amphetamines, dexedrine, diet pills, crystal meth)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"ASSQ,ASSQ_01",is old-fashioned or precocious,0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_55dP","     d. Cocaine (coke, crack)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_55eP","     e. Opioids (heroin, morphine, codeine, methadone, percodan, oxycotin)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,1,1,1,1
+"ARI_P,ARI_P_07","Overall, irritability causes him/her problems",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,1,1,1,1
+"SympChck,CSC_55hC","     h. Solvents/Inhalants (glue, gasoline, chloroform, ether, paint)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_42P",42. Has skipped a part or a whole day of school(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_39P","39. Argues or talks back to adults, more than others his/her age(Past)",0-1,"0=No, 1=Yes",0,1,1,1,1,1,0,1
+"CBCL,CBCL_27",27. Easily jealous,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SympChck,CSC_29C",29. Often has accidents when he/she soild the bed or self during the day(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_25",25. Doesn't get along well with other kids,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"CBCL,CBCL_24",24. Doesn't eat well,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"SympChck,CSC_22C","22. Has intense fears of specific animals, situations, or anything else(Current)",0-1,"0=No, 1=Yes",0,0,1,1,1,1,1,1
+"CBCL,CBCL_20",20. Destroys his/her own things,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"CBCL,CBCL_14",14. Cries a lot,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_12",12. Complains of loneliness,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"CBCL,CBCL_11",11. Clings to adults or too dependent,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SympChck,CSC_27C","27. Feels like he/she has to do certain things in a very specific way (handwashing, checking, doing things multiple times)(Current)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_28C",28. Often has accidents when he/she wets the bed or self during the day(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_06",6. Bowel movements outside toilet,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"ASSQ,ASSQ_14","has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable)",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_30P",30. Feels extremely worried about gaining weight or becoming fat(Past),0-1,"0=No, 1=Yes",0,0,0,0,0,1,1,1
+"SympChck,CSC_32P","32. Uses diet pills, throws up, or works out excessively to try to lose weight(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,1,1
+"CBCL,CBCL_04",4. Fails to finish things he/she starts,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"CBCL,CBCL_02",2. Drinks alcohol without parents' approval,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"ASSQ,ASSQ_19","is poor at games; no idea of cooperating in a team, scores ‘own goals’",0-2,"0=No, 1=Somewhat, 2=Yes",0,0,0,0,0,0,1,1
+"SympChck,CSC_37C",37. Often acts before thinking(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_37P",37. Often acts before thinking(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1,1
+"SympChck,CSC_38C",38. Often becomes really upset and loses his/her temper(Current),0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
+"SympChck,CSC_38P",38. Often becomes really upset and loses his/her temper(Past),0-1,"0=No, 1=Yes",0,0,0,0,1,1,1,1
+"SWAN,SWAN_03",3. Listens when spoken to directly,-6,"-3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",0,0,0,0,0,0,1,1
+"SRS,SRS_53","53. Talks to people with an unusual tone of voice (e.g., talks like a robot or like he or she is giving a lecture).",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"CBCL,CBCL_75",75. Too shy or timid,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"SCQ,SCQ_22",22. Does she/he ever spontaneously point at things around her/him just to show you things (not because she/he wants them)?,0-1,"0= No, 1= Yes",0,0,1,1,1,1,1,1
+"SCQ,SCQ_01","1. Is she/he now able to talk using short phrases or sentences? If no, skip to question 8.",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"PreInt_EduHx,weakness_foreignlanguage",Foreign Language,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,0,0,1
+"PreInt_EduHx,weakness_english",English,0-1,"0= Unchecked, 1= Checked",1,1,1,1,1,1,1,1
+"SCQ,SCQ_10","10. Does she/he ever use your hand like a tool or as if it were part of her/his own body (e.g., pointing with your finder or putting your hand on a doorknob to get you to open the door?)",0-1,"0= No, 1= Yes",0,0,0,0,0,0,0,1
+"SCQ,SCQ_12","12. Does she/he ever seem to be more interested in parts of a toy or an object (e.g., spinning the wheels of a car), rather than in using the object as it was intended?",0-1,"0= No, 1= Yes",0,0,0,0,0,0,0,1
+"ARI_P,ARI_P_02",Often loses his/her temper,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,1
+"PreInt_EduHx,strength_other",Other,0-1,"0= Unchecked, 1= Checked",0,0,0,0,1,1,1,1
+"SCQ,SCQ_15","15. Does she/he ever have any mannerisms or odd ways of moving her/his hands or fingers, such as flapping or moving her/his fingers in front or her/his eyes?",0-1,"0= No, 1= Yes",0,0,0,1,1,1,1,1
+"SCQ,SCQ_20",20. Does she/he ever talk with you just to be friendly (rather than to get something)?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,0,1
+"SCQ,SCQ_21","21. Does she/he ever spontaneously copy you (or other people) or what you are doing (such as vacuuming, gardening, or mending things)?",0-1,"0= No, 1= Yes",0,0,0,1,1,1,1,1
+"SCQ,SCQ_24",24. Does she/he nod her/his head to indicate yes?,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1,1
+"SRS,SRS_65",65. Stares or gazes off into space.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"SCQ,SCQ_25",25. Does she/he shake her/his head to indicate no?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SCQ,SCQ_26",26. Does she/he usually look at you directly in the face when doing things with you or talking with you?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"PreInt_EduHx,strength_foreignlanguage",Foreign Language,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,0,0,1
+"SCQ,SCQ_30",30. Does she/he ever seem to want you to join in her/his enjoyment of something?,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"SCQ,SCQ_31",31. Does she/he ever try to comfort you if you are sad or hurt?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,0,1
+"SCQ,SCQ_32","32. If she/he wants something or wants help, does she/he look at you and use gestures with sounds or words to get your attention?",0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"SCQ,SCQ_35",35. Does she/he play any pretend or make-believe games?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SCQ,SCQ_36",36. Does she/he seem interested in other children of approximately the same age whom she/he does not know?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"PreInt_EduHx,strength_math",Math,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,1,1,1
+"PreInt_EduHx,strength_science",Science,0-1,"0= Unchecked, 1= Checked",0,0,0,0,1,1,1,1
+"PreInt_EduHx,suspension",Suspensions (past year),0-1,"0= No, 1= Yes",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_40","40. My child feels nervous when he/she is going to parties, dances, or any place where there will be people that he/she doesn’t know well",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,1,1,1,1,1,1,1
+"SCARED_P,SCARED_P_39","39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport)",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,1,1,1,1
+"SCARED_P,SCARED_P_38","38. When my child gets frightened, he/she feels dizzy",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1,1
+"SCARED_P,SCARED_P_02",2. My child gets headaches when he/she is at school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_01","1. When my child feels frightened, it is hard to breathe",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,1,1,1,1,1
+"SCARED_P,SCARED_P_11",11. My child gets stomachaches at school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,1
+"SCARED_P,SCARED_P_13",13. My child worries about sleeping alone,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"PreInt_EduHx,getalongkids_school",How does your child get along with other children at school?,01-Apr,"1= Excellent, 2= Good, 3= Fair, 4= Poor",0,0,0,0,0,0,1,1
+"PreInt_EduHx,bestfriend",Does your child have a best friend?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SCARED_P,SCARED_P_17",17. My child worries about going to school,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_18","18. When my child gets frightened, his/her heart beats fast",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,1
+"SCARED_P,SCARED_P_20",20. My child has nightmares about something bad happening to him/her,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1,1
+"PreInt_EduHx,martial_arts",Martial Arts,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"SCARED_P,SCARED_P_24",24. My child gets really frightened for no reason at all,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_26",26. It is hard for my child to talk with people he/she doesn't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_27","27. When my child gets frightened, he/she feels like he/she is choking ",0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,1,1,1
+"SCARED_P,SCARED_P_28",28. People tell me that my child worries too much,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_29",29. My child doesn't like to be away from his/her family,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,1,1
+"PreInt_EduHx,dance",Dance,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1,1
+"SCARED_P,SCARED_P_31",31. My child worries that something bad will happen to his/her parents,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"PreInt_EduHx,music",Music,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"PreInt_EduHx,absent_skipping",Absent because of skipping,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,0,0,1,1,1
+"PreInt_EduHx,absent_ill",Absent because of being ill,0-5,"0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_37",37. My child worries about things that have already happened ,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"PreInt_EduHx,strength_history",Social studies/history,0-1,"0= Unchecked, 1= Checked",0,0,0,0,0,1,1,1
+"SDQ,SDQ_03","Often complains of headaches, stomach-aches or sickness",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,1,1,1,1,1,1
+"SDQ,SDQ_05",Often loses temper,0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,1
+"SRS,SRS_22",22. Plays appropriately with children his or her age.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"SRS,SRS_25",25. Doesn't seem to mind being out of step with or 'not on the same wavelength' as others.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1,1
+"CBCL,CBCL_102","102. Underactive, slow moving, or lacks energy",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SRS,SRS_28",28. Thinks or talks about the same thing over and over.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,1,1,1,1,1
+"SRS,SRS_30",30. Becomes upset in a situation with lots of things going on.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"CBCL,CBCL_95",95. Temper tantrums or hot temper,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,1,1,1,1
+"SRS,SRS_33","33. Is socially awkward, even when he or she is trying to be polite.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"SRS,SRS_37",37. Has difficulty relating to peers.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,1,1,1,1,1
+"SRS,SRS_38","38. Responds appropriately to mood changes in others (e.g., when a friend's or playmate's mood changes from happy to sad).",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,1,1,1,1,1,1
+"SRS,SRS_42","42. Seems overly sensitive to sounds, textures, or smells.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1,1
+"CBCL,CBCL_91",91. Talks about killing self,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"CBCL,CBCL_89",89. Suspicious,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,1,1,1,1
+"CBCL,CBCL_87",87. Sudden changes in mood or feelings,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"SRS,SRS_52",52. Knows when he or she is talking too loud or making too much noise.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"SCARED_P,SCARED_P_03",3. My child doesn’t like to be with people he/she does't know well,0-2,"0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",0,0,0,0,0,0,0,1
+"SRS,SRS_54",54. Seems to react to people as if they are objects.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"SRS,SRS_55",55. Knows when he or she is talking too loud or making too much noise.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1,1
+"CBCL,CBCL_82",82. Steals outside the home,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_80",80. Stares blankly ,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,1,1
+"SRS,SRS_61","61. Is inflexible, has a hard time changing his or her mind.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1,1
+"SRS,SRS_62",62. Give unusual or illogical reasons for doing things.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1,1
+"CBCL,CBCL_77",77. Sleeps more than most kids during day and/or night,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"CBCL,CBCL_103","103. Unhappy, sad, or depressed",0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,1,1,1,1,1,1
+"CBCL,CBCL_105",105. Uses drugs for nonmedical purposes (don't include alcohol or tobacco),0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,1,1,1
+"PreInt_DevHx,growth_concerns",Have there been any concerns about your child's growth?,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SRS,SRS_20","20. Shows unusual sensory interests (e.g., mouthing or spinning objects) or strange ways of playing with toys",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,1,1
+"PreInt_DevHx,temp_11",Problems with social relatedness,0-1,"0= No, 1= Yes",0,0,0,0,1,1,1,1
+"PreInt_DevHx,temp_09",Easily adaptable,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SDQ,SDQ_13","Often unhappy, depressed or tearful",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,1,1
+"SDQ,SDQ_16","Nervous in new situations, easily loses confidence",0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,1
+"PreInt_DevHx,temp_06",Baby did not enjoy body contact,0-1,"0= No, 1= Yes",0,0,0,0,0,0,1,1
+"SDQ,SDQ_23",Gets along better with adults than other children (for 11-17 year olds: Gets along better with adults than with other youth),0-2,"0=Not True, 1=Somewhat True, 2=Certainly True",0,0,0,0,0,0,0,1
+"PreInt_DevHx,temp_02",Difficult to soothe when upset,0-1,"0= No, 1= Yes",0,0,0,0,0,1,1,1
+"PreInt_DevHx,newborn_problems",Newborn period:,0-1,"0= Uncomplicated,1= Problems (oxygen, incubator, infection, jaundice requiring treatment, breathing difficulty, etc)",0,0,1,1,1,1,1,1
+"PreInt_DevHx,birthweight_lbs",Birth weight of child (lbs),,,0,0,0,0,0,0,1,1
+"SDQ,SDQ_29_a",Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,1,1,1
+"SDQ,SDQ_29_c",Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING,0-2,"0=Not at all/Only a little, 1=A medium amount, 2=A great deal",0,0,0,0,0,0,1,1
+"PreInt_DevHx,delivery",Delivery:,0-1,"0= C-section, 1= Vaginal",0,0,0,0,0,0,0,1
+"SRS,SRS_01",1. Seems much more fidgety in social situations than when alone.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,1,1,1,1
+"SRS,SRS_03",3. Seems self-confident when interacting with others.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"SRS,SRS_04","4. When under stress, he or she shows rigid or inflexible patterns of behavior that seem odd.",0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"SRS,SRS_06",6. Would rather be alone than with others.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"SRS,SRS_10",10. Takes things too literally and doesn't get the real meaning of a conversation.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,0,0,1
+"PreInt_DevHx,m_birthage",Mother's age at birth of child,,,0,0,0,0,0,0,1,1
+"SRS,SRS_15",15. Is able to understand the meaning of other people's tone of voice and facial expressions.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"SRS,SRS_16",16. Avoids eye contact or has unusual eye contact.,0-3,"0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",0,0,0,0,0,1,1,1
+"CBCL,CBCL_110",110. Wishes to be of opposite sex,0-2,"0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",0,0,0,0,0,0,0,1
+"SympChck,CSC_55iP","     i. Other (prescription drugs, nitrous oxide, ecstasy, MDMA, etc.)(Past)",0-1,"0=No, 1=Yes",0,0,0,0,0,0,0,1
