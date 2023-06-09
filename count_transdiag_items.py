@@ -57,11 +57,11 @@ cols.pop(cols.index("ID"))
 item_counts_table = item_counts_table[["ID"] + cols]
 
 # Only print 1, 2, 3, 5, 10, 20, 35 subsets: 
-cols_to_keep = [col for col in item_counts_table.columns.tolist() if not str(col).isdigit() or int(col) in [1, 2, 3, 5, 10, 20, 35]]
+cols_to_keep = [col for col in item_counts_table.columns.tolist() if not str(col).isdigit() or int(col) in [1, 2, 3, 5, 10, 20, 30, 41]]
 item_counts_table = item_counts_table[cols_to_keep]
 
 # Sort by count in 35th subset
-item_counts_table = item_counts_table.sort_values(35, ascending=False)
+item_counts_table = item_counts_table.sort_values(list(item_counts_table.columns)[-1], ascending=False) # Sort by last column
 print(item_counts_table)
 
 # Save to csv

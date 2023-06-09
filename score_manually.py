@@ -9,8 +9,16 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "SWAN,SWAN_Total": 18,
                     "SRS,SRS_Total_T": 65,
                     "CBCL,CBCL_Total_T": 112,
+                    "SCARED_P,SCARED_P_Total": 41,
                     "SWAN,SWAN_HY": 9,
                     "SWAN,SWAN_IN": 9,
+                    "SRS,SRS_MOT_T": 11,
+                    "SRS,SRS_AWR_T": 8,
+                    "SRS,SRS_COG_T": 12,
+                    "SRS,SRS_COM_T": 22,
+                    "SRS,SRS_RRB_T": 12,
+                    "SRS,SRS_SCI_T": 53, 
+                    "SRS,SRS_DSMRRB_T": 12,
                     "CBCL,CBCL_WD_T": 8,
                     "CBCL,CBCL_AD_T": 13,
                     "CBCL,CBCL_AP_T": 10,
@@ -23,13 +31,11 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "CBCL,CBCL_Int_T": 32,
                     "CBCL,CBCL_Ext_T": 35,
                     "CBCL,CBCL_C_T": 53, 
-                    "SRS,SRS_MOT_T": 11,
-                    "SRS,SRS_AWR_T": 8,
-                    "SRS,SRS_COG_T": 12,
-                    "SRS,SRS_COM_T": 22,
-                    "SRS,SRS_RRB_T": 12,
-                    "SRS,SRS_SCI_T": 53, 
-                    "SRS,SRS_DSMRRB_T": 12,
+                    "SCARED_P,SCARED_P_GD": 9,
+                    "SCARED_P,SCARED_P_PN": 13,
+                    "SCARED_P,SCARED_P_SC": 7,
+                    "SCARED_P,SCARED_P_SH": 4,
+                    "SCARED_P,SCARED_P_SP": 8,
                     }
 
 def get_list_of_analysed_diags():
@@ -48,7 +54,9 @@ def find_auc_for_score_col(total_scores_data, subscale_scores_data, score_col, d
 
 def read_subscales_data():
 
-    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", ["first_assessment_to_drop"])
+    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
+                                           ["first_assessment_to_drop",
+                                            "only_free_assessments__0"])
     print("Reading input data from: ", path)
     total_scores_data = pd.read_csv(path+'total_scores.csv')
     subscale_scores_data = pd.read_csv(path+'subscale_scores.csv')
@@ -71,14 +79,15 @@ def get_score_cols(total_scores_data, subscale_scores_data):
 
     score_cols = ([x for x in total_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING") and not "Barratt" in x and not "preg_symp" in x] 
     + [x for x in subscale_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING")  and not "Barratt" in x and not "preg_symp" in x])
-    print(score_cols)
+
+    [print(x) for x in score_cols]
 
     return score_cols
 
 # Get manual AUC scores for each diag and each scale/subscale
 def get_manual_scores(total_scores_data, subscale_scores_data, diags):
     score_cols = get_score_cols(total_scores_data, subscale_scores_data)
-    best_manual_score = []
+    
     all_manual_scores = {}
     for diag_col in diags:
         scores_for_diag = []
@@ -124,10 +133,10 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
         best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best score"].values[0]
-        number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale] if best_manual_score_subscale in numbers_of_items else 10
+        number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale]
 
+        print("DEBUG:", number_of_items_in_best_manual_subscale, best_manual_score_subscale, ml_scores_all_assessments[diag_col])
         ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
-        print(diag_col, number_of_items_in_best_manual_subscale)
         ml_score_at_number_of_items_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
