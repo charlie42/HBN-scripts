@@ -1,0 +1,23 @@
+Item,Coefficient
+" PSI,PSI_33: 33. Think carefully and count the number of things which your child does that bothers y...",0.61
+" PSI,PSI_35: 35. My child's behavior is more of a problem than I expected. - 1=Strongly Disagree, 2=...",0.6
+" CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes ...",0.6
+" ARI_P,ARI_P_07: Overall, irritability causes him/her problems - 0=Not True, 1=Somewhat True, 2=Cert...",0.6
+" SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far abov...",0.56
+" ESWAN,DMDD_10A: 10a. Compared to other children of the same age, over the past year, how well has t...",0.55
+" ARI_P,ARI_P_02: Often loses his/her temper - 0=Not True, 1=Somewhat True, 2=Certainly True...",0.54
+" SDQ,SDQ_07: Generally well behaved, usually does what adults request - 0=Not True, 1=Somewhat True,...",0.54
+" CBCL,CBCL_23: 23. Disobedient at school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or ...",0.54
+" SDQ,SDQ_29_a: Do the difficulties interfere with your child's everyday life in the following areas?...",0.52
+" SRS,SRS_64: 64. Is too tense in social settings. - 0= Not True, 1= Sometimes True, 2= Often True, 3...",0.51
+" ICU_P,ICU_P_12: 12. Seems very cold and uncaring.  - 0=Not at all true, 1=Somewhat true, 2=Very tru...",0.5
+" SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following ...",0.49
+" SDQ,SDQ_13: Often unhappy, depressed or tearful - 0=Not True, 1=Somewhat True, 2=Certainly True...",0.49
+" PSI,PSI_28: 28. Compared to the average child, my child has a great deal of difficulty in getting u...",0.48
+" MFQ_P,MFQ_P_29: 29. S/he didn't have any fun in school. - 0= Not True, 1= Sometimes, 2= True...",0.45
+" CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true...",0.44
+" CBCL,CBCL_45: 45. Nervous, highstrung, or tense - 0=Not true, 1=Somewhat or sometimes true, 2=Very ...",0.42
+" MFQ_P,MFQ_P_08: 8. S/he felt s/he was no good anymore. - 0= Not True, 1= Sometimes, 2= True...",0.42
+" ASSQ,ASSQ_17: lacks best friend - 0=No, 1=Somewhat, 2=Yes...",0.38
+" PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1=...",0.35
+" SCARED_P,SCARED_P_40: 40. My child feels nervous when he/she is going to parties, dances, or any pl...",0.31

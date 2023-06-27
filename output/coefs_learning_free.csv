@@ -1,0 +1,25 @@
+Item,Coefficient
+" PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked...",0.42
+" PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes...",0.38
+" SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certa...",0.24
+" PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, ...",0.2
+" PreInt_DevHx,newborn_problems_WAS_MISSING:  - ...",0.19
+" ESWAN,SocAnx_02: 2. Handle fears of appearing anxious in social situations - -3= Far above average,...",0.15
+" APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never...",0.14
+" APQ_P,APQ_P_29: 29. You don't tell your child where you are going - 1=Never, 2=Almost Never, 3=Some...",0.13
+" PreInt_DevHx,delivery: Delivery: - 0= C-section, 1= Vaginal...",0.13
+" APQ_SR,APQ_SR_15A_WAS_MISSING:  - ...",0.11
+" SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or...",0.11
+" APQ_P,APQ_P_21: 21. Your child goes out after dark without an adult - 1=Never, 2=Almost Never, 3=So...",-0.08
+" SCARED_SR,SCARED_SR_10: 10. I feel nervous with people I donât know well  - 0=Not True or Hardly ...",-0.09
+" CIS_P,CIS_P_05: How much of a problem would you say your child has with his/her behavior in school ...",-0.09
+" ICU_P,ICU_P_15: 15. Always tries his/her best.  - 0=Not at all true, 1=Somewhat true, 2=Very true, ...",-0.1
+" PreInt_EduHx,school_difficulty: Did your child experience any difficulty starting school? - 0= No, ...",-0.11
+" SympChck,CSC_03C: 3. Has a loss of interest in previously enjoyable activities(Current) - 0=No, 1=Y...",-0.12
+" PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes...",-0.14
+" SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) ...",-0.14
+" ESWAN,MDD_6: 6. Have energy to perform activities - -3= Far above average,-2= Above average,-1= Sli...",-0.14
+" PreInt_DevHx,m_birthage: Mother's age at birth of child - nan...",-0.18
+" APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=So...",-0.18
+" NIH_Scores,NIH7_List: List Sorting Working Memory Age 7+ Age-adjusted Score - nan...",-0.23
+" PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked...",-0.35

@@ -1,0 +1,8 @@
+,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments,AUC all features free assessments,AUC CV all features free assessments,AUC all features healthy controls free assessments,# of Positive Examples free assessments,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments,# rows full dataset all assessments,# input features all assessments,# rows full dataset free assessments,# input features free assessments
+New Diag.Specific Learning Disorder with Impairment in Reading,0.886,0.858,0.956,185.0,0.755,0.8,0.901,196.0,0.864,15,0.782,24,1403,1059,1476,695
+New Diag.Borderline Intellectual Functioning,0.85,0.832,0.873,251.0,0.811,0.835,0.883,263.0,0.839,11,0.786,10,1403,1059,1476,695
+New Diag.Processing Speed Deficit,0.804,0.798,0.899,349.0,0.802,0.795,0.922,361.0,0.777,7,0.804,14,1403,1059,1476,695
+New Diag.Specific Learning Disorder with Impairment in Reading - Consensus,0.849,0.773,0.819,298.0,0.663,0.696,0.722,307.0,0.807,18,0.647,7,1403,1059,1476,695
+New Diag.Specific Learning Disorder with Impairment in Written Expression,0.864,0.746,0.892,237.0,0.723,0.701,0.722,251.0,0.768,11,0.696,4,1403,1059,1476,695
+New Diag.Specific Learning Disorder with Impairment in Mathematics - Consensus,0.727,0.735,0.667,167.0,0.673,0.756,0.779,174.0,0.732,22,0.658,20,1403,1059,1476,695
+New Diag.Specific Learning Disorder with Impairment in Mathematics,0.708,0.731,0.744,272.0,0.8,0.697,0.879,285.0,0.731,20,0.756,4,1403,1059,1476,695

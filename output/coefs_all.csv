@@ -1,0 +1,13 @@
+Item,Coefficient
+" ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the need...",0.46
+" SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes Tru...",0.4
+" SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2=...",0.38
+" SympChck,CSC_51P: 51. Often has a difficult time making eye contact(Past) - 0=No, 1=Yes...",0.36
+" SRS,SRS_48: 48. Has a sense of humor, understands jokes. - 0= Not True, 1= Sometimes True, 2= Often...",0.33
+" ASSQ,ASSQ_16: can be with other children but only on his/her terms - 0=No, 1=Somewhat, 2=Yes...",0.29
+" SCQ,SCQ_15: 15. Does she/he ever have any mannerisms or odd ways of moving her/his hands or fingers...",0.28
+" SRS,SRS_42: 42. Seems overly sensitive to sounds, textures, or smells. - 0= Not True, 1= Sometimes ...",0.28
+" PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes...",0.21
+" SDQ,SDQ_18: Often lies or cheats - 0=Not True, 1=Somewhat True, 2=Certainly True...",-0.23
+" CBCL,CBCL_87: 87. Sudden changes in mood or feelings - 0=Not true, 1=Somewhat or sometimes true, 2=...",-0.3
+" Basic_Demos,Sex:  - ...",-0.32

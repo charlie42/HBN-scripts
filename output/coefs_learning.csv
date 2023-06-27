@@ -1,0 +1,16 @@
+Item,Coefficient
+" C3SR,C3SR_33: 33. I have trouble with reading. - ...",0.52
+" PreInt_EduHx,repeated_grades: Were any grades rep...",0.26
+" PSI,PSI_18: 18. My child doesn't seem to learn as...",0.21
+" PreInt_EduHx,weakness_english: English - 0= Unche...",0.13
+" C3SR,C3SR_13: 13. I have trouble with spelling. -...",0.12
+" RBS,RBS_43: Fascination, preoccupation with movem...",0.08
+" CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=...",0.08
+" PreInt_EduHx,recent_grades: Recent typical academ...",0.04
+" RBS,RBS_32: Insists on walking in a particular pa...",0.04
+" SDQ,SDQ_29_c: Do the difficulties interfere with ...",0.02
+" CIS_SR,CIS_SR_Total: CIS_SR Total Score - nan...",-0.05
+" PreInt_DevHx,m_birthage: Mother's age at birth of...",-0.06
+" NIH_Scores,NIH7_List: List Sorting Working Memory...",-0.06
+" C3SR,C3SR_38: 38. I have trouble with math. - 0=N...",-0.08
+" APQ_P,APQ_P_26: 26. you attend PTA meetings, pare...",-0.09

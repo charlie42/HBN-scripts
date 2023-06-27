@@ -1,0 +1,17 @@
+Item,Coefficient
+" ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the need...",0.22
+" SympChck,CSC_51P: 51. Often has a difficult time making eye contact(Past) - 0=No, 1=Yes...",0.2
+" ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, ...",0.2
+" ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual i...",0.19
+" SympChck,CSC_48P: 48. Has unusual physical mannerisms (rocked body or flapping hands)(Past) - 0=No,...",0.16
+" SDQ,SDQ_06: Rather solitary, prefers to play alone (for 11-17 year olds: Would rather be alone than...",0.15
+" PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes...",0.14
+" SympChck,CSC_27P: 27. Feels like he/she has to do certain things in a very specific way (handwashin...",0.13
+" SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far ab...",0.12
+" PreInt_DevHx,temp_07: Overly sensitive to sound - 0= No, 1= Yes...",0.11
+" SympChck,CSC_22P: 22. Has intense fears of specific animals, situations, or anything else(Past) - 0...",0.08
+" SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes...",-0.06
+" SCARED_P,SCARED_P_11: 11. My child gets stomachaches at school - 0=Not True or Hardly Ever True, 1=...",-0.07
+" SDQ,SDQ_18: Often lies or cheats - 0=Not True, 1=Somewhat True, 2=Certainly True...",-0.09
+" Basic_Demos,Sex:  - ...",-0.12
+" PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes...",-0.12

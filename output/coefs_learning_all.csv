@@ -1,0 +1,16 @@
+Item,Coefficient
+" C3SR,C3SR_33: 33. I have trouble with reading. - 0=Not true at all (Never, Seldom), 1=Just a little...",0.52
+" PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes...",0.26
+" PSI,PSI_18: 18. My child doesn't seem to learn as quickly as most children. - 1=Strongly Disagree, ...",0.21
+" PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked...",0.13
+" C3SR,C3SR_13: 13. I have trouble with spelling. - 0=Not true at all (Never, Seldom), 1=Just a littl...",0.12
+" RBS,RBS_43: Fascination, preoccupation with movement / things that move (e.g., fans, clocks) - 0=Be...",0.08
+" CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often t...",0.08
+" PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, ...",0.04
+" RBS,RBS_32: Insists on walking in a particular pattern (e.g., straight line) - 0=Behavior does not ...",0.04
+" SDQ,SDQ_29_c: Do the difficulties interfere with your child's everyday life in the following areas?...",0.02
+" CIS_SR,CIS_SR_Total: CIS_SR Total Score - nan...",-0.05
+" PreInt_DevHx,m_birthage: Mother's age at birth of child - nan...",-0.06
+" NIH_Scores,NIH7_List: List Sorting Working Memory Age 7+ Age-adjusted Score - nan...",-0.06
+" C3SR,C3SR_38: 38. I have trouble with math. - 0=Not true at all (Never, Seldom), 1=Just a little tr...",-0.08
+" APQ_P,APQ_P_26: 26. you attend PTA meetings, parent/teacher conderences, or other meetings at your ...",-0.09

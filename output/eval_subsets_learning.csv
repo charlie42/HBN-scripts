@@ -1,0 +1,8 @@
+Diagnosis,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments
+New Diag.Specific Learning Disorder with Impairment in Reading,0.864,15,0.782,24
+New Diag.Borderline Intellectual Functioning,0.839,11,0.786,10
+New Diag.Specific Learning Disorder with Impairment in Reading - Consensus,0.807,18,0.647,7
+New Diag.Processing Speed Deficit,0.777,7,0.804,14
+New Diag.Specific Learning Disorder with Impairment in Mathematics,0.731,20,0.756,4
+New Diag.Specific Learning Disorder with Impairment in Written Expression,0.768,11,0.696,4
+New Diag.Specific Learning Disorder with Impairment in Mathematics - Consensus,0.732,22,0.658,20

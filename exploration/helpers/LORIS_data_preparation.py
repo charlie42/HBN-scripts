@@ -52,6 +52,9 @@ def drop_rows_w_underscore_in_id(full):
 
 def prepare_data(full):
 
+    print("DEBUG helper")
+    [print(x) for x in full.columns if "WAIS,WAIS_BD" in x or "_PERC" in x]
+
     # Replace NaN (currently ".") values with np.nan
     full = full.replace(".", np.nan)
 
