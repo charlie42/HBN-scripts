@@ -1,0 +1,7 @@
+Diagnosis,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments
+Diag.Specific Learning Disorder with Impairment in Reading (test),0.864,15,0.794,8
+Diag.Intellectual Disability-Borderline (test),0.824,23,0.798,12
+Diag.Processing Speed Deficit (test),0.784,23,0.771,24
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.768,18,0.623,9
+Diag.Any Diag,0.746,7,0.72,5
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.74,15,0.665,4

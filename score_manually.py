@@ -12,6 +12,26 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "SCARED_P,SCARED_P_Total": 41,
                     "SWAN,SWAN_HY": 9,
                     "SWAN,SWAN_IN": 9,
+                    "ICU_P,ICU_P_Total": 24,
+                    "ICU_P,ICU_P_Callousness": 11,
+                    "ICU_P,ICU_P_Uncaring": 8,
+                    "ICU_P,ICU_P_Unemotional": 5,
+                    "PCIAT,PCIAT_Total": 20,
+                    "APQ_SR,APQ_SR_Total": 42,
+                    "APQ_SR,APQ_SR_INV_D": 10, 
+                    "APQ_SR,APQ_SR_INV_M": 10,
+                    "APQ_SR,APQ_SR_PP": 6,
+                    "APQ_SR,APQ_SR_PM": 10,
+                    "APQ_SR,APQ_SR_ID": 6,
+                    "APQ_SR,APQ_SR_CP": 3,
+                    "APQ_SR,APQ_SR_OPD": 42,
+                    "APQ_P,APQ_P_Total": 42,
+                    "APQ_P,APQ_P_INV": 10, 
+                    "APQ_P,APQ_P_PP": 6,
+                    "APQ_P,APQ_P_PM": 10,
+                    "APQ_P,APQ_P_ID": 6,
+                    "APQ_P,APQ_P_CP": 3,
+                    "APQ_P,APQ_P_OPD": 42,
                     "SRS,SRS_MOT_T": 11,
                     "SRS,SRS_AWR_T": 8,
                     "SRS,SRS_COG_T": 12,
@@ -39,12 +59,14 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     }
 
 def get_list_of_analysed_diags():
-    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", ["first_assessment_to_drop"])
+    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", ["first_assessment_to_drop", 
+                                                                                                                       "learning?__0",
+                                                                                                                       "only_free_assessments__0"])
     report = pd.read_csv(path + "auc-on-subsets-test-set-optimal-threshold.csv")
     return [x for x in report.columns if x.startswith("Diag.")]
 
 def find_auc_for_score_col(total_scores_data, subscale_scores_data, score_col, diag_col):
-    if "Total" in score_col:
+    if "Total" in score_col or "_OPD" in score_col:
         auc = roc_auc_score(total_scores_data[diag_col], total_scores_data[score_col])    
     else:
         auc = roc_auc_score(subscale_scores_data[diag_col], subscale_scores_data[score_col])
@@ -56,7 +78,8 @@ def read_subscales_data():
 
     path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
                                            ["first_assessment_to_drop",
-                                            "only_free_assessments__0"])
+                                            "only_free_assessments__0",
+                                            "learning?__0"])
     print("Reading input data from: ", path)
     total_scores_data = pd.read_csv(path+'total_scores.csv')
     subscale_scores_data = pd.read_csv(path+'subscale_scores.csv')
@@ -118,17 +141,14 @@ def read_ml_scores():
     path = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
     path_all_assessments = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop",
                                                                   "only_free_assessments__0",
+                                                                  "learning?__0",
                                                                   ])
-    path_free_assessments = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop",
-                                                                   "only_free_assessments__1",
-                                                                    ])
-    print("Reading report from: ", path_all_assessments, path_free_assessments)
+    print("Reading report from: ", path_all_assessments)
     ml_scores_all_assessments = pd.read_csv(path_all_assessments + "auc-on-subsets-test-set-optimal-threshold.csv")
-    ml_scores_free_assessments = pd.read_csv(path_free_assessments + "auc-on-subsets-test-set-optimal-threshold.csv")
 
-    return ml_scores_all_assessments, ml_scores_free_assessments
+    return ml_scores_all_assessments
 
-def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags):
+def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, diags):
     ml_scores_at_num_features = {}
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
@@ -137,19 +157,15 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
 
         print("DEBUG:", number_of_items_in_best_manual_subscale, best_manual_score_subscale, ml_scores_all_assessments[diag_col])
         ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
-        ml_score_at_number_of_items_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
         number_of_items_for_ml_score_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments[diag_col] >= best_manual_score]["Number of features"].min()
-        number_of_items_for_ml_score_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments[diag_col] >= best_manual_score]["Number of features"].min()
 
         ml_scores_at_num_features[diag_col] = [best_manual_score_subscale, 
                                                best_manual_score, 
                                                number_of_items_in_best_manual_subscale, 
                                                ml_score_at_number_of_items_of_best_manual_subscale_all_assessments, 
-                                               ml_score_at_number_of_items_of_best_manual_subscale_free_assessments,
                                                number_of_items_for_ml_score_of_best_manual_subscale_all_assessments,
-                                               number_of_items_for_ml_score_of_best_manual_subscale_free_assessments
                                                ]
 
     ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=[
@@ -157,15 +173,15 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         "Best subscale score", 
         "# of items in best subscale", 
         "ML score at # of items of best subscale (all assessments)",
-        "ML score at # of items of best subscale (free assessments)", 
         "# of items to reach best subscale (all assessments)",
-        "# of items to reach best subscale (free assessments)"
         ]).sort_values(by="Best subscale score", ascending=False)
     return ml_scores_at_num_features_df
 
 def main():
     output_dir = "output/manual_scoring_analysis/"
     total_scores_data, subscale_scores_data = read_subscales_data() # Read prepared data: total and subscale scores and diagnoses from HBN data
+    total_scores_data = total_scores_data.drop("ID", axis=1)
+    subscale_scores_data = subscale_scores_data.drop("ID", axis=1)
     
     diags = get_diags() 
 
@@ -174,8 +190,8 @@ def main():
 
     best_manual_scores_df = find_best_manual_score_for_diag(all_manual_scores_df, diags)
 
-    ml_scores_all_assessments, ml_scores_free_assessments = read_ml_scores()
-    comparison_table = compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags)
+    ml_scores_all_assessments = read_ml_scores()
+    comparison_table = compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, diags)
     comparison_table.to_csv(output_dir + "manual_subsale_scores_vs_ml.csv", float_format='%.3f')
 
 if __name__ == "__main__":

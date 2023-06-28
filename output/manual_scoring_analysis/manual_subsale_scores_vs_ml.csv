@@ -1,17 +1,12 @@
-,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),ML score at # of items of best subscale (free assessments),# of items to reach best subscale (all assessments),# of items to reach best subscale (free assessments)
-Diag.Autism Spectrum Disorder,"ASSQ,ASSQ_Total",0.861,27,0.919,0.905,4.000,4.000
-Diag.ADHD-Combined Type,"SWAN,SWAN_HY",0.851,9,0.860,0.859,2.000,8.000
-Diag.Oppositional Defiant Disorder,"CBCL,CBCL_Ext_T",0.851,35,0.875,0.882,3.000,3.000
-Diag.Separation Anxiety,"SCARED_P,SCARED_P_SP",0.814,8,0.811,0.801,10.000,17.000
-Diag.Generalized Anxiety Disorder,"SCARED_P,SCARED_P_GD",0.809,9,0.868,0.850,2.000,2.000
-Diag.Social Anxiety (Social Phobia),"SCARED_P,SCARED_P_SC",0.808,7,0.851,0.831,3.000,3.000
-Diag.Major Depressive Disorder,"CBCL,CBCL_Int_T",0.758,32,0.888,0.872,1.000,1.000
-Diag.ADHD-Inattentive Type,"SWAN,SWAN_IN",0.663,9,0.739,0.709,2.000,4.000
-Diag.Specific Phobia,"SCARED_P,SCARED_P_Total",0.662,41,0.763,0.766,2.000,1.000
-Diag.Other Specified Anxiety Disorder,"SCARED_P,SCARED_P_GD",0.637,9,0.555,0.571,,
-Diag.Enuresis,"SWAN,SWAN_HY",0.610,9,0.844,0.806,1.000,1.000
-Diag.Language Disorder,"SRS,SRS_COG_T",0.583,12,0.778,0.723,1.000,1.000
-Diag.Specific Learning Disorder with Impairment in Mathematics,"SWAN,SWAN_IN",0.578,9,0.711,0.759,1.000,1.000
-Diag.Specific Learning Disorder with Impairment in Written Expression,"SWAN,SWAN_IN",0.556,9,0.589,0.595,1.000,6.000
-Diag.Specific Learning Disorder with Impairment in Reading,"SCARED_P,SCARED_P_SP",0.523,8,0.707,0.725,1.000,1.000
-Diag.No Diagnosis Given,"SCARED_P,SCARED_P_SC",0.422,7,0.834,0.794,1.000,1.000
+,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),# of items to reach best subscale (all assessments)
+Diag.Oppositional Defiant Disorder,"ARI_P,ARI_P_Total_Score",0.787,7,0.823,1
+Diag.ADHD-Combined Type,"ICU_P,ICU_P_Uncaring",0.642,8,0.786,1
+Diag.Social Anxiety (Social Phobia),"ICU_P,ICU_P_Unemotional",0.616,5,0.758,1
+Diag.Generalized Anxiety Disorder,"PCIAT,PCIAT_Total",0.596,20,0.827,1
+Diag.Language Disorder,"APQ_P,APQ_P_PP",0.595,6,0.594,3
+Diag.Autism Spectrum Disorder,"ICU_P,ICU_P_Unemotional",0.592,5,0.807,1
+Diag.Specific Phobia,"ARI_P,ARI_P_Total_Score",0.574,7,0.728,1
+Diag.Specific Learning Disorder with Impairment in Mathematics,"APQ_P,APQ_P_PM",0.561,10,0.497,1
+Diag.Specific Learning Disorder with Impairment in Reading,"APQ_SR,APQ_SR_INV_M",0.558,10,0.686,1
+Diag.ADHD-Inattentive Type,"ICU_P,ICU_P_Unemotional",0.538,5,0.648,1
+Diag.No Diagnosis Given,"APQ_SR,APQ_SR_INV_D",0.526,10,0.798,1

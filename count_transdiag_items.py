@@ -8,7 +8,7 @@ from helpers import get_newest_non_empty_dir_in_dir
 path = "../diagnosis_predictor_data/reports/identify_feature_subsets/"
 dir = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop", # several assessments were used as opposed to one single assessment
                                              "only_free_assessments__0",
-                                             "debug_mode__True"]) 
+                                             "learning?__0",]) 
                                                                                                     
 print("Reading reports from: ", dir)
 from joblib import load
