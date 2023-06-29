@@ -140,13 +140,13 @@ def plot_opt_num_features(opt_vs_all_df, filename, plot_free_assessments=False):
 
     plt.savefig("output/viz/"+filename, bbox_inches="tight", dpi=600)
 
-def plot_thresholds(thresholds_df):
+def plot_thresholds(thresholds_df, diag):
     # Drop first row (PPV always 0.5)
     thresholds_df = thresholds_df.drop(thresholds_df.index[0])
 
     # Plot sensitivity, specificity, PPV, and NPV for each threshold
     plt.figure(figsize=(10, 8))
-    plt.title("Sensitivity, specificity, PPV, and NPV for each threshold for ASD diagnosis, optimal # of features, all assessments")
+    plt.title(f"Sensitivity, specificity, PPV, and NPV for each threshold for {diag}, optimal # of features, all assessments")
     plt.plot(thresholds_df.index, thresholds_df["Sensitivity"], label="Sensitivity", marker="o", linestyle="-", color="blue")
     plt.plot(thresholds_df.index, thresholds_df["Specificity"], label="Specificity", marker="o", linestyle="-", color="red")
     plt.plot(thresholds_df.index, thresholds_df["PPV"], label="PPV", marker="o", linestyle="-", color="green")
@@ -221,8 +221,8 @@ def main():
     # Read thresholds data from diagnosis_predictor_data (for all assessments, that's why using dir_eval_subsets_all[0])
     dir_eval_subsets_all_learning = data_paths["eval_subsets_learning"]
     print("dir_eval_subsets_all", dir_eval_subsets_all_learning)
-    filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
-    thresholds_df = make_df_to_plot_thresholds(dir_eval_subsets_all_learning, filename)
+    thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
+    thresholds_df = make_df_to_plot_thresholds(dir_eval_subsets_all_learning, thresholds_filename)
     
     # Rephrase diags to shorter names
     compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
@@ -242,10 +242,10 @@ def main():
 
     plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
     plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=True)
-    plot_manual_vs_ml(compare_orig_subsets_df)
+    plot_manual_vs_ml(compare_orig_subsets_learning_df)
     plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
     plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=True)
-    plot_thresholds(thresholds_df)
+    plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
     plot_what_improves_LD(what_improves_LD_df)
 
 if __name__ == "__main__":

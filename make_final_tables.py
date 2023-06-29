@@ -52,7 +52,7 @@ def make_df_to_plot_eval_subsets(dir_eval_subsets_all, dir_eval_subsets_free = N
     
     print("df_opt_features", df_opt_features, "df_manual", df_manual)
     # Add manual scoring if consensus diag (not learning)
-    if "(test)" not in df_opt_features.index[0]:
+    if "(test)" in df_opt_features.index[0]:
         df_opt_features = df_opt_features.merge(df_manual, left_index=True, right_index=True).sort_values(by="Best subscale score", ascending=False)
 
     return df_opt_features
@@ -136,14 +136,11 @@ data_paths = {
 }
 
 def main():
-    ### Consensus digas ###
+    ### Consensus diags ###
 
     eval_orig_df = make_df_to_plot_eval_orig(data_paths["eval_orig"])
-    
     eval_subsets_df = make_df_to_plot_eval_subsets(data_paths["eval_subsets"])
-    
     ds_stats_df = make_df_ds_stats(data_paths["make_ds"])
-    
     
     compare_orig_vs_subsets_df = eval_orig_df.merge(eval_subsets_df, left_index=True, right_index=True)
     
@@ -159,16 +156,14 @@ def main():
     ### Learning diags ###
 
     eval_orig_learning_df = make_df_to_plot_eval_orig(data_paths["eval_orig_learning"], data_paths["eval_orig_learning_free"])
-    
     eval_subsets_learning_df = make_df_to_plot_eval_subsets(data_paths["eval_subsets_learning"], data_paths["eval_subsets_learning_free"])
-    print("eval_subsets_learning_df", eval_subsets_learning_df)
     ds_stats_learning_df = make_df_ds_stats(data_paths["make_ds_learning"], data_paths["make_ds_learning_free"])
 
     compare_orig_vs_subsets_learning_df = eval_orig_learning_df.merge(eval_subsets_learning_df, left_index=True, right_index=True)
+
     # Add total # of features and examples to compare_orig_vs_subsets_df
     for col in ds_stats_learning_df.columns:
         compare_orig_vs_subsets_learning_df[col] = ds_stats_learning_df[col].values[0]
-    print("compare_orig_vs_subsets_learning_df", compare_orig_vs_subsets_learning_df)
 
     eval_orig_learning_df.to_csv("output/eval_orig_learning.csv")
     eval_subsets_learning_df.to_csv("output/eval_subsets_learning.csv")

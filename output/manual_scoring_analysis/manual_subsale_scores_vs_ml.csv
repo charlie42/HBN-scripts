@@ -1,12 +1,9 @@
 ,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),# of items to reach best subscale (all assessments)
-Diag.Oppositional Defiant Disorder,"ARI_P,ARI_P_Total_Score",0.787,7,0.823,1
-Diag.ADHD-Combined Type,"ICU_P,ICU_P_Uncaring",0.642,8,0.786,1
-Diag.Social Anxiety (Social Phobia),"ICU_P,ICU_P_Unemotional",0.616,5,0.758,1
-Diag.Generalized Anxiety Disorder,"PCIAT,PCIAT_Total",0.596,20,0.827,1
-Diag.Language Disorder,"APQ_P,APQ_P_PP",0.595,6,0.594,3
-Diag.Autism Spectrum Disorder,"ICU_P,ICU_P_Unemotional",0.592,5,0.807,1
-Diag.Specific Phobia,"ARI_P,ARI_P_Total_Score",0.574,7,0.728,1
-Diag.Specific Learning Disorder with Impairment in Mathematics,"APQ_P,APQ_P_PM",0.561,10,0.497,1
-Diag.Specific Learning Disorder with Impairment in Reading,"APQ_SR,APQ_SR_INV_M",0.558,10,0.686,1
-Diag.ADHD-Inattentive Type,"ICU_P,ICU_P_Unemotional",0.538,5,0.648,1
-Diag.No Diagnosis Given,"APQ_SR,APQ_SR_INV_D",0.526,10,0.798,1
+Diag.Any Diag,"SRS,SRS_DSMRRB_T",0.784,12,0.765,
+Diag.Specific Learning Disorder with Impairment in Reading (test),"C3SR,C3SR_LP_T",0.707,10,0.856,1.000
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),"C3SR,C3SR_LP_T",0.684,10,0.767,1.000
+Diag.NVLD without reading condition (test),"SRS,SRS_COG_T",0.664,12,0.735,1.000
+Diag.NVLD (test),"SRS,SRS_COG_T",0.663,12,0.709,5.000
+Diag.Borderline Intellectual Functioning (test),"C3SR,C3SR_LP_T",0.650,10,0.824,1.000
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),"C3SR,C3SR_LP_T",0.639,10,0.739,2.000
+Diag.Processing Speed Deficit (test),"SWAN,SWAN_IN",0.602,9,0.788,1.000

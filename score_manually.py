@@ -10,28 +10,31 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "SRS,SRS_Total_T": 65,
                     "CBCL,CBCL_Total_T": 112,
                     "SCARED_P,SCARED_P_Total": 41,
+                    "CIS_P,CIS_P_Score": 13,
+                    "CIS_SR,CIS_SR_Score": 13,
+                    "PCIAT,PCIAT_Total": 20,
+                    "APQ_SR,APQ_SR_Total": 42,
+                    "APQ_SR,APQ_SR_OPD": 42,
+                    "APQ_P,APQ_P_Total": 42,
+                    "APQ_P,APQ_P_OPD": 42,
+                    "PSI,PSI_Total": 36,
                     "SWAN,SWAN_HY": 9,
                     "SWAN,SWAN_IN": 9,
                     "ICU_P,ICU_P_Total": 24,
                     "ICU_P,ICU_P_Callousness": 11,
                     "ICU_P,ICU_P_Uncaring": 8,
                     "ICU_P,ICU_P_Unemotional": 5,
-                    "PCIAT,PCIAT_Total": 20,
-                    "APQ_SR,APQ_SR_Total": 42,
                     "APQ_SR,APQ_SR_INV_D": 10, 
                     "APQ_SR,APQ_SR_INV_M": 10,
                     "APQ_SR,APQ_SR_PP": 6,
                     "APQ_SR,APQ_SR_PM": 10,
                     "APQ_SR,APQ_SR_ID": 6,
                     "APQ_SR,APQ_SR_CP": 3,
-                    "APQ_SR,APQ_SR_OPD": 42,
-                    "APQ_P,APQ_P_Total": 42,
                     "APQ_P,APQ_P_INV": 10, 
                     "APQ_P,APQ_P_PP": 6,
                     "APQ_P,APQ_P_PM": 10,
                     "APQ_P,APQ_P_ID": 6,
                     "APQ_P,APQ_P_CP": 3,
-                    "APQ_P,APQ_P_OPD": 42,
                     "SRS,SRS_MOT_T": 11,
                     "SRS,SRS_AWR_T": 8,
                     "SRS,SRS_COG_T": 12,
@@ -56,17 +59,34 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "SCARED_P,SCARED_P_SC": 7,
                     "SCARED_P,SCARED_P_SH": 4,
                     "SCARED_P,SCARED_P_SP": 8,
+                    "PSI,PSI_DC_T": 10, # to confirm
+                    "PSI,PSI_PCDI_T": 10, # to confirm
+                    "PSI,PSI_PCDI_T": 10, # to confirm
+                    "PSI,PSI_PD_T": 10, # to confirm
+                    "C3SR,C3SR_AG_T": 10, # to confirm
+                    "C3SR,C3SR_FR_T": 10, # to confirm
+                    "C3SR,C3SR_HY_T": 10, # to confirm
+                    "C3SR,C3SR_IN_T": 10, # to confirm
+                    "C3SR,C3SR_LP_T": 10, # to confirm
+                    "C3SR,C3SR_NI": 10, # to confirm
+                    "C3SR,C3SR_PI": 10, # to confirm
                     }
 
 def get_list_of_analysed_diags():
     path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", ["first_assessment_to_drop", 
-                                                                                                                       "learning?__0",
+                                                                                                                       "learning?__1",
                                                                                                                        "only_free_assessments__0"])
     report = pd.read_csv(path + "auc-on-subsets-test-set-optimal-threshold.csv")
-    return [x for x in report.columns if x.startswith("Diag.")]
+    
+    diags = [x for x in report.columns if x.startswith("Diag.")]
+
+    print(diags)
+
+    return diags
 
 def find_auc_for_score_col(total_scores_data, subscale_scores_data, score_col, diag_col):
-    if "Total" in score_col or "_OPD" in score_col:
+    print("Calculating AUC for: ", diag_col, score_col)
+    if "Total" in score_col or "_OPD" in score_col or "CIS_P_Score" in score_col or "CIS_SR_Score" in score_col or "WHODAS_SR_Score" in score_col or "WHODAS_P_Score" in score_col: # Total scores
         auc = roc_auc_score(total_scores_data[diag_col], total_scores_data[score_col])    
     else:
         auc = roc_auc_score(subscale_scores_data[diag_col], subscale_scores_data[score_col])
@@ -79,7 +99,7 @@ def read_subscales_data():
     path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
                                            ["first_assessment_to_drop",
                                             "only_free_assessments__0",
-                                            "learning?__0"])
+                                            "learning?__1"])
     print("Reading input data from: ", path)
     total_scores_data = pd.read_csv(path+'total_scores.csv')
     subscale_scores_data = pd.read_csv(path+'subscale_scores.csv')
@@ -89,21 +109,10 @@ def read_subscales_data():
 
     return total_scores_data, subscale_scores_data
 
-def get_diags():
-
-    diags = get_list_of_analysed_diags()
-    # Drop diags that we created outselves, they're not in the raw data: "Diag.Any Diag"
-    diags = [x for x in diags if not x == "Diag.Any Diag"]
-    print(diags)
-
-    return diags
-
 def get_score_cols(total_scores_data, subscale_scores_data):
 
     score_cols = ([x for x in total_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING") and not "Barratt" in x and not "preg_symp" in x] 
     + [x for x in subscale_scores_data.columns if not x.startswith("Diag") and not x.endswith("WAS_MISSING")  and not "Barratt" in x and not "preg_symp" in x])
-
-    [print(x) for x in score_cols]
 
     return score_cols
 
@@ -141,7 +150,7 @@ def read_ml_scores():
     path = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
     path_all_assessments = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop",
                                                                   "only_free_assessments__0",
-                                                                  "learning?__0",
+                                                                  "learning?__1",
                                                                   ])
     print("Reading report from: ", path_all_assessments)
     ml_scores_all_assessments = pd.read_csv(path_all_assessments + "auc-on-subsets-test-set-optimal-threshold.csv")
@@ -155,7 +164,6 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best score"].values[0]
         number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale]
 
-        print("DEBUG:", number_of_items_in_best_manual_subscale, best_manual_score_subscale, ml_scores_all_assessments[diag_col])
         ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_in_best_manual_subscale][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
@@ -183,7 +191,7 @@ def main():
     total_scores_data = total_scores_data.drop("ID", axis=1)
     subscale_scores_data = subscale_scores_data.drop("ID", axis=1)
     
-    diags = get_diags() 
+    diags = get_list_of_analysed_diags()
 
     all_manual_scores_df = get_manual_scores(total_scores_data, subscale_scores_data, diags)
     all_manual_scores_df.T.to_csv(output_dir + "manual_subscale_scores.csv", float_format='%.3f')

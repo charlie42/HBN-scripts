@@ -1,12 +1,13 @@
-,AUC optimal features all assessments,Optimal # of features all assessments,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),# of items to reach best subscale (all assessments)
-Diag.Oppositional Defiant Disorder,0.823,7,"ARI_P,ARI_P_Total_Score",0.787,7,0.823,1
-Diag.ADHD-Combined Type,0.773,16,"ICU_P,ICU_P_Uncaring",0.642,8,0.786,1
-Diag.Social Anxiety (Social Phobia),0.784,20,"ICU_P,ICU_P_Unemotional",0.616,5,0.758,1
-Diag.Generalized Anxiety Disorder,0.817,14,"PCIAT,PCIAT_Total",0.596,20,0.827,1
-Diag.Language Disorder,0.647,21,"APQ_P,APQ_P_PP",0.595,6,0.594,3
-Diag.Autism Spectrum Disorder,0.839,14,"ICU_P,ICU_P_Unemotional",0.592,5,0.807,1
-Diag.Specific Phobia,0.703,6,"ARI_P,ARI_P_Total_Score",0.574,7,0.728,1
-Diag.Specific Learning Disorder with Impairment in Mathematics,0.515,12,"APQ_P,APQ_P_PM",0.561,10,0.497,1
-Diag.Specific Learning Disorder with Impairment in Reading,0.691,14,"APQ_SR,APQ_SR_INV_M",0.558,10,0.686,1
-Diag.ADHD-Inattentive Type,0.687,11,"ICU_P,ICU_P_Unemotional",0.538,5,0.648,1
-Diag.No Diagnosis Given,0.786,18,"APQ_SR,APQ_SR_INV_D",0.526,10,0.798,1
+Diagnosis,AUC optimal features all assessments,Optimal # of features all assessments
+Diag.Autism Spectrum Disorder,0.839,14
+Diag.Oppositional Defiant Disorder,0.823,7
+Diag.Generalized Anxiety Disorder,0.817,14
+Diag.Any Diag,0.788,8
+Diag.Social Anxiety (Social Phobia),0.784,20
+Diag.No Diagnosis Given,0.786,18
+Diag.ADHD-Combined Type,0.773,16
+Diag.Specific Phobia,0.703,6
+Diag.ADHD-Inattentive Type,0.687,11
+Diag.Specific Learning Disorder with Impairment in Reading,0.691,14
+Diag.Language Disorder,0.647,21
+Diag.Specific Learning Disorder with Impairment in Mathematics,0.515,12
