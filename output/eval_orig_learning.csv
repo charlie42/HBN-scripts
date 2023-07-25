@@ -1,7 +1,9 @@
-Diag,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments,AUC all features free assessments,AUC CV all features free assessments,AUC all features healthy controls free assessments,# of Positive Examples free assessments
-Diag.Specific Learning Disorder with Impairment in Reading (test),0.859,0.856,0.87,189.0,0.794,0.766,0.848,200.0
-Diag.Intellectual Disability-Borderline (test),0.849,0.851,0.91,259.0,0.842,0.825,0.881,271.0
-Diag.Any Diag,0.769,0.842,0.769,1356.0,0.766,0.809,0.766,1426.0
-Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.786,0.791,0.826,243.0,0.684,0.743,0.833,257.0
-Diag.Processing Speed Deficit (test),0.797,0.756,0.935,356.0,0.757,0.809,0.905,368.0
-Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.72,0.724,0.833,275.0,0.693,0.671,0.793,288.0
+Diag,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments
+Diag.Borderline Intellectual Functioning (test),0.848,0.855,0.912,259.0
+Diag.Specific Learning Disorder with Impairment in Reading (test),0.848,0.841,0.835,189.0
+Diag.Any Diag,0.769,0.84,0.769,1356.0
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.787,0.777,0.818,243.0
+Diag.Processing Speed Deficit (test),0.742,0.751,0.879,356.0
+Diag.NVLD (test),0.727,0.745,0.857,208.0
+Diag.NVLD without reading condition (test),0.729,0.742,0.893,313.0
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.709,0.737,0.795,275.0

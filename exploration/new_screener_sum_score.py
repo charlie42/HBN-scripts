@@ -12,14 +12,10 @@ from data_reading import DataReader
 
 if __name__ == "__main__":
 
-    data_reader = DataReader()
-    df = data_reader.read_data("item_lvl", ["first_assessment_to_drop", "only_free_assessments__0"])
-
-    #path = helpers.get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
-    #                                        ["first_assessment_to_drop",
-    #                                            "only_free_assessments__0"])
-
-    #df = pd.read_csv(path+'item_lvl.csv')
+    path = helpers.get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
+                                            ["first_assessment_to_drop",
+                                                "only_free_assessments__0"])
+    df = pd.read_csv(path+'item_lvl.csv')
 
     # ASD:
     #       "(0.46*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",

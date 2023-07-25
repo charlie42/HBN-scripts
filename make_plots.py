@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from make_final_tables import data_paths
+from data_reading import DataReader
 
 diagnosis_dict = {
         'Diag.Major Depressive Disorder': 'MDD',
@@ -19,17 +19,19 @@ diagnosis_dict = {
         'Diag.Separation Anxiety': 'SA',
         'Diag.ADHD-Inattentive Type': 'ADHD-I',
         'Diag.Specific Learning Disorder with Impairment in Mathematics': 'SLD-Math',
-        'Diag.Specific Learning Disorder with Impairment in Mathematics (test)': 'SLD-Math',
+        'Diag.Specific Learning Disorder with Impairment in Mathematics (test)': 'SLD-Math (test)',
         'Diag.Language Disorder': 'Language',
         'Diag.Specific Phobia': 'Phobia',
         'Diag.Specific Learning Disorder with Impairment in Reading': 'SLD-Reading',
         'Diag.Specific Learning Disorder with Impairment in Written Expression': 'SLD-Writing',
-        'Diag.Specific Learning Disorder with Impairment in Reading (test)': 'SLD-Reading',
-        'Diag.Specific Learning Disorder with Impairment in Written Expression (test)': 'SLD-Writing',
+        'Diag.Specific Learning Disorder with Impairment in Reading (test)': 'SLD-Reading (test)',
+        'Diag.Specific Learning Disorder with Impairment in Written Expression (test)': 'SLD-Writing (test)',
         'Diag.Other Specified Anxiety Disorder': 'Other Anxiety',
         'Diag.Processing Speed Deficit (test)': 'LD-PS',
-        'Diag.Borderline Intellectual Functioning (test)': 'LD-BIF',
-        'Diag.Intellectual Disability-Borderline (test)': 'LD-BIF',
+        'Diag.Borderline Intellectual Functioning (test)': 'LD-BIF (test)',
+        'Diag.Intellectual Disability-Borderline (test)': 'LD-BIF (test)',
+        'Diag.NVLD (test)': 'NVLD',
+        'Diag.NVLD without reading condition (test)': 'NVLD no read',
     }
 
 def make_df_to_plot_thresholds(dir_eval_subsets_all, filename):
@@ -81,6 +83,7 @@ def plot_eval_orig(eval_orig_df, filename, plot_free_assessments=False, plot_cv=
     plt.savefig(output_dir + filename, bbox_inches="tight", dpi=600)
 
 def plot_manual_vs_ml(eval_subsets_df):
+    print("DEBUG", eval_subsets_df)
     eval_subsets_df = eval_subsets_df.sort_values(by="Best subscale score", ascending=False)
     
     plt.figure(figsize=(10, 8))
@@ -213,16 +216,20 @@ def plot_what_improves_LD(check_what_improves_LD_df):
 
 def main():
 
-    # Read performance tables
-    compare_orig_subsets_df = pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
-    compare_orig_subsets_learning_df = pd.read_csv("output/compare_orig_vs_subsets_learning.csv", index_col=0)
-    what_improves_LD_df = pd.read_csv("output/what_improves_LD.csv", index_col=0)
+    # Read data
+    data_reader = DataReader()
 
-    # Read thresholds data from diagnosis_predictor_data (for all assessments, that's why using dir_eval_subsets_all[0])
-    dir_eval_subsets_all_learning = data_paths["eval_subsets_learning"]
-    print("dir_eval_subsets_all", dir_eval_subsets_all_learning)
+    # Read performance tables
+    compare_orig_subsets_df = data_reader.read_compare_orig_vs_subsets()
+    compare_orig_subsets_learning_df = data_reader.read_compare_orig_vs_subsets_learning()
+    what_improves_LD_df = data_reader.read_what_improves_LD()
+
+    # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
-    thresholds_df = make_df_to_plot_thresholds(dir_eval_subsets_all_learning, thresholds_filename)
+    thresholds_df = data_reader.read_data(
+        data_type="thresholds",
+        params=["multiple_assessments", "all_assessments", "only_learning_diags"],
+        filename=thresholds_filename)
     
     # Rephrase diags to shorter names
     compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
@@ -241,15 +248,12 @@ def main():
 
 
     plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
-    plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=True)
-    plot_manual_vs_ml(compare_orig_subsets_learning_df)
+    plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=False)
+    plot_manual_vs_ml(compare_orig_subsets_df)
     plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
-    plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=True)
+    plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
     plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
     plot_what_improves_LD(what_improves_LD_df)
 
 if __name__ == "__main__":
     main()
-
-
-
