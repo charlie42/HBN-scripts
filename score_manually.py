@@ -162,6 +162,7 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
         best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best score"].values[0]
+        best_manual_score_subscale_short = best_manual_score_subscale.split(",")[1]
         number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale]
 
         print("DEBUG: ", number_of_items_in_best_manual_subscale)
@@ -171,7 +172,7 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         # Find number of items needed to reach performance of the best subscale    
         number_of_items_for_ml_score_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments[diag_col] >= best_manual_score]["Number of features"].min()
 
-        ml_scores_at_num_features[diag_col] = [best_manual_score_subscale, 
+        ml_scores_at_num_features[diag_col] = [best_manual_score_subscale_short, 
                                                best_manual_score, 
                                                number_of_items_in_best_manual_subscale, 
                                                ml_score_at_number_of_items_of_best_manual_subscale_all_assessments, 

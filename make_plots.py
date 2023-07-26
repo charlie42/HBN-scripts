@@ -2,7 +2,6 @@ from helpers import get_newest_non_empty_dir_in_dir, make_dir_if_not_exists
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 from data_reading import DataReader
 
@@ -214,15 +213,41 @@ def plot_what_improves_LD(check_what_improves_LD_df):
 
     plt.savefig("output/viz/what_improves_LD_cumulative.png", dpi=600)
 
+def plot_sum_scores_vs_subscales(sum_scores_df):
+    # Plot AUC of sum scores vs AUC of best subscales, add number of items in best subscale to the right of the marker
+    plt.figure(figsize=(10, 8))
+    plt.title("AUROC of new screener vs best existing subscale")
+    plt.plot(sum_scores_df["Best subscale score"], label="AUROC of best subscale", marker="o", linestyle="", color="blue")
+    plt.plot(sum_scores_df["AUROC"], label="AUROC of new screener", marker="o", linestyle="", color="red")
+    plt.xticks(rotation=45, ha="right", size=8)
+    plt.legend(loc="upper right")
+    plt.ylabel("AUROC")
+    plt.xlabel("Diagnosis")
+
+    # Append # of items to diag name on x axis
+    plt.xticks(range(len(sum_scores_df.index)), (
+        sum_scores_df.index +
+        " (" + 
+        sum_scores_df['Best subscale'] + 
+        ", " + 
+        sum_scores_df['# of items in best subscale'].astype(str) + 
+        ")"
+        ), rotation=45, ha="right", size=8)
+    plt.xlabel("Diagnosis (# of items in best subscale)")
+        
+    plt.tight_layout()
+
+    plt.savefig("output/viz/sum_scores.png", bbox_inches="tight", dpi=600)
+
 def main():
 
-    # Read data
+    # Read data performance tables
     data_reader = DataReader()
 
-    # Read performance tables
-    compare_orig_subsets_df = data_reader.read_compare_orig_vs_subsets()
-    compare_orig_subsets_learning_df = data_reader.read_compare_orig_vs_subsets_learning()
-    what_improves_LD_df = data_reader.read_what_improves_LD()
+    compare_orig_subsets_df = data_reader.read_data("compare_orig_vs_subsets")
+    compare_orig_subsets_learning_df = data_reader.read_data("compare_orig_vs_subsets_learning")
+    what_improves_LD_df = data_reader.read_data("what_improves_LD")
+    sum_scores_df = data_reader.read_data("sum_score_aurocs")
 
     # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
@@ -235,6 +260,7 @@ def main():
     compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
     compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
     what_improves_LD_df = what_improves_LD_df.rename(index=diagnosis_dict)
+    sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
     for col in what_improves_LD_df.columns:
@@ -245,6 +271,10 @@ def main():
         print(col)
         if not "AUC" in col and not "score" in col and not "Best subscale" in col:
             compare_orig_subsets_df[col] = compare_orig_subsets_df[col].astype('Int64')
+    for col in sum_scores_df.columns:
+        print(col)
+        if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
+            sum_scores_df[col] = sum_scores_df[col].astype('Int64')
 
 
     plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
@@ -254,6 +284,7 @@ def main():
     plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
     plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
     plot_what_improves_LD(what_improves_LD_df)
+    plot_sum_scores_vs_subscales(sum_scores_df)
 
 if __name__ == "__main__":
     main()

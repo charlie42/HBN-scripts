@@ -16,6 +16,7 @@ class DataReader:
         "compare_orig_vs_subsets": None,
         "compare_orig_vs_subsets_learning": None,
         "what_improves_LD": None,
+        "sum_score_aurocs": None,
     }
     PARAM_TO_PATH_MAPPING = {
         "multiple_assessments": "first_assessment_to_drop",
@@ -33,14 +34,13 @@ class DataReader:
         
     def read_data(self, data_type, params=[], file_filter="", filename=""):
 
-        self.params = [self.DATA_TYPE_TO_PATH_MAPPING[param] for param in params]
+        self.params = [self.PARAM_TO_PATH_MAPPING[param] for param in params]
         self.file_filter = self.FILE_FILTER_MAPPING[file_filter] if file_filter else ""
         self.data_type_path = self.DATA_TYPE_TO_PATH_MAPPING[data_type]
 
         if self.data_type_path != None:
             self.data_path = self._generate_data_path()
-
-        print("Reading data from: ", self.data_path)
+            print("Reading data from: ", self.data_path)
 
         if data_type == "item_lvl":
             return self._read_item_lvl()
@@ -51,22 +51,24 @@ class DataReader:
         elif data_type == "make_ds":
             return self._read_make_ds()
         elif data_type == "manual_scoring":
-            return self.read_manual_scoring()
+            return self._read_manual_scoring()
         elif data_type == "compare_orig_vs_subsets":
-            return self.read_compare_orig_vs_subsets()
+            return self._read_compare_orig_vs_subsets()
         elif data_type == "compare_orig_vs_subsets_learning":
-            return self.read_compare_orig_vs_subsets_learning()
+            return self._read_compare_orig_vs_subsets_learning()
         elif data_type == "what_improves_LD":
-            return self.read_what_improves_LD()
+            return self._read_what_improves_LD()
         elif data_type == "estimators_on_subsets":
             return self._read_estimators_on_subsets()
         elif data_type == "thresholds":
             return self._read_thresholds(filename)
+        elif data_type == "sum_score_aurocs":
+            return self._read_sum_score_aurocs()
         else:
             raise ValueError("data_type not recognized: ", data_type)
         
     def _read_item_lvl(self):
-        return pd.read_csv(self.data_path + "item_lvl.csv")
+        return pd.read_csv(self.data_path + "item_lvl_new.csv")
     
     def _read_eval_orig(self):
         return pd.read_csv(self.data_path + "performance_table_all_features_test_set.csv", index_col=0)
@@ -77,16 +79,16 @@ class DataReader:
     def _read_make_ds(self):
         return pd.read_csv(self.data_path + "dataset_stats.csv", index_col=0)
     
-    def read_manual_scoring(self):
+    def _read_manual_scoring(self):
         return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
     
-    def read_compare_orig_vs_subsets(self):
+    def _read_compare_orig_vs_subsets(self):
         return pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
     
-    def read_compare_orig_vs_subsets_learning(self):
+    def _read_compare_orig_vs_subsets_learning(self):
         return pd.read_csv("output/compare_orig_vs_subsets_learning.csv", index_col=0)
     
-    def read_what_improves_LD(self):
+    def _read_what_improves_LD(self):
         return pd.read_csv("output/what_improves_LD.csv", index_col=0)
     
     def _read_estimators_on_subsets(self):
@@ -95,9 +97,12 @@ class DataReader:
     def _read_thresholds(self, filename):
         return pd.read_csv(self.data_path + "sens-spec-on-subsets-test-set-optimal-nb-features/" + filename, index_col=0)
     
+    def _read_sum_score_aurocs(self):
+        return pd.read_csv("output/sum_score_aurocs.csv", index_col=0)
+    
     def _generate_data_path(self):
         return self._get_newest_non_empty_dir_in_dir(
-            self.base_path + self.data_type_path, 
+            self.BASE_PATH + self.data_type_path, 
             self.params, 
             self.file_filter)
         
@@ -129,5 +134,3 @@ class DataReader:
         
         newest_dir_name = non_empty_dir_names[timestamps.index(max(timestamps))]
         return path + newest_dir_name + "/"
-
-    def dir_names
