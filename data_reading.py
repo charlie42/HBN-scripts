@@ -3,36 +3,39 @@ import os, datetime
 from joblib import load
 
 class DataReader:
+    
+    BASE_PATH = "../diagnosis_predictor_data/"
+    DATA_TYPE_TO_PATH_MAPPING = {
+        "item_lvl": "data/create_datasets/",
+        "eval_orig": "reports/evaluate_original_models/",
+        "eval_subsets": "reports/evaluate_models_on_feature_subsets/",
+        "make_ds": "reports/create_data_reports/",
+        "estimators_on_subsets": "models/identify_feature_subsets/",
+        "thresholds": "reports/evaluate_models_on_feature_subsets/",
+        "manual_scoring": None,
+        "compare_orig_vs_subsets": None,
+        "compare_orig_vs_subsets_learning": None,
+        "what_improves_LD": None,
+    }
+    PARAM_TO_PATH_MAPPING = {
+        "multiple_assessments": "first_assessment_to_drop",
+        "all_assessments": "only_free_assessments__0",
+        "free_assessments": "only_free_assessments__1",
+        "only_learning_diags": "learning?__1",
+        "learning_and_consensus_diags": "learning?__0",
+    }
+    FILE_FILTER_MAPPING = {
+        "eval_orig_test_set_file": "performance_table_all_features_test_set.csv",
+    }
+
     def __init__(self):
-        self.base_path = "../diagnosis_predictor_data/"
-        self.data_type_to_path_mapping = {
-            "item_lvl": "data/create_datasets/",
-            "eval_orig": "reports/evaluate_original_models/",
-            "eval_subsets": "reports/evaluate_models_on_feature_subsets/",
-            "make_ds": "reports/create_data_reports/",
-            "estimators_on_subsets": "models/identify_feature_subsets/",
-            "thresholds": "reports/evaluate_models_on_feature_subsets/",
-            "manual_scoring": None,
-            "compare_orig_vs_subsets": None,
-            "compare_orig_vs_subsets_learning": None,
-            "what_improves_LD": None,
-        }
-        self.param_to_path_mapping = {
-            "multiple_assessments": "first_assessment_to_drop",
-            "all_assessments": "only_free_assessments__0",
-            "free_assessments": "only_free_assessments__1",
-            "only_learning_diags": "learning?__1",
-            "learning_and_consensus_diags": "learning?__0",
-        }
-        self.file_filter_mapping = {
-            "eval_orig_test_set_file": "performance_table_all_features_test_set.csv",
-        }                          
+        pass                  
         
     def read_data(self, data_type, params=[], file_filter="", filename=""):
 
-        self.params = [self.param_to_path_mapping[param] for param in params]
-        self.file_filter = self.file_filter_mapping[file_filter] if file_filter else ""
-        self.data_type_path = self.data_type_to_path_mapping[data_type]
+        self.params = [self.DATA_TYPE_TO_PATH_MAPPING[param] for param in params]
+        self.file_filter = self.FILE_FILTER_MAPPING[file_filter] if file_filter else ""
+        self.data_type_path = self.DATA_TYPE_TO_PATH_MAPPING[data_type]
 
         if self.data_type_path != None:
             self.data_path = self._generate_data_path()
@@ -127,4 +130,4 @@ class DataReader:
         newest_dir_name = non_empty_dir_names[timestamps.index(max(timestamps))]
         return path + newest_dir_name + "/"
 
-        
+    def dir_names
