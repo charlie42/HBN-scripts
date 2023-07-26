@@ -81,28 +81,40 @@ def plot_eval_orig(eval_orig_df, filename, plot_free_assessments=False, plot_cv=
     make_dir_if_not_exists(output_dir)
     plt.savefig(output_dir + filename, bbox_inches="tight", dpi=600)
 
-def plot_manual_vs_ml(eval_subsets_df):
+def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
     print("DEBUG", eval_subsets_df)
     eval_subsets_df = eval_subsets_df.sort_values(by="Best subscale score", ascending=False)
     
     plt.figure(figsize=(10, 8))
     plt.title("AUROC on test set for subsets of features")
     plt.plot(eval_subsets_df["Best subscale score"], label="AUROC of best subscale (+ # of items to reach it with ML)", marker="o", linestyle="", color="red")
-    plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="AUROC of ML model on # of items in best subscale (+ # of items in best subscale) (all assessments)", marker="o", linestyle="", color="blue")
+    plt.plot(eval_subsets_df["ML score at # of items of best subscale (all assessments)"], label="AUROC of ML model on # of items in best subscale (all assessments)", marker="o", linestyle="", color="blue")
+    if plot_free_assessments:
+        plt.plot(eval_subsets_df["ML score at # of items of best subscale (free assessments)"], label="AUROC of ML model on # of items in best subscale (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
     plt.xlabel("Diagnosis")
 
     # Print number of items next to AUC scores to the right of the markers
-    for i, row in eval_subsets_df.iterrows():
-        #plt.text(i, row["AUC all assessments"]+0.01, str(row["Optimal # of features all assessments"]), ha="left", va="center", size=8)
-        plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="center", va="bottom", size=8, color="blue")
-        plt.text(i, row["Best subscale score"]-0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="center", va="top", size=8, color="blue")
+    if not plot_free_assessments:
+        for i, row in eval_subsets_df.iterrows():
+            #plt.text(i, row["AUC all assessments"]+0.01, str(row["Optimal # of features all assessments"]), ha="left", va="center", size=8)
+            plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="center", va="bottom", size=8, color="blue")
+            plt.text(i, row["Best subscale score"]-0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="center", va="top", size=8, color="blue")
+    else:
+        for i, row in eval_subsets_df.iterrows():
+            plt.text(i, row["Best subscale score"]-0.01, str(row["# of items to reach best subscale (free assessments)"]), ha="center", va="top", size=8, color="blue", alpha=0.5)
     
     # Append best subscale name to the diag name on x axis
-    eval_subsets_df["Best subscale"] = eval_subsets_df["Best subscale"].str.split(",").str[1] # Remove prefix before , from subscale names
-    plt.xticks(range(len(eval_subsets_df.index)), eval_subsets_df.index + " (" + eval_subsets_df["Best subscale"] + ")", rotation=45, ha="right", size=8)
+    plt.xticks(range(len(eval_subsets_df.index)), (
+        eval_subsets_df.index +
+        " (" + 
+        eval_subsets_df['Best subscale'] + 
+        ", " + 
+        eval_subsets_df['# of items in best subscale'].astype(str) + 
+        ")"
+        ), rotation=45, ha="right", size=8)
     plt.xlabel("Diagnosis (best subscale)")
 
     plt.tight_layout()
@@ -213,12 +225,14 @@ def plot_what_improves_LD(check_what_improves_LD_df):
 
     plt.savefig("output/viz/what_improves_LD_cumulative.png", dpi=600)
 
-def plot_sum_scores_vs_subscales(sum_scores_df):
+def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
     # Plot AUC of sum scores vs AUC of best subscales, add number of items in best subscale to the right of the marker
     plt.figure(figsize=(10, 8))
     plt.title("AUROC of new screener vs best existing subscale")
     plt.plot(sum_scores_df["Best subscale score"], label="AUROC of best subscale", marker="o", linestyle="", color="blue")
     plt.plot(sum_scores_df["AUROC"], label="AUROC of new screener", marker="o", linestyle="", color="red")
+    if sum_scores_free_df is not None:
+        plt.plot(sum_scores_free_df["AUROC"], label="AUROC of new screener (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
@@ -248,6 +262,7 @@ def main():
     compare_orig_subsets_learning_df = data_reader.read_data("compare_orig_vs_subsets_learning")
     what_improves_LD_df = data_reader.read_data("what_improves_LD")
     sum_scores_df = data_reader.read_data("sum_score_aurocs")
+    sum_scores_free_df = data_reader.read_data("sum_score_aurocs_free")
 
     # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
@@ -261,6 +276,7 @@ def main():
     compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
     what_improves_LD_df = what_improves_LD_df.rename(index=diagnosis_dict)
     sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
+    sum_scores_free_df = sum_scores_free_df.rename(index=diagnosis_dict)
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
     for col in what_improves_LD_df.columns:
@@ -275,16 +291,21 @@ def main():
         print(col)
         if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
             sum_scores_df[col] = sum_scores_df[col].astype('Int64')
-
+    for col in sum_scores_free_df.columns:
+        print(col)
+        if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
+            sum_scores_free_df[col] = sum_scores_free_df[col].astype('Int64')
 
     plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
     plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=False)
     plot_manual_vs_ml(compare_orig_subsets_df)
+    plot_manual_vs_ml(compare_orig_subsets_df, plot_free_assessments=True)
     plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
     plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
     plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
     plot_what_improves_LD(what_improves_LD_df)
     plot_sum_scores_vs_subscales(sum_scores_df)
+    plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
 
 if __name__ == "__main__":
     main()

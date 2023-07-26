@@ -38,6 +38,8 @@ def make_df_to_plot_eval_subsets(df_manual, df, df_free = None):
     if "(test)" not in df.index[0]:
         df = df.merge(df_manual, left_index=True, right_index=True).sort_values(by="Best subscale score", ascending=False)
 
+    print("DEBUG", df.columns)
+
     return df
 
 def make_df_ds_stats(df, df_free = None):
@@ -77,6 +79,8 @@ def make_dfs(data_reader):
     
     # Manual scoring
     dfs["manual_scoring"] = data_reader.read_data(data_type="manual_scoring")
+
+    print("DEBUG", dfs)
 
     return dfs
 

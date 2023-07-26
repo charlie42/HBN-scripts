@@ -17,6 +17,7 @@ class DataReader:
         "compare_orig_vs_subsets_learning": None,
         "what_improves_LD": None,
         "sum_score_aurocs": None,
+        "sum_score_aurocs_free": None,
     }
     PARAM_TO_PATH_MAPPING = {
         "multiple_assessments": "first_assessment_to_drop",
@@ -64,6 +65,8 @@ class DataReader:
             return self._read_thresholds(filename)
         elif data_type == "sum_score_aurocs":
             return self._read_sum_score_aurocs()
+        elif data_type == "sum_score_aurocs_free":
+            return self._read_sum_score_aurocs(free=True)
         else:
             raise ValueError("data_type not recognized: ", data_type)
         
@@ -97,8 +100,10 @@ class DataReader:
     def _read_thresholds(self, filename):
         return pd.read_csv(self.data_path + "sens-spec-on-subsets-test-set-optimal-nb-features/" + filename, index_col=0)
     
-    def _read_sum_score_aurocs(self):
-        return pd.read_csv("output/sum_score_aurocs.csv", index_col=0)
+    def _read_sum_score_aurocs(self, free=False):
+        return pd.read_csv(
+            "output/sum_score_aurocs_multiple_assessments_free_assessments_learning_and_consensus_diags.csv", index_col=0) if free else pd.read_csv(
+            "output/sum_score_aurocs_multiple_assessments_all_assessments_learning_and_consensus_diags.csv", index_col=0)
     
     def _generate_data_path(self):
         return self._get_newest_non_empty_dir_in_dir(

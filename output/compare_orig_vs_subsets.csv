@@ -1,17 +1,19 @@
-,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments,AUC all features free assessments,AUC CV all features free assessments,AUC all features healthy controls free assessments,# of Positive Examples free assessments,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),# of items to reach best subscale (all assessments),# rows full dataset all assessments,# input features all assessments,# rows full dataset free assessments,# input features free assessments
-Diag.Autism Spectrum Disorder,0.849,0.881,0.924,184.0,0.901,0.842,0.971,186.0,0.867,12,0.867,8,"ASSQ,ASSQ_Total",0.814,27,0.859,3.0,2323,829,2335,587
-Diag.Oppositional Defiant Disorder,0.858,0.855,0.929,234.0,0.807,0.876,0.913,235.0,0.839,6,0.784,13,"CBCL,CBCL_Ext_T",0.827,35,0.852,2.0,2323,829,2335,587
-Diag.Social Anxiety (Social Phobia),0.735,0.841,0.738,185.0,0.809,0.833,0.83,187.0,0.684,8,0.774,7,"SCARED_P,SCARED_P_SC",0.779,7,0.699,,2323,829,2335,587
-Diag.Generalized Anxiety Disorder,0.859,0.835,0.947,266.0,0.821,0.841,0.884,267.0,0.826,9,0.832,11,"SCARED_P,SCARED_P_GD",0.784,9,0.826,2.0,2323,829,2335,587
-Diag.ADHD-Combined Type,0.816,0.835,0.955,429.0,0.821,0.832,0.949,431.0,0.808,7,0.82,10,"SWAN,SWAN_HY",0.806,9,0.809,6.0,2323,829,2335,587
-Diag.Any Diag,0.751,0.821,0.751,2142.0,0.757,0.818,0.757,2154.0,0.794,12,0.743,10,"CBCL,CBCL_AP_T",0.766,10,0.771,10.0,2323,829,2335,587
-Diag.Specific Learning Disorder with Impairment in Reading (test),0.777,0.809,0.758,311.0,0.785,0.77,0.828,312.0,0.744,11,0.736,21,"APQ_SR,APQ_SR_PP",0.581,6,0.748,1.0,2323,829,2335,587
-Diag.No Diagnosis Given,0.809,0.809,,181.0,0.792,0.799,,181.0,0.792,10,0.759,17,"APQ_P,APQ_P_INV",0.522,10,0.792,1.0,2323,829,2335,587
-Diag.Borderline Intellectual Functioning (test),0.823,0.764,0.865,385.0,0.767,0.762,0.899,390.0,0.765,7,0.763,19,"SRS,SRS_COG_T",0.624,12,0.775,1.0,2323,829,2335,587
-Diag.ADHD-Inattentive Type,0.742,0.732,0.844,466.0,0.729,0.724,0.819,469.0,0.741,12,0.716,15,"SWAN,SWAN_IN",0.622,9,0.731,2.0,2323,829,2335,587
-Diag.Specific Learning Disorder with Impairment in Reading,0.73,0.726,0.704,300.0,0.642,0.697,0.633,301.0,0.734,22,0.647,20,"APQ_SR,APQ_SR_INV_M",0.554,10,0.702,1.0,2323,829,2335,587
-Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.726,0.721,0.856,391.0,0.726,0.69,0.814,394.0,0.726,27,0.761,15,"SRS,SRS_COG_T",0.575,12,0.704,1.0,2323,829,2335,587
-Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.722,0.715,0.78,393.0,0.726,0.67,0.806,397.0,0.711,16,0.726,27,"SRS,SRS_COG_T",0.552,12,0.723,1.0,2323,829,2335,587
-Diag.Specific Phobia,0.801,0.697,0.891,164.0,0.711,0.74,0.779,166.0,0.795,11,0.717,8,"CBCL,CBCL_AD_T",0.655,13,0.8,1.0,2323,829,2335,587
-Diag.Processing Speed Deficit (test),0.758,0.688,0.895,546.0,0.729,0.733,0.787,551.0,0.73,16,0.709,22,"SCQ,SCQ_Total",0.606,40,0.759,2.0,2323,829,2335,587
-Diag.Language Disorder,0.811,0.684,0.841,166.0,0.775,0.71,0.843,167.0,0.768,21,0.777,16,"APQ_P,APQ_P_PP",0.599,6,0.718,1.0,2323,829,2335,587
+,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments,AUC all features free assessments,AUC CV all features free assessments,AUC all features healthy controls free assessments,# of Positive Examples free assessments,AUC optimal features all assessments,Optimal # of features all assessments,AUC optimal features free assessments,Optimal # of features free assessments,Best subscale,Best subscale score,# of items in best subscale,ML score at # of items of best subscale (all assessments),# of items to reach best subscale (all assessments),ML score at # of items of best subscale (free assessments),# of items to reach best subscale (free assessments),# rows full dataset all assessments,# input features all assessments,# rows full dataset free assessments,# input features free assessments
+Diag.Autism Spectrum Disorder,0.86,0.877,0.956,184.0,0.904,0.834,0.958,186.0,0.867,12,0.895,7,ASSQ_Total,0.814,27,0.859,3.0,0.903,3.0,2323,829,2335,585
+Diag.Oppositional Defiant Disorder,0.841,0.843,0.957,234.0,0.807,0.877,0.928,235.0,0.839,6,0.798,6,CBCL_Ext_T,0.827,35,0.852,2.0,0.81,,2323,829,2335,585
+Diag.Social Anxiety (Social Phobia),0.721,0.823,0.726,185.0,0.782,0.838,0.768,187.0,0.684,8,0.777,15,SCARED_P_SC,0.779,7,0.699,,0.775,8.0,2323,829,2335,585
+Diag.Generalized Anxiety Disorder,0.871,0.819,0.935,266.0,0.821,0.841,0.865,267.0,0.826,9,0.799,16,SCARED_P_GD,0.784,9,0.826,2.0,0.81,5.0,2323,829,2335,585
+Diag.Any Diag,0.795,0.81,0.795,2142.0,0.772,0.817,0.772,2154.0,0.794,12,0.74,7,CBCL_AP_T,0.766,10,0.771,10.0,0.776,10.0,2323,829,2335,585
+Diag.ADHD-Combined Type,0.809,0.807,0.939,429.0,0.828,0.836,0.948,431.0,0.808,7,0.814,8,SWAN_HY,0.806,9,0.809,6.0,0.819,4.0,2323,829,2335,585
+Diag.Specific Learning Disorder with Impairment in Reading (test),0.799,0.791,0.809,311.0,0.715,0.754,0.77,312.0,0.744,11,0.715,4,APQ_SR_PP,0.581,6,0.748,1.0,0.714,2.0,2323,829,2335,585
+Diag.No Diagnosis Given,0.81,0.787,,181.0,0.789,0.802,,181.0,0.792,10,0.759,6,APQ_P_INV,0.522,10,0.792,1.0,0.756,1.0,2323,829,2335,585
+Diag.Borderline Intellectual Functioning (test),0.834,0.725,0.923,385.0,0.777,0.761,0.903,390.0,0.765,7,0.794,20,SRS_COG_T,0.624,12,0.775,1.0,0.773,1.0,2323,829,2335,585
+Diag.NVLD (test),0.596,0.721,0.785,292.0,0.692,0.699,0.826,295.0,0.615,10,0.695,4,SRS_COG_T,0.654,12,0.617,,0.693,2.0,2323,829,2335,585
+Diag.ADHD-Inattentive Type,0.741,0.721,0.839,466.0,0.738,0.727,0.851,469.0,0.741,12,0.724,16,SWAN_IN,0.622,9,0.731,2.0,0.732,1.0,2323,829,2335,585
+Diag.NVLD without reading condition (test),0.755,0.717,0.866,446.0,0.751,0.751,0.857,450.0,0.76,19,0.722,8,SRS_COG_T,0.663,12,0.765,2.0,0.729,3.0,2323,829,2335,585
+Diag.Specific Learning Disorder with Impairment in Reading,0.686,0.696,0.531,300.0,0.679,0.732,0.633,301.0,0.734,22,0.65,7,APQ_SR_INV_M,0.554,10,0.702,1.0,0.67,2.0,2323,829,2335,585
+Diag.Language Disorder,0.768,0.695,0.836,166.0,0.772,0.712,0.841,167.0,0.768,21,0.79,14,APQ_P_PP,0.599,6,0.718,1.0,0.741,1.0,2323,829,2335,585
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.718,0.67,0.788,393.0,0.709,0.684,0.768,397.0,0.711,16,0.69,18,SRS_COG_T,0.552,12,0.723,1.0,0.688,1.0,2323,829,2335,585
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.707,0.648,0.838,391.0,0.758,0.718,0.843,394.0,0.726,27,0.766,4,SRS_COG_T,0.575,12,0.704,1.0,0.753,1.0,2323,829,2335,585
+Diag.Processing Speed Deficit (test),0.751,0.635,0.852,546.0,0.743,0.725,0.793,551.0,0.73,16,0.718,15,SCQ_Total,0.606,40,0.759,2.0,0.737,1.0,2323,829,2335,585
+Diag.Specific Phobia,0.656,0.601,0.717,164.0,0.707,0.741,0.753,166.0,0.795,11,0.684,7,CBCL_AD_T,0.655,13,0.8,1.0,0.7,2.0,2323,829,2335,585

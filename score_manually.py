@@ -146,10 +146,12 @@ def find_best_manual_score_for_diag(all_manual_scores_df, diags):
     return best_manual_scores_df
 
 # Compare with ML scores
-def read_ml_scores():
+def read_ml_scores(free=False):
     path = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
+    free_param = "only_free_assessments__1" if free else "only_free_assessments__0"
+    
     path_all_assessments = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop",
-                                                                  "only_free_assessments__0",
+                                                                  free_param,
                                                                   "learning?__0",
                                                                   ])
     print("Reading report from: ", path_all_assessments)
@@ -157,7 +159,7 @@ def read_ml_scores():
 
     return ml_scores_all_assessments
 
-def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, diags):
+def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags):
     ml_scores_at_num_features = {}
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
@@ -168,15 +170,19 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         print("DEBUG: ", number_of_items_in_best_manual_subscale)
         number_of_items_to_check = number_of_items_in_best_manual_subscale if number_of_items_in_best_manual_subscale <= 27 else 27
         ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_to_check][diag_col].values[0]
+        ml_score_at_number_of_items_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments["Number of features"] == number_of_items_to_check][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
         number_of_items_for_ml_score_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments[diag_col] >= best_manual_score]["Number of features"].min()
+        number_of_items_for_ml_score_of_best_manual_subscale_fee_assessments = ml_scores_all_assessments[ml_scores_free_assessments[diag_col] >= best_manual_score]["Number of features"].min()
 
         ml_scores_at_num_features[diag_col] = [best_manual_score_subscale_short, 
                                                best_manual_score, 
                                                number_of_items_in_best_manual_subscale, 
                                                ml_score_at_number_of_items_of_best_manual_subscale_all_assessments, 
                                                number_of_items_for_ml_score_of_best_manual_subscale_all_assessments,
+                                               ml_score_at_number_of_items_of_best_manual_subscale_free_assessments,
+                                               number_of_items_for_ml_score_of_best_manual_subscale_fee_assessments
                                                ]
 
     ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=[
@@ -185,6 +191,8 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         "# of items in best subscale", 
         "ML score at # of items of best subscale (all assessments)",
         "# of items to reach best subscale (all assessments)",
+        "ML score at # of items of best subscale (free assessments)",
+        "# of items to reach best subscale (free assessments)",
         ]).sort_values(by="Best subscale score", ascending=False)
     return ml_scores_at_num_features_df
 
@@ -201,8 +209,9 @@ def main():
 
     best_manual_scores_df = find_best_manual_score_for_diag(all_manual_scores_df, diags)
 
-    ml_scores_all_assessments = read_ml_scores()
-    comparison_table = compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, diags)
+    ml_scores_all_assessments = read_ml_scores(free=False)
+    ml_scores_free_assessments = read_ml_scores(free=True)
+    comparison_table = compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags)
     comparison_table.to_csv(output_dir + "manual_subsale_scores_vs_ml.csv", float_format='%.3f')
 
 if __name__ == "__main__":

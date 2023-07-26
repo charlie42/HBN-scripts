@@ -65,7 +65,7 @@ class SumScorer():
         aurocs_df = aurocs_df.sort_values(by="Best subscale score", ascending=False)
 
         # Save to csv
-        aurocs_df.to_csv("output/sum_score_aurocs.csv")
+        aurocs_df.to_csv(f"output/sum_score_aurocs_{'_'.join(self.params)}.csv")
 
     def _make_sum_score(self, coef_df):
         # Sum up responses from self.item_lvl to items with a positive coefficient, and subtract responses from items with a negative coefficient, 
@@ -76,6 +76,8 @@ class SumScorer():
         # Drop items that have range of values > 6
         to_add_up = [item for item in to_add_up if self.item_lvl[item].max() - self.item_lvl[item].min() <= 6]
         to_subtract = [item for item in to_subtract if self.item_lvl[item].max() - self.item_lvl[item].min() <= 6]
+
+        print("to_add_up", to_add_up)
 
         sum_score = self.item_lvl[to_add_up].sum(axis=1) - self.item_lvl[to_subtract].sum(axis=1)
         return sum_score
@@ -129,4 +131,7 @@ class SumScorer():
 
 if __name__ == "__main__":
     sum_scorer = SumScorer(params = ["multiple_assessments", "all_assessments", "learning_and_consensus_diags"])
+    sum_scorer.make_sum_scores()
+
+    sum_scorer = SumScorer(params = ["multiple_assessments", "free_assessments", "learning_and_consensus_diags"])
     sum_scorer.make_sum_scores()
