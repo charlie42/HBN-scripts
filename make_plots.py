@@ -26,12 +26,23 @@ diagnosis_dict = {
         'Diag.Specific Learning Disorder with Impairment in Reading (test)': 'SLD-Reading (test)',
         'Diag.Specific Learning Disorder with Impairment in Written Expression (test)': 'SLD-Writing (test)',
         'Diag.Other Specified Anxiety Disorder': 'Other Anxiety',
-        'Diag.Processing Speed Deficit (test)': 'LD-PS',
-        'Diag.Borderline Intellectual Functioning (test)': 'LD-BIF (test)',
-        'Diag.Intellectual Disability-Borderline (test)': 'LD-BIF (test)',
-        'Diag.NVLD (test)': 'NVLD',
-        'Diag.NVLD without reading condition (test)': 'NVLD no read',
+        'Diag.Processing Speed Deficit (test)': 'PS (test)',
+        'Diag.Borderline Intellectual Functioning (test)': 'BIF (test)',
+        'Diag.Intellectual Disability-Borderline (test)': 'BIF (test)',
+        'Diag.NVLD (test)': 'NVLD (test)',
+        'Diag.NVLD without reading condition (test)': 'NVLD no read (test)',
     }
+
+# Get only the diagnoses with (test) in the name
+test_diagnosis_list = [diag for diag in diagnosis_dict.keys() if "(test)" in diag]
+
+def get_tick_ids_for_diagnoses_with_LD_in_name(diagnoses):
+    # Get the xtick ids for diagnoses with "test" in the name
+    tick_ids = []
+    for i, diag in enumerate(diagnoses):
+        if "LD" in diag:
+            tick_ids.append(i)
+    return tick_ids
 
 def make_df_to_plot_thresholds(dir_eval_subsets_all, filename):
 
@@ -51,6 +62,12 @@ def plot_eval_orig(eval_orig_df, filename, plot_free_assessments=False, plot_cv=
         plt.plot(eval_orig_df["AUC CV all features free assessments"], label="AUROC CV free assessments", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.plot(eval_orig_df["AUC all features healthy controls all assessments"], label="AUROC on test set healthy controls all assessments", marker="o", linestyle="", color="lightcoral")
     plt.xticks(rotation=45, ha="right", size=8)
+
+    # Make xticks for the diagnoses with (test) in the name bold
+    tick_ids = get_tick_ids_for_diagnoses_with_LD_in_name(eval_orig_df.index)
+    for tick_id in tick_ids:
+        plt.gca().get_xticklabels()[tick_id].set_weight("bold")
+
     plt.legend(loc="upper right")
     plt.ylim([0.5, 1.0])
     plt.ylabel("AUROC")
@@ -82,7 +99,6 @@ def plot_eval_orig(eval_orig_df, filename, plot_free_assessments=False, plot_cv=
     plt.savefig(output_dir + filename, bbox_inches="tight", dpi=600)
 
 def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
-    print("DEBUG", eval_subsets_df)
     eval_subsets_df = eval_subsets_df.sort_values(by="Best subscale score", ascending=False)
     
     plt.figure(figsize=(10, 8))
@@ -92,6 +108,12 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
     if plot_free_assessments:
         plt.plot(eval_subsets_df["ML score at # of items of best subscale (free assessments)"], label="AUROC of ML model on # of items in best subscale (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
+
+    # Make xticks for the diagnoses with (test) in the name bold
+    tick_ids = get_tick_ids_for_diagnoses_with_LD_in_name(eval_subsets_df.index)
+    for tick_id in tick_ids:
+        plt.gca().get_xticklabels()[tick_id].set_weight("bold")
+
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
     plt.xlabel("Diagnosis")
@@ -119,7 +141,10 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
 
     plt.tight_layout()
     
-    plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
+    if plot_free_assessments:
+        plt.savefig("output/viz/ROC_AUC_subsets_free.png", bbox_inches="tight", dpi=600)
+    else:
+        plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
 def plot_opt_num_features(opt_vs_all_df, filename, plot_free_assessments=False):
     opt_vs_all_df = opt_vs_all_df.sort_values(by="AUC optimal features all assessments", ascending=False)
@@ -139,6 +164,13 @@ def plot_opt_num_features(opt_vs_all_df, filename, plot_free_assessments=False):
     if plot_free_assessments:
         plt.plot(opt_vs_all_df["AUC optimal features free assessments"], label="AUC on optimal # of items (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
+
+    # Make xticks for the diagnoses with (test) in the name bold
+    tick_ids = get_tick_ids_for_diagnoses_with_LD_in_name(opt_vs_all_df.index)
+    for tick_id in tick_ids:
+        plt.gca().get_xticklabels()[tick_id].set_weight("bold")
+
+
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
     plt.xlabel("Diagnosis")
@@ -161,12 +193,13 @@ def plot_thresholds(thresholds_df, diag):
     # Plot sensitivity, specificity, PPV, and NPV for each threshold
     plt.figure(figsize=(10, 8))
     plt.title(f"Sensitivity, specificity, PPV, and NPV for each threshold for {diag}, optimal # of features, all assessments")
-    plt.plot(thresholds_df.index, thresholds_df["Sensitivity"], label="Sensitivity", marker="o", linestyle="-", color="blue")
-    plt.plot(thresholds_df.index, thresholds_df["Specificity"], label="Specificity", marker="o", linestyle="-", color="red")
-    plt.plot(thresholds_df.index, thresholds_df["PPV"], label="PPV", marker="o", linestyle="-", color="green")
-    plt.plot(thresholds_df.index, thresholds_df["NPV"], label="NPV", marker="o", linestyle="-", color="orange")
+    plt.plot(thresholds_df.index, thresholds_df["Sensitivity"], label="Sensitivity", marker="o", linestyle="", color="blue")
+    plt.plot(thresholds_df.index, thresholds_df["Specificity"], label="Specificity", marker="o", linestyle="", color="red")
+    plt.plot(thresholds_df.index, thresholds_df["PPV"], label="PPV", marker="o", linestyle="", color="green")
+    plt.plot(thresholds_df.index, thresholds_df["NPV"], label="NPV", marker="o", linestyle="", color="orange")
     plt.xlim(thresholds_df.index[0], thresholds_df.index[-1])
     plt.xticks(thresholds_df.index, rotation=45, ha="right", size=8)
+
     plt.legend(loc="upper right")
     plt.ylabel("Sensitivity, specificity, PPV, and NPV")
     plt.xlabel("Threshold")
@@ -174,56 +207,6 @@ def plot_thresholds(thresholds_df, diag):
     plt.tight_layout()
 
     plt.savefig("output/viz/sensitivity_specificity_PPV_NPV.png", bbox_inches="tight", dpi=600)
-
-def plot_what_improves_LD(check_what_improves_LD_df):
-
-    check_what_improves_LD_df = check_what_improves_LD_df.sort_values("ROC AUC Mean CV_nothing", ascending=False)
-
-    # First plot: one by one
-
-    # Plot ROC AUC Mean CV, x=diag (index), y=ROC AUC Mean CV, color=_nothing or _nih or _conners or _newdiag
-    plt.figure(figsize=(10, 8))
-    plt.title("AUROC Mean CV for each LD diagnosis, all features, all assessments")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_nothing"], label="AUROC CV - Nothing (+ positive cases/total cases)", marker="D", color="blue", markersize=10, linestyle="")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_nih"], label="AUROC CV - NIH (+ positive cases/total cases)", marker="o", color="red", markersize=10, linestyle="")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_conners"], label="AUROC CV - Conners (+ positive cases/total cases)", marker="o", color="green", markersize=10, linestyle="")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag"], label="AUROC CV - Test-based (+ positive cases/total cases)", marker="o", color="orange", markersize=10, linestyle="")
-    plt.xlim(check_what_improves_LD_df.index[0], check_what_improves_LD_df.index[-1])
-    plt.ylim(0.5, 1)
-    plt.xticks(check_what_improves_LD_df.index, rotation=45, ha="right", size=8)
-    plt.legend(loc="upper right")
-    plt.ylabel("AUROC")
-    plt.xlabel("Diagnosis")
-
-    # Add text labels for each point with # of positive examples and Total examples
-    check_what_improves_LD_df_reset_index = check_what_improves_LD_df.reset_index()
-    for i, row in check_what_improves_LD_df_reset_index.iterrows():
-        plt.text(i+0.1, row["ROC AUC Mean CV_nothing"]-0.0005, str(row["# of positive examples_nothing"]) + "/" + str(row["Total examples_nothing"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_nih"]-0.0005, str(row["# of positive examples_nih"]) + "/" + str(row["Total examples_nih"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_conners"]-0.0005, str(row["# of positive examples_conners"]) + "/" + str(row["Total examples_conners"]), ha="left", va="center", fontsize=8)
-        plt.text(i+0.1, row["ROC AUC Mean CV_newdiag"]-0.0005, str(row["# of positive examples_newdiag"]) + "/" + str(row["Total examples_newdiag"]), ha="left", va="center", fontsize=8)
-    plt.tight_layout()
-    
-    plt.savefig("output/viz/what_improves_LD_one_by_one.png", dpi=600)
-
-    # Second plot: cummulative
-
-    # Plot ROC AUC Mean CV, x=diag (index), y=ROC AUC Mean CV, color=_nothing or _nih or _conners or _newdiag
-    plt.figure(figsize=(10, 8))
-    plt.title("AUROC Mean CV for each LD diagnosis, all features, all assessments")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag"], label="AUROC CV - Test-based (+ positive cases/total cases)", marker="D", color="blue", markersize=10, linestyle="")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag_conners"], label="AUROC CV - Test-based and Conners (+ positive cases/total cases)", marker="o", color="green", markersize=10, linestyle="")
-    plt.plot(check_what_improves_LD_df.index, check_what_improves_LD_df["ROC AUC Mean CV_newdiag_conners_nih"], label="AUROC CV - Test-based and and Conners and NIH (+ positive cases/total cases)", marker="o", color="red", markersize=10, linestyle="")
-    plt.xlim(check_what_improves_LD_df.index[0], check_what_improves_LD_df.index[-1])
-    plt.ylim(0.5, 1)
-    plt.xticks(check_what_improves_LD_df.index, rotation=45, ha="right", size=8)
-    plt.legend(loc="upper right")
-    plt.ylabel("AUROC")
-    plt.xlabel("Diagnosis")
-    
-    plt.tight_layout()
-
-    plt.savefig("output/viz/what_improves_LD_cumulative.png", dpi=600)
 
 def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
     # Plot AUC of sum scores vs AUC of best subscales, add number of items in best subscale to the right of the marker
@@ -234,6 +217,12 @@ def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
     if sum_scores_free_df is not None:
         plt.plot(sum_scores_free_df["AUROC"], label="AUROC of new screener (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
+
+    # Make xticks for the diagnoses with (test) in the name bold
+    tick_ids = get_tick_ids_for_diagnoses_with_LD_in_name(sum_scores_df.index)
+    for tick_id in tick_ids:
+        plt.gca().get_xticklabels()[tick_id].set_weight("bold")
+
     plt.legend(loc="upper right")
     plt.ylabel("AUROC")
     plt.xlabel("Diagnosis")
@@ -251,7 +240,33 @@ def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
         
     plt.tight_layout()
 
-    plt.savefig("output/viz/sum_scores.png", bbox_inches="tight", dpi=600)
+    if sum_scores_free_df is not None:
+        plt.savefig("output/viz/sum_scores_free.png", bbox_inches="tight", dpi=600)
+    else:
+        plt.savefig("output/viz/sum_scores.png", bbox_inches="tight", dpi=600)
+
+def plot_learning_improvements(learning_improvement_df):
+    # Plot AUC from "original", "more assessments", "NIH"
+    df = learning_improvement_df
+    plt.figure(figsize=(10, 8))
+    plt.title("AUROC of original models, models with more assessments, and models with more assessments and NIH")
+    plt.plot(df["original"], label="Original", marker="o", linestyle="", color="blue")
+    plt.plot(df["more assessments"], label="More assessments", marker="o", linestyle="", color="red")
+    plt.plot(df["NIH"], label="More assessments and NIH", marker="o", linestyle="", color="green")
+    plt.xticks(rotation=45, ha="right", size=8)
+
+    # Make xticks for the diagnoses with (test) in the name bold
+    tick_ids = get_tick_ids_for_diagnoses_with_LD_in_name(df.index)
+    for tick_id in tick_ids:
+        plt.gca().get_xticklabels()[tick_id].set_weight("bold")
+
+    plt.legend(loc="upper right")
+    plt.ylabel("AUROC")
+    plt.xlabel("Diagnosis")
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/learning_improvements.png", bbox_inches="tight", dpi=600)
 
 def main():
 
@@ -260,9 +275,9 @@ def main():
 
     compare_orig_subsets_df = data_reader.read_data("compare_orig_vs_subsets")
     compare_orig_subsets_learning_df = data_reader.read_data("compare_orig_vs_subsets_learning")
-    what_improves_LD_df = data_reader.read_data("what_improves_LD")
     sum_scores_df = data_reader.read_data("sum_score_aurocs")
     sum_scores_free_df = data_reader.read_data("sum_score_aurocs_free")
+    learning_improvement_df = data_reader.read_data("learning_improvements")
 
     # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
@@ -274,15 +289,11 @@ def main():
     # Rephrase diags to shorter names
     compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
     compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
-    what_improves_LD_df = what_improves_LD_df.rename(index=diagnosis_dict)
     sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
     sum_scores_free_df = sum_scores_free_df.rename(index=diagnosis_dict)
+    learning_improvement_df = learning_improvement_df.rename(index=diagnosis_dict)
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
-    for col in what_improves_LD_df.columns:
-        print(col)
-        if not "AUC" in col and not "score" in col and not "Best subscale" in col:
-            what_improves_LD_df[col] = what_improves_LD_df[col].astype('Int64')
     for col in compare_orig_subsets_df.columns:
         print(col)
         if not "AUC" in col and not "score" in col and not "Best subscale" in col:
@@ -303,9 +314,9 @@ def main():
     plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
     plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
     plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
-    plot_what_improves_LD(what_improves_LD_df)
     plot_sum_scores_vs_subscales(sum_scores_df)
     plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
+    plot_learning_improvements(learning_improvement_df)
 
 if __name__ == "__main__":
     main()

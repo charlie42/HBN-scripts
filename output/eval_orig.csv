@@ -1,19 +1,17 @@
 Diag,AUC all features all assessments,AUC CV all features all assessments,AUC all features healthy controls all assessments,# of Positive Examples all assessments,AUC all features free assessments,AUC CV all features free assessments,AUC all features healthy controls free assessments,# of Positive Examples free assessments
-Diag.Autism Spectrum Disorder,0.86,0.877,0.956,184.0,0.904,0.834,0.958,186.0
-Diag.Oppositional Defiant Disorder,0.841,0.843,0.957,234.0,0.807,0.877,0.928,235.0
-Diag.Social Anxiety (Social Phobia),0.721,0.823,0.726,185.0,0.782,0.838,0.768,187.0
-Diag.Generalized Anxiety Disorder,0.871,0.819,0.935,266.0,0.821,0.841,0.865,267.0
-Diag.Any Diag,0.795,0.81,0.795,2142.0,0.772,0.817,0.772,2154.0
-Diag.ADHD-Combined Type,0.809,0.807,0.939,429.0,0.828,0.836,0.948,431.0
-Diag.Specific Learning Disorder with Impairment in Reading (test),0.799,0.791,0.809,311.0,0.715,0.754,0.77,312.0
-Diag.No Diagnosis Given,0.81,0.787,,181.0,0.789,0.802,,181.0
-Diag.Borderline Intellectual Functioning (test),0.834,0.725,0.923,385.0,0.777,0.761,0.903,390.0
-Diag.NVLD (test),0.596,0.721,0.785,292.0,0.692,0.699,0.826,295.0
-Diag.ADHD-Inattentive Type,0.741,0.721,0.839,466.0,0.738,0.727,0.851,469.0
-Diag.NVLD without reading condition (test),0.755,0.717,0.866,446.0,0.751,0.751,0.857,450.0
-Diag.Specific Learning Disorder with Impairment in Reading,0.686,0.696,0.531,300.0,0.679,0.732,0.633,301.0
-Diag.Language Disorder,0.768,0.695,0.836,166.0,0.772,0.712,0.841,167.0
-Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.718,0.67,0.788,393.0,0.709,0.684,0.768,397.0
-Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.707,0.648,0.838,391.0,0.758,0.718,0.843,394.0
-Diag.Processing Speed Deficit (test),0.751,0.635,0.852,546.0,0.743,0.725,0.793,551.0
-Diag.Specific Phobia,0.656,0.601,0.717,164.0,0.707,0.741,0.753,166.0
+Diag.Oppositional Defiant Disorder,0.801,0.885,0.861,160.0,0.807,0.877,0.928,235.0
+Diag.Autism Spectrum Disorder,0.921,0.882,0.985,136.0,0.904,0.834,0.958,186.0
+Diag.Specific Learning Disorder with Impairment in Reading (test),0.861,0.87,0.93,232.0,0.715,0.754,0.77,312.0
+Diag.Generalized Anxiety Disorder,0.795,0.828,0.855,227.0,0.821,0.841,0.865,267.0
+Diag.ADHD-Combined Type,0.849,0.823,0.954,295.0,0.828,0.836,0.948,431.0
+Diag.Any Diag,0.761,0.813,0.761,1633.0,0.772,0.817,0.772,2154.0
+Diag.Specific Learning Disorder with Impairment in Reading,0.836,0.81,0.848,214.0,0.679,0.732,0.633,301.0
+Diag.Social Anxiety (Social Phobia),0.818,0.807,0.886,154.0,0.782,0.838,0.768,187.0
+Diag.Borderline Intellectual Functioning (test),0.824,0.797,0.939,325.0,0.777,0.761,0.903,390.0
+Diag.No Diagnosis Given,0.802,0.789,,135.0,0.789,0.802,,181.0
+Diag.NVLD without reading condition (test),0.743,0.777,0.915,378.0,0.751,0.751,0.857,450.0
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.759,0.775,0.835,300.0,0.709,0.684,0.768,397.0
+Diag.ADHD-Inattentive Type,0.702,0.734,0.83,367.0,0.738,0.727,0.851,469.0
+Diag.NVLD (test),0.745,0.717,0.838,250.0,0.692,0.699,0.826,295.0
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.719,0.712,0.861,331.0,0.758,0.718,0.843,394.0
+Diag.Processing Speed Deficit (test),0.768,0.703,0.888,431.0,0.743,0.725,0.793,551.0

@@ -34,11 +34,8 @@ def make_df_to_plot_eval_subsets(df_manual, df, df_free = None):
         df = df.merge(df_free, left_index=True, right_index=True)
 
     # Add manual scoring if consensus diag (not learning)
-    print("DEBUG", df.index, df.index[0])
     if "(test)" not in df.index[0]:
         df = df.merge(df_manual, left_index=True, right_index=True).sort_values(by="Best subscale score", ascending=False)
-
-    print("DEBUG", df.columns)
 
     return df
 
@@ -55,32 +52,52 @@ def make_df_ds_stats(df, df_free = None):
     
     return df
 
+def find_max_n_features(df_all):
+    # Find max number of features (max in index)
+    return df_all.index.max()
+
+def make_df_learning_improvements(df_all, df_learning_NIH, df_learning_no_NIH, all_diags = True):
+    # Get row with index 27 for each diag (columns are diag names) for all dataframes, merge into one, index = diags, columns = "original (df_all), more assessments (df_learning_no_NIH), NIH (df_learning_NIH)"
+    max_n_features = find_max_n_features(df_all)
+
+    df_all = df_all.loc[max_n_features]
+    df_learning_NIH = df_learning_NIH.loc[max_n_features]
+    df_learning_no_NIH = df_learning_no_NIH.loc[max_n_features]
+
+    df = pd.concat([df_all, df_learning_no_NIH, df_learning_NIH], axis=1)
+    df.columns = ["original", "more assessments", "NIH"]
+    df = df.sort_values(by="original", ascending=False)
+
+    if not all_diags: # Only get test-based diags (have "(test)" in the name)
+        df = df[df.index.str.contains("(test)")]
+
+    return df
+
+
 def make_dfs(data_reader):
     # Read data
     dfs = {}
 
-    # Consensus + learning
-    for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds"]:
+    # Consensus and learning
+    for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds", "eval_subsets_one_subset"]:
         file_filter = "eval_orig_test_set_file" if data_type == "eval_orig" else ""
-        print(data_type, file_filter)
         dfs[data_type+"_consensus_and_learning_all"] = data_reader.read_data(data_type = data_type, 
                                                 params = ["multiple_assessments", "all_assessments", "learning_and_consensus_diags"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_free"] = data_reader.read_data(data_type = data_type, 
                                                 params = ["multiple_assessments", "free_assessments", "learning_and_consensus_diags"],
                                                 file_filter = file_filter)
-    # Only learning
-    for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds"]:
-        file_filter = "eval_orig_test_set_file" if data_type == "eval_orig" else ""
-        print(data_type, file_filter)
-        dfs[data_type+"_only_learning"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["multiple_assessments", "all_assessments", "only_learning_diags"],
+    # Learning
+    for data_type in ["eval_subsets_one_subset"]:
+        dfs[data_type+"_learning_NIH"] = data_reader.read_data(data_type = data_type, 
+                                                params = ["multiple_assessments", "all_assessments", "only_learning_diags", "NIH"],
+                                                file_filter = file_filter)
+        dfs[data_type+"_learning_no_NIH"] = data_reader.read_data(data_type = data_type, 
+                                                params = ["multiple_assessments", "all_assessments", "only_learning_diags", "no_NIH"],
                                                 file_filter = file_filter)
     
     # Manual scoring
     dfs["manual_scoring"] = data_reader.read_data(data_type="manual_scoring")
-
-    print("DEBUG", dfs)
 
     return dfs
 
@@ -108,18 +125,9 @@ if __name__ == "__main__":
     eval_subsets_df.to_csv("output/eval_subsets.csv")
     compare_orig_vs_subsets_df.to_csv("output/compare_orig_vs_subsets.csv")
 
-    ### Learning diags ###
-
-    eval_orig_learning_df = make_df_to_plot_eval_orig(dfs["eval_orig_only_learning"])
-    eval_subsets_learning_df = make_df_to_plot_eval_subsets(dfs["manual_scoring"], dfs["eval_subsets_only_learning"])
-    ds_stats_learning_df = make_df_ds_stats(dfs["make_ds_only_learning"])
-
-    compare_orig_vs_subsets_learning_df = eval_orig_learning_df.merge(eval_subsets_learning_df, left_index=True, right_index=True)
-
-    # Add total # of features and examples to compare_orig_vs_subsets_df
-    for col in ds_stats_learning_df.columns:
-        compare_orig_vs_subsets_learning_df[col] = ds_stats_learning_df[col].values[0]
-
-    eval_orig_learning_df.to_csv("output/eval_orig_learning.csv")
-    eval_subsets_learning_df.to_csv("output/eval_subsets_learning.csv")
-    compare_orig_vs_subsets_learning_df.to_csv("output/compare_orig_vs_subsets_learning.csv")
+    ### Learning diags improvements ###
+    learning_improvement_df = make_df_learning_improvements(dfs["eval_subsets_one_subset_consensus_and_learning_all"], dfs["eval_subsets_one_subset_learning_NIH"], dfs["eval_subsets_one_subset_learning_no_NIH"], all_diags = False)
+    learning_improvement_all_diags_df = make_df_learning_improvements(dfs["eval_subsets_one_subset_consensus_and_learning_all"], dfs["eval_subsets_one_subset_learning_NIH"], dfs["eval_subsets_one_subset_learning_no_NIH"], all_diags = True)
+    
+    learning_improvement_df.to_csv("output/learning_improvements.csv")
+    learning_improvement_all_diags_df.to_csv("output/learning_improvements_all_diags.csv")

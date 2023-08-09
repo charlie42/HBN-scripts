@@ -9,6 +9,7 @@ class DataReader:
         "item_lvl": "data/create_datasets/",
         "eval_orig": "reports/evaluate_original_models/",
         "eval_subsets": "reports/evaluate_models_on_feature_subsets/",
+        "eval_subsets_one_subset": "reports/evaluate_models_on_feature_subsets/",
         "make_ds": "reports/create_data_reports/",
         "estimators_on_subsets": "models/identify_feature_subsets/",
         "thresholds": "reports/evaluate_models_on_feature_subsets/",
@@ -18,6 +19,7 @@ class DataReader:
         "what_improves_LD": None,
         "sum_score_aurocs": None,
         "sum_score_aurocs_free": None,
+        "learning_improvements": None,
     }
     PARAM_TO_PATH_MAPPING = {
         "multiple_assessments": "first_assessment_to_drop",
@@ -25,6 +27,8 @@ class DataReader:
         "free_assessments": "only_free_assessments__1",
         "only_learning_diags": "learning?__1",
         "learning_and_consensus_diags": "learning?__0",
+        "NIH": "NIH?__1",
+        "no_NIH": "NIH?__0",
     }
     FILE_FILTER_MAPPING = {
         "eval_orig_test_set_file": "performance_table_all_features_test_set.csv",
@@ -67,6 +71,10 @@ class DataReader:
             return self._read_sum_score_aurocs()
         elif data_type == "sum_score_aurocs_free":
             return self._read_sum_score_aurocs(free=True)
+        elif data_type == "eval_subsets_one_subset":
+            return self._read_eval_subsets(one_subset=True)
+        elif data_type == "learning_improvements":
+            return self._read_learning_improvements(all_diags=True)
         else:
             raise ValueError("data_type not recognized: ", data_type)
         
@@ -76,8 +84,11 @@ class DataReader:
     def _read_eval_orig(self):
         return pd.read_csv(self.data_path + "performance_table_all_features_test_set.csv", index_col=0)
     
-    def _read_eval_subsets(self):
-        return pd.read_csv(self.data_path + "perf-on-subsets-test-set-one-threshold-optimal-nb-features.csv", index_col=1)
+    def _read_eval_subsets(self, one_subset=False):
+        if one_subset:
+            return pd.read_csv(self.data_path + "auc-on-subsets-test-set.csv", index_col=0)
+        else:
+            return pd.read_csv(self.data_path + "perf-on-subsets-test-set-one-threshold-optimal-nb-features.csv", index_col=1)
     
     def _read_make_ds(self):
         return pd.read_csv(self.data_path + "dataset_stats.csv", index_col=0)
@@ -104,6 +115,12 @@ class DataReader:
         return pd.read_csv(
             "output/sum_score_aurocs_multiple_assessments_free_assessments_learning_and_consensus_diags.csv", index_col=0) if free else pd.read_csv(
             "output/sum_score_aurocs_multiple_assessments_all_assessments_learning_and_consensus_diags.csv", index_col=0)
+    
+    def _read_learning_improvements(self, all_diags=False):
+        if all_diags:
+            return pd.read_csv("output/learning_improvements_all_diags.csv", index_col=0)
+        else:
+            return pd.read_csv("output/learning_improvements.csv", index_col=0)
     
     def _generate_data_path(self):
         return self._get_newest_non_empty_dir_in_dir(
