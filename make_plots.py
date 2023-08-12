@@ -122,7 +122,7 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
     if not plot_free_assessments:
         for i, row in eval_subsets_df.iterrows():
             #plt.text(i, row["AUC all assessments"]+0.01, str(row["Optimal # of features all assessments"]), ha="left", va="center", size=8)
-            plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="center", va="bottom", size=8, color="blue")
+            #plt.text(i, row["ML score at # of items of best subscale (all assessments)"]+0.01, str(row["# of items in best subscale"]), ha="center", va="bottom", size=8, color="blue")
             plt.text(i, row["Best subscale score"]-0.01, str(row["# of items to reach best subscale (all assessments)"]), ha="center", va="top", size=8, color="blue")
     else:
         for i, row in eval_subsets_df.iterrows():
@@ -212,10 +212,10 @@ def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
     # Plot AUC of sum scores vs AUC of best subscales, add number of items in best subscale to the right of the marker
     plt.figure(figsize=(10, 8))
     plt.title("AUROC of new screener vs best existing subscale")
-    plt.plot(sum_scores_df["Best subscale score"], label="AUROC of best subscale", marker="o", linestyle="", color="blue")
-    plt.plot(sum_scores_df["AUROC"], label="AUROC of new screener", marker="o", linestyle="", color="red")
+    plt.plot(sum_scores_df["Best subscale score"], label="AUROC of best subscale", marker="o", linestyle="", color="red")
+    plt.plot(sum_scores_df["AUROC"], label="AUROC of new screener", marker="o", linestyle="", color="blue")
     if sum_scores_free_df is not None:
-        plt.plot(sum_scores_free_df["AUROC"], label="AUROC of new screener (free assessments)", marker="o", linestyle="", color="red", markerfacecolor='none')
+        plt.plot(sum_scores_free_df["AUROC"], label="AUROC of new screener (free assessments)", marker="o", linestyle="", color="blue", markerfacecolor='none')
     plt.xticks(rotation=45, ha="right", size=8)
 
     # Make xticks for the diagnoses with (test) in the name bold
