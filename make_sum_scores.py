@@ -4,6 +4,8 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 
 class SumScorer():
+    MAX_SUBSCALE_LENGTH = 27
+
     def __init__(self, params):
         self.params = params
         
@@ -114,8 +116,8 @@ class SumScorer():
         screener_lengths = {}
         for diag in self.manual_subscale_scores.index:
             screener_lengths[diag] = self.manual_subscale_scores.loc[diag, "# of items in best subscale"]
-            if screener_lengths[diag] > 27:
-                screener_lengths[diag] = 27
+            if screener_lengths[diag] > self.MAX_SUBSCALE_LENGTH:
+                screener_lengths[diag] = self.MAX_SUBSCALE_LENGTH
         
         return screener_lengths
 

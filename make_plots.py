@@ -1,5 +1,6 @@
 from helpers import get_newest_non_empty_dir_in_dir, make_dir_if_not_exists
 
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -32,6 +33,19 @@ diagnosis_dict = {
         'Diag.NVLD (test)': 'NVLD (test)',
         'Diag.NVLD without reading condition (test)': 'NVLD no read (test)',
     }
+LDs = [
+    'SLD-Math',
+    'SLD-Math (test)',
+    'SLD-Reading',
+    'SLD-Writing',
+    'SLD-Reading (test)',
+    'SLD-Writing (test)',
+    'PS (test)',
+    'NVLD (test)',
+    'NVLD no read (test)'
+]
+non_LDs = [diag for diag in diagnosis_dict.values() if diag not in LDs]
+print(LDs, non_LDs)
 
 # Get only the diagnoses with (test) in the name
 test_diagnosis_list = [diag for diag in diagnosis_dict.keys() if "(test)" in diag]
@@ -145,6 +159,41 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
         plt.savefig("output/viz/ROC_AUC_subsets_free.png", bbox_inches="tight", dpi=600)
     else:
         plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
+
+def plot_manual_vs_ml_bars(df, diags, filename, title, col1, col1_renamed, col2, col2_renamed, col3 = None, col3_renamed = None):
+    print(df)
+    df = df.sort_values(by=col1, ascending=False)
+    # Filter df to only include the diagnoses in diags
+    df = df[df.index.isin(diags)]
+    if col3 is not None:
+        df = df[[col1, col2, col3]]
+        rename_dict = {col1: col1_renamed, col2: col2_renamed, col3: col3_renamed}
+    else:
+        df = df[[col1, col2]]
+        rename_dict = {col1: col1_renamed, col2: col2_renamed}
+    df = df.rename(rename_dict)
+
+    # Plot grouped bar chart
+    ax = df.plot(kind='bar', figsize=(10, 6))
+    ax.set_xlabel('Diagnosis')
+    ax.set_ylabel('AUROC')
+    ax.set_title(title)
+    plt.xticks(rotation=45, ha="right", size=8)
+    plt.ylim([0.5, 1.0])
+
+    # Add y-values on top of the bars
+    #for p in ax.patches:
+        #ax.annotate(str(p.get_height()), (p.get_x() * 1.005, p.get_height() * 1.005))
+    for container in ax.containers:
+        ax.bar_label(container, fmt='%.2f', label_type='edge', size=8)
+
+    # Show legend
+    plt.legend(loc="upper right")
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/" + filename, bbox_inches="tight", dpi=600)
+
 
 def plot_opt_num_features(opt_vs_all_df, filename, plot_free_assessments=False):
     opt_vs_all_df = opt_vs_all_df.sort_values(by="AUC optimal features all assessments", ascending=False)
@@ -307,16 +356,75 @@ def main():
         if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
             sum_scores_free_df[col] = sum_scores_free_df[col].astype('Int64')
 
-    plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
-    plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=False)
-    plot_manual_vs_ml(compare_orig_subsets_df)
-    plot_manual_vs_ml(compare_orig_subsets_df, plot_free_assessments=True)
-    plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
-    plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
-    plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
-    plot_sum_scores_vs_subscales(sum_scores_df)
-    plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
-    plot_learning_improvements(learning_improvement_df)
+    #plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
+    #plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=False)
+
+    #plot_manual_vs_ml(compare_orig_subsets_df)
+    #plot_manual_vs_ml(compare_orig_subsets_df, plot_free_assessments=True)
+
+    #plot_opt_num_features(compare_orig_subsets_df, filename="ROC_AUC_optimal_vs_all_features.png", plot_free_assessments=False)
+    #plot_opt_num_features(compare_orig_subsets_learning_df, filename="ROC_AUC_optimal_vs_all_features_learning.png", plot_free_assessments=False)
+
+    #plot_thresholds(thresholds_df, thresholds_filename.split(".")[0])
+
+    #plot_sum_scores_vs_subscales(sum_scores_df)
+    #plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
+
+    for diag_set, file_name in zip([non_LDs, LDs], ["non_LDs", "LDs"]):
+        # All assessments
+        plot_manual_vs_ml_bars(
+            compare_orig_subsets_df, 
+            diags=diag_set, 
+            filename=f"ROC_AUC_subsets_bars_{file_name}.png", 
+            title="AUROC on test set for subsets of features",
+            col1="Best subscale score",
+            col1_renamed="AUROC of best subscale",
+            col2="ML score at # of items of best subscale (all assessments)",
+            col2_renamed="AUROC of ML model on # of items in best subscale")
+        # Free assessments
+        plot_manual_vs_ml_bars(
+            compare_orig_subsets_df, 
+            diags=diag_set, 
+            filename=f"ROC_AUC_subsets_bars_free_{file_name}.png", 
+            title="AUROC on test set for subsets of features (all and non-proprietary assessments)",
+            col1="Best subscale score",
+            col1_renamed="AUROC of best subscale",
+            col2="ML score at # of items of best subscale (all assessments)",
+            col2_renamed="AUROC of ML model on # of items in best subscale (all assessments)",
+            col3="ML score at # of items of best subscale (free assessments)",
+            col3_renamed="AUROC of ML model on # of items in best subscale (non-proprietary)")
+        
+    # Merge sum_scores_df and sum_scores_free_df
+    sum_scores_df = sum_scores_df.rename(columns={"AUROC": "AUROC all assessments"})
+    sum_scores_free_df = sum_scores_free_df.rename(columns={"AUROC": "AUROC free assessments"})
+    sum_scores_df = sum_scores_df.merge(sum_scores_free_df["AUROC free assessments"], left_index=True, right_index=True)
+    print(sum_scores_df)
+        
+    for diag_set, file_name in zip([non_LDs, LDs], ["non_LDs", "LDs"]):    
+        # All assessments
+        plot_manual_vs_ml_bars(
+            sum_scores_df, 
+            diags=diag_set, 
+            filename=f"ROC_AUC_sum_scores_bars_{file_name}.png", 
+            title="AUROC of best existing subscale vs subset sum-score",
+            col1="Best subscale score",
+            col1_renamed="AUROC of best subscale",
+            col2="AUROC all assessments",
+            col2_renamed="AUROC of item subsest sum-score")
+        # Free assessments
+        plot_manual_vs_ml_bars(
+            sum_scores_df, 
+            diags=diag_set, 
+            filename=f"ROC_AUC_sum_scores_bars_free_{file_name}.png", 
+            title="AUROC of best existing subscale vs subset sum-score (all and non-propriatry assessments)",
+            col1="Best subscale score",
+            col1_renamed="AUROC of best subscale",
+            col2="AUROC all assessments",
+            col2_renamed="AUROC of item subsest sum-score (all assessments)",
+            col3="AUROC free assessments",
+            col3_renamed="AUROC of item subsest sum-score (non-proprietary)")
+
+    #plot_learning_improvements(learning_improvement_df)
 
 if __name__ == "__main__":
     main()
