@@ -159,6 +159,13 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
     else:
         plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
+def add_formatted_labels_to_bars(ax, container):
+    heights = [rect.get_height() for rect in container]
+    formatted_heights = ["{:.2f}".format(height).lstrip('0') for height in heights]
+    
+    ax.bar_label(container, labels=formatted_heights, label_type='edge', size=8, rotation=45)
+    return ax
+
 def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
     df = df.sort_values(by=list(col_dict.keys())[0], ascending=False)
 
@@ -180,11 +187,13 @@ def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
     plt.xticks(rotation=45, ha="right", size=8)
     plt.ylim([0.5, 1.0])
 
-    # Add y-values on top of the bars
+    # Add y-values on top of the bars if less than three bars in a group or less than 5 groups in total
     #for p in ax.patches:
         #ax.annotate(str(p.get_height()), (p.get_x() * 1.005, p.get_height() * 1.005))
-    for container in ax.containers:
-        ax.bar_label(container, fmt='%.2f', label_type='edge', size=8)
+    if len(df.columns) < 3 or len(df.index) < 5:
+        for container in ax.containers:
+            #ax.bar_label(container, fmt='%.2f', label_type='edge', size=8, rotation=45)
+            add_formatted_labels_to_bars(ax, container)
 
     # Show legend
     plt.legend(loc="upper right")
