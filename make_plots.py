@@ -45,7 +45,6 @@ LDs = [
     'NVLD no read (test)'
 ]
 non_LDs = [diag for diag in diagnosis_dict.values() if diag not in LDs]
-print(LDs, non_LDs)
 
 # Get only the diagnoses with (test) in the name
 test_diagnosis_list = [diag for diag in diagnosis_dict.keys() if "(test)" in diag]
@@ -161,7 +160,6 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
         plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
 def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
-    print(df)
     df = df.sort_values(by=list(col_dict.keys())[0], ascending=False)
 
     # Filter df to only include the diagnoses in diags
@@ -318,6 +316,139 @@ def plot_learning_improvements(learning_improvement_df):
 
     plt.savefig("output/viz/learning_improvements.png", bbox_inches="tight", dpi=600)
 
+def make_averages_for_assessment_subsets(
+        df_ml,
+        df_sum_scores, 
+        filename_and_diag_sets_dict):
+    
+    # Make df with averages for each assessment subset
+    col_dict_ml = {
+        "Best subscale score": "Best subscale",
+        "ML score at # of items of best subscale (all assessments)": "All",
+        "ML score at # of items of best subscale (free assessments)": "Non-propriatary",
+        "ML score at # of items of best subscale (only parent report)": "Only parent report",
+        "ML score at # of items of best subscale (free assessments, only parent report)": "Non-proprietary, only parent report"
+    }
+    col_dict_sum_scores = {
+        "Best subscale score": "Best subscale",
+        "AUROC all assessments parent and sr": "All",
+        "AUROC free assessments parent and sr": "Non-propriatary",
+        "AUROC all assessments only parent report": "Only parent report",
+        "AUROC free assessments only parent report": "Non-proprietary, only parent report"
+    }
+    col_list = col_dict_ml.values()
+    df_averages_ml = pd.DataFrame(col_list)
+    df_averages_sum_scores = pd.DataFrame(col_list)
+
+    # Make df with averages for each assessment subset
+    for index, diags in filename_and_diag_sets_dict.items():
+        diags = [diag for diag in diags if diag in df_ml.index]
+        for col_ml, col_renamed in col_dict_ml.items():
+            df_averages_ml.loc[index, col_renamed] = df_ml.loc[diags, col_ml].mean()
+
+        diags = [diag for diag in diags if diag in df_sum_scores.index]
+        for col_sum_scores, col_renamed in col_dict_sum_scores.items():
+            df_averages_sum_scores.loc[index, col_renamed] = df_sum_scores.loc[diags, col_sum_scores].mean()
+
+    print("df_averages_ml:\n", df_averages_ml)
+    print("df_averages_sum_scores:\n", df_averages_sum_scores)
+
+    return df_averages_ml, df_averages_sum_scores, col_list
+
+def plot_averages(df, filename, indices, cols):
+    col_dict = {x:x for x in cols} # Don't need to rename columns
+    plot_manual_vs_ml_bars(
+        df, 
+        diags=indices, 
+        filename=filename, 
+        title="AUROC of best existing subscale vs subset sum-score",
+        col_dict=col_dict)
+        
+def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
+    filename_and_diag_sets_dict = {
+        "non_LDs": non_LDs,
+        "LDs": LDs,
+    }
+    filename_and_col_sets_dict_ml = { # Rename columns for legend
+        "all": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale",
+        },
+        "free": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
+        },
+        "only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
+        },
+        "free_and_only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
+            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
+            "ML score at # of items of best subscale (free assessments, only parent report)": "AUROC of ML model on # of items in best subscale (free assessments, only parent report)",
+        }
+    }
+    filename_and_col_sets_dict_sum_scores = {
+        "all": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score",
+        },
+        "free": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
+        },
+        "only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
+        },
+        "free_and_only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
+            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
+            "AUROC free assessments only parent report": "AUROC of item subset sum-score (non-proprietary, only parent report)",
+        }
+    }
+    for filename, diags in filename_and_diag_sets_dict.items():
+        for col_set_name, col_set in filename_and_col_sets_dict_ml.items():
+            plot_manual_vs_ml_bars(
+                df_ml, 
+                diags=diags, 
+                filename=f"ROC_AUC_subsets_bars_{filename}_{col_set_name}.png", 
+                title="AUROC on test set for subsets of features",
+                col_dict=col_set)
+    for filename, diags in filename_and_diag_sets_dict.items():
+        for col_set_name, col_set in filename_and_col_sets_dict_sum_scores.items():
+            plot_manual_vs_ml_bars(
+                df_sum_scores, 
+                diags=diags, 
+                filename=f"ROC_AUC_sum_scores_bars_{filename}_{col_set_name}.png", 
+                title="AUROC of best existing subscale vs subset sum-score",
+                col_dict=col_set)
+            
+    # Plot group bar plot with averages score between diagnoses for each assessment subset (separate for LD and non-LD)
+    # One group for non-LDs, one for LDs. Each bar in group is assessment subset
+    df_averages_ml, df_averages_sum_scores, col_list = make_averages_for_assessment_subsets(
+        df_ml,
+        df_sum_scores, 
+        filename_and_diag_sets_dict)
+    
+    plot_averages(df_averages_ml, 
+                  filename="ROC_AUC_averages_ml.png", 
+                  indices=filename_and_diag_sets_dict.keys(), 
+                  cols=col_list)
+    plot_averages(df_averages_sum_scores, 
+                  filename="ROC_AUC_averages_sum_scores.png", 
+                  indices=filename_and_diag_sets_dict.keys(), 
+                  cols=col_list)
+
+
 def main():
 
     # Read data performance tables
@@ -343,11 +474,9 @@ def main():
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
     for col in compare_orig_subsets_df.columns:
-        print(col)
         if not "AUC" in col and not "score" in col and not "Best subscale" in col:
             compare_orig_subsets_df[col] = compare_orig_subsets_df[col].astype('Int64')
     for col in sum_scores_df.columns:
-        print(col)
         if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
             sum_scores_df[col] = sum_scores_df[col].astype('Int64')
 
@@ -365,76 +494,7 @@ def main():
     #plot_sum_scores_vs_subscales(sum_scores_df)
     #plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
 
-    # Plot ML vs sum-scores
-    filename_and_diag_sets_dict = {
-        "non_LDs": non_LDs,
-        "LDs": LDs,
-    }
-    filename_and_col_sets_dict = {
-        "all": {
-            "Best subscale score": "AUROC of best subscale",
-            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale",
-        },
-        "free": {
-            "Best subscale score": "AUROC of best subscale",
-            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
-            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
-        },
-        "only_parent_report": {
-            "Best subscale score": "AUROC of best subscale",
-            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
-            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
-        },
-        "free_and_only_parent_report": {
-            "Best subscale score": "AUROC of best subscale",
-            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
-            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
-            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
-            "ML score at # of items of best subscale (free assessments, only parent report)": "AUROC of ML model on # of items in best subscale (free assessments, only parent report)",
-        }
-    }
-    for filename, diags in filename_and_diag_sets_dict.items():
-        for col_set_name, col_set in filename_and_col_sets_dict.items():
-            plot_manual_vs_ml_bars(
-                compare_orig_subsets_df, 
-                diags=diags, 
-                filename=f"ROC_AUC_subsets_bars_{filename}_{col_set_name}.png", 
-                title="AUROC on test set for subsets of features",
-                col_dict=col_set)
-            
-    # # Plot sum-scores vs best subscale
-    filename_and_col_sets_dict = {
-        "all": {
-            "Best subscale score": "AUROC of best subscale",
-            "AUROC all assessments parent and sr": "AUROC of item subset sum-score",
-        },
-        "free": {
-            "Best subscale score": "AUROC of best subscale",
-            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
-            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
-        },
-        "only_parent_report": {
-            "Best subscale score": "AUROC of best subscale",
-            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
-            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
-        },
-        "free_and_only_parent_report": {
-            "Best subscale score": "AUROC of best subscale",
-            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
-            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
-            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
-            "AUROC free assessments only parent report": "AUROC of item subset sum-score (non-proprietary, only parent report)",
-        }
-    }
-
-    for filename, diags in filename_and_diag_sets_dict.items():
-        for col_set_name, col_set in filename_and_col_sets_dict.items():
-            plot_manual_vs_ml_bars(
-                sum_scores_df, 
-                diags=diags, 
-                filename=f"ROC_AUC_sum_scores_bars_{filename}_{col_set_name}.png", 
-                title="AUROC of best existing subscale vs subset sum-score",
-                col_dict=col_set)
+    plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
     #plot_learning_improvements(learning_improvement_df)
 
