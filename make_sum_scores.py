@@ -43,8 +43,7 @@ class SumScorer():
         # Make sum scores
         self.sum_scores = {}
         for diag in self.diags:
-            print(diag)
-            screener_length = screener_lengths[diag]
+            screener_length = screener_lengths[diag] if diag in screener_lengths.keys() else self.MAX_SUBSCALE_LENGTH
             coef_df = coefficients[diag][screener_length]
             
             # Make sum score
@@ -79,8 +78,7 @@ class SumScorer():
         to_add_up = [item for item in to_add_up if self.item_lvl[item].max() - self.item_lvl[item].min() <= 6]
         to_subtract = [item for item in to_subtract if self.item_lvl[item].max() - self.item_lvl[item].min() <= 6]
 
-        print("to_add_up", to_add_up)
-
+        # Sum up responses
         sum_score = self.item_lvl[to_add_up].sum(axis=1) - self.item_lvl[to_subtract].sum(axis=1)
         return sum_score
 
@@ -132,8 +130,14 @@ class SumScorer():
 
 
 if __name__ == "__main__":
-    sum_scorer = SumScorer(params = ["multiple_assessments", "all_assessments", "learning_and_consensus_diags"])
+    sum_scorer = SumScorer(params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags"])
     sum_scorer.make_sum_scores()
 
-    sum_scorer = SumScorer(params = ["multiple_assessments", "free_assessments", "learning_and_consensus_diags"])
+    sum_scorer = SumScorer(params = ["parent_and_sr", "multiple_assessments", "free_assessments", "learning_and_consensus_diags"])
+    sum_scorer.make_sum_scores()
+
+    sum_scorer = SumScorer(params = ["only_parent_report", "multiple_assessments", "all_assessments", "learning_and_consensus_diags"])
+    sum_scorer.make_sum_scores()
+
+    sum_scorer = SumScorer(params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags"])
     sum_scorer.make_sum_scores()

@@ -160,19 +160,20 @@ def plot_manual_vs_ml(eval_subsets_df, plot_free_assessments=False):
     else:
         plt.savefig("output/viz/ROC_AUC_subsets.png", bbox_inches="tight", dpi=600)
 
-def plot_manual_vs_ml_bars(df, diags, filename, title, col1, col1_renamed, col2, col2_renamed, col3 = None, col3_renamed = None):
+def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
     print(df)
-    df = df.sort_values(by=col1, ascending=False)
+    df = df.sort_values(by=list(col_dict.keys())[0], ascending=False)
+
     # Filter df to only include the diagnoses in diags
     df = df[df.index.isin(diags)]
-    if col3 is not None:
-        df = df[[col1, col2, col3]]
-        rename_dict = {col1: col1_renamed, col2: col2_renamed, col3: col3_renamed}
-    else:
-        df = df[[col1, col2]]
-        rename_dict = {col1: col1_renamed, col2: col2_renamed}
-    df = df.rename(rename_dict)
 
+    # Rename columns for legend
+    for col, col_renamed in col_dict.items():
+        df[col_renamed] = df[col]
+
+    # Keep only cols to be plotted in df
+    df = df[col_dict.values()]    
+    
     # Plot grouped bar chart
     ax = df.plot(kind='bar', figsize=(10, 6))
     ax.set_xlabel('Diagnosis')
@@ -325,21 +326,19 @@ def main():
     compare_orig_subsets_df = data_reader.read_data("compare_orig_vs_subsets")
     compare_orig_subsets_learning_df = data_reader.read_data("compare_orig_vs_subsets_learning")
     sum_scores_df = data_reader.read_data("sum_score_aurocs")
-    sum_scores_free_df = data_reader.read_data("sum_score_aurocs_free")
     learning_improvement_df = data_reader.read_data("learning_improvements")
 
     # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
     thresholds_df = data_reader.read_data(
         data_type="thresholds",
-        params=["multiple_assessments", "all_assessments", "only_learning_diags"],
+        params=["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags"],
         filename=thresholds_filename)
     
     # Rephrase diags to shorter names
     compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
     compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
     sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
-    sum_scores_free_df = sum_scores_free_df.rename(index=diagnosis_dict)
     learning_improvement_df = learning_improvement_df.rename(index=diagnosis_dict)
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
@@ -351,10 +350,6 @@ def main():
         print(col)
         if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
             sum_scores_df[col] = sum_scores_df[col].astype('Int64')
-    for col in sum_scores_free_df.columns:
-        print(col)
-        if not "AUC" in col and not "AUROC" and not "score" in col and not "Best subscale" in col:
-            sum_scores_free_df[col] = sum_scores_free_df[col].astype('Int64')
 
     #plot_eval_orig(compare_orig_subsets_df, filename="ROC_AUC_all_features.png", plot_free_assessments=False)
     #plot_eval_orig(compare_orig_subsets_learning_df, filename="ROC_AUC_all_features_learning.png", plot_free_assessments=False)
@@ -370,59 +365,76 @@ def main():
     #plot_sum_scores_vs_subscales(sum_scores_df)
     #plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
 
-    for diag_set, file_name in zip([non_LDs, LDs], ["non_LDs", "LDs"]):
-        # All assessments
-        plot_manual_vs_ml_bars(
-            compare_orig_subsets_df, 
-            diags=diag_set, 
-            filename=f"ROC_AUC_subsets_bars_{file_name}.png", 
-            title="AUROC on test set for subsets of features",
-            col1="Best subscale score",
-            col1_renamed="AUROC of best subscale",
-            col2="ML score at # of items of best subscale (all assessments)",
-            col2_renamed="AUROC of ML model on # of items in best subscale")
-        # Free assessments
-        plot_manual_vs_ml_bars(
-            compare_orig_subsets_df, 
-            diags=diag_set, 
-            filename=f"ROC_AUC_subsets_bars_free_{file_name}.png", 
-            title="AUROC on test set for subsets of features (all and non-proprietary assessments)",
-            col1="Best subscale score",
-            col1_renamed="AUROC of best subscale",
-            col2="ML score at # of items of best subscale (all assessments)",
-            col2_renamed="AUROC of ML model on # of items in best subscale (all assessments)",
-            col3="ML score at # of items of best subscale (free assessments)",
-            col3_renamed="AUROC of ML model on # of items in best subscale (non-proprietary)")
-        
-    # Merge sum_scores_df and sum_scores_free_df
-    sum_scores_df = sum_scores_df.rename(columns={"AUROC": "AUROC all assessments"})
-    sum_scores_free_df = sum_scores_free_df.rename(columns={"AUROC": "AUROC free assessments"})
-    sum_scores_df = sum_scores_df.merge(sum_scores_free_df["AUROC free assessments"], left_index=True, right_index=True)
-    print(sum_scores_df)
-        
-    for diag_set, file_name in zip([non_LDs, LDs], ["non_LDs", "LDs"]):    
-        # All assessments
-        plot_manual_vs_ml_bars(
-            sum_scores_df, 
-            diags=diag_set, 
-            filename=f"ROC_AUC_sum_scores_bars_{file_name}.png", 
-            title="AUROC of best existing subscale vs subset sum-score",
-            col1="Best subscale score",
-            col1_renamed="AUROC of best subscale",
-            col2="AUROC all assessments",
-            col2_renamed="AUROC of item subsest sum-score")
-        # Free assessments
-        plot_manual_vs_ml_bars(
-            sum_scores_df, 
-            diags=diag_set, 
-            filename=f"ROC_AUC_sum_scores_bars_free_{file_name}.png", 
-            title="AUROC of best existing subscale vs subset sum-score (all and non-propriatry assessments)",
-            col1="Best subscale score",
-            col1_renamed="AUROC of best subscale",
-            col2="AUROC all assessments",
-            col2_renamed="AUROC of item subsest sum-score (all assessments)",
-            col3="AUROC free assessments",
-            col3_renamed="AUROC of item subsest sum-score (non-proprietary)")
+    # Plot ML vs sum-scores
+    filename_and_diag_sets_dict = {
+        "non_LDs": non_LDs,
+        "LDs": LDs,
+    }
+    filename_and_col_sets_dict = {
+        "all": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale",
+        },
+        "free": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
+        },
+        "only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
+        },
+        "free_and_only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "ML score at # of items of best subscale (all assessments)": "AUROC of ML model on # of items in best subscale (all assessments)",
+            "ML score at # of items of best subscale (free assessments)": "AUROC of ML model on # of items in best subscale (non-proprietary)",
+            "ML score at # of items of best subscale (only parent report)": "AUROC of ML model on # of items in best subscale (only parent report)",
+            "ML score at # of items of best subscale (free assessments, only parent report)": "AUROC of ML model on # of items in best subscale (free assessments, only parent report)",
+        }
+    }
+    for filename, diags in filename_and_diag_sets_dict.items():
+        for col_set_name, col_set in filename_and_col_sets_dict.items():
+            plot_manual_vs_ml_bars(
+                compare_orig_subsets_df, 
+                diags=diags, 
+                filename=f"ROC_AUC_subsets_bars_{filename}_{col_set_name}.png", 
+                title="AUROC on test set for subsets of features",
+                col_dict=col_set)
+            
+    # # Plot sum-scores vs best subscale
+    filename_and_col_sets_dict = {
+        "all": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score",
+        },
+        "free": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
+        },
+        "only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
+        },
+        "free_and_only_parent_report": {
+            "Best subscale score": "AUROC of best subscale",
+            "AUROC all assessments parent and sr": "AUROC of item subset sum-score (all assessments)",
+            "AUROC free assessments parent and sr": "AUROC of item subset sum-score (non-proprietary)",
+            "AUROC all assessments only parent report": "AUROC of item subset sum-score (only parent report)",
+            "AUROC free assessments only parent report": "AUROC of item subset sum-score (non-proprietary, only parent report)",
+        }
+    }
+
+    for filename, diags in filename_and_diag_sets_dict.items():
+        for col_set_name, col_set in filename_and_col_sets_dict.items():
+            plot_manual_vs_ml_bars(
+                sum_scores_df, 
+                diags=diags, 
+                filename=f"ROC_AUC_sum_scores_bars_{filename}_{col_set_name}.png", 
+                title="AUROC of best existing subscale vs subset sum-score",
+                col_dict=col_set)
 
     #plot_learning_improvements(learning_improvement_df)
 

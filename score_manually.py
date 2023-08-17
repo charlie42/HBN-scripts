@@ -73,14 +73,14 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     }
 
 def get_list_of_analysed_diags():
-    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", ["first_assessment_to_drop", 
-                                                                                                                       "learning?__0",
-                                                                                                                       "only_free_assessments__0"])
+    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", [
+        "only_parent_report__0",
+        "first_assessment_to_drop", 
+        "learning?__0",
+        "only_free_assessments__0"])
     report = pd.read_csv(path + "auc-on-subsets-test-set.csv")
     
     diags = [x for x in report.columns if x.startswith("Diag.")]
-
-    print(diags)
 
     return diags
 
@@ -146,20 +146,28 @@ def find_best_manual_score_for_diag(all_manual_scores_df, diags):
     return best_manual_scores_df
 
 # Compare with ML scores
-def read_ml_scores(free=False):
+def read_ml_scores(free=False, only_parent=False):
     path = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
     free_param = "only_free_assessments__1" if free else "only_free_assessments__0"
+    only_parent_param = "only_parent_report__1" if only_parent else "only_parent_report__0"
     
-    path_all_assessments = get_newest_non_empty_dir_in_dir(path, ["first_assessment_to_drop",
-                                                                  free_param,
-                                                                  "learning?__0",
-                                                                  ])
+    path_all_assessments = get_newest_non_empty_dir_in_dir(path, [
+        only_parent_param,
+        "first_assessment_to_drop",
+        free_param,
+        "learning?__0",
+        ])
     print("Reading report from: ", path_all_assessments)
     ml_scores_all_assessments = pd.read_csv(path_all_assessments + "auc-on-subsets-test-set.csv")
 
     return ml_scores_all_assessments
 
-def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags):
+def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, 
+                                              ml_scores_all_assessments_parent_and_sr, 
+                                              ml_scores_free_assessments_parent_and_sr, 
+                                              ml_scores_all_assessments_only_parent_report,
+                                              ml_scores_free_assessments_only_parent_report,
+                                              diags):
     ml_scores_at_num_features = {}
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
@@ -167,23 +175,31 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         best_manual_score_subscale_short = best_manual_score_subscale.split(",")[1]
         number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale]
 
-        print("DEBUG: ", number_of_items_in_best_manual_subscale)
         number_of_items_to_check = number_of_items_in_best_manual_subscale if number_of_items_in_best_manual_subscale <= 27 else 27
-        ml_score_at_number_of_items_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments["Number of features"] == number_of_items_to_check][diag_col].values[0]
-        ml_score_at_number_of_items_of_best_manual_subscale_free_assessments = ml_scores_free_assessments[ml_scores_free_assessments["Number of features"] == number_of_items_to_check][diag_col].values[0]
+        ml_score_at_number_of_items_of_best_manual_subscale_all_parent_and_sr = ml_scores_all_assessments_parent_and_sr[ml_scores_all_assessments_parent_and_sr["Number of features"] == number_of_items_to_check][diag_col].values[0]
+        ml_score_at_number_of_items_of_best_manual_subscale_free_parent_and_sr = ml_scores_free_assessments_parent_and_sr[ml_scores_free_assessments_parent_and_sr["Number of features"] == number_of_items_to_check][diag_col].values[0]
+        ml_score_at_number_of_items_of_best_manual_subscale_all_only_parent_report = ml_scores_all_assessments_only_parent_report[ml_scores_all_assessments_only_parent_report["Number of features"] == number_of_items_to_check][diag_col].values[0]
+        ml_score_at_number_of_items_of_best_manual_subscale_free_only_parent_report = ml_scores_free_assessments_only_parent_report[ml_scores_free_assessments_only_parent_report["Number of features"] == number_of_items_to_check][diag_col].values[0]
 
         # Find number of items needed to reach performance of the best subscale    
-        number_of_items_for_ml_score_of_best_manual_subscale_all_assessments = ml_scores_all_assessments[ml_scores_all_assessments[diag_col] >= best_manual_score]["Number of features"].min()
-        number_of_items_for_ml_score_of_best_manual_subscale_fee_assessments = ml_scores_all_assessments[ml_scores_free_assessments[diag_col] >= best_manual_score]["Number of features"].min()
+        number_of_items_for_ml_score_of_best_manual_subscale_all_parent_and_sr = ml_scores_all_assessments_parent_and_sr[ml_scores_all_assessments_parent_and_sr[diag_col] >= best_manual_score]["Number of features"].min()
+        number_of_items_for_ml_score_of_best_manual_subscale_free_parent_and_sr = ml_scores_free_assessments_parent_and_sr[ml_scores_free_assessments_parent_and_sr[diag_col] >= best_manual_score]["Number of features"].min()
+        number_of_items_for_ml_score_of_best_manual_subscale_all_only_parent_report = ml_scores_all_assessments_only_parent_report[ml_scores_all_assessments_only_parent_report[diag_col] >= best_manual_score]["Number of features"].min()
+        number_of_items_for_ml_score_of_best_manual_subscale_free_only_parent_report = ml_scores_free_assessments_only_parent_report[ml_scores_free_assessments_only_parent_report[diag_col] >= best_manual_score]["Number of features"].min()
 
-        ml_scores_at_num_features[diag_col] = [best_manual_score_subscale_short, 
-                                               best_manual_score, 
-                                               number_of_items_in_best_manual_subscale, 
-                                               ml_score_at_number_of_items_of_best_manual_subscale_all_assessments, 
-                                               number_of_items_for_ml_score_of_best_manual_subscale_all_assessments,
-                                               ml_score_at_number_of_items_of_best_manual_subscale_free_assessments,
-                                               number_of_items_for_ml_score_of_best_manual_subscale_fee_assessments
-                                               ]
+        ml_scores_at_num_features[diag_col] = [
+            best_manual_score_subscale_short, 
+            best_manual_score, 
+            number_of_items_in_best_manual_subscale, 
+            ml_score_at_number_of_items_of_best_manual_subscale_all_parent_and_sr,
+            number_of_items_for_ml_score_of_best_manual_subscale_all_parent_and_sr,
+            ml_score_at_number_of_items_of_best_manual_subscale_free_parent_and_sr,
+            number_of_items_for_ml_score_of_best_manual_subscale_free_parent_and_sr,
+            ml_score_at_number_of_items_of_best_manual_subscale_all_only_parent_report, 
+            number_of_items_for_ml_score_of_best_manual_subscale_all_only_parent_report,
+            ml_score_at_number_of_items_of_best_manual_subscale_free_only_parent_report,
+            number_of_items_for_ml_score_of_best_manual_subscale_free_only_parent_report,
+        ]
 
     ml_scores_at_num_features_df = pd.DataFrame.from_dict(ml_scores_at_num_features, orient='index', columns=[
         "Best subscale", 
@@ -193,6 +209,10 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_a
         "# of items to reach best subscale (all assessments)",
         "ML score at # of items of best subscale (free assessments)",
         "# of items to reach best subscale (free assessments)",
+        "ML score at # of items of best subscale (only parent report)",
+        "# of items to reach best subscale (only parent report)",
+        "ML score at # of items of best subscale (free assessments, only parent report)",
+        "# of items to reach best subscale (free assessments, only parent report)",
         ]).sort_values(by="Best subscale score", ascending=False)
     return ml_scores_at_num_features_df
 
@@ -209,9 +229,17 @@ def main():
 
     best_manual_scores_df = find_best_manual_score_for_diag(all_manual_scores_df, diags)
 
-    ml_scores_all_assessments = read_ml_scores(free=False)
-    ml_scores_free_assessments = read_ml_scores(free=True)
-    comparison_table = compare_ml_scores_with_best_manual_scores(best_manual_scores_df, ml_scores_all_assessments, ml_scores_free_assessments, diags)
+    ml_scores_all_assessments_parent_and_sr = read_ml_scores(free=False, only_parent=False)
+    ml_scores_all_assessments_only_parent_report = read_ml_scores(free=False, only_parent=True)
+    ml_scores_free_assessments_parent_and_sr = read_ml_scores(free=True, only_parent=False)
+    ml_scores_free_assessments_only_parent_report = read_ml_scores(free=True, only_parent=True)
+    comparison_table = compare_ml_scores_with_best_manual_scores(
+        best_manual_scores_df, 
+        ml_scores_all_assessments_parent_and_sr, 
+        ml_scores_all_assessments_only_parent_report,
+        ml_scores_free_assessments_parent_and_sr,
+        ml_scores_free_assessments_only_parent_report, 
+        diags)
     comparison_table.to_csv(output_dir + "manual_subsale_scores_vs_ml.csv", float_format='%.3f')
 
 if __name__ == "__main__":

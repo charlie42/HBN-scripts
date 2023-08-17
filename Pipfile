@@ -8,7 +8,7 @@ pandas = "*"
 numpy = "*"
 matplotlib = "*"
 joblib = "*"
-scikit-learn = "*"
+scikit-learn = "==1.2.2"
 seaborn = "*"
 
 [dev-packages]

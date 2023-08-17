@@ -7,6 +7,7 @@ class DataReader:
     BASE_PATH = "../diagnosis_predictor_data/"
     DATA_TYPE_TO_PATH_MAPPING = {
         "item_lvl": "data/create_datasets/",
+        "subscale_scores": "data/create_datasets/",
         "eval_orig": "reports/evaluate_original_models/",
         "eval_subsets": "reports/evaluate_models_on_feature_subsets/",
         "eval_subsets_one_subset": "reports/evaluate_models_on_feature_subsets/",
@@ -22,6 +23,8 @@ class DataReader:
         "learning_improvements": None,
     }
     PARAM_TO_PATH_MAPPING = {
+        "only_parent_report": "only_parent_report__1",
+        "parent_and_sr": "only_parent_report__0",
         "multiple_assessments": "first_assessment_to_drop",
         "all_assessments": "only_free_assessments__0",
         "free_assessments": "only_free_assessments__1",
@@ -49,6 +52,8 @@ class DataReader:
 
         if data_type == "item_lvl":
             return self._read_item_lvl()
+        elif data_type == "subscale_scores":
+            return self._read_subscale_scores()
         elif data_type == "eval_orig":
             return self._read_eval_orig()
         elif data_type == "eval_subsets":
@@ -69,8 +74,6 @@ class DataReader:
             return self._read_thresholds(filename)
         elif data_type == "sum_score_aurocs":
             return self._read_sum_score_aurocs()
-        elif data_type == "sum_score_aurocs_free":
-            return self._read_sum_score_aurocs(free=True)
         elif data_type == "eval_subsets_one_subset":
             return self._read_eval_subsets(one_subset=True)
         elif data_type == "learning_improvements":
@@ -80,6 +83,9 @@ class DataReader:
         
     def _read_item_lvl(self):
         return pd.read_csv(self.data_path + "item_lvl_new.csv")
+    
+    def _read_subscale_scores(self):
+        return pd.read_csv(self.data_path + "subscale_scores.csv")
     
     def _read_eval_orig(self):
         return pd.read_csv(self.data_path + "performance_table_all_features_test_set.csv", index_col=0)
@@ -111,10 +117,8 @@ class DataReader:
     def _read_thresholds(self, filename):
         return pd.read_csv(self.data_path + "sens-spec-on-subsets-test-set-optimal-nb-features/" + filename, index_col=0)
     
-    def _read_sum_score_aurocs(self, free=False):
-        return pd.read_csv(
-            "output/sum_score_aurocs_multiple_assessments_free_assessments_learning_and_consensus_diags.csv", index_col=0) if free else pd.read_csv(
-            "output/sum_score_aurocs_multiple_assessments_all_assessments_learning_and_consensus_diags.csv", index_col=0)
+    def _read_sum_score_aurocs(self):
+        return pd.read_csv("output/sum_score_merged.csv", index_col=0)
     
     def _read_learning_improvements(self, all_diags=False):
         if all_diags:
