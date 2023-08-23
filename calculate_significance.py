@@ -33,20 +33,20 @@ if __name__ == "__main__":
 
     # Compare means of "AUC all features all assessments parent and sr" and "Best subscale score"
     features = ["AUC all features free assessments only parent report", "Best subscale score"]
-    print("Comparing: ", features)
+    print(f"Comparing: {features}:")
     significance_calculator.calculate_significance(method, data, features)
 
     # Compare means of "AUC all features all assessments parent and sr" and "AUC all features all assessments only parent report"
     features = ["AUC all features all assessments parent and sr", "AUC all features all assessments only parent report"]
-    print("Comparing: ", features)
+    print(f"Comparing: {features}:")
     significance_calculator.calculate_significance(method, data, features)
 
     # Compare means of "AUC all features all assessments parent and sr" and "AUC all features free assessments parent and sr"
     features = ["AUC all features all assessments parent and sr", "AUC all features free assessments parent and sr"]
-    print("Comparing: ", features)
+    print(f"Comparing: {features}:")
     significance_calculator.calculate_significance(method, data, features)
 
     # Compare means of "AUC all features all assessments parent and sr" and "AUC all features free assessments only parent report"
     features = ["AUC all features all assessments parent and sr", "AUC all features free assessments only parent report"]
-    print("Comparing: ", features)
+    print(f"Comparing: {features}:")
     significance_calculator.calculate_significance(method, data, features)
