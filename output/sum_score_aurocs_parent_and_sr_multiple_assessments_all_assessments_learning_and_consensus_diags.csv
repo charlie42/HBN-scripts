@@ -1,19 +1,19 @@
 ,AUROC,Best subscale,# of items in best subscale,Best subscale score
-Diag.Oppositional Defiant Disorder,0.8727011247355909,CBCL_Ext_T,35,0.827
-Diag.Autism Spectrum Disorder,0.8824445596276196,ASSQ_Total,27,0.814
-Diag.ADHD-Combined Type,0.8258314195484207,SWAN_HY,9,0.806
+Diag.Oppositional Defiant Disorder,0.8727011247355909,CBCL_Ext_T,35,0.83
+Diag.ADHD-Combined Type,0.8258314195484207,SWAN_HY,9,0.816
+Diag.Autism Spectrum Disorder,0.8824445596276196,ASSQ_Total,27,0.815
 Diag.Generalized Anxiety Disorder,0.8062831483180484,SCARED_P_GD,9,0.784
-Diag.Social Anxiety (Social Phobia),0.7913849771193084,SCARED_P_SC,7,0.779
-Diag.Any Diag,0.8108444114293968,CBCL_AP_T,10,0.766
-Diag.NVLD without reading condition (test),0.7302034780240388,SRS_COG_T,12,0.663
-Diag.Specific Phobia,0.745935900767067,CBCL_AD_T,13,0.655
-Diag.NVLD (test),0.7205514862103154,SRS_COG_T,12,0.654
-Diag.Borderline Intellectual Functioning (test),0.7845107420958815,SRS_COG_T,12,0.624
-Diag.ADHD-Inattentive Type,0.7109799136084091,SWAN_IN,9,0.622
-Diag.Processing Speed Deficit (test),0.7369305802057631,SCQ_Total,40,0.606
-Diag.Language Disorder,0.7034549882422597,APQ_P_PP,6,0.599
-Diag.Specific Learning Disorder with Impairment in Reading (test),0.7370335862637679,APQ_SR_PP,6,0.581
-Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.7000517598343685,SRS_COG_T,12,0.575
-Diag.Specific Learning Disorder with Impairment in Reading,0.6947825012357886,APQ_SR_INV_M,10,0.554
-Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.6996736937863387,SRS_COG_T,12,0.552
-Diag.No Diagnosis Given,0.8140724061263548,APQ_P_INV,10,0.522
+Diag.Social Anxiety (Social Phobia),0.7913849771193084,SCARED_P_SC,7,0.777
+Diag.Specific Phobia,0.745935900767067,CBCL_AD_T,13,0.66
+Diag.ADHD-Inattentive Type,0.7109799136084091,SWAN_IN,9,0.62
+Diag.Language Disorder,0.7034549882422597,APQ_P_PP,6,0.613
+Diag.Any Diag,0.8040337682034141,ASSQ_Total,27,0.533
+Diag.Borderline Intellectual Functioning (test),0.7463880288957687,SCARED_P_SC,7,0.529
+Diag.Specific Learning Disorder with Impairment in Mathematics (test),0.6866067788173871,APQ_P_INV,10,0.528
+Diag.Specific Learning Disorder with Impairment in Reading,0.678512934585599,SCARED_P_SP,8,0.526
+Diag.Processing Speed Deficit (test),0.6961062291675686,SCARED_P_GD,9,0.524
+Diag.NVLD (test),0.7292842786130052,APQ_P_INV,10,0.524
+Diag.Specific Learning Disorder with Impairment in Reading (test),0.7506927886059847,SWAN_HY,9,0.513
+Diag.Specific Learning Disorder with Impairment in Written Expression (test),0.6440605677068914,APQ_P_CP,3,0.513
+Diag.NVLD without reading condition (test),0.6847231413547523,APQ_P_CP,3,0.513
+Diag.No Diagnosis Given,0.8140724061263548,APQ_P_INV,10,0.512
