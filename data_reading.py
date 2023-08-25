@@ -4,7 +4,7 @@ from joblib import load
 
 class DataReader:
     
-    BASE_PATH = "../diagnosis_predictor_data/"
+    BASE_PATH = "../diagnosis_predictor_data_archive/"
     DATA_TYPE_TO_PATH_MAPPING = {
         "item_lvl": "data/create_datasets/",
         "subscale_scores": "data/create_datasets/",
