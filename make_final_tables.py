@@ -2,6 +2,9 @@ import pandas as pd
 import os, datetime
 import json
 
+import dsutils
+from dsutils.file_utils import write_dict_of_dfs_to_csv
+
 from data_reading import DataReader
 
 def make_df_to_plot_eval_orig(df, df_free = None, df_only_parent_report = None, df_only_parent_report_free = None):
@@ -108,6 +111,34 @@ def make_df_ds_stats(df, df_free = None, df_only_parent_report = None, df_only_p
     
     return df
 
+def make_dfs_for_saturation_plots(df, df_free = None, df_only_parent_report = None, df_only_parent_report_free = None):
+    diags = df.columns.tolist()
+    dfs = {}
+
+    for diag in diags:
+        # Make df with only this diag, rows: subsets, columns: "All assessments", "Free assessments", "All assessments only parent report", "Free assessments only parent report"
+        df_diag = df[[diag]]
+        df_diag.columns = ["All assessments"]
+
+        if df_free is not None:
+            df_diag_free = df_free[[diag]]
+            df_diag_free.columns = ["Free assessments"]
+            df_diag = df_diag.merge(df_diag_free, left_index=True, right_index=True)
+
+        if df_only_parent_report is not None:
+            df_diag_only_parent_report = df_only_parent_report[[diag]]
+            df_diag_only_parent_report.columns = ["Only parent report"]
+            df_diag = df_diag.merge(df_diag_only_parent_report, left_index=True, right_index=True)
+
+        if df_only_parent_report_free is not None:
+            df_diag_only_parent_report_free = df_only_parent_report_free[[diag]]
+            df_diag_only_parent_report_free.columns = ["Free assessments only parent report"]
+            df_diag = df_diag.merge(df_diag_only_parent_report_free, left_index=True, right_index=True)
+
+        dfs[diag] = df_diag
+
+    return dfs
+
 def find_max_n_features(df_all):
     # Find max number of features (max in index)
     return df_all.index.max()
@@ -150,7 +181,7 @@ def make_dfs(data_reader):
                                                 params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags"],
                                                 file_filter = file_filter)
     # Learning
-    for data_type in ["eval_subsets_one_subset"]:
+    for data_type in ["eval_subsets"]:
         dfs[data_type+"_learning_NIH"] = data_reader.read_data(data_type = data_type, 
                                                 params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "NIH"],
                                                 file_filter = file_filter)
@@ -204,10 +235,10 @@ if __name__ == "__main__":
         dfs["eval_orig_consensus_and_learning_free_only_parent_report"])
     eval_subsets_df = make_df_to_plot_eval_subsets(
         dfs["manual_scoring"], 
-        dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], 
-        dfs["eval_subsets_consensus_and_learning_free_parent_and_sr"],
-        dfs["eval_subsets_consensus_and_learning_all_only_parent_report"],
-        dfs["eval_subsets_consensus_and_learning_free_only_parent_report"])
+        dfs["eval_subsets_one_subset_consensus_and_learning_all_parent_and_sr"], 
+        dfs["eval_subsets_one_subset_consensus_and_learning_free_parent_and_sr"],
+        dfs["eval_subsets_one_subset_consensus_and_learning_all_only_parent_report"],
+        dfs["eval_subsets_one_subset_consensus_and_learning_free_only_parent_report"])
     ds_stats_df = make_df_ds_stats(
         dfs["make_ds_consensus_and_learning_all_parent_and_sr"], 
         dfs["make_ds_consensus_and_learning_free_parent_and_sr"],
@@ -225,11 +256,19 @@ if __name__ == "__main__":
     compare_orig_vs_subsets_df.to_csv("output/compare_orig_vs_subsets.csv")
 
     ### Learning diags improvements ###
-    learning_improvement_df = make_df_learning_improvements(dfs["eval_subsets_one_subset_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_one_subset_learning_NIH"], dfs["eval_subsets_one_subset_learning_no_NIH"], all_diags = False)
-    learning_improvement_all_diags_df = make_df_learning_improvements(dfs["eval_subsets_one_subset_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_one_subset_learning_NIH"], dfs["eval_subsets_one_subset_learning_no_NIH"], all_diags = True)
+    learning_improvement_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = False)
+    learning_improvement_all_diags_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = True)
     
     learning_improvement_df.to_csv("output/learning_improvements.csv")
     learning_improvement_all_diags_df.to_csv("output/learning_improvements_all_diags.csv")
 
     sum_score_merged_df = merge_sum_score_tables()
     sum_score_merged_df.to_csv("output/sum_score_merged.csv")
+
+    dfs_for_saturation_plots = make_dfs_for_saturation_plots(
+        dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], 
+        dfs["eval_subsets_consensus_and_learning_free_parent_and_sr"],
+        dfs["eval_subsets_consensus_and_learning_all_only_parent_report"],
+        dfs["eval_subsets_consensus_and_learning_free_only_parent_report"]
+    )
+    write_dict_of_dfs_to_csv(dfs_for_saturation_plots, "output/saturation_dfs", index=True)

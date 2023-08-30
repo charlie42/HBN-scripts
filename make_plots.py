@@ -456,6 +456,64 @@ def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
                   filename="ROC_AUC_averages_sum_scores.png", 
                   indices=filename_and_diag_sets_dict.keys(), 
                   cols=col_list)
+    
+def get_opt_n_features_per_diag(df):
+    df = df[["Optimal # of features all assessments parent and sr", 
+             "Optimal # of features free assessments parent and sr",
+             "Optimal # of features all assessments only parent report",
+             "Optimal # of features free assessments only parent report"]]
+    df = df.rename(columns={
+        "Optimal # of features all assessments parent and sr": "All assessments",
+        "Optimal # of features free assessments parent and sr": "Free assessments",
+        "Optimal # of features all assessments only parent report": "Only parent report",
+        "Optimal # of features free assessments only parent report": "Free assessments only parent report"
+    })
+    return df
+
+def plot_saturation_plot(df, optimal_ns, ax, diag):
+    # Plot saturation plot for one diagnosis, 4 curves (one for each assessment subset): "All assessments", "Free assessments", "Only parent report", "Free assessments, only parent report"
+    # x-axis: # of features, y-axis: AUROC
+
+    ax.set_title(diag)
+    ax.set_xlabel("# of features")
+    ax.set_ylabel("AUROC")
+
+    # Plot curves
+    ax.plot(df.index, df["All assessments"], label="All assessments", linestyle="-", color="orange")
+    ax.plot(df.index, df["Free assessments"], label="Non-proprietary assessments", linestyle="--", color="orange")
+    ax.plot(df.index, df["Only parent report"], label="Only parent report", linestyle="-", color="red")
+    ax.plot(df.index, df["Free assessments only parent report"], label="Non-proprietary assessments, only parent report", linestyle="--", color="red")
+
+    # Highlight dots with optimal n of features (same column names), empty dot for free, filled dot for all, orange for parent and sr assessments, red for only parent report
+    ax.plot(optimal_ns["All assessments"], df.loc[optimal_ns["All assessments"], "All assessments"], marker="o", color="orange", linestyle="", fillstyle="full", markersize=10)
+    ax.plot(optimal_ns["Free assessments"], df.loc[optimal_ns["Free assessments"], "Free assessments"], marker="o", color="orange", linestyle="", fillstyle="none", markersize=10)
+    ax.plot(optimal_ns["Only parent report"], df.loc[optimal_ns["Only parent report"], "Only parent report"], marker="o", color="red", linestyle="", fillstyle="full", markersize=10)
+    ax.plot(optimal_ns["Free assessments only parent report"], df.loc[optimal_ns["Free assessments only parent report"], "Free assessments only parent report"], marker="o", color="red", linestyle="", fillstyle="none", markersize=10)
+    
+    # Add legend
+    ax.legend(loc="lower right")
+    
+    return ax
+
+def plot_saturation_plots(dfs, optimal_ns):
+    # Plot saturation plots for each diagnosis, one plot per diagnosis, 4 curves per plot (one for each assessment subset), make as square as possible
+    diags = list(dfs.keys())
+    fig, axes = plt.subplots(int(np.ceil(len(diags)/3)), 3, figsize=(20, 20)) #calculate grid for nb of diags such that it is square
+    # Add gap between subplots
+    fig.subplots_adjust(hspace=0.4, wspace=0.4)
+
+    axes = axes.flatten()
+
+    for i, diag in enumerate(diags):
+        axes[i] = plot_saturation_plot(dfs[diag], optimal_ns.loc[diag], axes[i], diag)
+
+    # Remove empty plots
+    for i in range(len(diags), len(axes)):
+        axes[i].axis('off')
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/saturation_plots.png", bbox_inches="tight", dpi=600)
 
 
 def main():
@@ -467,6 +525,7 @@ def main():
     compare_orig_subsets_learning_df = data_reader.read_data("compare_orig_vs_subsets_learning")
     sum_scores_df = data_reader.read_data("sum_score_aurocs")
     learning_improvement_df = data_reader.read_data("learning_improvements")
+    saturation_dfs = data_reader.read_data("saturation")
 
     # Read thresholds data from diagnosis_predictor_data (all assessments)
     thresholds_filename = "Diag.Specific Learning Disorder with Impairment in Reading (test).csv"
@@ -480,6 +539,7 @@ def main():
     compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
     sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
     learning_improvement_df = learning_improvement_df.rename(index=diagnosis_dict)
+    saturation_dfs = {diagnosis_dict[x]:y for x,y in saturation_dfs.items() if x in diagnosis_dict.keys()}
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
     for col in compare_orig_subsets_df.columns:
@@ -503,9 +563,12 @@ def main():
     #plot_sum_scores_vs_subscales(sum_scores_df)
     #plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
 
-    plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
+    #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
     #plot_learning_improvements(learning_improvement_df)
+
+    opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
+    plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
 
 if __name__ == "__main__":
     main()

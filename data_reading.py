@@ -1,6 +1,7 @@
 import pandas as pd
 import os, datetime
 from joblib import load
+from dsutils import file_utils
 
 class DataReader:
     
@@ -21,6 +22,7 @@ class DataReader:
         "sum_score_aurocs": None,
         "sum_score_aurocs_free": None,
         "learning_improvements": None,
+        "saturation": None,
     }
     PARAM_TO_PATH_MAPPING = {
         "only_parent_report": "only_parent_report__1",
@@ -78,6 +80,8 @@ class DataReader:
             return self._read_eval_subsets(one_subset=True)
         elif data_type == "learning_improvements":
             return self._read_learning_improvements(all_diags=True)
+        elif data_type == "saturation":
+            return self._read_saturation()
         else:
             raise ValueError("data_type not recognized: ", data_type)
         
@@ -92,9 +96,9 @@ class DataReader:
     
     def _read_eval_subsets(self, one_subset=False):
         if one_subset:
-            return pd.read_csv(self.data_path + "auc-on-subsets-test-set.csv", index_col=0)
-        else:
             return pd.read_csv(self.data_path + "perf-on-subsets-test-set-one-threshold-optimal-nb-features.csv", index_col=1)
+        else:
+            return pd.read_csv(self.data_path + "auc-on-subsets-test-set.csv", index_col=0)
     
     def _read_make_ds(self):
         return pd.read_csv(self.data_path + "dataset_stats.csv", index_col=0)
@@ -125,6 +129,9 @@ class DataReader:
             return pd.read_csv("output/learning_improvements_all_diags.csv", index_col=0)
         else:
             return pd.read_csv("output/learning_improvements.csv", index_col=0)
+        
+    def _read_saturation(self):
+        return file_utils.read_dict_of_dfs_from_dir("output/saturation_dfs/", index_col="Number of features")
     
     def _generate_data_path(self):
         return self._get_newest_non_empty_dir_in_dir(
