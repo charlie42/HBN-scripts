@@ -504,6 +504,10 @@ def plot_saturation_plots(dfs, optimal_ns):
 
     axes = axes.flatten()
 
+    # Set ylim
+    for ax in axes:
+        ax.set_ylim([0.5, 1.0])
+
     for i, diag in enumerate(diags):
         axes[i] = plot_saturation_plot(dfs[diag], optimal_ns.loc[diag], axes[i], diag)
 
@@ -515,6 +519,54 @@ def plot_saturation_plots(dfs, optimal_ns):
 
     plt.savefig("output/viz/saturation_plots.png", bbox_inches="tight", dpi=600)
 
+def make_averages_for_saturation_plots(dfs, optimal_ns):
+    # Make df with average values for each number of features (without deprecated df.append)
+    df_averages = pd.concat(list(dfs.values()), keys=list(dfs.keys()))
+    df_averages = df_averages.groupby(level=1).mean()
+    print(df_averages)
+
+    # Make df with average values of optimal # of features for each assessment subset
+    print(optimal_ns)
+    optimal_ns = optimal_ns.mean().astype(int)
+    print(optimal_ns)
+
+    return df_averages, optimal_ns
+
+def plot_average_saturation_plot(dfs, optimal_ns):
+    # Get average value at each number of features among diags for all, free, only parent report, and free and only parent report
+
+    # Make df with average values for each number of features
+    df_averages, optimal_ns = make_averages_for_saturation_plots(dfs, optimal_ns)
+
+    # Plot saturation plot for one diagnosis, 4 curves (one for each assessment subset): "All assessments", "Free assessments", "Only parent report", "Free assessments, only parent report"
+    # x-axis: # of features, y-axis: AUROC
+
+    plt.figure(figsize=(10, 8))
+    plt.title("Average AUROC of ML model on # of items in best subscale")
+    plt.xlabel("# of features")
+    plt.ylabel("AUROC")
+
+    # Set ylim
+    plt.ylim([0.5, 1.0])
+
+    # Plot curves
+    plt.plot(df_averages.index, df_averages["All assessments"], label="All assessments", linestyle="-", color="orange")
+    plt.plot(df_averages.index, df_averages["Free assessments"], label="Non-proprietary assessments", linestyle="--", color="orange")
+    plt.plot(df_averages.index, df_averages["Only parent report"], label="Only parent report", linestyle="-", color="red")
+    plt.plot(df_averages.index, df_averages["Free assessments only parent report"], label="Non-proprietary assessments, only parent report", linestyle="--", color="red")
+
+    # Highlight dots with optimal n of features (same column names), empty dot for free, filled dot for all, orange for parent and sr assessments, red for only parent report
+    plt.plot(optimal_ns["All assessments"], df_averages.loc[optimal_ns["All assessments"], "All assessments"], marker="o", color="orange", linestyle="", fillstyle="full", markersize=10)
+    plt.plot(optimal_ns["Free assessments"], df_averages.loc[optimal_ns["Free assessments"], "Free assessments"], marker="o", color="orange", linestyle="", fillstyle="none", markersize=10)
+    plt.plot(optimal_ns["Only parent report"], df_averages.loc[optimal_ns["Only parent report"], "Only parent report"], marker="o", color="red", linestyle="", fillstyle="full", markersize=10)
+    plt.plot(optimal_ns["Free assessments only parent report"], df_averages.loc[optimal_ns["Free assessments only parent report"], "Free assessments only parent report"], marker="o", color="red", linestyle="", fillstyle="none", markersize=10)
+
+    # Add legend
+    plt.legend(loc="lower right")
+
+    plt.tight_layout()
+
+    plt.savefig("output/viz/average_saturation_plot.png", bbox_inches="tight", dpi=600)
 
 def main():
 
@@ -569,6 +621,7 @@ def main():
 
     opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
     plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
+    plot_average_saturation_plot(saturation_dfs, opt_n_features_per_diag)
 
 if __name__ == "__main__":
     main()
