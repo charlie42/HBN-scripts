@@ -303,6 +303,7 @@ def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
         plt.savefig("output/viz/sum_scores.png", bbox_inches="tight", dpi=600)
 
 def plot_learning_improvements(learning_improvement_df):
+
     # Plot AUC from "original", "more assessments", "NIH"
     df = learning_improvement_df
     plt.figure(figsize=(10, 8))
@@ -324,6 +325,20 @@ def plot_learning_improvements(learning_improvement_df):
     plt.tight_layout()
 
     plt.savefig("output/viz/learning_improvements.png", bbox_inches="tight", dpi=600)
+
+def plot_learning_improvements_bars(learning_improvement_df):
+
+    plot_manual_vs_ml_bars(
+        df=learning_improvement_df, 
+        diags=learning_improvement_df.index, 
+        filename="learning_improvements_bars", 
+        title="AUROC of original models, models with more assessments, and models with more assessments and NIH",
+        col_dict={
+            "original": "Original",
+            "more assessments": "More assessments",
+            "NIH": "More assessments and NIH"
+        }
+    )
 
 def make_averages_for_assessment_subsets(
         df_ml,
@@ -617,11 +632,12 @@ def main():
 
     #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
-    #plot_learning_improvements(learning_improvement_df)
+    plot_learning_improvements(learning_improvement_df)
+    plot_learning_improvements_bars(learning_improvement_df)
 
-    opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
-    plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
-    plot_average_saturation_plot(saturation_dfs, opt_n_features_per_diag)
+    #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
+    #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
+    #plot_average_saturation_plot(saturation_dfs, opt_n_features_per_diag)
 
 if __name__ == "__main__":
     main()
