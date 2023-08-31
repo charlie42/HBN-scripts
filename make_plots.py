@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 from data_reading import DataReader
 
-diagnosis_dict = {
+DIAGNOSIS_DICT = {
         'Diag.Major Depressive Disorder': 'MDD',
         'Diag.Autism Spectrum Disorder': 'ASD',
         'Diag.Enuresis': 'Enuresis',
@@ -33,7 +33,7 @@ diagnosis_dict = {
         'Diag.NVLD (test)': 'NVLD (test)',
         'Diag.NVLD without reading condition (test)': 'NVLD no read (test)',
     }
-LDs = [
+LDS = [
     'SLD-Math',
     'SLD-Math (test)',
     'SLD-Reading',
@@ -44,10 +44,10 @@ LDs = [
     'NVLD (test)',
     'NVLD no read (test)'
 ]
-non_LDs = [diag for diag in diagnosis_dict.values() if diag not in LDs]
+NON_LDS = [diag for diag in DIAGNOSIS_DICT.values() if diag not in LDS]
 
 # Get only the diagnoses with (test) in the name
-test_diagnosis_list = [diag for diag in diagnosis_dict.keys() if "(test)" in diag]
+test_diagnosis_list = [diag for diag in DIAGNOSIS_DICT.keys() if "(test)" in diag]
 
 def get_tick_ids_for_diagnoses_with_LD_in_name(diagnoses):
     # Get the xtick ids for diagnoses with "test" in the name
@@ -167,6 +167,7 @@ def add_formatted_labels_to_bars(ax, container):
     return ax
 
 def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
+    print("DEBUG\n", df, col_dict)
     df = df.sort_values(by=list(col_dict.keys())[0], ascending=False)
 
     # Filter df to only include the diagnoses in diags
@@ -331,7 +332,7 @@ def plot_learning_improvements_bars(learning_improvement_df):
     plot_manual_vs_ml_bars(
         df=learning_improvement_df, 
         diags=learning_improvement_df.index, 
-        filename="learning_improvements_bars", 
+        filename="learning_improvements_bars.png", 
         title="AUROC of original models, models with more assessments, and models with more assessments and NIH",
         col_dict={
             "original": "Original",
@@ -339,6 +340,46 @@ def plot_learning_improvements_bars(learning_improvement_df):
             "NIH": "More assessments and NIH"
         }
     )
+
+def make_averages_for_learning_improvements(learning_improvement_df):
+    df = learning_improvement_df
+    print(df)
+
+    # Make df with averages for each assessment subset
+    col_dict = {
+        "original": "Original",
+        "more assessments": "More assessments",
+        "NIH": "More assessments and NIH"
+    }
+    index_dict = {
+        "Non LDs": NON_LDS,
+        "LDs": LDS,
+    }
+    df_averages = pd.DataFrame(columns=col_dict.values(), index=index_dict.keys())
+    print(df_averages)
+
+    for index, diags in index_dict.items():
+        diags = [diag for diag in diags if diag in df.index] # Remove diagnoses not in df
+        for col in df.columns:
+            print("\n\nDEBUG", col, df_averages.columns), 
+            print("DEBUG", col_dict[col], df.columns)
+            print("DEBUG", df.loc[diags])
+            print("DEBUG", df_averages.loc[index])
+            df_averages.loc[index, col_dict[col]] = df.loc[diags, col].mean()
+    
+    print("df_averages:\n", df_averages)
+
+    return df_averages
+
+
+def plot_average_learning_improvements(learning_improvement_df):
+    df = make_averages_for_learning_improvements(learning_improvement_df)
+
+    plot_averages(
+        df, 
+        filename="learning_improvements_averages.png",
+        indices=["Non LDs", "LDs"], 
+        cols=df.columns)
 
 def make_averages_for_assessment_subsets(
         df_ml,
@@ -390,8 +431,8 @@ def plot_averages(df, filename, indices, cols):
         
 def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
     filename_and_diag_sets_dict = {
-        "non_LDs": non_LDs,
-        "LDs": LDs,
+        "Non LDs": NON_LDS,
+        "LDs": LDS,
     }
     filename_and_col_sets_dict_ml = { # Rename columns for legend
         "all": {
@@ -457,7 +498,7 @@ def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
                 col_dict=col_set)
             
     # Plot group bar plot with averages score between diagnoses for each assessment subset (separate for LD and non-LD)
-    # One group for non-LDs, one for LDs. Each bar in group is assessment subset
+    # One group for non-LDS, one for LDS. Each bar in group is assessment subset
     df_averages_ml, df_averages_sum_scores, col_list = make_averages_for_assessment_subsets(
         df_ml,
         df_sum_scores, 
@@ -602,11 +643,11 @@ def main():
         filename=thresholds_filename)
     
     # Rephrase diags to shorter names
-    compare_orig_subsets_df = compare_orig_subsets_df.rename(index=diagnosis_dict)
-    compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=diagnosis_dict)
-    sum_scores_df = sum_scores_df.rename(index=diagnosis_dict)
-    learning_improvement_df = learning_improvement_df.rename(index=diagnosis_dict)
-    saturation_dfs = {diagnosis_dict[x]:y for x,y in saturation_dfs.items() if x in diagnosis_dict.keys()}
+    compare_orig_subsets_df = compare_orig_subsets_df.rename(index=DIAGNOSIS_DICT)
+    compare_orig_subsets_learning_df = compare_orig_subsets_learning_df.rename(index=DIAGNOSIS_DICT)
+    sum_scores_df = sum_scores_df.rename(index=DIAGNOSIS_DICT)
+    learning_improvement_df = learning_improvement_df.rename(index=DIAGNOSIS_DICT)
+    saturation_dfs = {DIAGNOSIS_DICT[x]:y for x,y in saturation_dfs.items() if x in DIAGNOSIS_DICT.keys()}
 
     # Make all columns except those that start with ROC AUC into ints (if not NA) (bug in pd)
     for col in compare_orig_subsets_df.columns:
@@ -632,8 +673,9 @@ def main():
 
     #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
-    plot_learning_improvements(learning_improvement_df)
-    plot_learning_improvements_bars(learning_improvement_df)
+    #plot_learning_improvements(learning_improvement_df)
+    #plot_learning_improvements_bars(learning_improvement_df)
+    plot_average_learning_improvements(learning_improvement_df)
 
     #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
     #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
