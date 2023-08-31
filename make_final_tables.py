@@ -169,16 +169,16 @@ def make_dfs(data_reader):
     for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds", "eval_subsets_one_subset"]:
         file_filter = "eval_orig_test_set_file" if data_type == "eval_orig" else ""
         dfs[data_type+"_consensus_and_learning_all_parent_and_sr"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags"],
+                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_free_parent_and_sr"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "free_assessments", "learning_and_consensus_diags"],
+                                                params = ["parent_and_sr", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_all_only_parent_report"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["only_parent_report", "multiple_assessments", "all_assessments", "learning_and_consensus_diags"],
+                                                params = ["only_parent_report", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_free_only_parent_report"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags"],
+                                                params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n"],
                                                 file_filter = file_filter)
     # Learning
     for data_type in ["eval_subsets"]:

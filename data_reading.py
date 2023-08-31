@@ -34,6 +34,7 @@ class DataReader:
         "learning_and_consensus_diags": "learning?__0",
         "NIH": "NIH?__1",
         "no_NIH": "NIH?__0",
+        "fix_n": "fix_n__1",
     }
     FILE_FILTER_MAPPING = {
         "eval_orig_test_set_file": "performance_table_all_features_test_set.csv",
