@@ -169,24 +169,27 @@ def make_dfs(data_reader):
     for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds", "eval_subsets_one_subset"]:
         file_filter = "eval_orig_test_set_file" if data_type == "eval_orig" else ""
         dfs[data_type+"_consensus_and_learning_all_parent_and_sr"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n"],
+                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n_all"],
+                                                file_filter = file_filter)
+        dfs[data_type+"_consensus_and_learning_all_parent_and_sr_fix_n_learning"] = data_reader.read_data(data_type = data_type, 
+                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n_learning"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_free_parent_and_sr"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n"],
+                                                params = ["parent_and_sr", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n_all"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_all_only_parent_report"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["only_parent_report", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n"],
+                                                params = ["only_parent_report", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n_all"],
                                                 file_filter = file_filter)
         dfs[data_type+"_consensus_and_learning_free_only_parent_report"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n"],
+                                                params = ["only_parent_report", "multiple_assessments", "free_assessments", "learning_and_consensus_diags", "fix_n_all"],
                                                 file_filter = file_filter)
     # Learning
     for data_type in ["eval_subsets"]:
         dfs[data_type+"_learning_NIH"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "NIH"],
+                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "NIH", "fix_n_learning"],
                                                 file_filter = file_filter)
         dfs[data_type+"_learning_no_NIH"] = data_reader.read_data(data_type = data_type, 
-                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "no_NIH"],
+                                                params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "no_NIH", "fix_n_learning"],
                                                 file_filter = file_filter)
     
     # Manual scoring
@@ -255,9 +258,9 @@ if __name__ == "__main__":
     eval_subsets_df.to_csv("output/eval_subsets.csv")
     compare_orig_vs_subsets_df.to_csv("output/compare_orig_vs_subsets.csv")
 
-    ### Learning diags improvements ###
-    learning_improvement_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = False)
-    learning_improvement_all_diags_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = True)
+    ### Learning diags improvements ### 
+    learning_improvement_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr_fix_n_learning"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = False)
+    learning_improvement_all_diags_df = make_df_learning_improvements(dfs["eval_subsets_consensus_and_learning_all_parent_and_sr_fix_n_learning"], dfs["eval_subsets_learning_NIH"], dfs["eval_subsets_learning_no_NIH"], all_diags = True)
     
     learning_improvement_df.to_csv("output/learning_improvements.csv")
     learning_improvement_all_diags_df.to_csv("output/learning_improvements_all_diags.csv")

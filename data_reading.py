@@ -34,7 +34,8 @@ class DataReader:
         "learning_and_consensus_diags": "learning?__0",
         "NIH": "NIH?__1",
         "no_NIH": "NIH?__0",
-        "fix_n": "fix_n__1",
+        "fix_n_all": "fix_n__1", # rename to fix_n_all__1 when new data is generated
+        "fix_n_learning": "fix_n_learning__1",
     }
     FILE_FILTER_MAPPING = {
         "eval_orig_test_set_file": "performance_table_all_features_test_set.csv",
@@ -49,7 +50,7 @@ class DataReader:
         self.file_filter = self.FILE_FILTER_MAPPING[file_filter] if file_filter else ""
         self.data_type_path = self.DATA_TYPE_TO_PATH_MAPPING[data_type]
 
-        if self.data_type_path != None:
+        if self.data_type_path is not None:
             self.data_path = self._generate_data_path()
             print("Reading data from: ", self.data_path)
 

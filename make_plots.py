@@ -167,7 +167,6 @@ def add_formatted_labels_to_bars(ax, container):
     return ax
 
 def plot_manual_vs_ml_bars(df, diags, filename, title, col_dict):
-    print("DEBUG\n", df, col_dict)
     df = df.sort_values(by=list(col_dict.keys())[0], ascending=False)
 
     # Filter df to only include the diagnoses in diags
@@ -361,10 +360,6 @@ def make_averages_for_learning_improvements(learning_improvement_df):
     for index, diags in index_dict.items():
         diags = [diag for diag in diags if diag in df.index] # Remove diagnoses not in df
         for col in df.columns:
-            print("\n\nDEBUG", col, df_averages.columns), 
-            print("DEBUG", col_dict[col], df.columns)
-            print("DEBUG", df.loc[diags])
-            print("DEBUG", df_averages.loc[index])
             df_averages.loc[index, col_dict[col]] = df.loc[diags, col].mean()
     
     print("df_averages:\n", df_averages)
@@ -674,7 +669,7 @@ def main():
     #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
     #plot_learning_improvements(learning_improvement_df)
-    #plot_learning_improvements_bars(learning_improvement_df)
+    plot_learning_improvements_bars(learning_improvement_df)
     plot_average_learning_improvements(learning_improvement_df)
 
     #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
