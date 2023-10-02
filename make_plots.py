@@ -40,7 +40,6 @@ LDS = [
     'SLD-Writing',
     'SLD-Reading (test)',
     'SLD-Writing (test)',
-    'PS (test)',
     'NVLD (test)',
     'NVLD no read (test)'
 ]
@@ -351,9 +350,10 @@ def make_averages_for_learning_improvements(learning_improvement_df):
         "NIH": "More assessments and NIH"
     }
     index_dict = {
-        "Non LDs": NON_LDS,
+        "Non LDs": [x for x in NON_LDS if x not in ["Any", "None"]], # remove "Any" and "None" from df
         "LDs": LDS,
     }
+    print("DEBUG check that no any and none diags", index_dict)
     df_averages = pd.DataFrame(columns=col_dict.values(), index=index_dict.keys())
     print(df_averages)
 
@@ -374,7 +374,8 @@ def plot_average_learning_improvements(learning_improvement_df):
         df, 
         filename="learning_improvements_averages.png",
         indices=["Non LDs", "LDs"], 
-        cols=df.columns)
+        cols=df.columns,
+        title="AUROC of original models, models with additional assessments, and models with additional assessments and NIH")
 
 def make_averages_for_assessment_subsets(
         df_ml,
@@ -400,6 +401,10 @@ def make_averages_for_assessment_subsets(
     df_averages_ml = pd.DataFrame(col_list)
     df_averages_sum_scores = pd.DataFrame(col_list)
 
+    # Drop any and none diags
+    df_ml = df_ml.drop(["Any", "None"], axis=0)
+    df_sum_scores = df_sum_scores.drop(["Any", "None"], axis=0)
+
     # Make df with averages for each assessment subset
     for index, diags in filename_and_diag_sets_dict.items():
         diags = [diag for diag in diags if diag in df_ml.index]
@@ -415,13 +420,13 @@ def make_averages_for_assessment_subsets(
 
     return df_averages_ml, df_averages_sum_scores, col_list
 
-def plot_averages(df, filename, indices, cols):
+def plot_averages(df, filename, indices, cols, title):
     col_dict = {x:x for x in cols} # Don't need to rename columns
     plot_manual_vs_ml_bars(
         df, 
         diags=indices, 
         filename=filename, 
-        title="AUROC of best existing subscale vs subset sum-score",
+        title=title,
         col_dict=col_dict)
         
 def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
@@ -481,7 +486,7 @@ def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
                 df_ml, 
                 diags=diags, 
                 filename=f"ROC_AUC_subsets_bars_{filename}_{col_set_name}.png", 
-                title="AUROC on test set for subsets of features",
+                title="AUROC of best existing subscale vs ML model on # of items in best subscale",
                 col_dict=col_set)
     for filename, diags in filename_and_diag_sets_dict.items():
         for col_set_name, col_set in filename_and_col_sets_dict_sum_scores.items():
@@ -502,11 +507,13 @@ def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
     plot_averages(df_averages_ml, 
                   filename="ROC_AUC_averages_ml.png", 
                   indices=filename_and_diag_sets_dict.keys(), 
-                  cols=col_list)
+                  cols=col_list,
+                  title="AUROC of best existing subscale vs ML model on # of items in best subscale")
     plot_averages(df_averages_sum_scores, 
                   filename="ROC_AUC_averages_sum_scores.png", 
                   indices=filename_and_diag_sets_dict.keys(), 
-                  cols=col_list)
+                  cols=col_list, 
+                  title="AUROC of best existing subscale vs subset sum-score")
     
 def get_opt_n_features_per_diag(df):
     df = df[["Optimal # of features all assessments parent and sr", 
@@ -670,7 +677,7 @@ def main():
 
     #plot_learning_improvements(learning_improvement_df)
     #plot_learning_improvements_bars(learning_improvement_df)
-    #plot_average_learning_improvements(learning_improvement_df)
+    plot_average_learning_improvements(learning_improvement_df)
 
     #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
     #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
