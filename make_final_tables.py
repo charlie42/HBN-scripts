@@ -152,7 +152,7 @@ def make_df_learning_improvements(df_all, df_learning_NIH, df_learning_no_NIH, a
     df_learning_no_NIH = df_learning_no_NIH.loc[max_n_features]
 
     df = pd.concat([df_all, df_learning_no_NIH, df_learning_NIH], axis=1)
-    df.columns = ["original", "more assessments", "NIH"]
+    df.columns = ["original", "more assessments", "more assessments and NIH"]
     df = df.sort_values(by="original", ascending=False)
 
     if not all_diags: # Only get test-based diags (have "(test)" in the name)

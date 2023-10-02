@@ -303,13 +303,13 @@ def plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df = None):
 
 def plot_learning_improvements(learning_improvement_df):
 
-    # Plot AUC from "original", "more assessments", "NIH"
+    # Plot AUC from "original", "more assessments", "more assessments and NIH"
     df = learning_improvement_df
     plt.figure(figsize=(10, 8))
     plt.title("AUROC of original models, models with more assessments, and models with more assessments and NIH")
     plt.plot(df["original"], label="Original", marker="o", linestyle="", color="blue")
     plt.plot(df["more assessments"], label="More assessments", marker="o", linestyle="", color="red")
-    plt.plot(df["NIH"], label="More assessments and NIH", marker="o", linestyle="", color="green")
+    plt.plot(df["more assessments and NIH"], label="More assessments and NIH", marker="o", linestyle="", color="green")
     plt.xticks(rotation=45, ha="right", size=8)
 
     # Make xticks for the diagnoses with (test) in the name bold
@@ -335,7 +335,7 @@ def plot_learning_improvements_bars(learning_improvement_df):
         col_dict={
             "original": "Original",
             "more assessments": "More assessments",
-            "NIH": "More assessments and NIH"
+            "more assessments and NIH": "More assessments and NIH"
         }
     )
 
@@ -347,7 +347,7 @@ def make_averages_for_learning_improvements(learning_improvement_df):
     col_dict = {
         "original": "Original",
         "more assessments": "More assessments",
-        "NIH": "More assessments and NIH"
+        "more assessments and NIH": "More assessments and NIH"
     }
     index_dict = {
         "Non LDs": [x for x in NON_LDS if x not in ["Any", "None"]], # remove "Any" and "None" from df
