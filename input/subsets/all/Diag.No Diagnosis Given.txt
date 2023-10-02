@@ -1,0 +1,78 @@
+{
+  "1": [
+    "AUROC: 0.7",
+    [
+      "(-0.08*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.7",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.73",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.05*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.74",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.05*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.04*) SRS,SRS_51: 51. Has difficulty answering questions directly and ends up talking around the subject. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.75",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.04*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.04*) SRS,SRS_51: 51. Has difficulty answering questions directly and ends up talking around the subject. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.75",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.06*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.04*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.04*) SRS,SRS_51: 51. Has difficulty answering questions directly and ends up talking around the subject. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.77",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.06*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.04*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.03*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) SRS,SRS_51: 51. Has difficulty answering questions directly and ends up talking around the subject. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.77",
+    [
+      "(-0.07*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.06*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.04*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.04*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.03*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) SRS,SRS_51: 51. Has difficulty answering questions directly and ends up talking around the subject. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ]
+}

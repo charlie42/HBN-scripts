@@ -1,0 +1,123 @@
+{
+  "1": [
+    "AUROC: 0.66",
+    [
+      "(0.29*) SRS,SRS_43: 43. Separates easily from caregivers. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.72",
+    [
+      "(0.35*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.25*) SRS,SRS_43: 43. Separates easily from caregivers. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.72",
+    [
+      "(0.33*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.23*) SRS,SRS_43: 43. Separates easily from caregivers. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.71",
+    [
+      "(0.33*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.21*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.18*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.69",
+    [
+      "(0.32*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.21*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.19*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.71",
+    [
+      "(0.32*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.13*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.71",
+    [
+      "(0.30*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.19*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) ASSQ,ASSQ_26: has markedly unusual facial expression - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.72",
+    [
+      "(0.29*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.19*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) ASSQ,ASSQ_26: has markedly unusual facial expression - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(-0.13*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.72",
+    [
+      "(0.28*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.17*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) ASSQ,ASSQ_26: has markedly unusual facial expression - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) APQ_P,APQ_P_13: 13. You compliment your child when he/she has done something well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(-0.12*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.73",
+    [
+      "(0.28*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.21*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.13*) MFQ_P,MFQ_P_08: 8. S/he felt s/he was no good anymore. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) ASSQ,ASSQ_26: has markedly unusual facial expression - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) APQ_P,APQ_P_13: 13. You compliment your child when he/she has done something well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(-0.11*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.73",
+    [
+      "(0.29*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.21*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.12*) MFQ_P,MFQ_P_08: 8. S/he felt s/he was no good anymore. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) APQ_SR,APQ_SR_28: 28. You stay out later than you are supposed to and your parents don't know it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) ASSQ,ASSQ_26: has markedly unusual facial expression - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.11*) SympChck,CSC_48P: 48. Has unusual physical mannerisms (rocked body or flapping hands)(Past) - 0=No, 1=Yes",
+      "(0.11*) APQ_P,APQ_P_13: 13. You compliment your child when he/she has done something well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(-0.12*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ]
+}

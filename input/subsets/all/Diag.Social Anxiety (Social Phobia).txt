@@ -1,0 +1,32 @@
+{
+  "1": [
+    "AUROC: 0.66",
+    [
+      "(0.63*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.67",
+    [
+      "(0.60*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.23*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.7",
+    [
+      "(0.43*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.24*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.29*) CBCL,CBCL_75: 75. Too shy or timid - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.72",
+    [
+      "(0.37*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.25*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) CBCL,CBCL_75: 75. Too shy or timid - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.21*) SympChck,CSC_20C: 20. Often feels very nervous when he/she has to do things in front of others(Current) - 0=No, 1=Yes"
+    ]
+  ]
+}

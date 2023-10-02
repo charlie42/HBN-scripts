@@ -1,0 +1,218 @@
+{
+  "1": [
+    "AUROC: 0.62",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.62",
+    [
+      "(0.29*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.27*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.65",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.27*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.17*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.66",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.18*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.69",
+    [
+      "(0.25*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.18*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.14*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.69",
+    [
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.17*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.14*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.72",
+    [
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.16*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.14*) Basic_Demos,Sex:  - ",
+      "(-0.14*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.72",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.16*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.15*) Basic_Demos,Sex:  - ",
+      "(-0.14*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.11*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.72",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.16*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.15*) Basic_Demos,Sex:  - ",
+      "(-0.14*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.09*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.11*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.72",
+    [
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.16*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.13*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.09*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.09*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.73",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.16*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.12*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.12*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.10*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.73",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.15*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.12*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.12*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.10*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.74",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.15*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.11*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.12*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.09*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.10*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.73",
+    [
+      "(0.23*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.17*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.14*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.11*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.11*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.11*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.09*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.72",
+    [
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.17*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.14*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.11*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.11*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.11*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.09*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.07*) MFQ_P,MFQ_P_03: 3. S/he was less hungry than usual. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.72",
+    [
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.15*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) Basic_Demos,Age:  - ",
+      "(-0.16*) Basic_Demos,Sex:  - ",
+      "(-0.10*) ICU_P,ICU_P_13: 13. Easily admits to being wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.11*) APQ_SR,APQ_SR_36: 36. Your parents take away a privilege or money from you as punishment - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.11*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.09*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.08*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.07*) MFQ_P,MFQ_P_03: 3. S/he was less hungry than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.09*) SympChck,CSC_24C: 24. Often misses school or other activities because he/she doesn't feel well(Current) - 0=No, 1=Yes"
+    ]
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "1": [
+    "AUROC: 0.74",
+    [
+      "(0.65*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.79",
+    [
+      "(0.42*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.42*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.78",
+    [
+      "(0.35*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.39*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.30*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.79",
+    [
+      "(0.37*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.36*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.27*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.23*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.8",
+    [
+      "(0.30*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.38*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.24*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.20*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.81",
+    [
+      "(0.26*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.37*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(0.12*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.81",
+    [
+      "(0.26*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.35*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.20*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.13*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.13*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.8",
+    [
+      "(0.26*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.36*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) PreInt_EduHx,martial_arts: Martial Arts - 0= No, 1= Yes",
+      "(0.14*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.81",
+    [
+      "(0.26*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.35*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.24*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.10*) Basic_Demos,Sex:  - ",
+      "(0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.13*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) PreInt_EduHx,martial_arts: Martial Arts - 0= No, 1= Yes",
+      "(0.13*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.81",
+    [
+      "(0.26*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.34*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(0.12*) PreInt_EduHx,getalongkids_neighborhood: How does your child get along with children in the neighborhood? - 1= Excellent, 2= Good, 3= Fair, 4= Poor",
+      "(-0.10*) Basic_Demos,Sex:  - ",
+      "(0.18*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,martial_arts: Martial Arts - 0= No, 1= Yes",
+      "(0.07*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.8",
+    [
+      "(0.21*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.21*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.13*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(-0.08*) Basic_Demos,Sex:  - ",
+      "(0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.10*) SympChck,CSC_51P: 51. Often has a difficult time making eye contact(Past) - 0=No, 1=Yes",
+      "(0.13*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) PreInt_EduHx,martial_arts: Martial Arts - 0= No, 1= Yes",
+      "(0.14*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.82",
+    [
+      "(0.21*) ASSQ,ASSQ_15: wishes to be sociable but fails to make relationships with peers - 0=No, 1=Somewhat, 2=Yes",
+      "(0.36*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.14*) SympChck,CSC_52P: 52. Has a hard time expressing feelings on his/her face during social interactions(Past) - 0=No, 1=Yes",
+      "(0.22*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.13*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.10*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(-0.12*) Basic_Demos,Sex:  - ",
+      "(0.12*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) SympChck,CSC_51P: 51. Often has a difficult time making eye contact(Past) - 0=No, 1=Yes",
+      "(0.09*) ESWAN,SocAnx_04A: 4a. Seek out social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,martial_arts: Martial Arts - 0= No, 1= Yes",
+      "(0.12*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor"
+    ]
+  ]
+}

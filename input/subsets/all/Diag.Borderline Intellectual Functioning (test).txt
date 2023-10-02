@@ -1,0 +1,92 @@
+{
+  "1": [
+    "AUROC: 0.63",
+    [
+      "(0.37*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.62",
+    [
+      "(0.37*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.72",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.29*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.74",
+    [
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.26*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.76",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.27*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.20*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.77",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.20*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.19*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.78",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.19*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.19*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(-0.13*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.79",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.19*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.19*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(-0.13*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan",
+      "(-0.13*) SWAN,SWAN_10: 10. Sits still (controls movement of hands or feet or controls squirming) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.79",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.29*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.18*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.18*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(-0.13*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan",
+      "(-0.11*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.12*) SWAN,SWAN_10: 10. Sits still (controls movement of hands or feet or controls squirming) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ]
+}

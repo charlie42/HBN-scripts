@@ -1,0 +1,218 @@
+{
+  "1": [
+    "AUROC: 0.56",
+    [
+      "(0.31*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.64",
+    [
+      "(-0.75*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.64",
+    [
+      "(-0.74*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.27*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.25*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.64",
+    [
+      "(-0.73*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.29*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.25*) Basic_Demos,Age:  - ",
+      "(0.20*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.67",
+    [
+      "(-0.71*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.30*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.29*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.23*) Basic_Demos,Age:  - ",
+      "(0.21*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.67",
+    [
+      "(-0.70*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.31*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.31*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.27*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.19*) Basic_Demos,Age:  - ",
+      "(0.22*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.66",
+    [
+      "(-0.70*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.38*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.30*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.31*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.25*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) Basic_Demos,Age:  - ",
+      "(0.21*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.66",
+    [
+      "(-0.70*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.36*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.29*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.23*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.23*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) Basic_Demos,Age:  - ",
+      "(0.20*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.66",
+    [
+      "(-0.70*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.35*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.23*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.21*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) Basic_Demos,Age:  - ",
+      "(-0.14*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.69",
+    [
+      "(-0.68*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.34*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.22*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.23*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) Basic_Demos,Age:  - ",
+      "(-0.18*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.21*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.7",
+    [
+      "(-0.62*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.33*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.34*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.23*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.23*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.23*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) Basic_Demos,Age:  - ",
+      "(-0.18*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.20*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.20*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.7",
+    [
+      "(-0.62*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.33*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.35*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.22*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.22*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.22*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.14*) Basic_Demos,Age:  - ",
+      "(0.12*) APQ_SR,APQ_SR_23: 23. You help plan family activities - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.21*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.7",
+    [
+      "(-0.59*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.32*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.26*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.21*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.27*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(-0.23*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.14*) Basic_Demos,Age:  - ",
+      "(0.14*) APQ_SR,APQ_SR_23: 23. You help plan family activities - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.71",
+    [
+      "(-0.57*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.33*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.26*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.23*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.24*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.13*) Basic_Demos,Age:  - ",
+      "(0.15*) APQ_SR,APQ_SR_23: 23. You help plan family activities - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.16*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.72",
+    [
+      "(-0.57*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.32*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.26*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.33*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.22*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.25*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.19*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.14*) Basic_Demos,Age:  - ",
+      "(0.15*) APQ_SR,APQ_SR_23: 23. You help plan family activities - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.16*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.13*) SDQ,SDQ_07: Generally well behaved, usually does what adults request - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.71",
+    [
+      "(-0.56*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.32*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.26*) CBCL,CBCL_56A:      56A. Aches or pains (not stomach or headaches) - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.34*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(-0.24*) MFQ_P,MFQ_P_18: 18. S/he thought his/her family would be better off without him/her. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.25*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.21*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.22*) CBCL,CBCL_25: 25. Doesn't get along well with other kids - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) Basic_Demos,Age:  - ",
+      "(0.16*) APQ_SR,APQ_SR_23: 23. You help plan family activities - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.21*) ASSQ,ASSQ_06: has a deviant style of communication with a formal, fussy, \u00e2\u0080\u0098old-fashioned\u00e2\u0080\u0099 or \u00e2\u0080\u0098robotlike\u00e2\u0080\u0099 language (i.e. talks differently than other children, in a formal or stilted way) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) SDQ,SDQ_07: Generally well behaved, usually does what adults request - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) APQ_SR,APQ_SR_11: 11. Your mom helps you with your homework - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.15*) SRS,SRS_54: 54. Seems to react to people as if they are objects. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ]
+}

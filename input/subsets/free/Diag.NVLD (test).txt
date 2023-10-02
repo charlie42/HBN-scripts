@@ -1,0 +1,312 @@
+{
+  "1": [
+    "AUROC: 0.6",
+    [
+      "(0.20*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.7",
+    [
+      "(0.19*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.18*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.7",
+    [
+      "(0.19*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.17*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.7",
+    [
+      "(0.19*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.17*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.10*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.09*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.7",
+    [
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.16*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.10*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.09*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.71",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.15*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.10*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.09*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.09*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.7",
+    [
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.09*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.71",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.09*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(0.07*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.7",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.07*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.71",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.07*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.05*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.05*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.71",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.71",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.02*) SympChck,CSC_29C: 29. Often has accidents when he/she soild the bed or self during the day(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_55dP:      d. Cocaine (coke, crack)(Past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_55dP:      d. Cocaine (coke, crack)(Past) - 0=No, 1=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.02*) SympChck,CSC_29C: 29. Often has accidents when he/she soild the bed or self during the day(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.05*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.03*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(0.03*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.06*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_55dP:      d. Cocaine (coke, crack)(Past) - 0=No, 1=Yes",
+      "(0.05*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.03*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(0.02*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "18": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.06*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.06*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_55dP:      d. Cocaine (coke, crack)(Past) - 0=No, 1=Yes",
+      "(0.05*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.04*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.02*) SympChck,CSC_29C: 29. Often has accidents when he/she soild the bed or self during the day(Current) - 0=No, 1=Yes",
+      "(-0.02*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes"
+    ]
+  ],
+  "19": [
+    "AUROC: 0.72",
+    [
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.08*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.07*) APQ_P,APQ_P_16: 16. You praise your child for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.05*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.05*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_55dP:      d. Cocaine (coke, crack)(Past) - 0=No, 1=Yes",
+      "(0.05*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.03*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(0.02*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(0.04*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.02*) SympChck,CSC_29C: 29. Often has accidents when he/she soild the bed or self during the day(Current) - 0=No, 1=Yes",
+      "(-0.02*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes"
+    ]
+  ],
+  "20": [
+    "AUROC: 0.73",
+    [
+      "(0.14*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.13*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.11*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.08*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.06*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(0.05*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(0.05*) SympChck,CSC_40P: 40. Actively disobeys or doesn't listen to adult rules(Past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_12P: 12 Feels very afraid of being in a crowded place, or going outside in public alone(past) - 0=No, 1=Yes",
+      "(0.06*) ASSQ,ASSQ_04: accumulates facts on certain subjects (good rote memory) but does not really understand the meaning - 0=No, 1=Somewhat, 2=Yes",
+      "(0.05*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.05*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.03*) MFQ_P,MFQ_P_17: 17. S/he thought about death or dying. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.03*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(0.03*) SDQ,SDQ_16: Nervous in new situations, easily loses confidence - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SDQ,SDQ_11: Has at least one good friend - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SCARED_P,SCARED_P_37: 37. My child worries about things that have already happened  - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.02*) SympChck,CSC_29C: 29. Often has accidents when he/she soild the bed or self during the day(Current) - 0=No, 1=Yes",
+      "(-0.02*) PreInt_EduHx,afterschoolteams: Does your child belong to any groups, sports teams, or organizations? - 0= No, 1= Yes",
+      "(0.02*) SCARED_P,SCARED_P_24: 24. My child gets really frightened for no reason at all - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ]
+}

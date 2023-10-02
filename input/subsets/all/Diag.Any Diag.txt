@@ -1,0 +1,78 @@
+{
+  "1": [
+    "AUROC: 0.66",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.7",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.73",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.75",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.76",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.03*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(0.03*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.78",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.03*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.03*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(0.02*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.78",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SympChck,CSC_34P: 34. Has trouble paying attention, and it affects school work or performance(Past) - 0=No, 1=Yes",
+      "(0.03*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.03*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(0.02*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.78",
+    [
+      "(0.04*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) SympChck,CSC_34P: 34. Has trouble paying attention, and it affects school work or performance(Past) - 0=No, 1=Yes",
+      "(0.03*) SRS,SRS_24: 24. Has more difficulty than other children with changes in his or her routine. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.03*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(0.03*) ESWAN,SocAnx_01: 1. Tolerate feelings of anxiety in social situations - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.02*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ]
+}

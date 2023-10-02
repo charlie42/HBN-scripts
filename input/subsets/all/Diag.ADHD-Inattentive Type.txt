@@ -1,0 +1,177 @@
+{
+  "1": [
+    "AUROC: 0.62",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.68",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.72",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.73",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.73",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.73",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.06*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.73",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.74",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.73",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.05*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.74",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.74",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.03*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.74",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.03*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.75",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.03*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.03*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - "
+    ]
+  ],
+  "14": [
+    "AUROC: 0.76",
+    [
+      "(0.07*) SWAN,SWAN_05: 5. Organizes tasks and activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(-0.04*) CBCL,CBCL_19: 19. Demands a lot of attention - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) CBCL,CBCL_17: 17. Daydreams or gets lost in his/her thoughts - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.04*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.04*) SympChck,CSC_38P: 38. Often becomes really upset and loses his/her temper(Past) - 0=No, 1=Yes",
+      "(-0.03*) CBCL,CBCL_93: 93. Talks too much - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.05*) SympChck,CSC_35C: 35. Is often easily distracted(Current) - 0=No, 1=Yes",
+      "(0.05*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.03*) SRS,SRS_56: 56. Walks in between two people who are talking. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.03*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.03*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.04*) PCIAT,PCIAT_06: 6. How often do your child's grades suffer because of the amount of time he or she spends online? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.03*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - "
+    ]
+  ]
+}

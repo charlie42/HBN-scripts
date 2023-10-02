@@ -1,0 +1,197 @@
+{
+  "1": [
+    "AUROC: 0.78",
+    [
+      "(0.25*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.8",
+    [
+      "(0.25*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.81",
+    [
+      "(0.25*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.10*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.81",
+    [
+      "(0.25*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.10*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.82",
+    [
+      "(0.25*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.08*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.82",
+    [
+      "(0.24*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.08*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.11*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.82",
+    [
+      "(0.21*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.17*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.08*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.8",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.08*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.81",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.08*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.07*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "10": [
+    "AUROC: 0.81",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.08*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.07*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.07*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.07*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "11": [
+    "AUROC: 0.81",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.07*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.07*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.06*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.07*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.07*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.06*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "12": [
+    "AUROC: 0.81",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.07*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.07*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.06*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.07*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.07*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.06*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "13": [
+    "AUROC: 0.81",
+    [
+      "(0.20*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.07*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.07*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.08*) Basic_Demos,Age:  - ",
+      "(-0.07*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.06*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.07*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.10*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.06*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.06*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "14": [
+    "AUROC: 0.8",
+    [
+      "(0.19*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.07*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.11*) SCARED_P,SCARED_P_30: 30. My child is afraid of having anxiety (or panic) attacks - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.07*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(-0.07*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.06*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.07*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.09*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.06*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.06*) Basic_Demos,Sex:  - "
+    ]
+  ],
+  "15": [
+    "AUROC: 0.79",
+    [
+      "(0.17*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.17*) SympChck,CSC_23C: 23. Worries most days of the week(Current) - 0=No, 1=Yes",
+      "(-0.06*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.11*) SCARED_P,SCARED_P_30: 30. My child is afraid of having anxiety (or panic) attacks - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.06*) ESWAN,Panic_A02B_WAS_MISSING:  - ",
+      "(0.12*) SCARED_P,SCARED_P_05: 5. My child worries about other people liking him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(-0.06*) ESWAN,Panic_A01A_WAS_MISSING:  - ",
+      "(-0.06*) APQ_P,APQ_P_03: 3. You threaten to punish your child and then do not actuallypunish him/her - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.08*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.06*) ESWAN,Panic_A02A_WAS_MISSING:  - ",
+      "(0.09*) ESWAN,Panic_B07: 7. Keep a settled stomach - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.06*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.06*) Basic_Demos,Sex:  - "
+    ]
+  ]
+}

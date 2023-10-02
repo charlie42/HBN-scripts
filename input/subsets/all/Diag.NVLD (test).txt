@@ -1,0 +1,123 @@
+{
+  "1": [
+    "AUROC: 0.59",
+    [
+      "(0.34*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.59",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.27*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.6",
+    [
+      "(0.30*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.29*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.23*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.59",
+    [
+      "(0.29*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.28*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.58",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.15*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.58",
+    [
+      "(0.26*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.18*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.20*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.15*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.10*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.59",
+    [
+      "(0.26*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.16*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.28*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.20*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.13*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.09*) CBCL,CBCL_90: 90. Swearing or obscene language - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.10*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.61",
+    [
+      "(0.22*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.17*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.12*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.09*) CBCL,CBCL_90: 90. Swearing or obscene language - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.09*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.62",
+    [
+      "(0.21*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.15*) CBCL,CBCL_13: 13. Confused or seems to be in a fog - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.19*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.08*) CBCL,CBCL_90: 90. Swearing or obscene language - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.08*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.62",
+    [
+      "(0.22*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.20*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.13*) CBCL,CBCL_13: 13. Confused or seems to be in a fog - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.11*) SRS,SRS_41: 41. Wanders aimlessly from one activity to another. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.08*) CBCL,CBCL_90: 90. Swearing or obscene language - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.07*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.62",
+    [
+      "(0.21*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.19*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SympChck,CSC_42C: 42. Has skipped a part or a whole day of school(Current) - 0=No, 1=Yes",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.13*) CBCL,CBCL_13: 13. Confused or seems to be in a fog - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) ASSQ,ASSQ_03: lives somewhat in a world of his/her own with restricted idiosyncratic intellectual interests - 0=No, 1=Somewhat, 2=Yes",
+      "(0.10*) CBCL,CBCL_34: 34. Feels others are out to get him/her - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.12*) SRS,SRS_41: 41. Wanders aimlessly from one activity to another. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.10*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.07*) CBCL,CBCL_90: 90. Swearing or obscene language - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.07*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ]
+}

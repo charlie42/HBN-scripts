@@ -1,0 +1,452 @@
+{
+  "1": [
+    "AUROC: 0.71",
+    [
+      "(0.34*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.71",
+    [
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.47*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.73",
+    [
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.29*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.71",
+    [
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.36*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.29*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.72",
+    [
+      "(0.34*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.36*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.32*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.72",
+    [
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.35*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.33*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.29*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.26*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.71",
+    [
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.35*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.29*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.28*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.26*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.20*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.71",
+    [
+      "(0.29*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.39*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.30*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.29*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.27*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.18*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.71",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.42*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.29*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.31*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.30*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.24*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.23*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.7",
+    [
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.42*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.30*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.28*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.29*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.7",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.39*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.31*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.25*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.30*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.26*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.26*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.23*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.19*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.19*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.69",
+    [
+      "(0.29*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.39*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.29*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.25*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.29*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.26*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.18*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.7",
+    [
+      "(0.29*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.40*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.34*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.25*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.30*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.27*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.18*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.20*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.16*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.72",
+    [
+      "(-0.33*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.39*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.32*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.24*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.30*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.26*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.30*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.27*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.18*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.19*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.16*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.71",
+    [
+      "(-0.33*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.40*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.31*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.24*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.28*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.32*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.27*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.20*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.14*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.16*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.72",
+    [
+      "(-0.33*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.29*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.31*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.23*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.29*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.26*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.20*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.15*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.19*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.72",
+    [
+      "(-0.33*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.29*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.22*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.23*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.30*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.24*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.30*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.21*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.16*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.14*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.18*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.17*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "18": [
+    "AUROC: 0.73",
+    [
+      "(-0.34*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.27*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.22*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.22*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.25*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.23*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.30*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.21*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.15*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.17*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.19*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "19": [
+    "AUROC: 0.73",
+    [
+      "(-0.32*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.26*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.23*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.23*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.26*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.24*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.31*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.19*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.15*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.22*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.17*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "20": [
+    "AUROC: 0.72",
+    [
+      "(-0.32*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.21*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.24*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.27*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.25*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.30*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.19*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.18*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.23*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.20*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.14*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.13*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.14*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "21": [
+    "AUROC: 0.73",
+    [
+      "(-0.31*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.20*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.21*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.23*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.27*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.18*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.29*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.20*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.23*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.18*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.17*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.23*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.20*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.17*) DTS,DTS_13: 13. I\u00e2\u0080\u0099ll do anything to stop feeling distressed or upset.  - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(0.15*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.11*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.14*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "22": [
+    "AUROC: 0.74",
+    [
+      "(-0.31*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.19*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.21*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.23*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.27*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.17*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.29*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.29*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.21*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.19*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.24*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.18*) DTS,DTS_13: 13. I\u00e2\u0080\u0099ll do anything to stop feeling distressed or upset.  - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.12*) SDQ,SDQ_03: Often complains of headaches, stomach-aches or sickness - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.15*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.10*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.14*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.14*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "23": [
+    "AUROC: 0.75",
+    [
+      "(-0.31*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.23*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.17*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.27*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.21*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.26*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.21*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.27*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.22*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.24*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.20*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.22*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.20*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.22*) DTS,DTS_13: 13. I\u00e2\u0080\u0099ll do anything to stop feeling distressed or upset.  - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.18*) DTS,DTS_12: 12. My feelings of distress or being upset scare me. - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(0.16*) DTS,DTS_06: 6. I can tolerate being distressed or upset as well as most  people - 5=Strongly Agree, 2=Mildly Agree, 3=Agree and Disagree Equally, 4=Mildly Disagree, 5=Strongly Disagree",
+      "(-0.11*) SDQ,SDQ_03: Often complains of headaches, stomach-aches or sickness - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.16*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.13*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.13*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) ASSQ,ASSQ_05: has a literal understanding of ambiguous and metaphoric language (i.e. takes things literally; troubles understanding expressions or metaphors) - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "24": [
+    "AUROC: 0.75",
+    [
+      "(-0.32*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.17*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.20*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.27*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.19*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.26*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.28*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.21*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.23*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.20*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.22*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.22*) DTS,DTS_13: 13. I\u00e2\u0080\u0099ll do anything to stop feeling distressed or upset.  - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.17*) DTS,DTS_12: 12. My feelings of distress or being upset scare me. - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(0.17*) DTS,DTS_06: 6. I can tolerate being distressed or upset as well as most  people - 5=Strongly Agree, 2=Mildly Agree, 3=Agree and Disagree Equally, 4=Mildly Disagree, 5=Strongly Disagree",
+      "(-0.11*) SDQ,SDQ_03: Often complains of headaches, stomach-aches or sickness - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.13*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.13*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.13*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.13*) ASSQ,ASSQ_05: has a literal understanding of ambiguous and metaphoric language (i.e. takes things literally; troubles understanding expressions or metaphors) - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "25": [
+    "AUROC: 0.76",
+    [
+      "(-0.32*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.17*) MFQ_P,MFQ_P_11: 11. S/he felt grumpy and cross with his/her parents. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.25*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) APQ_P,APQ_P_24: 24. You get so busy that you forget where your child is and what he/she is doing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.28*) ARI_S,ARI_S_06: I lose my temper easily - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.19*) DTS,DTS_07: 7. My feelings of distress or being upset are not   acceptable - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.26*) PreInt_DevHx,growth_concerns: Have there been any concerns about your child's growth? - 0= No, 1= Yes",
+      "(0.29*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.20*) SympChck,CSC_05C: 5. Has strong and explosive feelings of anger(Current) - 0=No, 1=Yes",
+      "(0.25*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.21*) ASSQ,ASSQ_19: is poor at games; no idea of cooperating in a team, scores \u00e2\u0080\u0098own goals\u00e2\u0080\u0099 - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) PreInt_EduHx,current_religious: Is he/she religious now? - 0= No, not religious,1= Yes, and a practicing member of a religious community,2= Yes, but not a practicing member of a religious community",
+      "(0.24*) SWAN,SWAN_17: 17. Awaits turn (stands in line and takes turns) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.20*) APQ_P,APQ_P_01: 1. You have a friendly talk with your child - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) DTS,DTS_13: 13. I\u00e2\u0080\u0099ll do anything to stop feeling distressed or upset.  - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.21*) DTS,DTS_12: 12. My feelings of distress or being upset scare me. - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(0.17*) DTS,DTS_06: 6. I can tolerate being distressed or upset as well as most  people - 5=Strongly Agree, 2=Mildly Agree, 3=Agree and Disagree Equally, 4=Mildly Disagree, 5=Strongly Disagree",
+      "(-0.13*) SDQ,SDQ_03: Often complains of headaches, stomach-aches or sickness - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) ARI_S,ARI_S_04: I am angry most of the time - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) ICU_P,ICU_P_01: 1. Expresses his/her feelings openly.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.10*) ESWAN,DMDD_7C: 7c. Handle frustration on a day-to-day basis at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.13*) MFQ_P,MFQ_P_01: 1. S/he felt miserable or unhappy. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.15*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.12*) ASSQ,ASSQ_05: has a literal understanding of ambiguous and metaphoric language (i.e. takes things literally; troubles understanding expressions or metaphors) - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ]
+}

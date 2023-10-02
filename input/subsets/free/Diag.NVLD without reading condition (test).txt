@@ -1,0 +1,240 @@
+{
+  "1": [
+    "AUROC: 0.63",
+    [
+      "(0.42*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.69",
+    [
+      "(0.39*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.34*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.7",
+    [
+      "(0.35*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.36*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.34*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.69",
+    [
+      "(0.30*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.36*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.27*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.68",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.35*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.27*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.67",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.34*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.35*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.28*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.69",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.35*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.27*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.69",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.35*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.27*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.14*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.14*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.7",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.26*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.13*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(0.12*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.7",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.35*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.14*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(0.12*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.11*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.71",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.13*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(0.13*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.11*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.71",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.12*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(0.08*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.13*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.11*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.7",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.12*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.15*) SCARED_P,SCARED_P_25: 25. My child is afraid to be alone in the house - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.12*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.13*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.10*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.7",
+    [
+      "(0.27*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.24*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.12*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.16*) SCARED_P,SCARED_P_25: 25. My child is afraid to be alone in the house - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.12*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.13*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.10*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(0.08*) SWAN,SWAN_02: 2. Sustains attention on tasks or play activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.72",
+    [
+      "(0.26*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.34*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.24*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.13*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.16*) Basic_Demos,Age:  - ",
+      "(0.14*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.12*) SCARED_P,SCARED_P_25: 25. My child is afraid to be alone in the house - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.13*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.12*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.09*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(0.09*) SWAN,SWAN_02: 2. Sustains attention on tasks or play activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.73",
+    [
+      "(0.22*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.29*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.30*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.13*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(0.14*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.12*) SCARED_P,SCARED_P_25: 25. My child is afraid to be alone in the house - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.11*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.10*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.08*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(0.07*) SWAN,SWAN_02: 2. Sustains attention on tasks or play activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.73",
+    [
+      "(0.22*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.29*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.31*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.25*) ASSQ,ASSQ_20: has clumsy, ill coordinated, ungainly, awkward movements or gestures - 0=No, 1=Somewhat, 2=Yes",
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.13*) APQ_SR,APQ_SR_16: 16. Your parents praise you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(0.15*) ARI_S,ARI_S_07: Overall, irritability causes me problems - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.14*) APQ_P,APQ_P_02: 2. Your ket your child know when he/she is doing a good job with something - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.12*) SCARED_P,SCARED_P_25: 25. My child is afraid to be alone in the house - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.11*) SympChck,CSC_14C: 14. Worries about being separated from parent/guardian because of getting lost or kidnapped(Current) - 0=No, 1=Yes",
+      "(0.10*) APQ_P,APQ_P_28: 28. You don't check that your child comes home at the time he/she was supposed to - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.10*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.09*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.07*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(0.06*) SWAN,SWAN_02: 2. Sustains attention on tasks or play activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ]
+}

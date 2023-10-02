@@ -1,0 +1,92 @@
+{
+  "1": [
+    "AUROC: 0.63",
+    [
+      "(0.44*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.68",
+    [
+      "(0.38*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.35*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.73",
+    [
+      "(0.35*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.36*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.30*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.76",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.38*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.30*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.76",
+    [
+      "(0.24*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.38*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.24*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.25*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.75",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.25*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.15*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.76",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.33*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.24*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.22*) Basic_Demos,Age:  - ",
+      "(0.24*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.13*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.75",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.32*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.19*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.23*) Basic_Demos,Age:  - ",
+      "(0.22*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) SDQ,SDQ_16: Nervous in new situations, easily loses confidence - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.13*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.75",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.32*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.18*) CBCL,CBCL_62: 62. Poorly coordinated or clumsy - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.23*) Basic_Demos,Age:  - ",
+      "(0.22*) SRS,SRS_49: 49. Does extremely well at a few tasks, but does not do as well at most other tasks. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) SDQ,SDQ_16: Nervous in new situations, easily loses confidence - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.15*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(0.10*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan"
+    ]
+  ]
+}

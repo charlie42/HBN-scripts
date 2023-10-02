@@ -1,0 +1,32 @@
+{
+  "1": [
+    "AUROC: 0.7",
+    [
+      "(0.12*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.75",
+    [
+      "(0.11*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.09*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.74",
+    [
+      "(0.10*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.07*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.06*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.79",
+    [
+      "(0.08*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.08*) SympChck,CSC_22P: 22. Has intense fears of specific animals, situations, or anything else(Past) - 0=No, 1=Yes",
+      "(0.07*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.06*) CBCL,CBCL_112: 112. Worries - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ]
+}

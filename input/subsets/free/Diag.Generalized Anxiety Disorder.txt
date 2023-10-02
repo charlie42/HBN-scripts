@@ -1,0 +1,107 @@
+{
+  "1": [
+    "AUROC: 0.77",
+    [
+      "(0.83*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.79",
+    [
+      "(0.69*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.35*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "3": [
+    "AUROC: 0.79",
+    [
+      "(0.57*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.34*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.32*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "4": [
+    "AUROC: 0.81",
+    [
+      "(0.60*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.35*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.26*) ESWAN,Panic_A02A:  - ",
+      "(-0.38*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "5": [
+    "AUROC: 0.81",
+    [
+      "(0.60*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.35*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.24*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.27*) ESWAN,Panic_A02A:  - ",
+      "(-0.35*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "6": [
+    "AUROC: 0.8",
+    [
+      "(0.49*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.30*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.29*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.26*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.21*) ESWAN,Panic_A02A:  - ",
+      "(-0.35*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "7": [
+    "AUROC: 0.81",
+    [
+      "(0.47*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.32*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.28*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.24*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.22*) ESWAN,Panic_A02A:  - ",
+      "(0.22*) Basic_Demos,Sex:  - ",
+      "(-0.38*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "8": [
+    "AUROC: 0.81",
+    [
+      "(0.47*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.32*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.27*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.24*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.22*) ESWAN,Panic_A02A:  - ",
+      "(0.22*) Basic_Demos,Sex:  - ",
+      "(-0.39*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.10*) PreInt_EduHx,strength_history: Social studies/history - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.81",
+    [
+      "(0.48*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.33*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.28*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.24*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.23*) ESWAN,Panic_A02A:  - ",
+      "(0.21*) Basic_Demos,Sex:  - ",
+      "(-0.17*) SympChck,CSC_29P: 29. Often has accidents when he/she soild the bed or self during the day(Past) - 0=No, 1=Yes",
+      "(-0.38*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.09*) PreInt_EduHx,strength_history: Social studies/history - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.81",
+    [
+      "(0.49*) SDQ,SDQ_08: Many worries or often seems worried - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.33*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.28*) SCARED_P,SCARED_P_35: 35. My child worries about how well he/she does things - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.20*) PreInt_EduHx,number_friends: How many close friends does your child have? - 1= 1, 2= 2, 3= 3, 4= 4, 5= 5, 6= 6 or more",
+      "(0.25*) ESWAN,Panic_A02A:  - ",
+      "(0.20*) Basic_Demos,Sex:  - ",
+      "(-0.17*) ASSQ,ASSQ_16: can be with other children but only on his/her terms - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.16*) SympChck,CSC_29P: 29. Often has accidents when he/she soild the bed or self during the day(Past) - 0=No, 1=Yes",
+      "(-0.39*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.09*) PreInt_EduHx,strength_history: Social studies/history - 0= Unchecked, 1= Checked"
+    ]
+  ]
+}

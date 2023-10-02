@@ -1,0 +1,78 @@
+{
+  "1": [
+    "AUROC: 0.77",
+    [
+      "(0.86*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.82",
+    [
+      "(0.68*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.46*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.83",
+    [
+      "(0.59*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.37*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.36*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.83",
+    [
+      "(0.58*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.36*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.35*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes",
+      "(-0.26*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "5": [
+    "AUROC: 0.83",
+    [
+      "(0.50*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.34*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.31*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes",
+      "(-0.25*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.29*) SDQ,SDQ_29_a: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE - 0=Not at all/Only a little, 1=A medium amount, 2=A great deal"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.84",
+    [
+      "(0.38*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.31*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.28*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes",
+      "(-0.26*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.30*) ESWAN,DMDD_2A: 2a. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.27*) SDQ,SDQ_29_a: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE - 0=Not at all/Only a little, 1=A medium amount, 2=A great deal"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.84",
+    [
+      "(0.38*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.31*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.29*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes",
+      "(-0.25*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.30*) ESWAN,DMDD_2A: 2a. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.27*) SDQ,SDQ_29_a: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE - 0=Not at all/Only a little, 1=A medium amount, 2=A great deal",
+      "(-0.15*) APQ_P,APQ_P_10: 10. Your child stays out in the evening past the time that he/she is supposed to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.84",
+    [
+      "(0.39*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.30*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.26*) SympChck,CSC_40C: 40. Actively disobeys or doesn't listen to adult rules(Current) - 0=No, 1=Yes",
+      "(-0.24*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.28*) ESWAN,DMDD_2A: 2a. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.27*) SDQ,SDQ_29_a: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE - 0=Not at all/Only a little, 1=A medium amount, 2=A great deal",
+      "(-0.17*) APQ_P,APQ_P_10: 10. Your child stays out in the evening past the time that he/she is supposed to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) SympChck,CSC_43C: 43. Frequently starts physical fights with peers(Current) - 0=No, 1=Yes"
+    ]
+  ]
+}

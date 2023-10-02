@@ -1,0 +1,53 @@
+{
+  "1": [
+    "AUROC: 0.71",
+    [
+      "(1.04*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.75",
+    [
+      "(0.62*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.73*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.78",
+    [
+      "(0.59*) CBCL,CBCL_10: 10. Can't sit still, restless or hyperactive - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.54*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.40*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.8",
+    [
+      "(0.58*) CBCL,CBCL_10: 10. Can't sit still, restless or hyperactive - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.55*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.31*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.39*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.8",
+    [
+      "(0.47*) CBCL,CBCL_10: 10. Can't sit still, restless or hyperactive - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.53*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.31*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.26*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.35*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.8",
+    [
+      "(0.43*) CBCL,CBCL_10: 10. Can't sit still, restless or hyperactive - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.51*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.32*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SWAN,SWAN_11: 11. Stays seated (when required by class rules or social conventions) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) CBCL,CBCL_74: 74. Showing off or clowning - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.34*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes"
+    ]
+  ]
+}

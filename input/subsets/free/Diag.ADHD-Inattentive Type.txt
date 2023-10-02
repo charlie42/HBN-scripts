@@ -1,0 +1,197 @@
+{
+  "1": [
+    "AUROC: 0.63",
+    [
+      "(0.41*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.67",
+    [
+      "(0.50*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.25*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.7",
+    [
+      "(-0.45*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.51*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.27*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.69",
+    [
+      "(-0.47*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.50*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.27*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - "
+    ]
+  ],
+  "5": [
+    "AUROC: 0.7",
+    [
+      "(-0.46*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.53*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.20*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.24*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - "
+    ]
+  ],
+  "6": [
+    "AUROC: 0.74",
+    [
+      "(-0.46*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.42*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.27*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.24*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.20*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.75",
+    [
+      "(-0.46*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.43*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.24*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.22*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.20*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.33*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.76",
+    [
+      "(-0.46*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.32*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.25*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.23*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.22*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.20*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.76",
+    [
+      "(-0.46*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.31*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.25*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.24*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.22*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.08*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.76",
+    [
+      "(-0.45*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.31*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.25*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.24*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.22*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.32*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.09*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.74",
+    [
+      "(-0.44*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.22*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.23*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.36*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.18*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.11*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.10*) PreInt_EduHx,absent_late: Late - 0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",
+      "(0.14*) SWAN,SWAN_09: 9. Remembers daily activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.75",
+    [
+      "(-0.44*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.24*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.22*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.31*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.18*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.27*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.16*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.11*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) PreInt_EduHx,absent_late: Late - 0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",
+      "(0.18*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.11*) SWAN,SWAN_09: 9. Remembers daily activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.75",
+    [
+      "(-0.44*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.22*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.31*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.27*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.16*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.10*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) PreInt_EduHx,absent_late: Late - 0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",
+      "(0.18*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.08*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) SWAN,SWAN_09: 9. Remembers daily activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.75",
+    [
+      "(-0.45*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.19*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.22*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.31*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.27*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.15*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.10*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) PreInt_EduHx,absent_late: Late - 0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",
+      "(0.18*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.07*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.11*) SWAN,SWAN_09: 9. Remembers daily activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.07*) PreInt_DevHx,skill_age_14_WAS_MISSING:  - "
+    ]
+  ],
+  "15": [
+    "AUROC: 0.76",
+    [
+      "(-0.45*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.18*) SWAN,SWAN_14: 14. Settles down and rests (controls excessive talking) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.22*) SympChck,CSC_06P: 6. Has periods of unusual energy and activity(past) - 0=No, 1=Yes",
+      "(0.32*) SympChck,CSC_35P: 35. Is often easily distracted(Past) - 0=No, 1=Yes",
+      "(-0.13*) ASSQ,ASSQ_16: can be with other children but only on his/her terms - 0=No, 1=Somewhat, 2=Yes",
+      "(0.19*) PreInt_EduHx,absent_skipping_WAS_MISSING:  - ",
+      "(0.27*) SWAN,SWAN_07: 7. Keeps track of things necessary for activities (doesn't lose them) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) APQ_SR,APQ_SR_01A_WAS_MISSING:  - ",
+      "(0.12*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.11*) MFQ_P,MFQ_P_10: 10. It was hard for him/her to make up his/her mind. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.10*) PreInt_EduHx,absent_late: Late - 0= 0 days, 1= 1 day, 2= 2 days, 3= 3 or 4 days, 4= 5 or 6 days, 5= 7 or more days",
+      "(0.18*) SDQ,SDQ_25: Good attention span, sees chores or homework through to the end - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.06*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.12*) SWAN,SWAN_09: 9. Remembers daily activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.07*) PreInt_DevHx,skill_age_14_WAS_MISSING:  - "
+    ]
+  ]
+}

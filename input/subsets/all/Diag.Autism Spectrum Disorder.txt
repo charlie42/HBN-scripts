@@ -1,0 +1,123 @@
+{
+  "1": [
+    "AUROC: 0.76",
+    [
+      "(0.40*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.8",
+    [
+      "(0.32*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.33*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.85",
+    [
+      "(0.28*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.28*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.28*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.86",
+    [
+      "(0.28*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.27*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.27*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.86",
+    [
+      "(0.26*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.25*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.25*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.21*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.86",
+    [
+      "(0.26*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.25*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.25*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.21*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.08*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.87",
+    [
+      "(0.24*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.24*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.20*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.19*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.09*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.87",
+    [
+      "(0.24*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.20*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.19*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.12*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.09*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.87",
+    [
+      "(0.24*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.20*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.19*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.12*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.09*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.08*) SCARED_P,SCARED_P_16: 16. My child has nightmares about something bad happening to his/her parents - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.87",
+    [
+      "(0.24*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.24*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.23*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.20*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.19*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(0.17*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.12*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.08*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.07*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.07*) SCARED_P,SCARED_P_16: 16. My child has nightmares about something bad happening to his/her parents - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.87",
+    [
+      "(0.22*) SRS,SRS_28: 28. Thinks or talks about the same thing over and over. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.23*) ASSQ,ASSQ_11: uses language freely but fails to make adjustments to fit social contexts or the needs of different listeners - 0=No, 1=Somewhat, 2=Yes",
+      "(0.22*) SRS,SRS_29: 29. Is regarded by other children as odd or weird. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.19*) SRS,SRS_22: 22. Plays appropriately with children his or her age. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.17*) SympChck,CSC_50P: 50. Is preoccupied with very specific objects, routines, or interests(Past) - 0=No, 1=Yes",
+      "(0.17*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(0.16*) PreInt_DevHx,temp_11: Problems with social relatedness - 0= No, 1= Yes",
+      "(-0.12*) PreInt_DevHx,dev_normal: All developmental milestones within normal limits - 0= No, 1= Yes",
+      "(-0.08*) CBCL,CBCL_28: 28. Breaks rules at home, school, or elsewhere - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.08*) APQ_P,APQ_P_34: 34. You ignore your child when he/she is misbehvaing - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.08*) SCARED_P,SCARED_P_16: 16. My child has nightmares about something bad happening to his/her parents - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "1": [
+    "AUROC: 0.6",
+    [
+      "(0.42*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.65",
+    [
+      "(0.39*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.68",
+    [
+      "(0.35*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.23*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.67",
+    [
+      "(0.33*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(0.18*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.69",
+    [
+      "(0.34*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.22*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.69",
+    [
+      "(0.33*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.24*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.22*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.12*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.7",
+    [
+      "(0.31*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.25*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.22*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.14*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.72",
+    [
+      "(0.29*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.18*) Basic_Demos,Sex:  - ",
+      "(-0.17*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.74",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.20*) Basic_Demos,Sex:  - ",
+      "(0.14*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.17*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.73",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.19*) Basic_Demos,Sex:  - ",
+      "(-0.15*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.14*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.18*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.74",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.20*) Basic_Demos,Sex:  - ",
+      "(0.11*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.15*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.15*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.17*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.73",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.22*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.19*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(-0.21*) Basic_Demos,Sex:  - ",
+      "(0.11*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.15*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.10*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.73",
+    [
+      "(0.25*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.14*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.12*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.15*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.73",
+    [
+      "(0.25*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.17*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.13*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.21*) Basic_Demos,Sex:  - ",
+      "(0.12*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.17*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.06*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.74",
+    [
+      "(0.26*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.14*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.12*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.08*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.12*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.73",
+    [
+      "(0.27*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.20*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.15*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.14*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.12*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.15*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(0.11*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.73",
+    [
+      "(0.27*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.19*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.15*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.14*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.11*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.16*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.06*) MFQ_P,MFQ_P_05: 5. S/he felt so tired s/he just sat around and did nothing. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.10*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "18": [
+    "AUROC: 0.73",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.18*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.15*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.16*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.10*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.15*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(-0.09*) PCIAT,PCIAT_08: 8. How often does your child seem withdrawn from others since discovering the Internet? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.10*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.05*) MFQ_P,MFQ_P_05: 5. S/he felt so tired s/he just sat around and did nothing. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.10*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "19": [
+    "AUROC: 0.74",
+    [
+      "(0.28*) SWAN,SWAN_06: 6. Engages in tasks that require sustained mental effort - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.18*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.16*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.22*) Basic_Demos,Sex:  - ",
+      "(0.12*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(-0.11*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.12*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.15*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.07*) Basic_Demos,Age:  - ",
+      "(-0.10*) PCIAT,PCIAT_08: 8. How often does your child seem withdrawn from others since discovering the Internet? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.10*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.09*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.05*) MFQ_P,MFQ_P_05: 5. S/he felt so tired s/he just sat around and did nothing. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.10*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "20": [
+    "AUROC: 0.74",
+    [
+      "(0.20*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.13*) ASSQ,ASSQ_10: is surprisingly good at some things and surprisingly poor at others - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.19*) CBCL,CBCL_56F:      56F. Stomachaches - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.17*) PreInt_DevHx,skill_age_14: Bowel control - Age (months) - nan",
+      "(0.18*) SRS,SRS_14: 14. Is not well coordinated. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.21*) Basic_Demos,Sex:  - ",
+      "(0.10*) PreInt_DevHx,puberty: Has your child shown adult sexual body development (puberty)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.16*) SRS,SRS_05: 5. Doesn't recognize when others are trying to take advantage of him or her. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.13*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.13*) PreInt_DevHx,skill_age_06: Walked - Age (months) - nan",
+      "(-0.12*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) PreInt_DevHx,labor_dur_WAS_MISSING:  - ",
+      "(0.11*) Basic_Demos,Age:  - ",
+      "(-0.10*) PCIAT,PCIAT_08: 8. How often does your child seem withdrawn from others since discovering the Internet? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.14*) CBCL,CBCL_61: 61. Poor school work - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.10*) ASSQ,ASSQ_14: has a deviant style of gaze (e.g. may range from not looking people in the eye, to the other extreme of staring directly at people to the point it makes them uncomfortable) - 0=No, 1=Somewhat, 2=Yes",
+      "(-0.07*) MFQ_P,MFQ_P_05: 5. S/he felt so tired s/he just sat around and did nothing. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.10*) SDQ,SDQ_01: Considerate of other people's feelings - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ]
+}

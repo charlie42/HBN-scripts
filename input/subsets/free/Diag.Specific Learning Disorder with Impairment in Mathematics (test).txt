@@ -1,0 +1,32 @@
+{
+  "1": [
+    "AUROC: 0.69",
+    [
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.74",
+    [
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.23*) Basic_Demos,Age:  - "
+    ]
+  ],
+  "3": [
+    "AUROC: 0.76",
+    [
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.23*) Basic_Demos,Age:  - "
+    ]
+  ],
+  "4": [
+    "AUROC: 0.77",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) Basic_Demos,Age:  - ",
+      "(0.18*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ]
+}

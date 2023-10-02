@@ -1,0 +1,53 @@
+{
+  "1": [
+    "AUROC: 0.65",
+    [
+      "(0.99*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.67",
+    [
+      "(0.20*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes",
+      "(0.20*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.67",
+    [
+      "(0.20*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes",
+      "(0.18*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.06*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "4": [
+    "AUROC: 0.7",
+    [
+      "(0.15*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes",
+      "(0.18*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.08*) SympChck,CSC_22P: 22. Has intense fears of specific animals, situations, or anything else(Past) - 0=No, 1=Yes",
+      "(0.05*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "5": [
+    "AUROC: 0.71",
+    [
+      "(0.13*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes",
+      "(0.18*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.07*) SympChck,CSC_22P: 22. Has intense fears of specific animals, situations, or anything else(Past) - 0=No, 1=Yes",
+      "(0.05*) ESWAN,Panic_A02A:  - ",
+      "(0.05*) SympChck,CSC_13C: 13. Feels very afraid of being on a bridge or traveling in a car, bus, or train(Current) - 0=No, 1=Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.71",
+    [
+      "(0.14*) SympChck,CSC_22C: 22. Has intense fears of specific animals, situations, or anything else(Current) - 0=No, 1=Yes",
+      "(0.17*) SDQ,SDQ_24: Many fears, easily scared - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.08*) SympChck,CSC_22P: 22. Has intense fears of specific animals, situations, or anything else(Past) - 0=No, 1=Yes",
+      "(0.04*) ESWAN,Panic_A02A:  - ",
+      "(0.04*) SCARED_P,SCARED_P_13: 13. My child worries about sleeping alone - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.04*) SympChck,CSC_13C: 13. Feels very afraid of being on a bridge or traveling in a car, bus, or train(Current) - 0=No, 1=Yes"
+    ]
+  ]
+}

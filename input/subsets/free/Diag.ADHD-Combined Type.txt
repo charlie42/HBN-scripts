@@ -1,0 +1,158 @@
+{
+  "1": [
+    "AUROC: 0.77",
+    [
+      "(0.88*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.81",
+    [
+      "(0.71*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.48*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.83",
+    [
+      "(0.71*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.45*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.49*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.83",
+    [
+      "(0.51*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.47*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.44*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.42*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.85",
+    [
+      "(0.46*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.40*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.44*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.27*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.38*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.85",
+    [
+      "(0.44*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.40*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.44*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.27*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.41*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.14*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.85",
+    [
+      "(0.41*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.39*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.44*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.25*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.36*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.16*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.85",
+    [
+      "(0.37*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.42*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.24*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.31*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.22*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.84",
+    [
+      "(0.37*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.42*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.31*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.16*) APQ_P,APQ_P_09: 9. You ask your child about his/her day in school - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.85",
+    [
+      "(0.38*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.42*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(0.31*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) APQ_P,APQ_P_09: 9. You ask your child about his/her day in school - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.18*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.15*) APQ_SR,APQ_SR_07A: 7A. How about your dad? - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.85",
+    [
+      "(0.38*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.24*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(-0.24*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) APQ_P,APQ_P_09: 9. You ask your child about his/her day in school - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.19*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.18*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.15*) APQ_SR,APQ_SR_07A: 7A. How about your dad? - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.85",
+    [
+      "(0.38*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.23*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(-0.23*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.31*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) APQ_P,APQ_P_09: 9. You ask your child about his/her day in school - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.23*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.19*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.12*) PreInt_DevHx,temp_09: Easily adaptable - 0= No, 1= Yes",
+      "(-0.15*) APQ_SR,APQ_SR_07A: 7A. How about your dad? - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.85",
+    [
+      "(0.38*) SDQ,SDQ_02: Restless, overactive, cannot stay still for long - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.36*) SympChck,CSC_36P: 36. Has difficulty remaining seated at home or school(Past) - 0=No, 1=Yes",
+      "(-0.23*) ESWAN,Panic_A03B_WAS_MISSING:  - ",
+      "(0.23*) SympChck,CSC_37P: 37. Often acts before thinking(Past) - 0=No, 1=Yes",
+      "(-0.23*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.32*) SWAN,SWAN_18: 18. Enters into conversation and games without interrupting or intruding - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.17*) APQ_P,APQ_P_09: 9. You ask your child about his/her day in school - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.24*) SWAN,SWAN_12: 12. Modulates motor activity (inhibits inappropriate running or climbing) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) ESWAN,SocAnx_04B: 4b. Enjoy participating in social activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.21*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.13*) SCARED_P,SCARED_P_12: 12. When my child gets frightened, he/she feels like he/she is going crazy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.12*) PreInt_DevHx,temp_09: Easily adaptable - 0= No, 1= Yes",
+      "(-0.15*) APQ_SR,APQ_SR_07A: 7A. How about your dad? - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "1": [
+    "AUROC: 0.78",
+    [
+      "(0.82*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.83",
+    [
+      "(0.65*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.53*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.86",
+    [
+      "(0.51*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.44*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.42*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.87",
+    [
+      "(0.52*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.44*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.42*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(-0.12*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.86",
+    [
+      "(0.46*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.37*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.39*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.29*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.14*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.87",
+    [
+      "(0.45*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.37*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.39*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.29*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.17*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.14*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.87",
+    [
+      "(0.45*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.37*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.39*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.29*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.14*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.87",
+    [
+      "(0.45*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.37*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.40*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.30*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.13*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(-0.14*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.86",
+    [
+      "(0.43*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.35*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.38*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.28*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.19*) ICU_P,ICU_P_18: 18. Shows no remorse when he/she has done something wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.16*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.14*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(-0.14*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.87",
+    [
+      "(0.43*) ESWAN,DMDD_8A: 8a. Avoid or limit temper tantrums at home - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.35*) CBCL,CBCL_22: 22. Disobedient at home - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.38*) SympChck,CSC_39P: 39. Argues or talks back to adults, more than others his/her age(Past) - 0=No, 1=Yes",
+      "(0.29*) CBCL,CBCL_86: 86. Stubborn, sullen, or irritable - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.19*) ICU_P,ICU_P_18: 18. Shows no remorse when he/she has done something wrong.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.15*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(-0.14*) SCQ,SCQ_13: 13. Does she/he ever have any special interests that are unusual in their intensity but otherwise appropriate for her/his age and peer group (e.g., trains or dinosaurs)? - 0= No, 1= Yes",
+      "(-0.14*) PreInt_EduHx,bullied: Has your child ever been bullied by others? - 0= Never/Rarely, 1= Sometimes, 2= Often, 3= Very Often",
+      "(-0.14*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(-0.12*) APQ_SR,APQ_SR_07A_WAS_MISSING:  - "
+    ]
+  ]
+}

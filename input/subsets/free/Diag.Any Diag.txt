@@ -1,0 +1,140 @@
+{
+  "1": [
+    "AUROC: 0.72",
+    [
+      "(0.77*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.77",
+    [
+      "(0.57*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.44*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.77",
+    [
+      "(0.51*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.41*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.36*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.78",
+    [
+      "(0.51*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.39*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.35*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - "
+    ]
+  ],
+  "5": [
+    "AUROC: 0.79",
+    [
+      "(0.46*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.39*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.33*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.25*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.8",
+    [
+      "(0.43*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.38*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.32*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.22*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.14*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "7": [
+    "AUROC: 0.79",
+    [
+      "(0.42*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.37*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.32*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.24*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.17*) Basic_Demos,Sex:  - ",
+      "(0.14*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "8": [
+    "AUROC: 0.79",
+    [
+      "(0.41*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.37*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.30*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.24*) SympChck,CSC_47C: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Current) - 0=No, 1=Yes",
+      "(0.22*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.15*) Basic_Demos,Sex:  - ",
+      "(0.14*) ESWAN,Panic_A02A:  - "
+    ]
+  ],
+  "9": [
+    "AUROC: 0.79",
+    [
+      "(0.41*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.37*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.30*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.24*) SympChck,CSC_47C: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Current) - 0=No, 1=Yes",
+      "(0.22*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.14*) Basic_Demos,Sex:  - ",
+      "(0.14*) ESWAN,Panic_A02A:  - ",
+      "(0.08*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.79",
+    [
+      "(0.40*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.37*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.30*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.20*) SympChck,CSC_11C: 11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(Current) - 0=No, 1=Yes",
+      "(0.21*) SympChck,CSC_47C: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Current) - 0=No, 1=Yes",
+      "(0.18*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.15*) Basic_Demos,Sex:  - ",
+      "(0.12*) ESWAN,Panic_A02A:  - ",
+      "(0.08*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.79",
+    [
+      "(0.38*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.38*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.29*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.32*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.21*) SympChck,CSC_11C: 11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(Current) - 0=No, 1=Yes",
+      "(0.22*) SympChck,CSC_47C: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Current) - 0=No, 1=Yes",
+      "(0.18*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.15*) Basic_Demos,Sex:  - ",
+      "(0.10*) ESWAN,Panic_A02A:  - ",
+      "(0.07*) PreInt_DevHx,birthweight_lbs: Birth weight of child (lbs) - nan",
+      "(-0.08*) ICU_P,ICU_P_10: 10. Does not let feelings control him/her.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.8",
+    [
+      "(0.42*) SWAN,SWAN_04: 4. Follows through on instructions and finishes school work and chores - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.34*) ASSQ,ASSQ_13: makes na\u00c3\u00afve and embarrassing remarks - 0=No, 1=Somewhat, 2=Yes",
+      "(0.30*) PreInt_EduHx,recent_grades_WAS_MISSING:  - ",
+      "(0.19*) SympChck,CSC_11C: 11. Has anxiety attacks, where out of the blue he/she suddenly feels scared(Current) - 0=No, 1=Yes",
+      "(0.21*) SympChck,CSC_47C: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Current) - 0=No, 1=Yes",
+      "(0.21*) SCARED_P,SCARED_P_07: 7. My child is nervous - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.18*) Basic_Demos,Sex:  - ",
+      "(0.18*) SCARED_P,SCARED_P_20: 20. My child has nightmares about something bad happening to him/her - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.08*) SCARED_P,SCARED_P_39: 39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport) - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.11*) ESWAN,Panic_A02A:  - ",
+      "(0.24*) SDQ,SDQ_15: Easily distracted, concentration wanders - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.13*) ICU_P,ICU_P_10: 10. Does not let feelings control him/her.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true"
+    ]
+  ]
+}

@@ -669,8 +669,8 @@ def main():
     #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
     #plot_learning_improvements(learning_improvement_df)
-    plot_learning_improvements_bars(learning_improvement_df)
-    plot_average_learning_improvements(learning_improvement_df)
+    #plot_learning_improvements_bars(learning_improvement_df)
+    #plot_average_learning_improvements(learning_improvement_df)
 
     #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
     #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)

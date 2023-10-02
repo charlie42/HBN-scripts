@@ -1,0 +1,263 @@
+{
+  "1": [
+    "AUROC: 0.67",
+    [
+      "(0.42*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.67",
+    [
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.31*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.72",
+    [
+      "(0.32*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.31*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.73",
+    [
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.23*) Basic_Demos,Age:  - ",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.27*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.71",
+    [
+      "(0.32*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) Basic_Demos,Age:  - ",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.14*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.71",
+    [
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.23*) Basic_Demos,Age:  - ",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.14*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.12*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.7",
+    [
+      "(0.32*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.14*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.7",
+    [
+      "(0.32*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) Basic_Demos,Age:  - ",
+      "(0.22*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.13*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.12*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.7",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.25*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.22*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.7",
+    [
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.24*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.09*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.11*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.7",
+    [
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.15*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(-0.10*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.11*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.7",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.18*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.13*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.11*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.71",
+    [
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(0.21*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.10*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.14*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.11*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.71",
+    [
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.16*) Basic_Demos,Age:  - ",
+      "(0.20*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.15*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.10*) SCQ,SCQ_09: 9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell? - 0= No, 1= Yes",
+      "(0.10*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.72",
+    [
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.17*) Basic_Demos,Age:  - ",
+      "(0.20*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.13*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.11*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.09*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.13*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.09*) SCQ,SCQ_09: 9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell? - 0= No, 1= Yes",
+      "(0.10*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.72",
+    [
+      "(0.23*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) Basic_Demos,Age:  - ",
+      "(0.19*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.20*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.17*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.13*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.13*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.09*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.12*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.09*) SCQ,SCQ_09: 9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell? - 0= No, 1= Yes",
+      "(0.09*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.08*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.72",
+    [
+      "(0.23*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.21*) Basic_Demos,Age:  - ",
+      "(0.19*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.12*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.14*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.13*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.11*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.08*) SympChck,CSC_43C: 43. Frequently starts physical fights with peers(Current) - 0=No, 1=Yes",
+      "(0.08*) SCQ,SCQ_09: 9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell? - 0= No, 1= Yes",
+      "(0.08*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.07*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ],
+  "18": [
+    "AUROC: 0.72",
+    [
+      "(0.22*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(-0.23*) PreInt_EduHx,strength_math: Math - 0= Unchecked, 1= Checked",
+      "(0.19*) Basic_Demos,Age:  - ",
+      "(0.19*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.19*) SCQ,SCQ_05: 5. Does she/he ever get her/his pronouns mixed up (e.g., saying you or she/he for I)? - 0= No, 1= Yes",
+      "(0.18*) PreInt_EduHx,weakness_math: Math - 0= Unchecked, 1= Checked",
+      "(0.11*) ICU_P,ICU_P_03: 3. Is concerned about schoolwork.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(0.14*) APQ_SR,APQ_SR_30: 30. You come home from school more than an hour past the time your parents expect you to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.14*) APQ_SR,APQ_SR_35: 35. Your parents slap you when you have done something wrong - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.13*) CBCL,CBCL_36: 36. Gets hurt a lot, accident-prone - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) CBCL,CBCL_56D:      56D.A. Problems with eyes (not if corrected by glasses - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.09*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.11*) ESWAN,MDD_8A: 8A. Concentrate - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.08*) SCQ,SCQ_36: 36. Does she/he seem interested in other children of approximately the same age whom she/he does not know? - 0= No, 1= Yes",
+      "(0.08*) SympChck,CSC_43C: 43. Frequently starts physical fights with peers(Current) - 0=No, 1=Yes",
+      "(0.08*) SCQ,SCQ_09: 9. Does her/his facial expression usually seem appropriate to the particular situation, as far as you can tell? - 0= No, 1= Yes",
+      "(0.08*) DTS,DTS_08: 8. I\u00e2\u0080\u0099ll do anything to avoid feeling distressed or upset.    - 1=Strongly Disagree, 2=Mildly Disagree, 3=Agree and Disagree Equally, 4=Mildly Agree, 5=Strongly Agree",
+      "(-0.07*) PreInt_EduHx,school_sports: Sports - 0= No, 1= Yes"
+    ]
+  ]
+}

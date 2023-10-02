@@ -1,0 +1,140 @@
+{
+  "1": [
+    "AUROC: 0.77",
+    [
+      "(0.11*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.79",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.10*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.81",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.10*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.8",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.10*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.81",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.81",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.82",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "8": [
+    "AUROC: 0.82",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.06*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(-0.03*) SympChck,CSC_04C: 4. Often feels overly happy and silly, above and beyond a normal feeling(Current) - 0=No, 1=Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "9": [
+    "AUROC: 0.82",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.05*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.05*) ESWAN,SocAnx_05: 5. Control anxiety in challenging social situations - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) SympChck,CSC_04C: 4. Often feels overly happy and silly, above and beyond a normal feeling(Current) - 0=No, 1=Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "10": [
+    "AUROC: 0.81",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.05*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.03*) ESWAN,DMDD_2B: 2b. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  with friends - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.06*) ESWAN,SocAnx_05: 5. Control anxiety in challenging social situations - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) SympChck,CSC_04C: 4. Often feels overly happy and silly, above and beyond a normal feeling(Current) - 0=No, 1=Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "11": [
+    "AUROC: 0.81",
+    [
+      "(0.10*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.05*) ESWAN,MDD_2A: 2A. Show interest in preforming activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.03*) ESWAN,DMDD_2B: 2b. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  with friends - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.06*) ESWAN,SocAnx_05: 5. Control anxiety in challenging social situations - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.05*) PreInt_DevHx,temp_10: Slow to warm up - 0= No, 1= Yes",
+      "(-0.04*) SympChck,CSC_04C: 4. Often feels overly happy and silly, above and beyond a normal feeling(Current) - 0=No, 1=Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - "
+    ]
+  ],
+  "12": [
+    "AUROC: 0.82",
+    [
+      "(0.09*) SCARED_P,SCARED_P_41: 41. My child is shy - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(0.09*) SympChck,CSC_20P: 20. Often feels very nervous when he/she has to do things in front of others(Past) - 0=No, 1=Yes",
+      "(0.06*) SympChck,CSC_21C: 21. Is unable to speak in specific situations, such as school, despite being able to speak without a problem in other situations(Current) - 0=No, 1=Yes",
+      "(-0.05*) SWAN,SWAN_16: 16. Reflects on questions (controls blurting out answers) - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,DMDD_2B: 2b. Avoid or control \u00e2\u0080\u0098getting into fights\u00e2\u0080\u0099  with friends - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_EduHx,tutor: Has your child had tutoring outside of school? - 0= No, 1= Yes",
+      "(0.05*) ESWAN,SocAnx_05: 5. Control anxiety in challenging social situations - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(0.04*) PreInt_DevHx,temp_10: Slow to warm up - 0= No, 1= Yes",
+      "(-0.04*) SympChck,CSC_04C: 4. Often feels overly happy and silly, above and beyond a normal feeling(Current) - 0=No, 1=Yes",
+      "(-0.04*) ESWAN,DMDD_1C: 1c. Avoid or control \u00e2\u0080\u0098arguing or yelling\u00e2\u0080\u0099 at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.04*) ESWAN,Panic_A01B_WAS_MISSING:  - ",
+      "(0.05*) ESWAN,MDD_2B: 2B. Enjoy activities - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average"
+    ]
+  ]
+}

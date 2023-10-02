@@ -11,6 +11,8 @@ joblib = "*"
 scikit-learn = "==1.2.2"
 seaborn = "*"
 dsutils = {editable = true, path = "./../dsutils"}
+mlxtend = "*"
+pyyaml = "*"
 
 [dev-packages]
 ipykernel = "*"

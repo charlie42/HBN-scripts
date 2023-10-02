@@ -1,0 +1,218 @@
+{
+  "1": [
+    "AUROC: 0.66",
+    [
+      "(0.48*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.71",
+    [
+      "(0.45*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.74",
+    [
+      "(0.39*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.43*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.35*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.78",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.36*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.8",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.35*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.34*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.23*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.78",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.29*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.18*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.78",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.36*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.28*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.18*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.18*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.79",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.38*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.35*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.27*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.10*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.79",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.36*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.38*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.28*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.16*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.10*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - "
+    ]
+  ],
+  "10": [
+    "AUROC: 0.79",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.35*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.28*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.12*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.16*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.11*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - "
+    ]
+  ],
+  "11": [
+    "AUROC: 0.8",
+    [
+      "(-0.47*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.28*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.33*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.11*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.14*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.09*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.18*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - "
+    ]
+  ],
+  "12": [
+    "AUROC: 0.8",
+    [
+      "(-0.47*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.36*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.28*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.11*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.14*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.09*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.17*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - ",
+      "(0.10*) APQ_SR,APQ_SR_26A_WAS_MISSING:  - "
+    ]
+  ],
+  "13": [
+    "AUROC: 0.81",
+    [
+      "(-0.47*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.36*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.26*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.14*) APQ_P,APQ_P_21: 21. Your child goes out after dark without an adult - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.12*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.14*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(-0.08*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.15*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - ",
+      "(0.10*) APQ_SR,APQ_SR_26A_WAS_MISSING:  - "
+    ]
+  ],
+  "14": [
+    "AUROC: 0.81",
+    [
+      "(-0.47*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.25*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.13*) APQ_P,APQ_P_21: 21. Your child goes out after dark without an adult - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.14*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.14*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.12*) SCARED_P,SCARED_P_39: 39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport) - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.09*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.14*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - ",
+      "(0.09*) APQ_SR,APQ_SR_26A_WAS_MISSING:  - "
+    ]
+  ],
+  "15": [
+    "AUROC: 0.8",
+    [
+      "(-0.47*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.36*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.38*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.26*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.13*) APQ_P,APQ_P_21: 21. Your child goes out after dark without an adult - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.11*) ESWAN,DMDD_5C: 5c. Return quickly to baseline mood and behavior when frustrated at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.13*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.15*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.11*) SCARED_P,SCARED_P_39: 39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport) - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.11*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.14*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - ",
+      "(0.09*) APQ_SR,APQ_SR_26A_WAS_MISSING:  - "
+    ]
+  ],
+  "16": [
+    "AUROC: 0.81",
+    [
+      "(-0.46*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.37*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.38*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(-0.26*) APQ_P,APQ_P_30: 30. Your child comes home from school more than an hour past the time you expect him/her to be home - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.32*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.14*) APQ_P,APQ_P_21: 21. Your child goes out after dark without an adult - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) SDQ,SDQ_26: Overall, do you think that your child has difficulties in one or more of the following areas: emotions, concentration, behavior or being able to get on with other people? - 0=No, 1=Yes- minor difficulties, 2=Yes- definite difficulties, 3=Yes, severe difficulties",
+      "(0.13*) ESWAN,DMDD_5C: 5c. Return quickly to baseline mood and behavior when frustrated at school - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.13*) PreInt_EduHx,getalongkids_school: How does your child get along with other children at school? - 1= Excellent, 2= Good, 3= Fair, 4= Poor",
+      "(-0.14*) PreInt_DevHx,m_birthage: Mother's age at birth of child - nan",
+      "(0.13*) SDQ,SDQ_09: Helpful if someone is hurt, upset or feeling ill - 0=Not True, 1=Somewhat True, 2=Certainly True",
+      "(0.12*) SCARED_P,SCARED_P_39: 39. My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play agame, play a sport) - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True",
+      "(-0.11*) ESWAN,MDD_4: 4. Sleep for an appropriate amount of time - -3= Far above average,-2= Above average,-1= Slightly above average,0= Average,1= Slightly below average,2= Above average,3= Far above average",
+      "(-0.14*) APQ_P,APQ_P_32: 32. Your child is at home without adult supervision - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.12*) PreInt_DevHx,newborn_problems_WAS_MISSING:  - ",
+      "(0.09*) APQ_SR,APQ_SR_26A_WAS_MISSING:  - "
+    ]
+  ]
+}

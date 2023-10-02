@@ -1,0 +1,365 @@
+{
+  "1": [
+    "AUROC: 0.59",
+    [
+      "(0.43*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "2": [
+    "AUROC: 0.62",
+    [
+      "(0.37*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.35*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing"
+    ]
+  ],
+  "3": [
+    "AUROC: 0.67",
+    [
+      "(0.35*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.31*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes"
+    ]
+  ],
+  "4": [
+    "AUROC: 0.67",
+    [
+      "(0.35*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.33*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "5": [
+    "AUROC: 0.66",
+    [
+      "(0.34*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.32*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "6": [
+    "AUROC: 0.7",
+    [
+      "(0.30*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.30*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.23*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "7": [
+    "AUROC: 0.71",
+    [
+      "(0.30*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.23*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(0.13*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "8": [
+    "AUROC: 0.7",
+    [
+      "(0.29*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.29*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.23*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.13*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always"
+    ]
+  ],
+  "9": [
+    "AUROC: 0.71",
+    [
+      "(0.29*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.23*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.13*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.14*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.11*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "10": [
+    "AUROC: 0.7",
+    [
+      "(0.29*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.23*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.19*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.13*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.11*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "11": [
+    "AUROC: 0.7",
+    [
+      "(0.29*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.22*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.09*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "12": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.20*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.15*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.15*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.11*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "13": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.21*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.17*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.16*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.09*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "14": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.16*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.15*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.13*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.15*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True"
+    ]
+  ],
+  "15": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.16*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.15*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.13*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.15*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.10*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True"
+    ]
+  ],
+  "16": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.14*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.14*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.14*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.14*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.15*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.09*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.09*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "17": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.14*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.14*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.14*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.14*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.15*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.10*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.09*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.08*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "18": [
+    "AUROC: 0.69",
+    [
+      "(0.28*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.27*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.25*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.21*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.17*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.14*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.13*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.15*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.14*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.11*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.12*) APQ_SR,APQ_SR_03: 3. Your parents threaten to punish you and then not do it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.09*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.09*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes"
+    ]
+  ],
+  "19": [
+    "AUROC: 0.69",
+    [
+      "(0.27*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.28*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.16*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.19*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.15*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.12*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.13*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SympChck,CSC_04P: 4. Often feels overly happy and silly, above and beyond a normal feeling(past) - 0=No, 1=Yes",
+      "(-0.11*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.12*) APQ_SR,APQ_SR_03: 3. Your parents threaten to punish you and then not do it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.17*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.10*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes",
+      "(0.12*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "20": [
+    "AUROC: 0.69",
+    [
+      "(0.27*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.17*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.19*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.15*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.12*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SympChck,CSC_04P: 4. Often feels overly happy and silly, above and beyond a normal feeling(past) - 0=No, 1=Yes",
+      "(-0.10*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.12*) APQ_SR,APQ_SR_03: 3. Your parents threaten to punish you and then not do it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.18*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.07*) MFQ_P,MFQ_P_30: 30. S/he thought s/he could never be as good as other kids. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes",
+      "(0.12*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "21": [
+    "AUROC: 0.68",
+    [
+      "(0.27*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.26*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.14*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.15*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.20*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.14*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.12*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(-0.10*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SympChck,CSC_04P: 4. Often feels overly happy and silly, above and beyond a normal feeling(past) - 0=No, 1=Yes",
+      "(-0.10*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.12*) APQ_SR,APQ_SR_03: 3. Your parents threaten to punish you and then not do it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.17*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.08*) MFQ_P,MFQ_P_30: 30. S/he thought s/he could never be as good as other kids. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.10*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes",
+      "(0.12*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ],
+  "22": [
+    "AUROC: 0.68",
+    [
+      "(0.27*) PreInt_EduHx,weakness_english: English - 0= Unchecked, 1= Checked",
+      "(0.25*) PreInt_EduHx,recent_grades: Recent typical academic performance: - 1= Excellent, 2= Good, 3= Fair, 4= Poor, 5= Failing",
+      "(0.24*) PreInt_EduHx,repeated_grades: Were any grades repeated? - 0= No, 1= Yes",
+      "(-0.24*) PreInt_EduHx,strength_english: English - 0= Unchecked, 1= Checked",
+      "(0.20*) APQ_SR,APQ_SR_05: 5. Your parents reward or give something extra to you for behaving well - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.15*) CBCL,CBCL_111: 111. Withdrawn, doesn't get inolved with others - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.14*) CBCL,CBCL_79: 79. Speech problem - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.18*) ICU_P,ICU_P_22: 22. Hides his/her feelings from others.  - 0=Not at all true, 1=Somewhat true, 2=Very true, 3=Definitely true",
+      "(-0.15*) CBCL,CBCL_46: 46. Nervous movements or twitching - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(0.16*) SCQ,SCQ_14: 14. Does she/he ever seem to be unusually interested in the sight, feel, sound, taske, or smell of things or people? - 0= No, 1= Yes",
+      "(-0.12*) PCIAT,PCIAT_03: 3. How often does your child prefer to spend time online rather than with the rest of your family? - 0=Does Not Apply, 1=Rarely, 2=Occasionally, 3=Frequently, 4=Often, 5=Always",
+      "(0.12*) SRS,SRS_36: 36. Has difficulty relating to adults. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(-0.14*) SRS,SRS_33: 33. Is socially awkward, even when he or she is trying to be polite. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.14*) SRS,SRS_45: 45. Focuses his or her attention to where others are looking or listening. - 0= Not True, 1= Sometimes True, 2= Often True, 3= Almost Always True",
+      "(0.13*) SympChck,CSC_04P: 4. Often feels overly happy and silly, above and beyond a normal feeling(past) - 0=No, 1=Yes",
+      "(-0.11*) PreInt_DevHx,birthweight_lbs_WAS_MISSING:  - ",
+      "(-0.12*) APQ_SR,APQ_SR_03: 3. Your parents threaten to punish you and then not do it - 1=Never, 2=Almost Never, 3=Sometimes, 4=Often, 5=Always",
+      "(-0.17*) CBCL,CBCL_29: 29. Fears certain animals, situations, or places, other than school - 0=Not true, 1=Somewhat or sometimes true, 2=Very true or often true",
+      "(-0.11*) MFQ_P,MFQ_P_06: 6. S/he was moving and walking more slowly than usual. - 0= Not True, 1= Sometimes, 2= True",
+      "(0.08*) MFQ_P,MFQ_P_30: 30. S/he thought s/he could never be as good as other kids. - 0= Not True, 1= Sometimes, 2= True",
+      "(-0.11*) SympChck,CSC_47P: 47. Makes noises that he/she can't control (repeating sounds, sniffing)(Past) - 0=No, 1=Yes",
+      "(0.11*) SCARED_P,SCARED_P_08: 8. My child follows me wherever I go - 0=Not True or Hardly Ever True, 1=Somewhat True or Sometimes True, 2=Very True or Often True"
+    ]
+  ]
+}
