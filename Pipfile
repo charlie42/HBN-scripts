@@ -13,6 +13,7 @@ seaborn = "*"
 dsutils = {editable = true, path = "./../dsutils"}
 mlxtend = "*"
 pyyaml = "*"
+statsmodels = "*"
 
 [dev-packages]
 ipykernel = "*"
