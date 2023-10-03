@@ -528,7 +528,7 @@ def get_opt_n_features_per_diag(df):
     })
     return df
 
-def plot_saturation_plot(df, optimal_ns, ax, diag):
+def plot_saturation_plot(df, optimal_ns, ax, diag, legend=True):
     # Plot saturation plot for one diagnosis, 4 curves (one for each assessment subset): "All assessments", "Free assessments", "Only parent report", "Free assessments, only parent report"
     # x-axis: # of features, y-axis: AUROC
 
@@ -549,7 +549,8 @@ def plot_saturation_plot(df, optimal_ns, ax, diag):
     ax.plot(optimal_ns["Free assessments only parent report"], df.loc[optimal_ns["Free assessments only parent report"], "Free assessments only parent report"], marker="o", color="red", linestyle="", fillstyle="none", markersize=10)
     
     # Add legend
-    ax.legend(loc="lower right")
+    if legend:
+        ax.legend(loc="lower right")
     
     return ax
 
@@ -566,8 +567,15 @@ def plot_saturation_plots(dfs, optimal_ns):
     for ax in axes:
         ax.set_ylim([0.5, 1.0])
 
+    # Legend
+    #handles, labels = plt.gca().get_legend_handles_labels()
+    #fig.legend(handles, labels, loc='upper center')
+
     for i, diag in enumerate(diags):
-        axes[i] = plot_saturation_plot(dfs[diag], optimal_ns.loc[diag], axes[i], diag)
+        legend = False
+        if i == len(diags)-1:
+            legend = True
+        axes[i] = plot_saturation_plot(dfs[diag], optimal_ns.loc[diag], axes[i], diag, legend)
 
     # Remove empty plots
     for i in range(len(diags), len(axes)):
@@ -677,10 +685,10 @@ def main():
 
     #plot_learning_improvements(learning_improvement_df)
     #plot_learning_improvements_bars(learning_improvement_df)
-    plot_average_learning_improvements(learning_improvement_df)
+    #plot_average_learning_improvements(learning_improvement_df)
 
-    #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
-    #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
+    opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
+    plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
     #plot_average_saturation_plot(saturation_dfs, opt_n_features_per_diag)
 
 if __name__ == "__main__":
