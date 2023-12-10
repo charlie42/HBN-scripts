@@ -375,7 +375,31 @@ def plot_average_learning_improvements(learning_improvement_df):
         filename="learning_improvements_averages.png",
         indices=["Non LDs", "LDs"], 
         cols=df.columns,
-        title="AUROC of original models, models with additional assessments, and models with additional assessments and NIH")
+        title="AUROC of original models, models with additional assessments, and models with additional assessments and NIH Toolbox")
+    
+def plot_average_learning_improvements_box(df):
+    print(df)
+    # Drop rows wtih NAN
+    df = df.dropna(axis=0, how='any')
+    cols = df.columns
+    # Make df with averages for each assessment subset
+    col_dict = {
+        "original": "Original",
+        "more assessments": "More assessments",
+        "more assessments and NIH": "More assessments and NIH"
+    }
+    
+    # Make a plot with three jitter+box plots comparing Original, More assessments, and More assessments and NIH
+    plt.figure(figsize=(10, 8))
+    plt.title("AUROC of original models, models with additional assessments, and models with additional assessments and NIH Toolbox")
+    for i, col in enumerate(cols):
+        plt.boxplot(df[col], positions=[i], showfliers=False)
+        plt.scatter(np.ones(len(df[col]))*i, df[col], alpha=0.5)
+    plt.xticks(range(len(cols)), [col_dict[col] for col in cols], rotation=45, ha="right", size=8)
+    plt.ylabel("AUROC")
+    plt.xlabel("Model")
+    plt.tight_layout()
+    plt.savefig("output/viz/learning_improvements_box.png", bbox_inches="tight", dpi=600)
 
 def make_averages_for_assessment_subsets(
         df_ml,
@@ -430,6 +454,8 @@ def plot_averages(df, filename, indices, cols, title):
         col_dict=col_dict)
         
 def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
+    print(df_ml.columns)
+
     filename_and_diag_sets_dict = {
         "Non LDs": NON_LDS,
         "LDs": LDS,
@@ -497,6 +523,11 @@ def plot_group_bar_plots_for_subsets(df_ml, df_sum_scores):
                 title="AUROC of best existing subscale vs subset sum-score",
                 col_dict=col_set)
             
+    # Plot box plots for each assessment subset (all, free, only parent report, free and only parent report)
+    # x-axis: "All", "Free", "Only parent report", "Free and only parent report"
+    # y-axis: AUROC
+    plot_box_plots_for_subsets(df_ml)
+            
     # Plot group bar plot with averages score between diagnoses for each assessment subset (separate for LD and non-LD)
     # One group for non-LDS, one for LDS. Each bar in group is assessment subset
     df_averages_ml, df_averages_sum_scores, col_list = make_averages_for_assessment_subsets(
@@ -528,6 +559,30 @@ def get_opt_n_features_per_diag(df):
     })
     return df
 
+def plot_box_plots_for_subsets(compare_orig_subsets_df):
+    # Plot jitter+box plots for each assessment subset (all, free, only parent report, free and only parent report)
+    # x-axis: "All", "Free", "Only parent report", "Free and only parent report"
+    # y-axis: AUROC
+    plt.figure(figsize=(10, 8))
+    plt.title("AUROC of best existing subscale vs ML model on # of items in best subscale")
+    plt.boxplot(compare_orig_subsets_df["Best subscale score"], positions=[0], showfliers=False)
+    plt.scatter(np.ones(len(compare_orig_subsets_df["Best subscale score"]))*0, compare_orig_subsets_df["Best subscale score"], alpha=0.5)
+    plt.boxplot(compare_orig_subsets_df["ML score at # of items of best subscale (all assessments)"], positions=[1], showfliers=False)
+    plt.scatter(np.ones(len(compare_orig_subsets_df["ML score at # of items of best subscale (all assessments)"]))*1, compare_orig_subsets_df["ML score at # of items of best subscale (all assessments)"], alpha=0.5)
+    plt.boxplot(compare_orig_subsets_df["ML score at # of items of best subscale (free assessments)"], positions=[2], showfliers=False)
+    plt.scatter(np.ones(len(compare_orig_subsets_df["ML score at # of items of best subscale (free assessments)"]))*2, compare_orig_subsets_df["ML score at # of items of best subscale (free assessments)"], alpha=0.5)
+    plt.boxplot(compare_orig_subsets_df["ML score at # of items of best subscale (only parent report)"], positions=[3], showfliers=False)
+    plt.scatter(np.ones(len(compare_orig_subsets_df["ML score at # of items of best subscale (only parent report)"]))*3, compare_orig_subsets_df["ML score at # of items of best subscale (only parent report)"], alpha=0.5)
+    plt.boxplot(compare_orig_subsets_df["ML score at # of items of best subscale (free assessments, only parent report)"], positions=[4], showfliers=False)
+    plt.scatter(np.ones(len(compare_orig_subsets_df["ML score at # of items of best subscale (free assessments, only parent report)"]))*4, compare_orig_subsets_df["ML score at # of items of best subscale (free assessments, only parent report)"], alpha=0.5)
+    plt.xticks(range(5), ["Best subscale", "ML All", "ML Free", "ML Only parent report", "ML Free and only parent report"], rotation=45, ha="right", size=8)
+    plt.ylabel("AUROC")
+
+    plt.tight_layout()
+    plt.savefig("output/viz/ROC_AUC_subsets_box.png", bbox_inches="tight", dpi=600)
+
+    
+    
 def plot_saturation_plot(df, optimal_ns, ax, diag, legend=True):
     # Plot saturation plot for one diagnosis, 4 curves (one for each assessment subset): "All assessments", "Free assessments", "Only parent report", "Free assessments, only parent report"
     # x-axis: # of features, y-axis: AUROC
@@ -608,7 +663,7 @@ def plot_average_saturation_plot(dfs, optimal_ns):
     # x-axis: # of features, y-axis: AUROC
 
     plt.figure(figsize=(10, 8))
-    plt.title("Average AUROC of ML model on # of items in best subscale")
+    plt.title("Average AUROC of ML models (test set)")
     plt.xlabel("# of features")
     plt.ylabel("AUROC")
 
@@ -681,14 +736,15 @@ def main():
     #plot_sum_scores_vs_subscales(sum_scores_df)
     #plot_sum_scores_vs_subscales(sum_scores_df, sum_scores_free_df)
 
-    #plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
+    plot_group_bar_plots_for_subsets(compare_orig_subsets_df, sum_scores_df)
 
     #plot_learning_improvements(learning_improvement_df)
     #plot_learning_improvements_bars(learning_improvement_df)
     #plot_average_learning_improvements(learning_improvement_df)
+    #plot_average_learning_improvements_box(learning_improvement_df)
 
-    opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
-    plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
+    #opt_n_features_per_diag = get_opt_n_features_per_diag(compare_orig_subsets_df)
+    #plot_saturation_plots(saturation_dfs, opt_n_features_per_diag)
     #plot_average_saturation_plot(saturation_dfs, opt_n_features_per_diag)
 
 if __name__ == "__main__":
