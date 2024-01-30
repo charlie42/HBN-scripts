@@ -70,10 +70,29 @@ numbers_of_items = {"SCQ,SCQ_Total": 40,
                     "C3SR,C3SR_LP_T": 10, # to confirm
                     "C3SR,C3SR_NI": 10, # to confirm
                     "C3SR,C3SR_PI": 10, # to confirm
+                    "CCSC,CCSC_PFC": 5, # to confirm
+                    "CCSC,CCSC_CDM": 5, # to confirm
+                    "CCSC,CCSC_DPS": 5, # to confirm
+                    "CCSC,CCSC_SU": 5, # to confirm
+                    "CCSC,CCSC_AC": 5, # to confirm
+                    "CCSC,CCSC_AA": 5, # to confirm
+                    "CCSC,CCSC_REP": 5, # to confirm
+                    "CCSC,CCSC_WT": 5, # to confirm
+                    "CCSC,CCSC_PCR": 5, # to confirm
+                    "CCSC,CCSC_CON": 5, # to confirm
+                    "CCSC,CCSC_OPT": 5, # to confirm
+                    "CCSC,CCSC_POS": 5, # to confirm
+                    "CCSC,CCSC_REL": 5, # to confirm
+                    "CCSC,CCSC_SS": 5, # to confirm
+                    "CCSC,CCSC_SUPMF": 5, # to confirm
+                    "CCSC,CCSC_SUPOA": 5, # to confirm
+                    "CCSC,CCSC_SUPEER": 5, # to confirm
+                    "CCSC,CCSC_SUPSIB": 5, # to confirm
                     }
 
 def get_list_of_analysed_diags():
-    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/", [
+    print("Getting list of analysed diags")
+    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data_archive/reports/evaluate_models_on_feature_subsets/", [
         "only_parent_report__0",
         "first_assessment_to_drop", 
         "learning?__0",
@@ -81,7 +100,8 @@ def get_list_of_analysed_diags():
     report = pd.read_csv(path + "auc-on-subsets-test-set.csv")
     
     diags = [x for x in report.columns if x.startswith("Diag.")]
-
+    print("Analysed diags: ", diags)
+ 
     return diags
 
 def find_auc_for_score_col(total_scores_data, subscale_scores_data, score_col, diag_col):
@@ -95,10 +115,12 @@ def find_auc_for_score_col(total_scores_data, subscale_scores_data, score_col, d
 
 def read_subscales_data():
 
-    path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data/data/create_datasets/", 
-                                           ["first_assessment_to_drop",
-                                            "only_free_assessments__0",
-                                            "learning?__0"])
+    #path = get_newest_non_empty_dir_in_dir("../diagnosis_predictor_data_archive/data/create_datasets/", 
+    #                                       ["first_assessment_to_drop",
+    #                                        "only_free_assessments__0",
+    #                                        "learning?__1"])
+    path = "../diagnosis_predictor_data_archive/data/create_datasets/2023-11-10 10.04.10___only_parent_report__0___first_assessment_to_drop__CPIC___use_other_diags_as_input__0___only_free_assessments__0___learning?__1___NIH?__0___fix_n_all__0___fix_n_learning__0/"
+                                           
     print("Reading input data from: ", path)
     total_scores_data = pd.read_csv(path+'total_scores.csv', index_col=0)
     subscale_scores_data = pd.read_csv(path+'subscale_scores.csv', index_col=0)
@@ -140,22 +162,25 @@ def find_best_manual_score_for_diag(all_manual_scores_df, diags):
         best_manual_score = all_manual_scores_df.loc[diag_col].max()
         best_manual_score_col = all_manual_scores_df.loc[diag_col].idxmax()
         best_manual_scores.append([diag_col, best_manual_score_col, best_manual_score])
-    best_manual_scores_df = pd.DataFrame(best_manual_scores, columns=["Diag","Best score","AUC"])
+    best_manual_scores_df = pd.DataFrame(best_manual_scores, columns=["Diag","Best score","AUC"]).sort_values(by="AUC", ascending=False)
     print(best_manual_scores_df)
+    best_manual_scores_df.to_csv("output/manual_scoring_analysis/best_manual_scores_learning.csv", float_format='%.3f')
 
     return best_manual_scores_df
 
 # Compare with ML scores
 def read_ml_scores(free=False, only_parent=False):
-    path = "../diagnosis_predictor_data/reports/evaluate_models_on_feature_subsets/"
+    path = "../diagnosis_predictor_data_archive/reports/evaluate_models_on_feature_subsets/"
     free_param = "only_free_assessments__1" if free else "only_free_assessments__0"
     only_parent_param = "only_parent_report__1" if only_parent else "only_parent_report__0"
     
+    print("Reading ML scores from: ", path, " with params: ", free_param, only_parent_param)
     path_all_assessments = get_newest_non_empty_dir_in_dir(path, [
         only_parent_param,
         "first_assessment_to_drop",
         free_param,
         "learning?__0",
+        "fix_n_all__1"
         ])
     print("Reading report from: ", path_all_assessments)
     ml_scores_all_assessments = pd.read_csv(path_all_assessments + "auc-on-subsets-test-set.csv")
@@ -218,14 +243,37 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df,
 
 def main():
     output_dir = "output/manual_scoring_analysis/"
+
     total_scores_data, subscale_scores_data = read_subscales_data() # Read prepared data: total and subscale scores and diagnoses from HBN data
     total_scores_data = total_scores_data.drop("ID", axis=1)
     subscale_scores_data = subscale_scores_data.drop("ID", axis=1)
     
-    diags = get_list_of_analysed_diags()
+    #diags = get_list_of_analysed_diags()
+    #Diag.Oppositional Defiant Disorder,Diag.Generalized Anxiety Disorder,Diag.Autism Spectrum Disorder,Diag.No Diagnosis Given,Diag.ADHD-Combined Type,Diag.ADHD-Inattentive Type,Diag.Borderline Intellectual Functioning (test),Diag.Any Diag,Diag.Specific Learning Disorder with Impairment in Reading,
+    #Diag.Processing Speed Deficit (test),Diag.Specific Learning Disorder with Impairment in Reading (test),Diag.NVLD without reading condition (test),Diag.Language Disorder,Diag.Social Anxiety (Social Phobia),Diag.NVLD (test),Diag.Specific Learning Disorder with Impairment in Mathematics (test),Diag.Specific Phobia,Diag.Specific Learning Disorder with Impairment in Written Expression (test)
+    diags = [
+        "Diag.Oppositional Defiant Disorder",
+        "Diag.Generalized Anxiety Disorder",
+        "Diag.Autism Spectrum Disorder",
+        "Diag.No Diagnosis Given", ###
+        "Diag.ADHD-Combined Type",
+        "Diag.ADHD-Inattentive Type",
+        "Diag.Borderline Intellectual Functioning (test)", ###
+        "Diag.Any Diag",
+        "Diag.Specific Learning Disorder with Impairment in Reading",
+        "Diag.Processing Speed Deficit (test)", ###
+        "Diag.Specific Learning Disorder with Impairment in Reading (test)",
+        "Diag.NVLD without reading condition (test)",
+        "Diag.Language Disorder", ###
+        "Diag.Social Anxiety (Social Phobia)",
+        "Diag.NVLD (test)",
+        "Diag.Specific Learning Disorder with Impairment in Mathematics (test)",
+        "Diag.Specific Phobia",
+        "Diag.Specific Learning Disorder with Impairment in Written Expression (test)"
+    ]
 
     all_manual_scores_df = get_manual_scores(total_scores_data, subscale_scores_data, diags)
-    all_manual_scores_df.T.to_csv(output_dir + "manual_subscale_scores.csv", float_format='%.3f')
+    all_manual_scores_df.T.to_csv(output_dir + "manual_subscale_scores_learning.csv", float_format='%.3f')
 
     best_manual_scores_df = find_best_manual_score_for_diag(all_manual_scores_df, diags)
 
@@ -233,6 +281,19 @@ def main():
     ml_scores_all_assessments_only_parent_report = read_ml_scores(free=False, only_parent=True)
     ml_scores_free_assessments_parent_and_sr = read_ml_scores(free=True, only_parent=False)
     ml_scores_free_assessments_only_parent_report = read_ml_scores(free=True, only_parent=True)
+
+    print("DEBUG best_manual_scores_df")
+    print(best_manual_scores_df)
+    print("DEBUG ml_scores_all_assessments_parent_and_sr")
+    print(ml_scores_all_assessments_parent_and_sr.columns)
+    print("DEBUG ml_scores_all_assessments_only_parent_report")
+    print(ml_scores_all_assessments_only_parent_report.columns)
+    print("DEBUG ml_scores_free_assessments_parent_and_sr")
+    print(ml_scores_free_assessments_parent_and_sr.columns)
+    print("DEBUG ml_scores_free_assessments_only_parent_report")
+    print(ml_scores_free_assessments_only_parent_report.columns)
+    print(diags)
+
     comparison_table = compare_ml_scores_with_best_manual_scores(
         best_manual_scores_df, 
         ml_scores_all_assessments_parent_and_sr, 
@@ -240,7 +301,8 @@ def main():
         ml_scores_free_assessments_parent_and_sr,
         ml_scores_free_assessments_only_parent_report, 
         diags)
-    comparison_table.to_csv(output_dir + "manual_subsale_scores_vs_ml.csv", float_format='%.3f')
+    print(comparison_table)
+    comparison_table.to_csv(output_dir + "manual_subsale_scores_vs_ml_learning.csv", float_format='%.3f')
 
 if __name__ == "__main__":
     main()

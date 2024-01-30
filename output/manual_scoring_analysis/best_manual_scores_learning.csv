@@ -1,0 +1,19 @@
+,Diag,Best score,AUC
+2,Diag.Autism Spectrum Disorder,"ASSQ,ASSQ_Total",0.835
+4,Diag.ADHD-Combined Type,"SWAN,SWAN_HY",0.835
+0,Diag.Oppositional Defiant Disorder,"CBCL,CBCL_AB_T",0.829
+7,Diag.Any Diag,"SRS,SRS_DSMRRB_T",0.790
+13,Diag.Social Anxiety (Social Phobia),"SCARED_P,SCARED_P_SC",0.778
+1,Diag.Generalized Anxiety Disorder,"SCARED_P,SCARED_P_GD",0.773
+10,Diag.Specific Learning Disorder with Impairment in Reading (test),"C3SR,C3SR_LP_T",0.702
+8,Diag.Specific Learning Disorder with Impairment in Reading,"C3SR,C3SR_LP_T",0.694
+17,Diag.Specific Learning Disorder with Impairment in Written Expression (test),"C3SR,C3SR_LP_T",0.685
+12,Diag.Language Disorder,"C3SR,C3SR_PI",0.685
+16,Diag.Specific Phobia,"CBCL,CBCL_AD_T",0.670
+11,Diag.NVLD without reading condition (test),"SRS,SRS_COG_T",0.669
+14,Diag.NVLD (test),"SRS,SRS_COG_T",0.667
+6,Diag.Borderline Intellectual Functioning (test),"C3SR,C3SR_LP_T",0.646
+15,Diag.Specific Learning Disorder with Impairment in Mathematics (test),"C3SR,C3SR_LP_T",0.636
+5,Diag.ADHD-Inattentive Type,"SWAN,SWAN_IN",0.622
+3,Diag.No Diagnosis Given,"CCSC,CCSC_DPS",0.604
+9,Diag.Processing Speed Deficit (test),"SWAN,SWAN_IN",0.602

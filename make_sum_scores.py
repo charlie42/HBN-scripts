@@ -62,6 +62,8 @@ class SumScorer():
         # Make a df with AUROCs for sum scores, add lenght of best subscale, and performance of best subscale
         aurocs_df = pd.DataFrame.from_dict(self.aurocs, orient="index")
         aurocs_df.columns = ["AUROC"]
+        print("DEBUG WHY NO BIF")
+        print(aurocs_df.index, self.manual_subscale_scores.index)
         aurocs_df = aurocs_df.merge(self.manual_subscale_scores[['Best subscale', "# of items in best subscale", "Best subscale score"]], left_index=True, right_index=True)
         aurocs_df = aurocs_df.sort_values(by="Best subscale score", ascending=False)
 

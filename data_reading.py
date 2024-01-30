@@ -34,7 +34,8 @@ class DataReader:
         "learning_and_consensus_diags": "learning?__0",
         "NIH": "NIH?__1",
         "no_NIH": "NIH?__0",
-        "fix_n_all": "fix_n__1", # rename to fix_n_all__1 when new data is generated
+        #"fix_n_all": "fix_n__1", # rename to fix_n_all__1 when new data is generated
+        "fix_n_all": "fix_n_all__1", 
         "fix_n_learning": "fix_n_learning__1",
     }
     FILE_FILTER_MAPPING = {
@@ -106,7 +107,8 @@ class DataReader:
         return pd.read_csv(self.data_path + "dataset_stats.csv", index_col=0)
     
     def _read_manual_scoring(self):
-        return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
+        #return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
+        return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml_learning.csv", index_col=0)
     
     def _read_compare_orig_vs_subsets(self):
         return pd.read_csv("output/compare_orig_vs_subsets.csv", index_col=0)
@@ -164,6 +166,7 @@ class DataReader:
         # Find non-empty dir with the latest timestamp, dir name format: 2023-01-05 11.03.00___first_dropped_assessment__ICU_P___other_diag_as_input__0___debug_mode__True
         timestamps = [d.split("___")[0] for d in non_empty_dir_names]
         timestamps = [datetime.datetime.strptime(t, "%Y-%m-%d %H.%M.%S") for t in timestamps]
+        
         if not timestamps:
             raise ValueError("No timestamps found in: ", path, "among: ", non_empty_dir_names)
         

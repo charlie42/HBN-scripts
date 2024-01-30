@@ -8,6 +8,8 @@ from dsutils.file_utils import write_dict_of_dfs_to_csv
 from data_reading import DataReader
 
 def make_df_to_plot_eval_orig(df, df_free = None, df_only_parent_report = None, df_only_parent_report_free = None):
+
+    print("Making df to plot eval orig")
     
     # Each row is diagnosis (index), plot ROC AUC column and ROC AUC healthy controls column. 
     # Plot both for all assessments and free assessments on the same plot, add number of positive examples to each diagnosis
@@ -49,6 +51,19 @@ def make_df_to_plot_eval_orig(df, df_free = None, df_only_parent_report = None, 
     return df
 
 def make_df_to_plot_eval_subsets(df_manual, df, df_free = None, df_only_parent_report = None, df_only_parent_report_free = None):
+
+    print("DEBUG df_manual")
+    print(df_manual)
+    print("DEBUG df")
+    print(df)
+    print("DEBUG df_free")
+    print(df_free)
+    print("DEBUG df_only_parent_report")
+    print(df_only_parent_report)
+    print("DEBUG df_only_parent_report_free")
+    print(df_only_parent_report_free)
+
+    print("Making df to plot eval subsets")
 
     # Make one dataset with all info
     df = df[["AUC", "Number of features"]]
@@ -167,7 +182,9 @@ def make_dfs(data_reader):
 
     # Consensus and learning
     for data_type in ["item_lvl", "eval_orig", "eval_subsets", "make_ds", "eval_subsets_one_subset"]:
+        print("Reading data: ", data_type)
         file_filter = "eval_orig_test_set_file" if data_type == "eval_orig" else ""
+        print("File filter: ", file_filter)
         dfs[data_type+"_consensus_and_learning_all_parent_and_sr"] = data_reader.read_data(data_type = data_type, 
                                                 params = ["parent_and_sr", "multiple_assessments", "all_assessments", "learning_and_consensus_diags", "fix_n_all"],
                                                 file_filter = file_filter)
@@ -185,6 +202,7 @@ def make_dfs(data_reader):
                                                 file_filter = file_filter)
     # Learning
     for data_type in ["eval_subsets"]:
+        print("Reading data: ", data_type)
         dfs[data_type+"_learning_NIH"] = data_reader.read_data(data_type = data_type, 
                                                 params = ["parent_and_sr", "multiple_assessments", "all_assessments", "only_learning_diags", "NIH", "fix_n_learning"],
                                                 file_filter = file_filter)
@@ -248,6 +266,10 @@ if __name__ == "__main__":
         dfs["make_ds_consensus_and_learning_all_only_parent_report"],
         dfs["make_ds_consensus_and_learning_free_only_parent_report"])
     
+    print("DEBUG eval_subsets_df")
+    print(eval_subsets_df)
+    print("DEBUG eval_orig_df")
+    print(eval_orig_df)
     compare_orig_vs_subsets_df = eval_orig_df.merge(eval_subsets_df, left_index=True, right_index=True)
     
     # Add total # of features and examples to compare_orig_vs_subsets_df

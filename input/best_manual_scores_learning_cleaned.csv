@@ -1,0 +1,15 @@
+;Diagnosis;Best scale;AUROC
+0;Autism Spectrum Disorder;ASSQ_Total;0.835
+1;ADHD-Combined Type;SWAN_HY;0.835
+2;Oppositional Defiant Disorder;CBCL_AB_T;0.829
+3;Any Diag;SRS_DSMRRB_T;0.790
+4;Social Anxiety (Social Phobia);SCARED_P_SC;0.778
+5;Generalized Anxiety Disorder;SCARED_P_GD;0.773
+6;Specific Learning Disorder with Impairment in Reading (test);C3SR_LP_T;0.702
+7;Specific Learning Disorder with Impairment in Reading;C3SR_LP_T;0.694
+8;Specific Learning Disorder with Impairment in Written Expression (test);C3SR_LP_T;0.685
+9;Specific Phobia;CBCL_AD_T;0.670
+10;NVLD without reading condition (test);SRS_COG_T;0.669
+11;NVLD (test);SRS_COG_T;0.667
+12;Specific Learning Disorder with Impairment in Mathematics (test);C3SR_LP_T;0.636
+13;ADHD-Inattentive Type;SWAN_IN;0.622
