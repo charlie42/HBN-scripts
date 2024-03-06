@@ -140,7 +140,8 @@ def make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df):
     
     df = pd.DataFrame.from_dict(dict_for_df).set_index("Diag")
     df["Delta ML"] = df["Mean ML score at N"] - df["Score of best scale"]
-    df = df.sort_values("Median ML score at N")
+    #df = df.sort_values("Median ML score at N")
+    df = df.sort_values("Delta ML")
     return df
 
 

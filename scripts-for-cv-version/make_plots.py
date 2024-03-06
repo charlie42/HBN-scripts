@@ -66,10 +66,19 @@ def plot_box_cv(df, labels, box_labels, title, filename_base):
 
     fig, ax = plt.subplots()
 
-    ax.scatter(df[labels[0]], range(1, len(df.index)+1), label=labels[0], color='blue')
-
-    ax.boxplot(df[labels[1]], vert=False)
+    
+    c = "#1f77b4"
+    ax.boxplot(df[labels[1]], vert=False,
+                patch_artist=True,
+                boxprops=dict(facecolor="#17becf", color=c),
+                capprops=dict(color=c),
+                whiskerprops=dict(color=c),
+                flierprops=dict(color=c, markeredgecolor=c),
+                medianprops=dict(color="#2ca02c"),
+                zorder=0)
     ax.set_yticklabels(df.index)
+
+    ax.scatter(df[labels[0]], range(1, len(df.index)+1), label=labels[0], color='red', zorder=1)
 
     
     #plt.xlim([0.5, 0.9])
@@ -80,7 +89,13 @@ def plot_box_cv(df, labels, box_labels, title, filename_base):
     #plt.tight_layout()
 
     plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
+    plt.close()
 
+def plot_box_delta(df, filename_base):
+    plt.figure(figsize=(1, 5))
+    df.boxplot(column="Delta ML", widths=0.6)
+    plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
+                   
 
 if __name__ == "__main__":
     # Plot mean cv auroc across diags vs existing assessments, boxplot
@@ -141,3 +156,8 @@ if __name__ == "__main__":
         title="Performance of existing subscales vs trained models",
         filename_base="manual_vs_cv_ml_box"
     )
+
+    plot_box_delta(
+        manual_vs_cv_ml_df,
+        filename_base="delta_box"
+        )
