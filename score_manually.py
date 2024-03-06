@@ -154,7 +154,7 @@ def get_manual_scores(total_scores_data, subscale_scores_data, diags):
     print(all_manual_scores_df)
     return all_manual_scores_df
 
-# Make df with best scores for each diag (cols: Diag,Best score,AUC) 
+# Make df with best scales for each diag (cols: Diag,Best scale,AUC) 
 
 def find_best_manual_score_for_diag(all_manual_scores_df, diags):
     best_manual_scores = []
@@ -162,10 +162,9 @@ def find_best_manual_score_for_diag(all_manual_scores_df, diags):
         best_manual_score = all_manual_scores_df.loc[diag_col].max()
         best_manual_score_col = all_manual_scores_df.loc[diag_col].idxmax()
         best_manual_scores.append([diag_col, best_manual_score_col, best_manual_score])
-    best_manual_scores_df = pd.DataFrame(best_manual_scores, columns=["Diag","Best score","AUC"]).sort_values(by="AUC", ascending=False)
+    best_manual_scores_df = pd.DataFrame(best_manual_scores, columns=["Diag","Best scale","AUC"]).sort_values(by="AUC", ascending=False)
     print(best_manual_scores_df)
-    best_manual_scores_df.to_csv("output/manual_scoring_analysis/best_manual_scores_learning.csv", float_format='%.3f')
-
+    
     return best_manual_scores_df
 
 # Compare with ML scores
@@ -196,7 +195,7 @@ def compare_ml_scores_with_best_manual_scores(best_manual_scores_df,
     ml_scores_at_num_features = {}
     for diag_col in diags:
         best_manual_score = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["AUC"].values[0]
-        best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best score"].values[0]
+        best_manual_score_subscale = best_manual_scores_df[best_manual_scores_df["Diag"] == diag_col]["Best scale"].values[0]
         best_manual_score_subscale_short = best_manual_score_subscale.split(",")[1]
         number_of_items_in_best_manual_subscale = numbers_of_items[best_manual_score_subscale]
 
@@ -276,6 +275,10 @@ def main():
     all_manual_scores_df.T.to_csv(output_dir + "manual_subscale_scores_learning.csv", float_format='%.3f')
 
     best_manual_scores_df = find_best_manual_score_for_diag(all_manual_scores_df, diags)
+    # Add n items in best subscale to best_manual_scores_df
+    best_manual_scores_df["N in best scale"] = best_manual_scores_df["Best scale"].map(numbers_of_items)
+
+    best_manual_scores_df.to_csv("output/manual_scoring_analysis/best_manual_scores_learning.csv", float_format='%.3f')
 
     ml_scores_all_assessments_parent_and_sr = read_ml_scores(free=False, only_parent=False)
     ml_scores_all_assessments_only_parent_report = read_ml_scores(free=False, only_parent=True)

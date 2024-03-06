@@ -45,7 +45,7 @@ class DataReader:
     def __init__(self):
         pass                  
         
-    def read_data(self, data_type, params=[], file_filter="", filename=""):
+    def read_data(self, data_type, params=[], file_filter="", filename="", only_manual=False):
 
         self.params = [self.PARAM_TO_PATH_MAPPING[param] for param in params]
         self.file_filter = self.FILE_FILTER_MAPPING[file_filter] if file_filter else ""
@@ -66,7 +66,7 @@ class DataReader:
         elif data_type == "make_ds":
             return self._read_make_ds()
         elif data_type == "manual_scoring":
-            return self._read_manual_scoring()
+            return self._read_manual_scoring(only_manual)
         elif data_type == "compare_orig_vs_subsets":
             return self._read_compare_orig_vs_subsets()
         elif data_type == "compare_orig_vs_subsets_learning":
@@ -106,7 +106,9 @@ class DataReader:
     def _read_make_ds(self):
         return pd.read_csv(self.data_path + "dataset_stats.csv", index_col=0)
     
-    def _read_manual_scoring(self):
+    def _read_manual_scoring(self, only_manual=False):
+        if only_manual:
+            return pd.read_csv("output/manual_scoring_analysis/best_manual_scores_learning.csv", index_col=0)
         #return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml.csv", index_col=0)
         return pd.read_csv("output/manual_scoring_analysis/manual_subsale_scores_vs_ml_learning.csv", index_col=0)
     
