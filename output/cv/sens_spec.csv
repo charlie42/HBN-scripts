@@ -1,0 +1,20 @@
+,Diag,N features,AUC,Sensitivity,Specificity
+5,Diag.Autism Spectrum Disorder,4,0.865,0.865,0.738
+8,Diag.Generalized Anxiety Disorder,5,0.840,0.811,0.672
+2,Diag.Oppositional Defiant Disorder,3,0.810,0.851,0.667
+14,Diag.Borderline Intellectual Functioning (test),8,0.793,0.818,0.652
+1,Diag.No Diagnosis Given,4,0.786,0.833,0.557
+17,Diag.NVLD without reading condition (test),7,0.781,0.921,0.495
+10,Diag.ADHD-Combined Type,3,0.772,0.756,0.662
+11,Diag.Specific Learning Disorder with Impairment in Reading (test),7,0.759,0.710,0.707
+6,Diag.Specific Phobia,5,0.758,0.970,0.178
+9,Diag.Language Disorder,7,0.752,0.758,0.539
+13,Diag.Specific Learning Disorder with Impairment in Written Expression (test),7,0.749,0.886,0.461
+18,Diag.Any Diag,5,0.746,0.860,0.444
+4,Diag.ADHD-Inattentive Type,7,0.715,0.796,0.535
+15,Diag.Processing Speed Deficit (test),8,0.712,0.817,0.475
+12,Diag.Specific Learning Disorder with Impairment in Mathematics (test),6,0.711,0.808,0.509
+0,Diag.Specific Learning Disorder with Impairment in Reading,7,0.708,0.750,0.541
+3,Diag.Social Anxiety (Social Phobia),6,0.686,0.622,0.708
+7,Diag.Specific Learning Disorder with Impairment in Mathematics,6,0.668,0.875,0.363
+16,Diag.NVLD (test),6,0.597,0.517,0.509

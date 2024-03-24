@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import os, datetime
 import json
+import math
 from joblib import load
 
 import dsutils
@@ -50,12 +51,13 @@ DIAGNOSIS_DICT = {
 }
 
 def parse_perf_data(data_dict):
-    print(data_dict)
-    print(data_dict.keys())
+    #print(data_dict)
+    #print(data_dict.keys())
 
     for diag in data_dict:
-        print(diag)
-        print(data_dict[diag].keys())
+        #print(diag)
+        #print(data_dict[diag].keys())
+        pass
     
 
 def make_dfs_for_saturation_plots(perf_dict):
@@ -115,7 +117,6 @@ def make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df):
 
     for diag in perf_dict:
         if diag in manual_scoring_df.index:
-            print(diag)
             n = manual_scoring_df.loc[diag, "N in best scale"]
             best_scale = manual_scoring_df.loc[diag, "Best scale"]
             score_of_best_scale = manual_scoring_df.loc[diag, "AUC"]
@@ -132,6 +133,7 @@ def make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df):
                 "CV sum scores at N": perf_dict[diag]["perf_on_features"][n]["auc_sum_score"],
                 "Mean ML score at N": np.mean(perf_dict[diag]["perf_on_features"][n]["auc"]),
                 "Median ML score at N": np.median(perf_dict[diag]["perf_on_features"][n]["auc"]),
+                "Std ML score at N": np.std(perf_dict[diag]["perf_on_features"][n]["auc"]),
                 "Mean sum score at N": np.mean(perf_dict[diag]["perf_on_features"][n]["auc_sum_score"]),
                 "Min ML score at N": np.min(perf_dict[diag]["perf_on_features"][n]["auc"]),
                 "Min sum score at N": np.min(perf_dict[diag]["perf_on_features"][n]["auc_sum_score"]),
@@ -142,21 +144,80 @@ def make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df):
     df["Delta ML"] = df["Mean ML score at N"] - df["Score of best scale"]
     #df = df.sort_values("Median ML score at N")
     df = df.sort_values("Delta ML")
+
+    # DEBUG
+    print("AVERAGE SD: ", df["Std ML score at N"].mean())
+
     return df
 
+def make_sens_spec_table(perf_dict):
+
+    print("DEBUG")
+    print("/DEBUG")
+
+    print("DEBUG sens spec cv")
+    for diag in perf_dict:
+        n = math.ceil(np.mean(perf_dict[diag]["opt_ns"]))
+        opt_thresh_last = perf_dict[diag]["perf_on_features"][n]["opt_thresh"][-1]
+        print(diag)
+        #if diag == "Diag.Generalized Anxiety Disorder":
+            #print(diag, perf_dict[diag]["perf_on_features"][10]["opt_thresh"])
+            #print(perf_dict[diag]["n_positives"])
+            #print("Last fold opt threshold: ", opt_thresh_last)
+        takeClosest = lambda num,collection:min(collection,key=lambda x:abs(x-num))
+        thresh = 0.2
+        opt_thresh = takeClosest(np.mean(perf_dict[diag]["perf_on_features"][n]["opt_thresh"]), perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][0].keys())
+        #opt_thresh = np.quantile(perf_dict[diag]["perf_on_features"][n]["opt_thresh"], 0.5)
+        print("opt thresh", opt_thresh)
+        #print(perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][0].keys())
+        
+        thresh =  opt_thresh
+        for i in range(0, len(perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"])):
+            print(
+                i, " FOLD: ", 
+                "\nsens spec at avg opt thresh", perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][i][thresh], 
+                "\nopt thresh for this fold", perf_dict[diag]["perf_on_features"][n]["opt_thresh"][i],
+                #"\nsens spec at this fold opt thresh", perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][i][perf_dict[diag]["perf_on_features"][n]["opt_thresh"][i]], 
+                #"\nsens spec dict", perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][i],
+                "\n n positives in this fold", perf_dict[diag]["n_positives"][i]["y_test"],
+                #"\n", perf_dict[diag]["perf_on_features"][n]["auc"][i]
+                )
+        #print("TEST SET: ", perf_dict[diag]["sens_test_set"], perf_dict[diag]["spec_test_set"])
+        #print("LAST FOLD: ", perf_dict[diag]["perf_on_features"][n]["spec_sens_dict"][-1][0.5])
+        print(
+            "TEST SET: ", 
+            #perf_dict[diag]["sens_spec_test_set"],
+            perf_dict[diag]["sens_spec_test_set"][thresh],
+            #perf_dict[diag]["auc_test_set"]
+            #"\n n positives test set", perf_dict[diag]["n_positives_test_set"]
+        )
+
+        
+
+
+    rows = []
+    for diag in perf_dict:
+        n = math.ceil(np.mean(perf_dict[diag]["opt_ns"]))
+        auc = perf_dict[diag]["auc_test_set"]
+        sens = perf_dict[diag]["sens_test_set"]
+        spec = perf_dict[diag]["spec_test_set"]
+        row = [diag, n, auc, sens, spec]
+        rows.append(row)
+    result_df = pd.DataFrame(
+        rows, 
+        columns=["Diag", "N features", "AUC", "Sensitivity", "Specificity"]
+    ).sort_values("AUC", ascending=False) 
+    return result_df
 
 if __name__ == "__main__":
 
-    ### Consensus diags ###
+    #### Original Assessment Set ####
     
     # Read data
-    perf_dict = load("input/scores_objects_lr_debug.joblib")
-    #parse_perf_data(perf_dict)
-    #print(json.dumps(perf_dict, cls=NpEncoder, indent=4))
-
+    perf_dict = load("input/scores_objects_lr_debug_false_non_learning.joblib")
+    
     # Make tables for saturation plots
     dfs_for_saturation_plots = make_dfs_for_saturation_plots(perf_dict)
-    print(dfs_for_saturation_plots)
     write_dict_of_dfs_to_csv(dfs_for_saturation_plots, "output/cv/saturation_dfs", index=True)
 
     # Make tables for mean manual vs ML
@@ -166,5 +227,47 @@ if __name__ == "__main__":
     # Make table for cv ML
     manual_vs_cv_ml_df = make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df)
     manual_vs_cv_ml_df = manual_vs_cv_ml_df.rename(index=DIAGNOSIS_DICT)
-    print(manual_vs_cv_ml_df)
     manual_vs_cv_ml_df.to_csv("output/cv/manual_vs_cv_ml.csv", float_format='%.3f')
+
+    sens_spec_table = make_sens_spec_table(perf_dict)
+    sens_spec_table.to_csv("output/cv/sens_spec.csv", float_format='%.3f')
+
+    #### Learning Assessment Set ####
+    # Read data
+    perf_dict = load("input/scores_objects_lr_debug_false_learning.joblib")
+    
+    # Make tables for saturation plots
+    dfs_for_saturation_plots = make_dfs_for_saturation_plots(perf_dict)
+    write_dict_of_dfs_to_csv(dfs_for_saturation_plots, "output/cv/saturation_dfs_learning", index=True)
+
+    # Make tables for mean manual vs ML
+    data_reader = DataReader()
+    manual_scoring_df = data_reader.read_data(data_type="manual_scoring", only_manual=True).set_index("Diag")
+
+    # Make table for cv ML
+    manual_vs_cv_ml_df = make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df)
+    manual_vs_cv_ml_df = manual_vs_cv_ml_df.rename(index=DIAGNOSIS_DICT)
+    manual_vs_cv_ml_df.to_csv("output/cv/manual_vs_cv_ml_learning.csv", float_format='%.3f')
+
+    sens_spec_table = make_sens_spec_table(perf_dict)
+    sens_spec_table.to_csv("output/cv/sens_spec_learning.csv", float_format='%.3f')
+
+    #### Non-proprietary Assessment Set ####
+    # Read data
+    perf_dict = load("input/scores_objects_lr_debug_false_free.joblib")
+    
+    # Make tables for saturation plots
+    dfs_for_saturation_plots = make_dfs_for_saturation_plots(perf_dict)
+    write_dict_of_dfs_to_csv(dfs_for_saturation_plots, "output/cv/saturation_dfs_free", index=True)
+
+    # Make tables for mean manual vs ML
+    data_reader = DataReader()
+    manual_scoring_df = data_reader.read_data(data_type="manual_scoring", only_manual=True).set_index("Diag")
+
+    # Make table for cv ML
+    manual_vs_cv_ml_df = make_df_for_manual_vs_cv_ml(perf_dict, manual_scoring_df)
+    manual_vs_cv_ml_df = manual_vs_cv_ml_df.rename(index=DIAGNOSIS_DICT)
+    manual_vs_cv_ml_df.to_csv("output/cv/manual_vs_cv_ml_free.csv", float_format='%.3f')
+
+    sens_spec_table = make_sens_spec_table(perf_dict)
+    sens_spec_table.to_csv("output/cv/sens_spec_free.csv", float_format='%.3f')

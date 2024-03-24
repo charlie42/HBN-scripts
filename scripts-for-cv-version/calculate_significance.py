@@ -49,6 +49,7 @@ class SignificanceCalculator:
         return result
 
 def make_data_list(data, col, is_list=False):
+    # If series is a series of lists, expand each list to make a big common list
     if is_list:
         result = []
         for index, value in data[col].items():
@@ -84,6 +85,20 @@ if __name__ == "__main__":
     data_2 = make_data_list(data, "CV sum scores at N", is_list=True)
     print(f"Comparing: Score of best scale and sum scores at N:")
     ml_model_p_values.append(significance_calculator.calculate_significance(data_1, data_2, method))
+
+    # Compare all assessment to non-proprietary assessments
+    data_free = pd.read_csv(
+        "output/cv/manual_vs_cv_ml_free.csv",
+        converters={
+            "CV ML scores at N": literal_eval,
+            "CV sum scores at N": literal_eval,
+        } # To read list as list and not str)
+    )
+    data_1 = make_data_list(data, "CV ML scores at N", is_list=True)
+    data_2 = make_data_list(data_free, "CV ML scores at N", is_list=True)
+    print(f"Comparing: ML scores of all assessments vs non-propritary:")
+    ml_model_p_values.append(significance_calculator.calculate_significance(data_1, data_2, method))
+
 
     # # Compare means of "AUC all features all assessments parent and sr" and "Best subscale score"
     # features = ["AUC all features all assessments parent and sr", "Best subscale score"]
