@@ -74,11 +74,13 @@ def plot_box_cv(df, labels, box_labels, title, filename_base):
                 capprops=dict(color=c),
                 whiskerprops=dict(color=c),
                 flierprops=dict(color=c, markeredgecolor=c),
-                medianprops=dict(color="#2ca02c"),
+                medianprops=dict(color=c),
                 zorder=0)
     ax.set_yticklabels(df.index)
 
     ax.scatter(df[labels[0]], range(1, len(df.index)+1), label=labels[0], color='red', zorder=1)
+
+    plt.xlabel("AUROC")
 
     
     #plt.xlim([0.5, 0.9])
@@ -93,7 +95,18 @@ def plot_box_cv(df, labels, box_labels, title, filename_base):
 
 def plot_box_delta(df, filename_base):
     plt.figure(figsize=(1, 5))
-    df.boxplot(column="Delta ML", widths=0.6)
+
+    c = "#1f77b4"
+    df.boxplot(column="Delta ML", labels=[""], widths=0.6,
+               patch_artist=True,
+                boxprops=dict(facecolor="white", color=c),
+                capprops=dict(color=c),
+                whiskerprops=dict(color=c),
+                flierprops=dict(color=c, markeredgecolor=c),
+                medianprops=dict(color=c),
+                zorder=0)
+    
+    plt.ylabel("AUROC Difference")
     plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
                    
 
