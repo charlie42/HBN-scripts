@@ -61,12 +61,11 @@ def plot_indiv_cv(df, labels, box_labels, title, filename_base):
     plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
 
 def plot_box_cv(df, labels, box_labels, title, filename_base):
+    
+    # Colored
     plt.figure(figsize=(8, 5))
-
-
     fig, ax = plt.subplots()
 
-    
     c = "#1f77b4"
     ax.boxplot(df[labels[1]], vert=False,
                 patch_artist=True,
@@ -81,21 +80,46 @@ def plot_box_cv(df, labels, box_labels, title, filename_base):
     ax.scatter(df[labels[0]], range(1, len(df.index)+1), label=labels[0], color='red', zorder=1)
 
     plt.xlabel("AUROC")
-
-    
-    #plt.xlim([0.5, 0.9])
     plt.legend()
     drop_duplicated_from_legend(plt)
     plt.grid(True)
     plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
-    #plt.tight_layout()
 
     plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
+    plt.close()
+
+    # Grey and tiff
+    plt.figure(figsize=(8, 5))
+    fig, ax = plt.subplots()
+
+    c = "black"
+    c_grey = "#807f7e"
+    ax.boxplot(df[labels[1]], vert=False,
+                patch_artist=True,
+                boxprops=dict(facecolor=c_grey, color=c),
+                capprops=dict(color=c),
+                whiskerprops=dict(color=c),
+                flierprops=dict(color=c, markeredgecolor=c),
+                medianprops=dict(color=c),
+                zorder=0)
+    ax.set_yticklabels(df.index)
+
+    ax.scatter(df[labels[0]], range(1, len(df.index)+1), label=labels[0], color=c, zorder=1)
+
+    plt.xlabel("AUROC")
+    plt.legend()
+    drop_duplicated_from_legend(plt)
+    plt.grid(True)
+    plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
+
+    plt.savefig(FIG_PATH+filename_base+"_grey.tiff", bbox_inches="tight", dpi=600)
+    plt.savefig(FIG_PATH+filename_base+"_grey.png", bbox_inches="tight", dpi=600)
     plt.close()
 
 def plot_box_delta(df, filename_base):
     plt.figure(figsize=(1, 5))
 
+    # Colored
     c = "#1f77b4"
     df.boxplot(column="Delta ML", labels=[""], widths=0.6,
                patch_artist=True,
@@ -105,9 +129,22 @@ def plot_box_delta(df, filename_base):
                 flierprops=dict(color=c, markeredgecolor=c),
                 medianprops=dict(color=c),
                 zorder=0)
-    
     plt.ylabel("AUROC Difference")
     plt.savefig(FIG_PATH+filename_base+".png", bbox_inches="tight", dpi=600)
+    
+    # Grey and tiff
+    c = "black"
+    df.boxplot(column="Delta ML", labels=[""], widths=0.6,
+               patch_artist=True,
+                boxprops=dict(facecolor="white", color=c),
+                capprops=dict(color=c),
+                whiskerprops=dict(color=c),
+                flierprops=dict(color=c, markeredgecolor=c),
+                medianprops=dict(color=c),
+                zorder=0)
+    plt.ylabel("AUROC Difference")
+    plt.savefig(FIG_PATH+filename_base+"_grey.tiff", bbox_inches="tight", dpi=600)
+    plt.savefig(FIG_PATH+filename_base+"_grey.png", bbox_inches="tight", dpi=600)
                    
 
 if __name__ == "__main__":
